@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1635544760594
+Bnd-LastModified: 1636618239642
 Bundle-Activator: org.freeplane.plugin.svg.Activator
 Bundle-ClassPath: .,lib/plugin-1.9.11.jar,lib/batik-codec-1.14.jar,lib
  /batik-transcoder-1.14.jar,lib/batik-swing-1.14.jar,lib/fop-core-2.6.

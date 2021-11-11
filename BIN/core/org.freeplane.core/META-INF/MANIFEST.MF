@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1635544750947
+Bnd-LastModified: 1636618230207
 Bundle-Activator: org.freeplane.main.osgi.Activator
 Bundle-ClassPath: .,lib/freeplaneviewer.jar,lib/freeplaneeditor-1.9.11
  .jar,lib/freeplane_mac-1.9.11.jar,lib/freeplaneosgi-1.9.11.jar,lib/ki
