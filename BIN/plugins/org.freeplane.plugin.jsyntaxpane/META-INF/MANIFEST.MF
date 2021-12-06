@@ -1,18 +1,18 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1636618238379
+Bnd-LastModified: 1638706234623
 Bundle-Activator: org.freeplane.plugin.jsyntaxpane.Activator
-Bundle-ClassPath: .,lib/plugin-1.9.11.jar,lib/syntaxpane-1.2.0.jar
+Bundle-ClassPath: .,lib/plugin-1.9.12.jar,lib/syntaxpane-1.2.0.jar
 Bundle-ManifestVersion: 2
 Bundle-Name: org.freeplane.plugin.jsyntaxpane
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-SymbolicName: org.freeplane.plugin.jsyntaxpane
 Bundle-Vendor: Freeplane Project
-Bundle-Version: 1.9.11
+Bundle-Version: 1.9.12
 Created-By: 11.0.12 (Oracle Corporation)
-Export-Package: de.sciss.syntaxpane;version="1.9.11",de.sciss.syntaxpa
- ne.lexers;uses:="de.sciss.syntaxpane";version="1.9.11",de.sciss.synta
- xpane.syntaxkits;uses:="de.sciss.syntaxpane";version="1.9.11",de.scis
- s.syntaxpane.actions;uses:="de.sciss.syntaxpane";version="1.9.11"
+Export-Package: de.sciss.syntaxpane;version="1.9.12",de.sciss.syntaxpa
+ ne.lexers;uses:="de.sciss.syntaxpane";version="1.9.12",de.sciss.synta
+ xpane.syntaxkits;uses:="de.sciss.syntaxpane";version="1.9.12",de.scis
+ s.syntaxpane.actions;uses:="de.sciss.syntaxpane";version="1.9.12"
 Private-Package: de.sciss.syntaxpane.syntaxkits.groovysyntaxkit,de.sci
  ss.syntaxpane.syntaxkits.latexsyntaxkit,org.freeplane.plugin.jsyntaxp
  ane
