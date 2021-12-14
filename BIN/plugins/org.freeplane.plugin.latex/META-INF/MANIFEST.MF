@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1638706235298
+Bnd-LastModified: 1639312106270
 Bundle-Activator: org.freeplane.plugin.latex.Activator
 Bundle-ClassPath: .,lib/plugin-1.9.12.jar,lib/jlatexmath-1.0.7.jar,lib
  /jlatexmath-font-greek-1.0.7.jar,lib/jlatexmath-font-cyrillic-1.0.7.j
