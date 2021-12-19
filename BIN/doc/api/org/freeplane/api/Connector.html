@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -234,10 +234,15 @@ extends <a href="ConnectorRO.html" title="interface in org.freeplane.api">Connec
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTargetLabel(java.lang.String)">setTargetLabel</a></span>&#8203;(java.lang.String&nbsp;label)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setStyle_(java.lang.String)">setStyle_</a></span>&#8203;(java.lang.String&nbsp;name)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTargetLabel(java.lang.String)">setTargetLabel</a></span>&#8203;(java.lang.String&nbsp;label)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setWidth(int)">setWidth</a></span>&#8203;(int&nbsp;width)</code></th>
 <td class="colLast">
@@ -250,7 +255,7 @@ extends <a href="ConnectorRO.html" title="interface in org.freeplane.api">Connec
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;org.freeplane.api.<a href="ConnectorRO.html" title="interface in org.freeplane.api">ConnectorRO</a></h3>
-<code><a href="ConnectorRO.html#getColor()">getColor</a>, <a href="ConnectorRO.html#getColorCode()">getColorCode</a>, <a href="ConnectorRO.html#getDashArray()">getDashArray</a>, <a href="ConnectorRO.html#getEndInclination()">getEndInclination</a>, <a href="ConnectorRO.html#getLabelFontFamily()">getLabelFontFamily</a>, <a href="ConnectorRO.html#getLabelFontSize()">getLabelFontSize</a>, <a href="ConnectorRO.html#getMiddleLabel()">getMiddleLabel</a>, <a href="ConnectorRO.html#getOpacity()">getOpacity</a>, <a href="ConnectorRO.html#getShape()">getShape</a>, <a href="ConnectorRO.html#getSource()">getSource</a>, <a href="ConnectorRO.html#getSourceLabel()">getSourceLabel</a>, <a href="ConnectorRO.html#getStartInclination()">getStartInclination</a>, <a href="ConnectorRO.html#getTarget()">getTarget</a>, <a href="ConnectorRO.html#getTargetLabel()">getTargetLabel</a>, <a href="ConnectorRO.html#getWidth()">getWidth</a>, <a href="ConnectorRO.html#hasEndArrow()">hasEndArrow</a>, <a href="ConnectorRO.html#hasStartArrow()">hasStartArrow</a>, <a href="ConnectorRO.html#simulatesEdge()">simulatesEdge</a></code></li>
+<code><a href="ConnectorRO.html#getColor()">getColor</a>, <a href="ConnectorRO.html#getColorCode()">getColorCode</a>, <a href="ConnectorRO.html#getDashArray()">getDashArray</a>, <a href="ConnectorRO.html#getEndInclination()">getEndInclination</a>, <a href="ConnectorRO.html#getLabelFontFamily()">getLabelFontFamily</a>, <a href="ConnectorRO.html#getLabelFontSize()">getLabelFontSize</a>, <a href="ConnectorRO.html#getMiddleLabel()">getMiddleLabel</a>, <a href="ConnectorRO.html#getOpacity()">getOpacity</a>, <a href="ConnectorRO.html#getShape()">getShape</a>, <a href="ConnectorRO.html#getSource()">getSource</a>, <a href="ConnectorRO.html#getSourceLabel()">getSourceLabel</a>, <a href="ConnectorRO.html#getStartInclination()">getStartInclination</a>, <a href="ConnectorRO.html#getStyle_()">getStyle_</a>, <a href="ConnectorRO.html#getTarget()">getTarget</a>, <a href="ConnectorRO.html#getTargetLabel()">getTargetLabel</a>, <a href="ConnectorRO.html#getWidth()">getWidth</a>, <a href="ConnectorRO.html#hasEndArrow()">hasEndArrow</a>, <a href="ConnectorRO.html#hasStartArrow()">hasStartArrow</a>, <a href="ConnectorRO.html#simulatesEdge()">simulatesEdge</a></code></li>
 </ul>
 </li>
 </ul>
@@ -429,11 +434,20 @@ extends <a href="ConnectorRO.html" title="interface in org.freeplane.api">Connec
 <a id="setLabelFontSize(int)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setLabelFontSize</h4>
 <pre class="methodSignature">void&nbsp;setLabelFontSize&#8203;(int&nbsp;size)</pre>
 <div class="block">Since 1.7.10</div>
+</li>
+</ul>
+<a id="setStyle_(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setStyle_</h4>
+<pre class="methodSignature">void&nbsp;setStyle_&#8203;(java.lang.String&nbsp;name)</pre>
 </li>
 </ul>
 </li>
