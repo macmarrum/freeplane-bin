@@ -1,13 +1,13 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1641567347055
+Bnd-LastModified: 1641810399831
 Bundle-Activator: org.freeplane.plugin.bugreport.Activator
-Bundle-ClassPath: .,lib/plugin-1.9.12.jar
+Bundle-ClassPath: .,lib/plugin-1.9.13.jar
 Bundle-ManifestVersion: 2
 Bundle-Name: org.freeplane.plugin.bugreport
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-SymbolicName: org.freeplane.plugin.bugreport
 Bundle-Vendor: Freeplane Project
-Bundle-Version: 1.9.12
+Bundle-Version: 1.9.13
 Created-By: 11.0.13 (Oracle Corporation)
 Private-Package: org.freeplane.plugin.bugreport
 Require-Bundle: org.freeplane.core

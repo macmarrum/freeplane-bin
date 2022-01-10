@@ -1,4 +1,10 @@
 ==============================
+1.9.13
+===============================
+Bug fixes
+Replace Darcula by supported Flat Darcula Look and Feel and add some other Flat Look and Feels
+ 
+==============================
 1.9.12
 ===============================
 Bug fixes
