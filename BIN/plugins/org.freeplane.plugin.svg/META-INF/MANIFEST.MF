@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1641567351079
+Bnd-LastModified: 1641815527894
 Bundle-Activator: org.freeplane.plugin.svg.Activator
-Bundle-ClassPath: .,lib/plugin-1.9.12.jar,lib/batik-codec-1.14.jar,lib
+Bundle-ClassPath: .,lib/plugin-1.9.13.jar,lib/batik-codec-1.14.jar,lib
  /batik-transcoder-1.14.jar,lib/batik-swing-1.14.jar,lib/fop-core-2.6.
  jar,lib/fop-util-2.6.jar,lib/fop-events-2.6.jar,lib/fontbox-2.0.23.ja
  r,lib/batik-bridge-1.14.jar,lib/batik-script-1.14.jar,lib/batik-anim-
@@ -18,7 +18,7 @@ Bundle-Name: org.freeplane.plugin.svg
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-SymbolicName: org.freeplane.plugin.svg
 Bundle-Vendor: Freeplane Project
-Bundle-Version: 1.9.12
+Bundle-Version: 1.9.13
 Created-By: 11.0.13 (Oracle Corporation)
 Private-Package: org.apache.fop.fonts,org.freeplane.plugin.svg
 Require-Bundle: org.freeplane.core
