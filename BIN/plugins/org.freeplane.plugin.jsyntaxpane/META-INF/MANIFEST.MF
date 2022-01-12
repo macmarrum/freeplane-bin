@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1641815527144
+Bnd-LastModified: 1641917495228
 Bundle-Activator: org.freeplane.plugin.jsyntaxpane.Activator
 Bundle-ClassPath: .,lib/plugin-1.9.13.jar,lib/syntaxpane-1.2.0.jar
 Bundle-ManifestVersion: 2
