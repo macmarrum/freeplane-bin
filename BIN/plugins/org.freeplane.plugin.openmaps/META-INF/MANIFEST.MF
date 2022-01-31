@@ -1,5 +1,4 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1643220010070
 Bundle-Activator: org.freeplane.plugin.openmaps.Activator
 Bundle-ClassPath: .,lib/plugin-1.9.13.jar,lib/jmapviewer-2.15.jar
 Bundle-ManifestVersion: 2
