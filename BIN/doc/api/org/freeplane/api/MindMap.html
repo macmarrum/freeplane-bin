@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":38,"i17":6,"i18":6,"i19":6,"i20":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":38,"i18":6,"i19":6,"i20":6,"i21":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -213,13 +213,18 @@ extends <a href="MindMapRO.html" title="interface in org.freeplane.api">MindMapR
 </td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code>java.util.List&lt;<a href="NodeChangeListener.html" title="interface in org.freeplane.api">NodeChangeListener</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getListeners_()">getListeners_</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="Properties.html" title="interface in org.freeplane.api">Properties</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStorage()">getStorage</a></span>()</code></th>
 <td class="colLast">
 <div class="block">returns an accessor to the map specific storage.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hide(boolean,boolean,org.freeplane.api.NodeCondition)">hide</a></span>&#8203;(boolean&nbsp;hideAncestors,
     boolean&nbsp;hideDescendants,
@@ -228,43 +233,43 @@ extends <a href="MindMapRO.html" title="interface in org.freeplane.api">MindMapR
 <div class="block">Hides nodes matching given condition.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#redoFilter()">redoFilter</a></span>()</code></th>
 <td class="colLast">
 <div class="block">reinstalls the previously undone filter if there is any.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeListener(org.freeplane.api.NodeChangeListener)">removeListener</a></span>&#8203;(<a href="NodeChangeListener.html" title="interface in org.freeplane.api">NodeChangeListener</a>&nbsp;listener)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#save(boolean)">save</a></span>&#8203;(boolean&nbsp;allowInteraction)</code></th>
 <td class="colLast">
 <div class="block">saves the map to disk.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#saveAs(java.io.File)">saveAs</a></span>&#8203;(java.io.File&nbsp;file)</code></th>
 <td class="colLast">
 <div class="block">saves the map to disk.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setBackgroundColor(java.awt.Color)">setBackgroundColor</a></span>&#8203;(java.awt.Color&nbsp;color)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setBackgroundColorCode(java.lang.String)">setBackgroundColorCode</a></span>&#8203;(java.lang.String&nbsp;rgbString)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setFilter(boolean,boolean,org.freeplane.api.NodeCondition)">setFilter</a></span>&#8203;(boolean&nbsp;showAncestors,
          boolean&nbsp;showDescendants,
@@ -275,26 +280,26 @@ extends <a href="MindMapRO.html" title="interface in org.freeplane.api">MindMapR
 </div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setFilter(org.freeplane.api.NodeCondition)">setFilter</a></span>&#8203;(<a href="NodeCondition.html" title="interface in org.freeplane.api">NodeCondition</a>&nbsp;condition)</code></th>
 <td class="colLast">
 <div class="block">alias for <a href="#filter(org.freeplane.api.NodeCondition)"><code>filter(NodeCondition)</code></a>.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setName(java.lang.String)">setName</a></span>&#8203;(java.lang.String&nbsp;title)</code></th>
 <td class="colLast">
 <div class="block">Sets the map (frame/tab) title.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSaved(boolean)">setSaved</a></span>&#8203;(boolean&nbsp;isSaved)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#undoFilter()">undoFilter</a></span>()</code></th>
 <td class="colLast">
@@ -651,6 +656,15 @@ void&nbsp;setFilter&#8203;(boolean&nbsp;showAncestors,
 <li class="blockList">
 <h4>removeListener</h4>
 <pre class="methodSignature">void&nbsp;removeListener&#8203;(<a href="NodeChangeListener.html" title="interface in org.freeplane.api">NodeChangeListener</a>&nbsp;listener)</pre>
+</li>
+</ul>
+<a id="getListeners_()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getListeners_</h4>
+<pre class="methodSignature">java.util.List&lt;<a href="NodeChangeListener.html" title="interface in org.freeplane.api">NodeChangeListener</a>&gt;&nbsp;getListeners_()</pre>
 </li>
 </ul>
 <a id="copyStyleFrom(org.freeplane.api.MindMap,java.lang.String)">
