@@ -7,7 +7,7 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-SymbolicName: org.freeplane.plugin.formula
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.9.13
-Created-By: 11.0.13 (Oracle Corporation)
+Created-By: 11.0.14.1 (Oracle Corporation)
 Import-Package: org.freeplane.plugin.script;version="[1.9,2)",org.free
  plane.plugin.script.dependencies;version="[1.9,2)",de.sciss.syntaxpan
  e;version="[1.9,2)"

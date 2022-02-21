@@ -16,7 +16,7 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-SymbolicName: org.freeplane.core
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.9.13
-Created-By: 11.0.13 (Oracle Corporation)
+Created-By: 11.0.14.1 (Oracle Corporation)
 Export-Package: com.inet.jortho;version="1.9.13",org.freeplane.api;ver
  sion="1.9.13",org.freeplane.core.extension;version="1.9.13",org.freep
  lane.core.io;uses:="org.freeplane.api,org.freeplane.core.extension,or

@@ -7,7 +7,7 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-SymbolicName: org.freeplane.plugin.jsyntaxpane
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.9.13
-Created-By: 11.0.13 (Oracle Corporation)
+Created-By: 11.0.14.1 (Oracle Corporation)
 Export-Package: de.sciss.syntaxpane;version="1.9.13",de.sciss.syntaxpa
  ne.lexers;uses:="de.sciss.syntaxpane";version="1.9.13",de.sciss.synta
  xpane.syntaxkits;uses:="de.sciss.syntaxpane";version="1.9.13",de.scis
