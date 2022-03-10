@@ -7,7 +7,7 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-SymbolicName: org.freeplane.plugin.bugreport
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.9.13
-Created-By: 11.0.14.1 (Oracle Corporation)
+Created-By: 11.0.15 (Oracle Corporation)
 Private-Package: org.freeplane.plugin.bugreport
 Require-Bundle: org.freeplane.core
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"

@@ -7,7 +7,7 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-SymbolicName: org.freeplane.plugin.openmaps
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.9.13
-Created-By: 11.0.14.1 (Oracle Corporation)
+Created-By: 11.0.15 (Oracle Corporation)
 Private-Package: org.freeplane.plugin.openmaps,org.freeplane.plugin.op
  enmaps.actions,org.freeplane.plugin.openmaps.mapelements
 Require-Bundle: org.freeplane.core
