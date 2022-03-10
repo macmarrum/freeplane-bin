@@ -1,12 +1,12 @@
 Manifest-Version: 1.0
 Bundle-Activator: org.freeplane.plugin.formula.Activator
-Bundle-ClassPath: .,lib/plugin-1.9.13.jar
+Bundle-ClassPath: .,lib/plugin-1.9.14.jar
 Bundle-ManifestVersion: 2
 Bundle-Name: org.freeplane.plugin.formula
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-SymbolicName: org.freeplane.plugin.formula
 Bundle-Vendor: Freeplane Project
-Bundle-Version: 1.9.13
+Bundle-Version: 1.9.14
 Created-By: 11.0.15 (Oracle Corporation)
 Import-Package: org.freeplane.plugin.script;version="[1.9,2)",org.free
  plane.plugin.script.dependencies;version="[1.9,2)",de.sciss.syntaxpan

@@ -1,13 +1,13 @@
 Manifest-Version: 1.0
 Bundle-Activator: org.freeplane.plugin.markdown.Activator
-Bundle-ClassPath: .,lib/plugin-1.9.13.jar,lib/markedj-1.0.16.jar,lib/j
+Bundle-ClassPath: .,lib/plugin-1.9.14.jar,lib/markedj-1.0.16.jar,lib/j
  soup-1.10.2.jar
 Bundle-ManifestVersion: 2
 Bundle-Name: org.freeplane.plugin.markdown
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-SymbolicName: org.freeplane.plugin.markdown
 Bundle-Vendor: Freeplane Project
-Bundle-Version: 1.9.13
+Bundle-Version: 1.9.14
 Created-By: 11.0.15 (Oracle Corporation)
 Private-Package: org.freeplane.plugin.markdown
 Require-Bundle: org.freeplane.core
