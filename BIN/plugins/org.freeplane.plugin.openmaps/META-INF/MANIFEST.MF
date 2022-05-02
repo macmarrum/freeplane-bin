@@ -1,11 +1,11 @@
 Manifest-Version: 1.0
 Bundle-Activator: org.freeplane.plugin.openmaps.Activator
-Bundle-ClassPath: .,lib/plugin-1.10.1.jar,lib/jmapviewer-2.16.jar
+Bundle-ClassPath: .,lib/plugin-1.10.2.jar,lib/jmapviewer-2.16.jar
 Bundle-ManifestVersion: 2
 Bundle-Name: org.freeplane.plugin.openmaps
 Bundle-SymbolicName: org.freeplane.plugin.openmaps
 Bundle-Vendor: Freeplane Project
-Bundle-Version: 1.10.1
+Bundle-Version: 1.10.2
 Created-By: 17.0.3 (N/A)
 Private-Package: org.freeplane.plugin.openmaps,org.freeplane.plugin.op
  enmaps.actions,org.freeplane.plugin.openmaps.mapelements

@@ -1,16 +1,16 @@
 Manifest-Version: 1.0
 Bundle-Activator: org.freeplane.plugin.jsyntaxpane.Activator
-Bundle-ClassPath: .,lib/plugin-1.10.1.jar,lib/syntaxpane-1.2.0.jar
+Bundle-ClassPath: .,lib/plugin-1.10.2.jar,lib/syntaxpane-1.2.0.jar
 Bundle-ManifestVersion: 2
 Bundle-Name: org.freeplane.plugin.jsyntaxpane
 Bundle-SymbolicName: org.freeplane.plugin.jsyntaxpane
 Bundle-Vendor: Freeplane Project
-Bundle-Version: 1.10.1
+Bundle-Version: 1.10.2
 Created-By: 17.0.3 (N/A)
-Export-Package: de.sciss.syntaxpane;version="1.10.1",de.sciss.syntaxpa
- ne.lexers;uses:="de.sciss.syntaxpane";version="1.10.1",de.sciss.synta
- xpane.syntaxkits;uses:="de.sciss.syntaxpane";version="1.10.1",de.scis
- s.syntaxpane.actions;uses:="de.sciss.syntaxpane";version="1.10.1"
+Export-Package: de.sciss.syntaxpane;version="1.10.2",de.sciss.syntaxpa
+ ne.lexers;uses:="de.sciss.syntaxpane";version="1.10.2",de.sciss.synta
+ xpane.syntaxkits;uses:="de.sciss.syntaxpane";version="1.10.2",de.scis
+ s.syntaxpane.actions;uses:="de.sciss.syntaxpane";version="1.10.2"
 Private-Package: de.sciss.syntaxpane.defaultsyntaxkit,de.sciss.syntaxp
  ane.syntaxkits.groovysyntaxkit,de.sciss.syntaxpane.syntaxkits.latexsy
  ntaxkit,org.freeplane.plugin.jsyntaxpane
