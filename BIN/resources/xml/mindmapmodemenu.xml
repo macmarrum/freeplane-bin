@@ -261,6 +261,7 @@
               <Entry name="IconIntersectionHierarchyAction" />
               <Entry builder="separator" />
               <Entry name="menu_remove_icons" >
+                <Entry name="SetBooleanPropertyAction.iconActionRemovesIconIfExists"/>
                 <Entry name="RemoveIcon_0_Action" />
                 <Entry name="RemoveIconAction" />
                 <Entry name="RemoveAllIconsAction" />
@@ -304,6 +305,7 @@
 			</Entry>
 			<Entry name="menu_viewmode" >
 				<Entry name="ViewLayoutTypeAction.OUTLINE" />
+				<Entry name="SetBooleanMapPropertyAction.allow_compact_layout" usedBy = "EDITOR" />
 				<Entry name="SetBooleanPropertyAction.outline_view_fits_window_width" />
 				<Entry name="ToggleFullScreenAction" accelerator="F11" />
 				<Entry name="SetBooleanMapViewPropertyAction.spotlight" />
