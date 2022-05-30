@@ -8,8 +8,7 @@ Bundle-ClassPath: .,lib/freeplaneviewer.jar,lib/freeplaneeditor-1.10.3
  s-codec-1.15.jar,lib/jgoodies-forms-1.9.0.jar,lib/jgoodies-common-1.8
  .1.jar,lib/simplyhtml-0.18.9.jar,lib/idw-gpl-1.6.1.jar,lib/imageio-me
  tadata-3.8.2.jar,lib/imageio-core-3.8.2.jar,lib/common-image-3.8.2.ja
- r,lib/common-io-3.8.2.jar,lib/common-lang-3.8.2.jar,lib/vaqua-10.jar,
- lib/jnr-11.jar,lib/vappearances-3.jar,lib/javax.activation-1.2.0.jar
+ r,lib/common-io-3.8.2.jar,lib/common-lang-3.8.2.jar,lib/vaqua-10.jar
 Bundle-ManifestVersion: 2
 Bundle-Name: org.freeplane.core
 Bundle-SymbolicName: org.freeplane.core
