@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-Activator: org.freeplane.plugin.jsyntaxpane.Activator
-Bundle-ClassPath: .,lib/plugin-1.10.3.jar,lib/syntaxpane-1.2.0.jar
+Bundle-ClassPath: .,lib/plugin-1.10.3.jar,lib/syntaxpane-1.2.1.jar
 Bundle-ManifestVersion: 2
 Bundle-Name: org.freeplane.plugin.jsyntaxpane
 Bundle-SymbolicName: org.freeplane.plugin.jsyntaxpane
