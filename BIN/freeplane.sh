@@ -58,7 +58,7 @@ findjava() {
 	fi
 
 	JAVA_VERSION=$(${JAVACMD} -version |& grep -E "[[:alnum:]]+ version" | awk '{print $3}' | tr -d '"')
-	JAVA_MAJOR_VERSION=$(echo $JAVA_VERSION | awk -F. '{print $1}')
+	JAVA_MAJOR_VERSION=$(echo $JAVA_VERSION | sed -e 's/^1\.//' | awk -F. '{print $1}')
 	if [ $JAVA_MAJOR_VERSION -lt 8 ] || [ $JAVA_MAJOR_VERSION -gt 17 ] || [ $JAVA_MAJOR_VERSION -eq 10 ]; then
 		if [ -z "${FREEPLANE_USE_UNSUPPORTED_JAVA_VERSION}" ]; then
 			_error "Found $JAVACMD in $JAVA_SOURCE."
@@ -193,6 +193,7 @@ fi
 if [ $JAVA_MAJOR_VERSION -ge 11 ]; then
 	JAVA_OPTS="--add-exports java.desktop/sun.awt=ALL-UNNAMED $JAVA_OPTS"
 	JAVA_OPTS="--add-exports java.desktop/sun.swing=ALL-UNNAMED $JAVA_OPTS"
+	JAVA_OPTS="--add-exports java.desktop/sun.swing.shell=ALL-UNNAMED $JAVA_OPTS"
 	JAVA_OPTS="--add-opens java.desktop/sun.awt.X11=ALL-UNNAMED $JAVA_OPTS"
 	JAVA_OPTS="--add-opens java.desktop/javax.swing.text.html=ALL-UNNAMED $JAVA_OPTS"
 	JAVA_OPTS="-Dorg.osgi.framework.system.capabilities=osgi.ee;osgi.ee=\"JavaSE\";version:List=\"1.8,15\" $JAVA_OPTS"
