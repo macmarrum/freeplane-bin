@@ -14,7 +14,7 @@ Bundle-Name: org.freeplane.core
 Bundle-SymbolicName: org.freeplane.core
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.10.4
-Created-By: 17.0.4 (N/A)
+Created-By: 17.0.4.1 (N/A)
 Export-Package: com.inet.jortho;version="1.10.4",org.freeplane.api;ver
  sion="1.10.4",org.freeplane.core.extension;version="1.10.4",org.freep
  lane.core.io;uses:="org.freeplane.api,org.freeplane.core.extension,or
