@@ -11,9 +11,10 @@ Export-Package: de.sciss.syntaxpane;version="1.10.5",de.sciss.syntaxpa
  ne.lexers;uses:="de.sciss.syntaxpane";version="1.10.5",de.sciss.synta
  xpane.syntaxkits;uses:="de.sciss.syntaxpane";version="1.10.5",de.scis
  s.syntaxpane.actions;uses:="de.sciss.syntaxpane";version="1.10.5"
-Private-Package: de.sciss.syntaxpane.defaultsyntaxkit,de.sciss.syntaxp
- ane.syntaxkits.groovysyntaxkit,de.sciss.syntaxpane.syntaxkits.latexsy
- ntaxkit,org.freeplane.plugin.jsyntaxpane
+Private-Package: de.sciss.syntaxpane.actions.gui,de.sciss.syntaxpane.c
+ omponents,de.sciss.syntaxpane.defaultsyntaxkit,de.sciss.syntaxpane.sy
+ ntaxkits.groovysyntaxkit,de.sciss.syntaxpane.syntaxkits.latexsyntaxki
+ t,org.freeplane.plugin.jsyntaxpane
 Require-Bundle: org.freeplane.core
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Tool: Bnd-6.2.0.202202251641
