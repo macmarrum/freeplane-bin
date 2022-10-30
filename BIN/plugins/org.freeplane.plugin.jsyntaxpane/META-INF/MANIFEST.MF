@@ -1,20 +1,19 @@
 Manifest-Version: 1.0
 Bundle-Activator: org.freeplane.plugin.jsyntaxpane.Activator
-Bundle-ClassPath: .,lib/plugin-1.10.5.jar,lib/syntaxpane-1.2.1.jar
+Bundle-ClassPath: .,lib/plugin-1.10.5.jar,lib/syntaxpane-1.2.3.jar
 Bundle-ManifestVersion: 2
 Bundle-Name: org.freeplane.plugin.jsyntaxpane
 Bundle-SymbolicName: org.freeplane.plugin.jsyntaxpane
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.10.5
-Created-By: 17.0.4.1 (N/A)
+Created-By: 17.0.5 (N/A)
 Export-Package: de.sciss.syntaxpane;version="1.10.5",de.sciss.syntaxpa
  ne.lexers;uses:="de.sciss.syntaxpane";version="1.10.5",de.sciss.synta
  xpane.syntaxkits;uses:="de.sciss.syntaxpane";version="1.10.5",de.scis
  s.syntaxpane.actions;uses:="de.sciss.syntaxpane";version="1.10.5"
-Private-Package: de.sciss.syntaxpane.actions.gui,de.sciss.syntaxpane.c
- omponents,de.sciss.syntaxpane.defaultsyntaxkit,de.sciss.syntaxpane.sy
- ntaxkits.groovysyntaxkit,de.sciss.syntaxpane.syntaxkits.latexsyntaxki
- t,org.freeplane.plugin.jsyntaxpane
+Private-Package: de.sciss.syntaxpane.defaultsyntaxkit,de.sciss.syntaxp
+ ane.syntaxkits.groovysyntaxkit,de.sciss.syntaxpane.syntaxkits.latexsy
+ ntaxkit,org.freeplane.plugin.jsyntaxpane
 Require-Bundle: org.freeplane.core
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Tool: Bnd-6.2.0.202202251641
