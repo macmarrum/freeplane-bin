@@ -167,6 +167,8 @@
 		<Entry name="AddSelfConnectorAction" />
 	</Entry>
 	<Entry name="main_toolbar" builder="toolbar,ignore">
+		<Entry name="styledialog.ok" />
+		<Entry name="styledialog.cancel" />
 		<Entry name="undo">
 			<Entry name="UndoAction" />
 			<Entry name="RedoAction" />
