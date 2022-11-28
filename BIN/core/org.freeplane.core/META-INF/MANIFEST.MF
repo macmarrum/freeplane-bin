@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
 Bundle-Activator: org.freeplane.main.osgi.Activator
-Bundle-ClassPath: .,lib/freeplaneviewer.jar,lib/freeplaneeditor-1.10.5
- .jar,lib/freeplane_mac-1.10.5.jar,lib/freeplaneosgi-1.10.5.jar,lib/tw
+Bundle-ClassPath: .,lib/freeplaneviewer.jar,lib/freeplaneeditor-1.10.6
+ .jar,lib/freeplane_mac-1.10.6.jar,lib/freeplaneosgi-1.10.6.jar,lib/tw
  emoji-12.1.4.jar,lib/kitfox-svg-salamander-1.1.1-p1.jar,lib/data-url-
  2.0.jar,lib/flatlaf-2.2.jar,lib/imageio-jpeg-3.8.2.jar,lib/jortho-1.1
- 0.5.jar,lib/commons-lang-2.6.jar,lib/commons-io-2.11.0.jar,lib/common
+ 0.6.jar,lib/commons-lang-2.6.jar,lib/commons-io-2.11.0.jar,lib/common
  s-codec-1.15.jar,lib/jgoodies-forms-1.9.0.jar,lib/jgoodies-common-1.8
  .1.jar,lib/simplyhtml-0.18.10.jar,lib/idw-gpl-1.6.1.jar,lib/imageio-m
  etadata-3.8.2.jar,lib/imageio-core-3.8.2.jar,lib/common-image-3.8.2.j
@@ -13,265 +13,265 @@ Bundle-ManifestVersion: 2
 Bundle-Name: org.freeplane.core
 Bundle-SymbolicName: org.freeplane.core
 Bundle-Vendor: Freeplane Project
-Bundle-Version: 1.10.5
+Bundle-Version: 1.10.6
 Created-By: 17.0.5 (N/A)
-Export-Package: com.inet.jortho;version="1.10.5",org.freeplane.api;ver
- sion="1.10.5",org.freeplane.core.extension;version="1.10.5",org.freep
+Export-Package: com.inet.jortho;version="1.10.6",org.freeplane.api;ver
+ sion="1.10.6",org.freeplane.core.extension;version="1.10.6",org.freep
  lane.core.io;uses:="org.freeplane.api,org.freeplane.core.extension,or
- g.freeplane.features.map,org.freeplane.n3.nanoxml";version="1.10.5",o
+ g.freeplane.features.map,org.freeplane.n3.nanoxml";version="1.10.6",o
  rg.freeplane.core.io.xml;uses:="org.freeplane.core.extension,org.free
- plane.core.io,org.freeplane.n3.nanoxml";version="1.10.5",org.freeplan
+ plane.core.io,org.freeplane.n3.nanoxml";version="1.10.6",org.freeplan
  e.core.resources;uses:="org.freeplane.api,org.freeplane.core.resource
  s.components,org.freeplane.core.ui,org.freeplane.features.mode,org.fr
- eeplane.n3.nanoxml";version="1.10.5",org.freeplane.core.resources.com
+ eeplane.n3.nanoxml";version="1.10.6",org.freeplane.core.resources.com
  ponents;uses:="com.jgoodies.forms.builder,com.jgoodies.forms.layout,o
  rg.freeplane.api,org.freeplane.core.io,org.freeplane.core.ui,org.free
  plane.core.ui.menubuilders.generic,org.freeplane.features.icon,org.fr
- eeplane.n3.nanoxml";version="1.10.5",org.freeplane.core.ui;uses:="org
+ eeplane.n3.nanoxml";version="1.10.6",org.freeplane.core.ui;uses:="org
  .freeplane.api,org.freeplane.core.ui.components,org.freeplane.core.ui
  .menubuilders.action,org.freeplane.core.ui.menubuilders.generic,org.f
- reeplane.features.map,org.freeplane.features.mode";version="1.10.5",o
+ reeplane.features.map,org.freeplane.features.mode";version="1.10.6",o
  rg.freeplane.core.ui.components;uses:="org.freeplane.api,org.freeplan
  e.core.resources,org.freeplane.core.ui,org.freeplane.features.icon,or
  g.freeplane.features.icon.mindmapmode,org.freeplane.features.map,org.
- freeplane.features.styles";version="1.10.5",org.freeplane.core.ui.com
- ponents.calendar;version="1.10.5",org.freeplane.core.ui.components.ht
- ml;uses:="org.freeplane.api";version="1.10.5",org.freeplane.core.ui.c
- omponents.resizer;version="1.10.5",org.freeplane.core.ui.textchanger;
- uses:="org.freeplane.core.ui";version="1.10.5",org.freeplane.core.ui.
+ freeplane.features.styles";version="1.10.6",org.freeplane.core.ui.com
+ ponents.calendar;version="1.10.6",org.freeplane.core.ui.components.ht
+ ml;uses:="org.freeplane.api";version="1.10.6",org.freeplane.core.ui.c
+ omponents.resizer;version="1.10.6",org.freeplane.core.ui.textchanger;
+ uses:="org.freeplane.core.ui";version="1.10.6",org.freeplane.core.ui.
  menubuilders;uses:="org.freeplane.core.ui.menubuilders.generic";versi
- on="1.10.5",org.freeplane.core.ui.menubuilders.action;uses:="org.free
+ on="1.10.6",org.freeplane.core.ui.menubuilders.action;uses:="org.free
  plane.core.ui,org.freeplane.core.ui.menubuilders.generic,org.freeplan
  e.core.ui.menubuilders.menu,org.freeplane.features.mode";version="1.1
- 0.5",org.freeplane.core.ui.menubuilders.generic;uses:="org.freeplane.
- core.ui,org.freeplane.features.mode";version="1.10.5",org.freeplane.c
+ 0.6",org.freeplane.core.ui.menubuilders.generic;uses:="org.freeplane.
+ core.ui,org.freeplane.features.mode";version="1.10.6",org.freeplane.c
  ore.ui.menubuilders.menu;uses:="org.freeplane.core.ui,org.freeplane.c
  ore.ui.menubuilders.action,org.freeplane.core.ui.menubuilders.generic
- ,org.freeplane.features.mode";version="1.10.5",org.freeplane.core.und
+ ,org.freeplane.features.mode";version="1.10.6",org.freeplane.core.und
  o;uses:="org.freeplane.core.extension,org.freeplane.features.map";ver
- sion="1.10.5",org.freeplane.core.util;uses:="org.freeplane.api,org.fr
+ sion="1.10.6",org.freeplane.core.util;uses:="org.freeplane.api,org.fr
  eeplane.core.io,org.freeplane.core.resources,org.freeplane.core.ui,or
- g.freeplane.n3.nanoxml";version="1.10.5",org.freeplane.core.util.coll
- ection;version="1.10.5",org.freeplane.core.util.logging;version="1.10
- .5",org.freeplane.features.attribute;uses:="org.freeplane.api,org.fre
+ g.freeplane.n3.nanoxml";version="1.10.6",org.freeplane.core.util.coll
+ ection;version="1.10.6",org.freeplane.core.util.logging;version="1.10
+ .6",org.freeplane.features.attribute;uses:="org.freeplane.api,org.fre
  eplane.core.extension,org.freeplane.core.io,org.freeplane.core.ui,org
  .freeplane.core.util.collection,org.freeplane.features.filter.conditi
  on,org.freeplane.features.map,org.freeplane.features.mode,org.freepla
- ne.n3.nanoxml";version="1.10.5",org.freeplane.features.attribute.mind
+ ne.n3.nanoxml";version="1.10.6",org.freeplane.features.attribute.mind
  mapmode;uses:="org.freeplane.api,org.freeplane.core.ui,org.freeplane.
  features.attribute,org.freeplane.features.map,org.freeplane.features.
- mode";version="1.10.5",org.freeplane.features.clipboard;uses:="org.fr
- eeplane.core.extension";version="1.10.5",org.freeplane.features.clipb
+ mode";version="1.10.6",org.freeplane.features.clipboard;uses:="org.fr
+ eeplane.core.extension";version="1.10.6",org.freeplane.features.clipb
  oard.mindmapmode;uses:="org.freeplane.features.clipboard";version="1.
- 10.5",org.freeplane.features.cloud;uses:="org.freeplane.core.extensio
+ 10.6",org.freeplane.features.cloud;uses:="org.freeplane.core.extensio
  n,org.freeplane.features.map,org.freeplane.features.mode,org.freeplan
- e.features.styles";version="1.10.5",org.freeplane.features.cloud.mind
+ e.features.styles";version="1.10.6",org.freeplane.features.cloud.mind
  mapmode;uses:="org.freeplane.features.cloud,org.freeplane.features.ma
- p,org.freeplane.features.mode";version="1.10.5",org.freeplane.feature
+ p,org.freeplane.features.mode";version="1.10.6",org.freeplane.feature
  s.commandsearch;uses:="org.freeplane.core.ui,org.freeplane.core.ui.me
- nubuilders.generic,org.freeplane.features.map";version="1.10.5",org.f
+ nubuilders.generic,org.freeplane.features.map";version="1.10.6",org.f
  reeplane.features.edge;uses:="org.freeplane.api,org.freeplane.core.ex
  tension,org.freeplane.core.util,org.freeplane.features.map,org.freepl
  ane.features.mode,org.freeplane.features.styles,org.freeplane.n3.nano
- xml";version="1.10.5",org.freeplane.features.edge.mindmapmode;uses:="
+ xml";version="1.10.6",org.freeplane.features.edge.mindmapmode;uses:="
  org.freeplane.features.edge,org.freeplane.features.map,org.freeplane.
- features.mode";version="1.10.5",org.freeplane.features.encrypt;uses:=
+ features.mode";version="1.10.6",org.freeplane.features.encrypt;uses:=
  "org.freeplane.core.extension,org.freeplane.core.ui,org.freeplane.fea
- tures.map,org.freeplane.features.mode";version="1.10.5",org.freeplane
+ tures.map,org.freeplane.features.mode";version="1.10.6",org.freeplane
  .features.encrypt.mindmapmode;uses:="org.freeplane.core.ui,org.freepl
  ane.features.encrypt,org.freeplane.features.map,org.freeplane.feature
- s.mode";version="1.10.5",org.freeplane.features.explorer;uses:="org.f
+ s.mode";version="1.10.6",org.freeplane.features.explorer;uses:="org.f
  reeplane.core.extension,org.freeplane.core.resources,org.freeplane.co
  re.ui,org.freeplane.features.attribute,org.freeplane.features.filter.
  condition,org.freeplane.features.map,org.freeplane.features.mode,org.
- freeplane.n3.nanoxml";version="1.10.5",org.freeplane.features.explore
+ freeplane.n3.nanoxml";version="1.10.6",org.freeplane.features.explore
  r.mindmapmode;uses:="org.freeplane.features.explorer,org.freeplane.fe
  atures.map,org.freeplane.features.mode,org.freeplane.features.text";v
- ersion="1.10.5",org.freeplane.features.export.mindmapmode;uses:="org.
+ ersion="1.10.6",org.freeplane.features.export.mindmapmode;uses:="org.
  freeplane.core.extension,org.freeplane.core.ui,org.freeplane.features
  .map,org.freeplane.features.mode,org.freeplane.n3.nanoxml";version="1
- .10.5",org.freeplane.features.filter;uses:="org.freeplane.core.extens
+ .10.6",org.freeplane.features.filter;uses:="org.freeplane.core.extens
  ion,org.freeplane.core.ui,org.freeplane.core.ui.menubuilders.generic,
  org.freeplane.features.filter.condition,org.freeplane.features.map,or
  g.freeplane.features.mode,org.freeplane.features.styles,org.freeplane
- .features.ui";version="1.10.5",org.freeplane.features.filter.conditio
+ .features.ui";version="1.10.6",org.freeplane.features.filter.conditio
  n;uses:="org.freeplane.core.resources,org.freeplane.features.icon,org
- .freeplane.features.map,org.freeplane.n3.nanoxml";version="1.10.5",or
+ .freeplane.features.map,org.freeplane.n3.nanoxml";version="1.10.6",or
  g.freeplane.features.format;uses:="org.freeplane.core.extension,org.f
  reeplane.core.resources,org.freeplane.core.resources.components,org.f
  reeplane.core.util,org.freeplane.features.mode,org.freeplane.n3.nanox
- ml";version="1.10.5",org.freeplane.features.help;uses:="org.freeplane
- .core.extension,org.freeplane.core.ui";version="1.10.5",org.freeplane
+ ml";version="1.10.6",org.freeplane.features.help;uses:="org.freeplane
+ .core.extension,org.freeplane.core.ui";version="1.10.6",org.freeplane
  .features.icon;uses:="org.freeplane.api,org.freeplane.core.extension,
  org.freeplane.core.resources,org.freeplane.features.filter.condition,
  org.freeplane.features.map,org.freeplane.features.mode,org.freeplane.
- features.styles,org.freeplane.n3.nanoxml";version="1.10.5",org.freepl
+ features.styles,org.freeplane.n3.nanoxml";version="1.10.6",org.freepl
  ane.features.icon.factory;uses:="org.freeplane.api,org.freeplane.feat
- ures.icon";version="1.10.5",org.freeplane.features.icon.mindmapmode;u
+ ures.icon";version="1.10.6",org.freeplane.features.icon.mindmapmode;u
  ses:="org.freeplane.api,org.freeplane.core.ui,org.freeplane.core.ui.c
  omponents,org.freeplane.features.icon,org.freeplane.features.map,org.
- freeplane.features.mode";version="1.10.5",org.freeplane.features.link
+ freeplane.features.mode";version="1.10.6",org.freeplane.features.link
  ;uses:="org.freeplane.core.extension,org.freeplane.core.io,org.freepl
  ane.core.resources,org.freeplane.core.ui.components,org.freeplane.cor
  e.util,org.freeplane.features.filter,org.freeplane.features.filter.co
  ndition,org.freeplane.features.map,org.freeplane.features.mode,org.fr
  eeplane.features.styles,org.freeplane.features.text,org.freeplane.n3.
- nanoxml";version="1.10.5",org.freeplane.features.link.mindmapmode;use
+ nanoxml";version="1.10.6",org.freeplane.features.link.mindmapmode;use
  s:="org.freeplane.core.ui,org.freeplane.core.util,org.freeplane.featu
  res.link,org.freeplane.features.map,org.freeplane.features.mode,org.f
- reeplane.features.styles";version="1.10.5",org.freeplane.features.map
+ reeplane.features.styles";version="1.10.6",org.freeplane.features.map
  ;uses:="org.freeplane.api,org.freeplane.core.extension,org.freeplane.
  core.io,org.freeplane.core.ui,org.freeplane.features.filter,org.freep
  lane.features.filter.condition,org.freeplane.features.icon,org.freepl
  ane.features.link,org.freeplane.features.map.clipboard,org.freeplane.
  features.mode,org.freeplane.features.ui,org.freeplane.n3.nanoxml";ver
- sion="1.10.5",org.freeplane.features.map.clipboard;uses:="org.freepla
+ sion="1.10.6",org.freeplane.features.map.clipboard;uses:="org.freepla
  ne.core.extension,org.freeplane.core.ui,org.freeplane.features.clipbo
  ard,org.freeplane.features.map,org.freeplane.features.mode";version="
- 1.10.5",org.freeplane.features.map.filemode;uses:="org.freeplane.core
+ 1.10.6",org.freeplane.features.map.filemode;uses:="org.freeplane.core
  .ui,org.freeplane.features.map,org.freeplane.features.mode.filemode";
- version="1.10.5",org.freeplane.features.map.mindmapmode;uses:="org.fr
+ version="1.10.6",org.freeplane.features.map.mindmapmode;uses:="org.fr
  eeplane.core.extension,org.freeplane.core.ui,org.freeplane.features.m
  ap,org.freeplane.features.map.clipboard,org.freeplane.features.mode,o
  rg.freeplane.features.mode.mindmapmode,org.freeplane.features.url.min
- dmapmode,org.freeplane.n3.nanoxml";version="1.10.5",org.freeplane.fea
+ dmapmode,org.freeplane.n3.nanoxml";version="1.10.6",org.freeplane.fea
  tures.map.mindmapmode.clipboard;uses:="org.freeplane.features.clipboa
  rd.mindmapmode,org.freeplane.features.map,org.freeplane.features.map.
- clipboard,org.freeplane.features.mode.mindmapmode";version="1.10.5",o
+ clipboard,org.freeplane.features.mode.mindmapmode";version="1.10.6",o
  rg.freeplane.features.mapio;uses:="org.freeplane.core.extension,org.f
  reeplane.features.map,org.freeplane.features.mode,org.freeplane.featu
- res.url,org.freeplane.n3.nanoxml";version="1.10.5",org.freeplane.feat
+ res.url,org.freeplane.n3.nanoxml";version="1.10.6",org.freeplane.feat
  ures.mapio.mindmapmode;uses:="org.freeplane.features.map,org.freeplan
  e.features.mapio,org.freeplane.features.mode.mindmapmode,org.freeplan
- e.n3.nanoxml";version="1.10.5",org.freeplane.features.mode;uses:="org
+ e.n3.nanoxml";version="1.10.6",org.freeplane.features.mode;uses:="org
  .freeplane.core.extension,org.freeplane.core.io,org.freeplane.core.re
  sources,org.freeplane.core.resources.components,org.freeplane.core.ui
  ,org.freeplane.core.ui.menubuilders.generic,org.freeplane.core.undo,o
  rg.freeplane.features.filter,org.freeplane.features.map,org.freeplane
  .features.styles,org.freeplane.features.ui,org.freeplane.main.applica
- tion,org.freeplane.n3.nanoxml";version="1.10.5",org.freeplane.feature
- s.mode.filemode;uses:="org.freeplane.features.mode";version="1.10.5",
+ tion,org.freeplane.n3.nanoxml";version="1.10.6",org.freeplane.feature
+ s.mode.filemode;uses:="org.freeplane.features.mode";version="1.10.6",
  org.freeplane.features.mode.mindmapmode;uses:="org.freeplane.core.res
  ources.components,org.freeplane.core.ui,org.freeplane.core.ui.menubui
  lders.generic,org.freeplane.core.undo,org.freeplane.features.map,org.
  freeplane.features.map.mindmapmode,org.freeplane.features.mode";versi
- on="1.10.5",org.freeplane.features.nodelocation;uses:="org.freeplane.
+ on="1.10.6",org.freeplane.features.nodelocation;uses:="org.freeplane.
  api,org.freeplane.core.extension,org.freeplane.features.map,org.freep
- lane.features.mode";version="1.10.5",org.freeplane.features.nodelocat
+ lane.features.mode";version="1.10.6",org.freeplane.features.nodelocat
  ion.mindmapmode;uses:="org.freeplane.api,org.freeplane.features.map,o
- rg.freeplane.features.nodelocation";version="1.10.5",org.freeplane.fe
+ rg.freeplane.features.nodelocation";version="1.10.6",org.freeplane.fe
  atures.nodestyle;uses:="org.freeplane.api,org.freeplane.core.extensio
  n,org.freeplane.features.map,org.freeplane.features.mode,org.freeplan
- e.features.styles,org.freeplane.n3.nanoxml";version="1.10.5",org.free
+ e.features.styles,org.freeplane.n3.nanoxml";version="1.10.6",org.free
  plane.features.nodestyle.mindmapmode;uses:="org.freeplane.api,org.fre
  eplane.core.extension,org.freeplane.features.map,org.freeplane.featur
  es.mode,org.freeplane.features.nodestyle,org.freeplane.n3.nanoxml";ve
- rsion="1.10.5",org.freeplane.features.note;uses:="org.freeplane.core.
+ rsion="1.10.6",org.freeplane.features.note;uses:="org.freeplane.core.
  extension,org.freeplane.features.map,org.freeplane.features.mode,org.
- freeplane.features.text";version="1.10.5",org.freeplane.features.note
+ freeplane.features.text";version="1.10.6",org.freeplane.features.note
  .mindmapmode;uses:="org.freeplane.core.ui,org.freeplane.features.map,
  org.freeplane.features.mode.mindmapmode,org.freeplane.features.note";
- version="1.10.5",org.freeplane.features.print;uses:="org.freeplane.co
- re.extension";version="1.10.5",org.freeplane.features.script;uses:="o
+ version="1.10.6",org.freeplane.features.print;uses:="org.freeplane.co
+ re.extension";version="1.10.6",org.freeplane.features.script;uses:="o
  rg.freeplane.core.extension,org.freeplane.features.map";version="1.10
- .5",org.freeplane.features.spellchecker.mindmapmode;uses:="org.freepl
- ane.core.extension,org.freeplane.features.mode";version="1.10.5",org.
+ .6",org.freeplane.features.spellchecker.mindmapmode;uses:="org.freepl
+ ane.core.extension,org.freeplane.features.mode";version="1.10.6",org.
  freeplane.features.styles;uses:="org.freeplane.api,org.freeplane.core
  .extension,org.freeplane.core.io,org.freeplane.core.resources,org.fre
  eplane.core.ui,org.freeplane.features.filter.condition,org.freeplane.
  features.map,org.freeplane.features.mode,org.freeplane.n3.nanoxml";ve
- rsion="1.10.5",org.freeplane.features.styles.mindmapmode;uses:="org.f
+ rsion="1.10.6",org.freeplane.features.styles.mindmapmode;uses:="org.f
  reeplane.core.extension,org.freeplane.core.resources.components,org.f
  reeplane.core.ui,org.freeplane.features.filter,org.freeplane.features
  .filter.condition,org.freeplane.features.format,org.freeplane.feature
  s.map,org.freeplane.features.mode,org.freeplane.features.styles,org.f
- reeplane.features.ui";version="1.10.5",org.freeplane.features.text;us
+ reeplane.features.ui";version="1.10.6",org.freeplane.features.text;us
  es:="org.freeplane.core.extension,org.freeplane.core.io,org.freeplane
  .core.util,org.freeplane.features.filter.condition,org.freeplane.feat
  ures.map,org.freeplane.features.mode,org.freeplane.n3.nanoxml";versio
- n="1.10.5",org.freeplane.features.text.mindmapmode;uses:="com.lightde
+ n="1.10.6",org.freeplane.features.text.mindmapmode;uses:="com.lightde
  v.app.shtm,org.freeplane.core.extension,org.freeplane.core.resources,
  org.freeplane.core.ui,org.freeplane.features.map,org.freeplane.featur
- es.mode,org.freeplane.features.text";version="1.10.5",org.freeplane.f
+ es.mode,org.freeplane.features.text";version="1.10.6",org.freeplane.f
  eatures.time;uses:="org.freeplane.core.resources,org.freeplane.featur
  es.filter.condition,org.freeplane.features.format,org.freeplane.featu
- res.map,org.freeplane.n3.nanoxml";version="1.10.5",org.freeplane.feat
+ res.map,org.freeplane.n3.nanoxml";version="1.10.6",org.freeplane.feat
  ures.ui;uses:="org.freeplane.core.extension,org.freeplane.core.ui,org
  .freeplane.core.ui.components,org.freeplane.core.ui.menubuilders.gene
  ric,org.freeplane.core.util,org.freeplane.features.map,org.freeplane.
- features.mode";version="1.10.5",org.freeplane.features.url;uses:="org
+ features.mode";version="1.10.6",org.freeplane.features.url;uses:="org
  .freeplane.core.extension,org.freeplane.core.ui.components,org.freepl
  ane.core.util,org.freeplane.features.map,org.freeplane.n3.nanoxml";ve
- rsion="1.10.5",org.freeplane.features.url.mindmapmode;uses:="org.free
+ rsion="1.10.6",org.freeplane.features.url.mindmapmode;uses:="org.free
  plane.core.ui,org.freeplane.core.ui.components,org.freeplane.core.ui.
  menubuilders.generic,org.freeplane.core.util,org.freeplane.features.m
  ap,org.freeplane.features.mode,org.freeplane.features.ui,org.freeplan
- e.features.url,org.freeplane.n3.nanoxml";version="1.10.5",org.freepla
+ e.features.url,org.freeplane.n3.nanoxml";version="1.10.6",org.freepla
  ne.main.addons;uses:="org.freeplane.core.extension,org.freeplane.core
  .resources,org.freeplane.core.util,org.freeplane.n3.nanoxml";version=
- "1.10.5",org.freeplane.main.applet;uses:="org.freeplane.features.mode
- ";version="1.10.5",org.freeplane.main.application;uses:="org.freeplan
+ "1.10.6",org.freeplane.main.applet;uses:="org.freeplane.features.mode
+ ";version="1.10.6",org.freeplane.main.application;uses:="org.freeplan
  e.core.resources,org.freeplane.core.ui,org.freeplane.core.util,org.fr
  eeplane.features.map,org.freeplane.features.mode,org.freeplane.featur
- es.ui,org.freeplane.n3.nanoxml";version="1.10.5",org.freeplane.main.a
+ es.ui,org.freeplane.n3.nanoxml";version="1.10.6",org.freeplane.main.a
  pplication.protocols.freeplaneresource;uses:="org.freeplane.main.osgi
- ";version="1.10.5",org.freeplane.main.filemode;uses:="org.freeplane.f
- eatures.mode.filemode";version="1.10.5",org.freeplane.main.headlessmo
+ ";version="1.10.6",org.freeplane.main.filemode;uses:="org.freeplane.f
+ eatures.mode.filemode";version="1.10.6",org.freeplane.main.headlessmo
  de;uses:="org.freeplane.core.extension,org.freeplane.core.resources,o
  rg.freeplane.core.ui.components,org.freeplane.core.util,org.freeplane
  .features.map,org.freeplane.features.mode,org.freeplane.features.mode
  .mindmapmode,org.freeplane.features.ui,org.freeplane.main.application
- ";version="1.10.5",org.freeplane.main.mindmapmode;uses:="org.freeplan
- e.features.mode.mindmapmode";version="1.10.5",org.freeplane.main.mind
+ ";version="1.10.6",org.freeplane.main.mindmapmode;uses:="org.freeplan
+ e.features.mode.mindmapmode";version="1.10.6",org.freeplane.main.mind
  mapmode.stylemode;uses:="org.freeplane.core.ui,org.freeplane.features
  .map,org.freeplane.features.mode,org.freeplane.features.mode.mindmapm
- ode";version="1.10.5",org.freeplane.main.osgi;uses:="org.freeplane.fe
- atures.mode,org.freeplane.main.application";version="1.10.5",org.free
- plane.n3.nanoxml;version="1.10.5",org.freeplane.view.swing.features;u
+ ode";version="1.10.6",org.freeplane.main.osgi;uses:="org.freeplane.fe
+ atures.mode,org.freeplane.main.application";version="1.10.6",org.free
+ plane.n3.nanoxml;version="1.10.6",org.freeplane.view.swing.features;u
  ses:="org.freeplane.core.extension,org.freeplane.core.ui,org.freeplan
  e.features.map,org.freeplane.features.mode,org.freeplane.n3.nanoxml";
- version="1.10.5",org.freeplane.view.swing.features.filepreview;uses:=
+ version="1.10.6",org.freeplane.view.swing.features.filepreview;uses:=
  "org.freeplane.core.extension,org.freeplane.core.ui,org.freeplane.cor
  e.ui.components,org.freeplane.features.map,org.freeplane.features.map
  .mindmapmode,org.freeplane.features.mode,org.freeplane.features.ui,or
- g.freeplane.n3.nanoxml,org.freeplane.view.swing.map";version="1.10.5"
+ g.freeplane.n3.nanoxml,org.freeplane.view.swing.map";version="1.10.6"
  ,org.freeplane.view.swing.features.nodehistory;uses:="org.freeplane.c
- ore.extension,org.freeplane.features.mode";version="1.10.5",org.freep
+ ore.extension,org.freeplane.features.mode";version="1.10.6",org.freep
  lane.view.swing.features.progress.mindmapmode;uses:="org.freeplane.fe
- atures.map,org.freeplane.features.mode";version="1.10.5",org.freeplan
+ atures.map,org.freeplane.features.mode";version="1.10.6",org.freeplan
  e.view.swing.features.time.mindmapmode;uses:="org.freeplane.core.exte
  nsion,org.freeplane.features.map,org.freeplane.features.mode,org.free
- plane.n3.nanoxml";version="1.10.5",org.freeplane.view.swing.map;uses:
+ plane.n3.nanoxml";version="1.10.6",org.freeplane.view.swing.map;uses:
  ="org.freeplane.core.extension,org.freeplane.core.resources,org.freep
  lane.core.ui,org.freeplane.features.cloud,org.freeplane.features.edge
  ,org.freeplane.features.filter,org.freeplane.features.icon,org.freepl
  ane.features.map,org.freeplane.features.mode,org.freeplane.features.n
  odestyle,org.freeplane.features.styles,org.freeplane.features.ui,org.
  freeplane.view.swing.map.attribute,org.freeplane.view.swing.ui";versi
- on="1.10.5",org.freeplane.view.swing.map.attribute;uses:="org.freepla
+ on="1.10.6",org.freeplane.view.swing.map.attribute;uses:="org.freepla
  ne.core.ui,org.freeplane.features.attribute,org.freeplane.features.mo
- de,org.freeplane.view.swing.map";version="1.10.5",org.freeplane.view.
+ de,org.freeplane.view.swing.map";version="1.10.6",org.freeplane.view.
  swing.map.cloud;uses:="org.freeplane.features.cloud,org.freeplane.vie
- w.swing.map";version="1.10.5",org.freeplane.view.swing.map.edge;uses:
- ="org.freeplane.view.swing.map";version="1.10.5",org.freeplane.view.s
+ w.swing.map";version="1.10.6",org.freeplane.view.swing.map.edge;uses:
+ ="org.freeplane.view.swing.map";version="1.10.6",org.freeplane.view.s
  wing.map.link;uses:="org.freeplane.features.link,org.freeplane.featur
  es.mode,org.freeplane.view.swing.map,org.freeplane.view.swing.map.edg
- e";version="1.10.5",org.freeplane.view.swing.map.mindmapmode;uses:="o
+ e";version="1.10.6",org.freeplane.view.swing.map.mindmapmode;uses:="o
  rg.freeplane.features.map,org.freeplane.features.mode,org.freeplane.f
  eatures.text.mindmapmode,org.freeplane.view.swing.map";version="1.10.
- 5",org.freeplane.view.swing.ui;uses:="org.freeplane.core.ui,org.freep
+ 6",org.freeplane.view.swing.ui;uses:="org.freeplane.core.ui,org.freep
  lane.core.ui.components,org.freeplane.core.ui.menubuilders.generic,or
  g.freeplane.features.mode,org.freeplane.view.swing.map";version="1.10
- .5",org.freeplane.view.swing.ui.mindmapmode;uses:="org.freeplane.core
+ .6",org.freeplane.view.swing.ui.mindmapmode;uses:="org.freeplane.core
  .ui,org.freeplane.features.map,org.freeplane.view.swing.map,org.freep
- lane.view.swing.ui";version="1.10.5",com.jgoodies.forms.builder;uses:
+ lane.view.swing.ui";version="1.10.6",com.jgoodies.forms.builder;uses:
  ="com.jgoodies.forms.factories,com.jgoodies.forms.layout,com.jgoodies
- .forms.util";version="1.10.5",com.jgoodies.forms.debug;uses:="com.jgo
- odies.forms.layout";version="1.10.5",com.jgoodies.forms.factories;use
- s:="com.jgoodies.forms.layout";version="1.10.5",com.jgoodies.forms.la
- yout;uses:="com.jgoodies.forms.util";version="1.10.5",com.jgoodies.fo
- rms.util;uses:="com.jgoodies.forms.layout";version="1.10.5",com.light
- dev.app.shtm;version="1.10.5",org.apache.commons.io;version="1.4.9999
+ .forms.util";version="1.10.6",com.jgoodies.forms.debug;uses:="com.jgo
+ odies.forms.layout";version="1.10.6",com.jgoodies.forms.factories;use
+ s:="com.jgoodies.forms.layout";version="1.10.6",com.jgoodies.forms.la
+ yout;uses:="com.jgoodies.forms.util";version="1.10.6",com.jgoodies.fo
+ rms.util;uses:="com.jgoodies.forms.layout";version="1.10.6",com.light
+ dev.app.shtm;version="1.10.6",org.apache.commons.io;version="1.4.9999
  ";uses:="org.apache.commons.io.filefilter",org.apache.commons.io.comp
  arator;version="1.4.9999";uses:="org.apache.commons.io",org.apache.co
  mmons.io.filefilter;version="1.4.9999";uses:="org.apache.commons.io",
@@ -283,9 +283,9 @@ Export-Package: com.inet.jortho;version="1.10.5",org.freeplane.api;ver
  ",org.apache.commons.lang.builder;version="2.6",org.apache.commons.la
  ng.exception;version="2.6",org.apache.commons.lang.math;version="2.6"
  ,org.apache.commons.lang.time;version="2.6",org.freeplane.features.mo
- de.browsemode;version="1.10.5",org.freeplane.features.nodestyle.filem
- ode;version="1.10.5",org.freeplane.main.browsemode;version="1.10.5",o
- rg.freeplane.plugin.macos;version="1.10.5"
+ de.browsemode;version="1.10.6",org.freeplane.features.nodestyle.filem
+ ode;version="1.10.6",org.freeplane.main.browsemode;version="1.10.6",o
+ rg.freeplane.plugin.macos;version="1.10.6"
 Private-Package: com.thebuzzmedia.imgscalr,net.infonode.gui,org.freepl
  ane.core.enumeration,org.freeplane.core.ui.flatlaf,org.freeplane.core
  .ui.svgicons,org.freeplane.core.util.logging.internal,org.freeplane.f
