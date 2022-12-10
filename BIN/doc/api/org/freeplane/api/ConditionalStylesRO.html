@@ -102,7 +102,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/ja
      node.conditionalStyles.findAll { it.styleName == 'styles.important' }.each { it.active = false }
 
      // find the first conditional style with ScriptCondition (aka Script Filter) and remove it
-     node.conditionalStyles.find { it.hasScriptCondition() }?.remove()
+     node.conditionalStyles.find { it.hasScriptCondition() }.each { it.remove() }
 
      // remove all, i.e. each ConditionalStyle item
      node.conditionalStyles.collect().each { it.remove() }
