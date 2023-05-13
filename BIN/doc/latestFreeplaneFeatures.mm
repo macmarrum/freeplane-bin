@@ -1,6 +1,6 @@
-<map version="freeplane 1.9.0">
+<map version="freeplane 1.11.1">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="Latest Freeplane features" STYLE_REF="Introduction" FOLDED="false" ID="ID_1286342769" CREATED="1541847389542" MODIFIED="1620561021647" BACKGROUND_COLOR="#99ccff" TEXT_ALIGN="RIGHT" MIN_WIDTH="0 cm">
+<node TEXT="Latest Freeplane features" STYLE_REF="Introduction" FOLDED="false" ID="ID_1286342769" CREATED="1541847389542" MODIFIED="1668190156172" BACKGROUND_COLOR="#99ccff" TEXT_ALIGN="RIGHT" MIN_WIDTH="0 cm" CHILD_NODES_LAYOUT="TOPTOBOTTOM_RIGHT_CENTERED">
 <edge DASH="SOLID"/>
 <hook NAME="MapStyle" background="#ffcccc">
     <conditional_styles>
@@ -16,11 +16,13 @@
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
 <font SIZE="24"/>
-<stylenode LOCALIZED_TEXT="styles.predefined" POSITION="right" STYLE="bubble">
-<stylenode LOCALIZED_TEXT="default" ID="ID_1913414962" FORMAT_AS_HYPERLINK="true">
+<stylenode LOCALIZED_TEXT="styles.predefined" POSITION="bottom_or_right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="default" ID="ID_1913414962" ICON_SIZE="12 pt" FORMAT_AS_HYPERLINK="true" COLOR="#000000" STYLE="as_parent" NUMBERED="false" FORMAT="STANDARD_FORMAT" TEXT_ALIGN="DEFAULT" CHILD_NODES_LAYOUT="AUTO" VGAP_QUANTITY="2 pt" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1 px" BORDER_COLOR_LIKE_EDGE="true" BORDER_COLOR="#808080" BORDER_DASH_LIKE_EDGE="false" BORDER_DASH="SOLID" MAX_WIDTH="10 cm" MIN_WIDTH="0 cm">
 <arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1913414962" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<font NAME="SansSerif" SIZE="8" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
 <edge COLOR="#808080" WIDTH="1"/>
-<font SIZE="8"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="plain/html"/>
+<richcontent CONTENT-TYPE="plain/html" TYPE="DETAILS"/>
 </stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.attributes">
 <font SIZE="9"/>
@@ -33,9 +35,9 @@
 <font SIZE="8"/>
 </stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.note" BACKGROUND_COLOR="#ffffff"/>
-<stylenode LOCALIZED_TEXT="defaultstyle.selection" BACKGROUND_COLOR="#afd3f7" STYLE="bubble" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#002080"/>
+<stylenode LOCALIZED_TEXT="defaultstyle.selection" BACKGROUND_COLOR="#afd3f7" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#002080"/>
 </stylenode>
-<stylenode LOCALIZED_TEXT="styles.AutomaticLayout" POSITION="right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="styles.AutomaticLayout" POSITION="bottom_or_right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="AutomaticLayout.level.root" COLOR="#000000">
 <font SIZE="12"/>
 </stylenode>
@@ -52,7 +54,7 @@
 <font SIZE="12"/>
 </stylenode>
 </stylenode>
-<stylenode LOCALIZED_TEXT="styles.user-defined" POSITION="right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="styles.user-defined" POSITION="bottom_or_right" STYLE="bubble">
 <stylenode TEXT="Introduction" BACKGROUND_COLOR="#00cc33" MIN_WIDTH="5 cm">
 <font BOLD="true"/>
 <edge STYLE="bezier" COLOR="#33ffcc"/>
@@ -129,23 +131,56 @@
 <edge STYLE="horizontal"/>
 </stylenode>
 </stylenode>
-<stylenode LOCALIZED_TEXT="styles.topic" POSITION="right" COLOR="#18898b" STYLE="fork">
+<stylenode LOCALIZED_TEXT="styles.topic" POSITION="bottom_or_right" COLOR="#18898b" STYLE="fork">
 <font NAME="Liberation Sans" SIZE="12" BOLD="true"/>
 </stylenode>
-<stylenode LOCALIZED_TEXT="styles.subtopic" POSITION="right" COLOR="#cc3300" STYLE="fork">
+<stylenode LOCALIZED_TEXT="styles.subtopic" POSITION="bottom_or_right" COLOR="#cc3300" STYLE="fork">
 <font NAME="Liberation Sans" SIZE="12" BOLD="true"/>
 </stylenode>
-<stylenode LOCALIZED_TEXT="styles.subsubtopic" POSITION="right" COLOR="#669900">
+<stylenode LOCALIZED_TEXT="styles.subsubtopic" POSITION="bottom_or_right" COLOR="#669900">
 <font NAME="Liberation Sans" SIZE="12" BOLD="true"/>
 </stylenode>
-<stylenode LOCALIZED_TEXT="styles.important" POSITION="right">
+<stylenode LOCALIZED_TEXT="styles.important" POSITION="bottom_or_right">
 <icon BUILTIN="yes"/>
 </stylenode>
 </stylenode>
 </map_styles>
 </hook>
-<node TEXT="Version 1.9.x" STYLE_REF="Actions" POSITION="right" ID="ID_1638165251" CREATED="1541847687331" MODIFIED="1620389180349">
-<node TEXT="Editor features" STYLE_REF="Purpose" ID="ID_1741600255" CREATED="1541848060291" MODIFIED="1620561170250">
+<node TEXT="Version 1.11.x" STYLE_REF="Actions" POSITION="bottom_or_right" ID="ID_414352132" CREATED="1668190203324" MODIFIED="1668190235820">
+<node TEXT="Editor features" STYLE_REF="Purpose" ID="ID_1802701213" CREATED="1541848060291" MODIFIED="1541848968607">
+<node TEXT="Top-to-bottom, left-to-right and combined layouts" ID="ID_120328641" CREATED="1675608098149" MODIFIED="1675608116259">
+<hook URI="latestFreeplaneFeatures_files/layouts.png" SIZE="0.6124021" NAME="ExternalObject"/>
+</node>
+<node TEXT="Base distance from parent node to child node configurable for parent nodes and styles" ID="ID_455500811" CREATED="1675606733862" MODIFIED="1675606733862"/>
+<node TEXT="Node movement restricted to single directions" ID="ID_1260662085" CREATED="1675606733862" MODIFIED="1675606733862"/>
+<node TEXT="Simultaneous movement of all selected nodes" ID="ID_1265802507" CREATED="1675606733868" MODIFIED="1675606733868"/>
+<node TEXT="Fold/unfold only visible nodes and their ancestors" ID="ID_1883753058" CREATED="1675606733869" MODIFIED="1675606733869"/>
+<node TEXT="New flat look and feels for MacOS" ID="ID_467226780" CREATED="1675606743640" MODIFIED="1675606781008"/>
+<node TEXT="TAB  inserts new nodes when editing node content" ID="ID_1345875067" CREATED="1675606821161" MODIFIED="1675607669478"/>
+</node>
+<node TEXT="Updated software components" STYLE_REF="Purpose" ID="ID_127255283" CREATED="1541847932161" MODIFIED="1541848968607"/>
+</node>
+<node TEXT="Version 1.10.5" STYLE_REF="Actions" POSITION="bottom_or_right" ID="ID_1651354600" CREATED="1668190189347" MODIFIED="1668190578373">
+<node TEXT="Editor features" STYLE_REF="Purpose" ID="ID_343021245" CREATED="1541848060291" MODIFIED="1541848968607">
+<node TEXT="New UI icons (created by Rexel and Predrag)" ID="ID_1135148263" CREATED="1668190473688" MODIFIED="1668190473688"/>
+<node TEXT="Command line option -R to run groovy scripts on start-up" ID="ID_1329668559" CREATED="1668190473688" MODIFIED="1668190473688"/>
+<node TEXT="Support command line options -R and -S in non interactive mode" ID="ID_1972168280" CREATED="1668190473695" MODIFIED="1668190473695"/>
+<node TEXT="Compact map layout" ID="ID_1482025158" CREATED="1668190489243" MODIFIED="1668190489243"/>
+<node TEXT="Jump in selected subtrees" ID="ID_519305347" CREATED="1668190533641" MODIFIED="1668190533641"/>
+<node TEXT="Vertical aligning child nodes at the top, at the bottom or at the center of the parent node" ID="ID_161848692" CREATED="1668190566667" MODIFIED="1668190566667"/>
+<node TEXT="Consider hidden free node positions in map layout" ID="ID_430638175" CREATED="1668190566667" MODIFIED="1668190566667"/>
+<node TEXT="Creating new user style from selection assigns it to all selected nodes and clears their formatting" ID="ID_1478638916" CREATED="1668190566691" MODIFIED="1668190566691"/>
+<node TEXT="Make dragging area width configurable and increase its default size" ID="ID_1449443293" CREATED="1668190566691" MODIFIED="1668190566691"/>
+<node TEXT="Change key based navigation for summary nodes" ID="ID_1444166533" CREATED="1668190566693" MODIFIED="1668190566693"/>
+<node TEXT="Word wrap in editors for formulas, scripts, markdown and latex" ID="ID_171708339" CREATED="1668190566693" MODIFIED="1668190566693"/>
+</node>
+<node TEXT="Updated software components" STYLE_REF="Purpose" FOLDED="true" ID="ID_1651141080" CREATED="1541847932161" MODIFIED="1675607272082" VGAP_QUANTITY="2 pt">
+<node TEXT="Java 17 support" ID="ID_602837388" CREATED="1668190416034" MODIFIED="1668190416034"/>
+<node TEXT="Updated Groovy to version 4" ID="ID_1354215770" CREATED="1668190416034" MODIFIED="1675607272081"/>
+</node>
+</node>
+<node TEXT="Version 1.9.x" STYLE_REF="Actions" POSITION="bottom_or_right" ID="ID_1638165251" CREATED="1541847687331" MODIFIED="1620389180349">
+<node TEXT="Editor features" STYLE_REF="Purpose" FOLDED="true" ID="ID_1741600255" CREATED="1541848060291" MODIFIED="1620561170250">
 <node TEXT="Connector styles configurable at user style nodes in style editor" ID="ID_309599694" CREATED="1620389785732" MODIFIED="1620389785732"/>
 <node TEXT="Selected node colors configurable at appropriate styles in use style editor" ID="ID_521611641" CREATED="1620389785732" MODIFIED="1620389785732"/>
 <node TEXT="Formulas in node core, node details and notes" ID="ID_1417671379" CREATED="1620389785752" MODIFIED="1620560915450"/>
@@ -171,7 +206,7 @@
 <node TEXT="Updated Groovy to 3.0.8" ID="ID_702829975" CREATED="1620389743797" MODIFIED="1620389751288"/>
 </node>
 </node>
-<node TEXT="Version 1.8.x" STYLE_REF="Actions" POSITION="right" ID="ID_25848260" CREATED="1541847687331" MODIFIED="1620389153347">
+<node TEXT="Version 1.8.x" STYLE_REF="Actions" FOLDED="true" POSITION="bottom_or_right" ID="ID_25848260" CREATED="1541847687331" MODIFIED="1620389153347">
 <node TEXT="Editor features" STYLE_REF="Purpose" ID="ID_109116165" CREATED="1541848060291" MODIFIED="1541848968607">
 <node TEXT="Use emoticons from https://twemoji.twitter.com/ as icons" ID="ID_391516983" CREATED="1620389509864" MODIFIED="1620389509864" LINK="https://twemoji.twitter.com/"/>
 <node TEXT="Optionally ignore accents and diacritics in filter conditions" ID="ID_684736245" CREATED="1620389550378" MODIFIED="1620389550378"/>
@@ -185,7 +220,7 @@
 </node>
 <node TEXT="Formulas and scripts" STYLE_REF="Purpose" ID="ID_377149294" CREATED="1541847985637" MODIFIED="1541848968607"/>
 </node>
-<node TEXT="Version 1.7.x" STYLE_REF="Actions" FOLDED="true" POSITION="right" ID="ID_1757711154" CREATED="1541847687331" MODIFIED="1541847877907">
+<node TEXT="Version 1.7.x" STYLE_REF="Actions" FOLDED="true" POSITION="bottom_or_right" ID="ID_1757711154" CREATED="1541847687331" MODIFIED="1541847877907">
 <node TEXT="Editor features" STYLE_REF="Purpose" FOLDED="true" ID="ID_1765567826" CREATED="1541848060291" MODIFIED="1541848968607">
 <node TEXT="Nodes URLs with relative and absolute paths like #at(:~someNodeAlias)" ID="ID_1539755264" CREATED="1541847881092" MODIFIED="1541847881092"/>
 <node TEXT="Node aliases" ID="ID_1352789056" CREATED="1541847881092" MODIFIED="1541847881092"/>
@@ -215,7 +250,7 @@
 </node>
 <node TEXT="Freeplane API can be embedded in arbitrary JVM applications and scripts" ID="ID_343365936" CREATED="1541848092374" MODIFIED="1620389208685"/>
 </node>
-<node TEXT="Version 1.6.x" STYLE_REF="Actions" FOLDED="true" POSITION="right" ID="ID_132081568" CREATED="1541847698879" MODIFIED="1541850524278">
+<node TEXT="Version 1.6.x" STYLE_REF="Actions" FOLDED="true" POSITION="bottom_or_right" ID="ID_132081568" CREATED="1541847698879" MODIFIED="1541850524278">
 <node TEXT="connectors" STYLE_REF="Purpose" FOLDED="true" ID="ID_1672618426" CREATED="1541848613842" MODIFIED="1541848953471">
 <node TEXT="Option to hide connectors" ID="ID_389731514" CREATED="1541848487215" MODIFIED="1541848487215"/>
 <node TEXT="Option to show connectors only for selected nodes" ID="ID_353659522" CREATED="1541848487215" MODIFIED="1541848487215"/>

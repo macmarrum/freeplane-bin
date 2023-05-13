@@ -1,16 +1,16 @@
 Manifest-Version: 1.0
 Bundle-Activator: org.freeplane.plugin.latex.Activator
-Bundle-ClassPath: .,lib/plugin-1.10.7.jar,lib/jlatexmath-1.0.7.jar,lib
+Bundle-ClassPath: .,lib/plugin-1.11.2.jar,lib/jlatexmath-1.0.7.jar,lib
  /jlatexmath-font-greek-1.0.7.jar,lib/jlatexmath-font-cyrillic-1.0.7.j
  ar
 Bundle-ManifestVersion: 2
 Bundle-Name: org.freeplane.plugin.latex
 Bundle-SymbolicName: org.freeplane.plugin.latex
 Bundle-Vendor: Freeplane Project
-Bundle-Version: 1.10.7
-Created-By: 17.0.6 (N/A)
+Bundle-Version: 1.11.2
+Created-By: 17.0.7 (N/A)
 Private-Package: org.freeplane.plugin.latex
 Require-Bundle: org.freeplane.core
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
-Tool: Bnd-6.2.0.202202251641
+Tool: Bnd-6.3.1.202206071316
 
