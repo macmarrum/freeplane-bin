@@ -1,5 +1,30 @@
 ==============================
-1.1.2
+1.11.5
+==============================
+Automatic stacked layouts
+Prevent overlapping node drag handler from stealing the mouse pointer
+Fast fold/unfold on node click if editing is not possible or editing on double click is disabled
+Slide roots (jump-in and jump-out for slides)
+Bug fixes
+
+==============================
+1.11.4
+==============================
+Bug fix
+
+==============================
+1.11.3
+==============================
+Allow to remove minimum and maximum node width limits for the default style
+Option View->Notes->Note follows selection (enabled by default)
+Node children layout added to the toolbar
+Latest features mind map added to help menu
+Scripting API extended (node.getBranchAsTextOutline(), node.setBranchAsTextOutline(string))
+Scripting Security permissions sharpened
+Bug fixes
+
+==============================
+1.11.2
 ==============================
 Bug fixes
 

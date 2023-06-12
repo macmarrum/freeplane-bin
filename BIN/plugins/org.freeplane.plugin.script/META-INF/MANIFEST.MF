@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-Activator: org.freeplane.plugin.script.Activator
-Bundle-ClassPath: .,lib/plugin-1.11.2.jar,lib/groovy-ant-4.0.6.jar,lib
+Bundle-ClassPath: .,lib/plugin-1.11.5.jar,lib/groovy-ant-4.0.6.jar,lib
  /groovy-cli-picocli-4.0.6.jar,lib/groovy-groovysh-4.0.6.jar,lib/groov
  y-console-4.0.6.jar,lib/groovy-datetime-4.0.6.jar,lib/groovy-groovydo
  c-4.0.6.jar,lib/groovy-docgenerator-4.0.6.jar,lib/groovy-jmx-4.0.6.ja
@@ -25,15 +25,15 @@ Bundle-ManifestVersion: 2
 Bundle-Name: org.freeplane.plugin.script
 Bundle-SymbolicName: org.freeplane.plugin.script
 Bundle-Vendor: Freeplane Project
-Bundle-Version: 1.11.2
+Bundle-Version: 1.11.5
 Created-By: 17.0.7 (N/A)
 Export-Package: org.freeplane.plugin.script;uses:="org.freeplane.plugi
  n.script.dependencies,org.freeplane.plugin.script.proxy";version="1.1
- 1.2",org.freeplane.plugin.script.addons;uses:="org.freeplane.plugin.s
- cript";version="1.11.2",org.freeplane.plugin.script.dependencies;vers
- ion="1.11.2",org.freeplane.plugin.script.filter;version="1.11.2",org.
+ 1.5",org.freeplane.plugin.script.addons;uses:="org.freeplane.plugin.s
+ cript";version="1.11.5",org.freeplane.plugin.script.dependencies;vers
+ ion="1.11.5",org.freeplane.plugin.script.filter;version="1.11.5",org.
  freeplane.plugin.script.proxy;uses:="org.freeplane.plugin.script,org.
- freeplane.plugin.script.dependencies";version="1.11.2"
+ freeplane.plugin.script.dependencies";version="1.11.5"
 Import-Package: de.sciss.syntaxpane.actions;version="[1.11,2)"
 Private-Package: groovy.runtime.metaclass.groovy.grape,groovy.runtime.
  metaclass.java.lang,org.freeplane.plugin.script.help
