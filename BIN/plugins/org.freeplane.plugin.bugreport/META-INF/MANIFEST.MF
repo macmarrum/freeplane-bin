@@ -6,7 +6,7 @@ Bundle-Name: org.freeplane.plugin.bugreport
 Bundle-SymbolicName: org.freeplane.plugin.bugreport
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.10.7
-Created-By: 17.0.7 (N/A)
+Created-By: 17.0.8.1 (N/A)
 Private-Package: org.freeplane.plugin.bugreport
 Require-Bundle: org.freeplane.core
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
