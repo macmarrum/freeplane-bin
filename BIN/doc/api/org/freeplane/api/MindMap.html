@@ -111,13 +111,50 @@ extends <a href="MindMapRO.html" title="interface in org.freeplane.api">MindMapR
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#copyConditionalStylesFrom(org.freeplane.api.MindMap,java.lang.String)" class="member-name-link">copyConditionalStylesFrom</a><wbr>(<a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a>&nbsp;source,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;styleName)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Returns all style names/translation keys active for the node.</div>
+<div class="block">Copies a style and its conditional style rules from another mind map into this mind map.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#copyStyleFrom(org.freeplane.api.MindMap,java.lang.String)" class="member-name-link">copyStyleFrom</a><wbr>(<a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a>&nbsp;source,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;styleName)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Returns all style names/translation keys active for the node.</div>
+<div class="block">Copies a style from another mind map into this mind map.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#copyUserStylesFrom(org.freeplane.api.MindMap)" class="member-name-link">copyUserStylesFrom</a><wbr>(<a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a>&nbsp;source)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Copies all user styles and their conditional style rules from another mind map into this one.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#copyUserStylesFrom(org.freeplane.api.MindMap,boolean)" class="member-name-link">copyUserStylesFrom</a><wbr>(<a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a>&nbsp;source,
+ boolean&nbsp;includeConditionalRules)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Copies all user styles from another mind map into this one.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#copyUserStylesFrom(org.freeplane.api.MindMap,boolean,java.lang.String...)" class="member-name-link">copyUserStylesFrom</a><wbr>(<a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a>&nbsp;source,
+ boolean&nbsp;includeConditionalRules,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;styleNameFilters)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Copies one or more user styles from another mind map into this one.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#copyUserStylesFrom(org.freeplane.api.MindMap,boolean,java.util.ArrayList)" class="member-name-link">copyUserStylesFrom</a><wbr>(<a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a>&nbsp;source,
+ boolean&nbsp;includeConditionalRules,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html" title="class or interface in java.util" class="external-link">ArrayList</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;styleNameFilters)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Copies one or more user styles from another mind map into this one.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#copyUserStylesFrom(org.freeplane.api.MindMap,java.lang.String...)" class="member-name-link">copyUserStylesFrom</a><wbr>(<a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a>&nbsp;source,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;styleNameFilters)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Copies one or more user styles and their conditional style rules from another mind map into this one.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#copyUserStylesFrom(org.freeplane.api.MindMap,java.util.ArrayList)" class="member-name-link">copyUserStylesFrom</a><wbr>(<a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a>&nbsp;source,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html" title="class or interface in java.util" class="external-link">ArrayList</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;styleNameFilters)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Copies one or more user styles and their conditional style rules from another mind map into this one.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#evaluateAllFormulas()" class="member-name-link">evaluateAllFormulas</a>()</code></div>
@@ -175,24 +212,36 @@ extends <a href="MindMapRO.html" title="interface in org.freeplane.api">MindMapR
 <div class="block">saves the map to disk.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setBackgroundColor(java.awt.Color)" class="member-name-link">setBackgroundColor</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/awt/Color.html" title="class or interface in java.awt" class="external-link">Color</a>&nbsp;color)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setAssociatedTemplate(java.net.URI)" class="member-name-link">setAssociatedTemplate</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html" title="class or interface in java.net" class="external-link">URI</a>&nbsp;uri)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block"> Sets <code>uri</code> as Associated Template, template-normalizing it first
+ if the location is in User- or Standard-Templates Directory, i.e.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setBackgroundColorCode(java.lang.String)" class="member-name-link">setBackgroundColorCode</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;rgbString)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setBackgroundColor(java.awt.Color)" class="member-name-link">setBackgroundColor</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/awt/Color.html" title="class or interface in java.awt" class="external-link">Color</a>&nbsp;color)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="#setFilter(boolean,boolean,org.freeplane.api.NodeCondition)" class="member-name-link">setFilter</a><wbr>(boolean&nbsp;showAncestors,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setBackgroundColorCode(java.lang.String)" class="member-name-link">setBackgroundColorCode</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;rgbString)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="#setFilter(boolean,boolean,org.freeplane.api.NodeCondition)" class="member-name-link">setFilter</a><wbr>(boolean&nbsp;showAncestors,
  boolean&nbsp;showDescendants,
  <a href="NodeCondition.html" title="interface in org.freeplane.api">NodeCondition</a>&nbsp;condition)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated.</span>
 <div class="deprecation-comment">use filter</div>
 </div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setFilter(org.freeplane.api.NodeCondition)" class="member-name-link">setFilter</a><wbr>(<a href="NodeCondition.html" title="interface in org.freeplane.api">NodeCondition</a>&nbsp;condition)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setFilter(org.freeplane.api.NodeCondition)" class="member-name-link">setFilter</a><wbr>(<a href="NodeCondition.html" title="interface in org.freeplane.api">NodeCondition</a>&nbsp;condition)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">alias for <a href="#filter(org.freeplane.api.NodeCondition)"><code>filter(NodeCondition)</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setFollowedMap(java.net.URI)" class="member-name-link">setFollowedMap</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html" title="class or interface in java.net" class="external-link">URI</a>&nbsp;uri)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block"> Sets <code>uri</code> as Followed Map, template-normalizing it first
+ if the location is in User- or Standard-Templates Directory, e.g.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setName(java.lang.String)" class="member-name-link">setName</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;title)</code></div>
@@ -212,7 +261,7 @@ extends <a href="MindMapRO.html" title="interface in org.freeplane.api">MindMapR
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.freeplane.api.MindMapRO">Methods inherited from interface&nbsp;org.freeplane.api.<a href="MindMapRO.html" title="interface in org.freeplane.api">MindMapRO</a></h3>
-<code><a href="MindMapRO.html#getBackgroundColor()">getBackgroundColor</a>, <a href="MindMapRO.html#getBackgroundColorCode()">getBackgroundColorCode</a>, <a href="MindMapRO.html#getConditionalStyles()">getConditionalStyles</a>, <a href="MindMapRO.html#getFile()">getFile</a>, <a href="MindMapRO.html#getName()">getName</a>, <a href="MindMapRO.html#getRoot()">getRoot</a>, <a href="MindMapRO.html#getRootNode()">getRootNode</a>, <a href="MindMapRO.html#isSaved()">isSaved</a>, <a href="MindMapRO.html#node(java.lang.String)">node</a></code></div>
+<code><a href="MindMapRO.html#getAssociatedTemplate()">getAssociatedTemplate</a>, <a href="MindMapRO.html#getAssociatedTemplateFile()">getAssociatedTemplateFile</a>, <a href="MindMapRO.html#getBackgroundColor()">getBackgroundColor</a>, <a href="MindMapRO.html#getBackgroundColorCode()">getBackgroundColorCode</a>, <a href="MindMapRO.html#getConditionalStyles()">getConditionalStyles</a>, <a href="MindMapRO.html#getFile()">getFile</a>, <a href="MindMapRO.html#getFollowedMap()">getFollowedMap</a>, <a href="MindMapRO.html#getFollowedMapFile()">getFollowedMapFile</a>, <a href="MindMapRO.html#getName()">getName</a>, <a href="MindMapRO.html#getRoot()">getRoot</a>, <a href="MindMapRO.html#getRootNode()">getRootNode</a>, <a href="MindMapRO.html#getUserDefinedStylesNames()">getUserDefinedStylesNames</a>, <a href="MindMapRO.html#isSaved()">isSaved</a>, <a href="MindMapRO.html#node(java.lang.String)">node</a></code></div>
 </section>
 </li>
 </ul>
@@ -518,16 +567,10 @@ extends <a href="MindMapRO.html" title="interface in org.freeplane.api">MindMapR
 <h3>copyStyleFrom</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">copyStyleFrom</span><wbr><span class="parameters">(<a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a>&nbsp;source,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;styleName)</span></div>
-<div class="block">Returns all style names/translation keys active for the node.</div>
+<div class="block">Copies a style from another mind map into this mind map.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.9.8</dd>
-<dt>See Also:</dt>
-<dd>
-<ul class="see-list">
-<li><a href="MindMapRO.html#getName()"><code>MindMapRO.getName()</code></a></li>
-</ul>
-</dd>
 </dl>
 </section>
 </li>
@@ -536,16 +579,209 @@ extends <a href="MindMapRO.html" title="interface in org.freeplane.api">MindMapR
 <h3>copyConditionalStylesFrom</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">copyConditionalStylesFrom</span><wbr><span class="parameters">(<a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a>&nbsp;source,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;styleName)</span></div>
-<div class="block">Returns all style names/translation keys active for the node.</div>
+<div class="block">Copies a style and its conditional style rules from another mind map into this mind map.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.9.8</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="copyUserStylesFrom(org.freeplane.api.MindMap,boolean,java.lang.String...)">
+<h3>copyUserStylesFrom</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">copyUserStylesFrom</span><wbr><span class="parameters">(<a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a>&nbsp;source,
+ boolean&nbsp;includeConditionalRules,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;styleNameFilters)</span></div>
+<div class="block">Copies one or more user styles from another mind map into this one.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>source</code> - mind map containing the desired style(s)</dd>
+<dd><code>includeConditionalRules</code> - whether to include conditional style rules or not.</dd>
+<dd><code>styleNameFilters</code> - one or more strings to indicate which styles should be copied (REGEX match)</dd>
+<dt>Returns:</dt>
+<dd>list with the names of the copied styles</dd>
+<dt>Since:</dt>
+<dd>1.11.9</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="copyUserStylesFrom(org.freeplane.api.MindMap,boolean,java.util.ArrayList)">
+<h3>copyUserStylesFrom</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">copyUserStylesFrom</span><wbr><span class="parameters">(<a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a>&nbsp;source,
+ boolean&nbsp;includeConditionalRules,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html" title="class or interface in java.util" class="external-link">ArrayList</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;styleNameFilters)</span></div>
+<div class="block">Copies one or more user styles from another mind map into this one.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>source</code> - mind map containing the desired style(s)</dd>
+<dd><code>includeConditionalRules</code> - whether to include conditional style rules or not.</dd>
+<dd><code>styleNameFilters</code> - ArrayList of strings to indicate which styles should be copied (REGEX match)</dd>
+<dt>Returns:</dt>
+<dd>list with the names of the copied styles</dd>
+<dt>Since:</dt>
+<dd>1.11.9</dd>
 <dt>See Also:</dt>
 <dd>
-<ul class="see-list">
-<li><a href="MindMapRO.html#getName()"><code>MindMapRO.getName()</code></a></li>
+<ul class="see-list-long">
+<li><a href="#copyUserStylesFrom(org.freeplane.api.MindMap,boolean,java.lang.String...)"><code>copyUserStylesFrom(MindMap, boolean, String...)</code></a></li>
 </ul>
 </dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="copyUserStylesFrom(org.freeplane.api.MindMap)">
+<h3>copyUserStylesFrom</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">copyUserStylesFrom</span><wbr><span class="parameters">(<a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a>&nbsp;source)</span></div>
+<div class="block">Copies all user styles and their conditional style rules from another mind map into this one.
+ <p>
+ <b>Note:</b> equivalent to: <code>    copyUserStylesFrom(source, true, ".*")</code></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>source</code> - mind map containing the desired style(s)</dd>
+<dt>Returns:</dt>
+<dd>list with the names of the copied styles</dd>
+<dt>Since:</dt>
+<dd>1.11.9</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list-long">
+<li><a href="#copyUserStylesFrom(org.freeplane.api.MindMap,boolean,java.lang.String...)"><code>copyUserStylesFrom(MindMap, boolean, String...)</code></a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="copyUserStylesFrom(org.freeplane.api.MindMap,java.lang.String...)">
+<h3>copyUserStylesFrom</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">copyUserStylesFrom</span><wbr><span class="parameters">(<a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a>&nbsp;source,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;styleNameFilters)</span></div>
+<div class="block">Copies one or more user styles and their conditional style rules from another mind map into this one.
+ <p>
+ <b>Note:</b> equivalent to: <code>    copyUserStylesFrom(source, true, styleNameFilters)</code></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>source</code> - mind map containing the desired style(s)</dd>
+<dd><code>styleNameFilters</code> - one or more strings to indicate which styles should be copied (REGEX match)</dd>
+<dt>Returns:</dt>
+<dd>list with the names of the copied styles</dd>
+<dt>Since:</dt>
+<dd>1.11.9</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list-long">
+<li><a href="#copyUserStylesFrom(org.freeplane.api.MindMap,boolean,java.lang.String...)"><code>copyUserStylesFrom(MindMap, boolean, String...)</code></a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="copyUserStylesFrom(org.freeplane.api.MindMap,java.util.ArrayList)">
+<h3>copyUserStylesFrom</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">copyUserStylesFrom</span><wbr><span class="parameters">(<a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a>&nbsp;source,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html" title="class or interface in java.util" class="external-link">ArrayList</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;styleNameFilters)</span></div>
+<div class="block">Copies one or more user styles and their conditional style rules from another mind map into this one.
+ <p>
+ <b>Note:</b> equivalent to: <code>    copyUserStylesFrom(source, true, styleNameFilters)</code></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>source</code> - mind map containing the desired style(s)</dd>
+<dd><code>styleNameFilters</code> - ArrayList of strings to indicate which styles should be copied (REGEX match)</dd>
+<dt>Returns:</dt>
+<dd>list with the names of the copied styles</dd>
+<dt>Since:</dt>
+<dd>1.11.9</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list-long">
+<li><a href="#copyUserStylesFrom(org.freeplane.api.MindMap,boolean,java.lang.String...)"><code>copyUserStylesFrom(MindMap, boolean, String...)</code></a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="copyUserStylesFrom(org.freeplane.api.MindMap,boolean)">
+<h3>copyUserStylesFrom</h3>
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">copyUserStylesFrom</span><wbr><span class="parameters">(<a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a>&nbsp;source,
+ boolean&nbsp;includeConditionalRules)</span></div>
+<div class="block">Copies all user styles from another mind map into this one.
+ <p>
+ <b>Note:</b> equivalent to: <code>   copyUserStylesFrom(source, includeConditionalRules, ".*")</code></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>source</code> - mind map containing the desired style(s)</dd>
+<dd><code>includeConditionalRules</code> - whether to include conditional style rules or not.</dd>
+<dt>Returns:</dt>
+<dd>list with the names of the copied styles</dd>
+<dt>Since:</dt>
+<dd>1.11.9</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list-long">
+<li><a href="#copyUserStylesFrom(org.freeplane.api.MindMap,boolean,java.lang.String...)"><code>copyUserStylesFrom(MindMap, boolean, String...)</code></a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="setFollowedMap(java.net.URI)">
+<h3>setFollowedMap</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">setFollowedMap</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html" title="class or interface in java.net" class="external-link">URI</a>&nbsp;uri)</span></div>
+<div class="block"><p> Sets <code>uri</code> as Followed Map, template-normalizing it first
+ if the location is in User- or Standard-Templates Directory, e.g.
+ <br> from <code>file:/home/macmarrum/.config/freeplane/1.11.x/templates/the-file.mm</code>
+ <br> to &nbsp; &nbsp; &nbsp; <code>template:/the-file.mm</code>
+ </p>
+ <pre>
+  // Unfollows a mind map
+  node.mindMap.followedMap = null
+
+  // Follows a mind map, using an absolute path - a standard string is used, therefore backslashes (path separators) must be escaped
+  node.mindMap.followedMap = new File('c:\\Users\\macmarrum\\Documents\\My top-level mind map.mm').toURI()
+
+  // Follows a template, using an absolute path - a slashy string is used, therefore backslashes (path separators) mustn't be escaped
+  node.mindMap.followedMap = new File(/c:\Users\macmarrum\AppData\Roaming\Freeplane\1.11.x\templates\My template.mm/).toURI()
+
+  // Follows a template, using a <code>template:</code> URI
+  node.mindMap.followedMap = new URI('template:/My%20template.mm')
+ </pre></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>uri</code> - Followed-Map URI or <code>null</code> to unfollow</dd>
+<dt>Since:</dt>
+<dd>1.11.11</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="setAssociatedTemplate(java.net.URI)">
+<h3>setAssociatedTemplate</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">setAssociatedTemplate</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html" title="class or interface in java.net" class="external-link">URI</a>&nbsp;uri)</span></div>
+<div class="block"><p> Sets <code>uri</code> as Associated Template, template-normalizing it first
+ if the location is in User- or Standard-Templates Directory, i.e.
+ <br> from <code>file:/home/macmarrum/.config/freeplane/1.11.x/templates/the-file.mm</code>
+ <br> to &nbsp; &nbsp; &nbsp; <code>template:/the-file.mm</code>
+ </p>
+ <pre>
+  // Clears the template association
+  node.mindMap.associatedTemplate = null
+
+  // Associates a template with the mind map, using an absolute path - a slashy string is used, therefore backslashes (path separators) mustn't be escaped
+  node.mindMap.associatedTemplate = new File(/c:\Users\macmarrum\AppData\Roaming\Freeplane\1.11.x\templates\My template.mm/).toURI()
+
+  // Associates a template with the mind map, using a <code>template:</code> URI
+  node.mindMap.associatedTemplate = new URI('template:/My%20template.mm')
+ </pre></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>uri</code> - Associated-Template URI or <code>null</code> to remove it</dd>
+<dt>Since:</dt>
+<dd>1.11.11</dd>
 </dl>
 </section>
 </li>

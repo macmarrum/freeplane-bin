@@ -238,7 +238,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/freeplane/api/ConditionalStyle.html" class="type-name-link" title="interface in org.freeplane.api">ConditionalStyle</a> - Interface in <a href="org/freeplane/api/package-summary.html">org.freeplane.api</a></dt>
 <dd>
-<div class="block">See also <a href="org/freeplane/api/ConditionalStyleRO.html" title="interface in org.freeplane.api"><code>ConditionalStyleRO</code></a> and <a href="org/freeplane/api/ConditionalStyles.html" title="interface in org.freeplane.api"><code>ConditionalStyles</code></a></div>
+<div class="block">Node's or map's conditional style</div>
 </dd>
 <dt><a href="org/freeplane/api/ConditionalStyleNotFoundException.html" class="type-name-link" title="class in org.freeplane.api">ConditionalStyleNotFoundException</a> - Exception in <a href="org/freeplane/api/package-summary.html">org.freeplane.api</a></dt>
 <dd>&nbsp;</dd>
@@ -311,7 +311,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/MindMap.html#copyConditionalStylesFrom(org.freeplane.api.MindMap,java.lang.String)" class="member-name-link">copyConditionalStylesFrom(MindMap, String)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMap.html" title="interface in org.freeplane.api">MindMap</a></dt>
 <dd>
-<div class="block">Returns all style names/translation keys active for the node.</div>
+<div class="block">Copies a style and its conditional style rules from another mind map into this mind map.</div>
 </dd>
 <dt><a href="org/freeplane/core/util/TextUtils.html#copyHtmlToClipboard(java.lang.String)" class="member-name-link">copyHtmlToClipboard(String)</a> - Static method in class org.freeplane.core.util.<a href="org/freeplane/core/util/TextUtils.html" title="class in org.freeplane.core.util">TextUtils</a></dt>
 <dd>
@@ -319,11 +319,35 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/freeplane/api/MindMap.html#copyStyleFrom(org.freeplane.api.MindMap,java.lang.String)" class="member-name-link">copyStyleFrom(MindMap, String)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMap.html" title="interface in org.freeplane.api">MindMap</a></dt>
 <dd>
-<div class="block">Returns all style names/translation keys active for the node.</div>
+<div class="block">Copies a style from another mind map into this mind map.</div>
 </dd>
 <dt><a href="org/freeplane/core/util/TextUtils.html#copyToClipboard(java.lang.String)" class="member-name-link">copyToClipboard(String)</a> - Static method in class org.freeplane.core.util.<a href="org/freeplane/core/util/TextUtils.html" title="class in org.freeplane.core.util">TextUtils</a></dt>
 <dd>
 <div class="block">Shortcut for scripting: Copies <code>string</code> to the system clipboard.</div>
+</dd>
+<dt><a href="org/freeplane/api/MindMap.html#copyUserStylesFrom(org.freeplane.api.MindMap)" class="member-name-link">copyUserStylesFrom(MindMap)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMap.html" title="interface in org.freeplane.api">MindMap</a></dt>
+<dd>
+<div class="block">Copies all user styles and their conditional style rules from another mind map into this one.</div>
+</dd>
+<dt><a href="org/freeplane/api/MindMap.html#copyUserStylesFrom(org.freeplane.api.MindMap,boolean)" class="member-name-link">copyUserStylesFrom(MindMap, boolean)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMap.html" title="interface in org.freeplane.api">MindMap</a></dt>
+<dd>
+<div class="block">Copies all user styles from another mind map into this one.</div>
+</dd>
+<dt><a href="org/freeplane/api/MindMap.html#copyUserStylesFrom(org.freeplane.api.MindMap,boolean,java.lang.String...)" class="member-name-link">copyUserStylesFrom(MindMap, boolean, String...)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMap.html" title="interface in org.freeplane.api">MindMap</a></dt>
+<dd>
+<div class="block">Copies one or more user styles from another mind map into this one.</div>
+</dd>
+<dt><a href="org/freeplane/api/MindMap.html#copyUserStylesFrom(org.freeplane.api.MindMap,boolean,java.util.ArrayList)" class="member-name-link">copyUserStylesFrom(MindMap, boolean, ArrayList&lt;String&gt;)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMap.html" title="interface in org.freeplane.api">MindMap</a></dt>
+<dd>
+<div class="block">Copies one or more user styles from another mind map into this one.</div>
+</dd>
+<dt><a href="org/freeplane/api/MindMap.html#copyUserStylesFrom(org.freeplane.api.MindMap,java.lang.String...)" class="member-name-link">copyUserStylesFrom(MindMap, String...)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMap.html" title="interface in org.freeplane.api">MindMap</a></dt>
+<dd>
+<div class="block">Copies one or more user styles and their conditional style rules from another mind map into this one.</div>
+</dd>
+<dt><a href="org/freeplane/api/MindMap.html#copyUserStylesFrom(org.freeplane.api.MindMap,java.util.ArrayList)" class="member-name-link">copyUserStylesFrom(MindMap, ArrayList&lt;String&gt;)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMap.html" title="interface in org.freeplane.api">MindMap</a></dt>
+<dd>
+<div class="block">Copies one or more user styles and their conditional style rules from another mind map into this one.</div>
 </dd>
 <dt><a href="org/freeplane/launcher/Launcher.html#create()" class="member-name-link">create()</a> - Static method in class org.freeplane.launcher.<a href="org/freeplane/launcher/Launcher.html" title="class in org.freeplane.launcher">Launcher</a></dt>
 <dd>
@@ -695,6 +719,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns all style names/translation keys active for the node.</div>
 </dd>
+<dt><a href="org/freeplane/api/MindMapRO.html#getAssociatedTemplate()" class="member-name-link">getAssociatedTemplate()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMapRO.html" title="interface in org.freeplane.api">MindMapRO</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/MindMapRO.html#getAssociatedTemplateFile()" class="member-name-link">getAssociatedTemplateFile()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMapRO.html" title="interface in org.freeplane.api">MindMapRO</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/IconsRO.html#getAt(int)" class="member-name-link">getAt(int)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/IconsRO.html" title="interface in org.freeplane.api">IconsRO</a></dt>
 <dd>
 <div class="block">returns the name of the icon at the given index (starting at 0) or null if <code>index &gt;= size</code>.</div>
@@ -914,6 +942,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">returns the <em>first</em> value of an attribute with the given name or null otherwise.</div>
 </dd>
+<dt><a href="org/freeplane/api/MindMapRO.html#getFollowedMap()" class="member-name-link">getFollowedMap()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMapRO.html" title="interface in org.freeplane.api">MindMapRO</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/MindMapRO.html#getFollowedMapFile()" class="member-name-link">getFollowedMapFile()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMapRO.html" title="interface in org.freeplane.api">MindMapRO</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/NodeStyleRO.html#getFont()" class="member-name-link">getFont()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeStyleRO.html" title="interface in org.freeplane.api">NodeStyleRO</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/NodeRO.html#getFormat()" class="member-name-link">getFormat()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeRO.html" title="interface in org.freeplane.api">NodeRO</a></dt>
@@ -1478,6 +1510,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/api/IconsRO.html#getUrls()" class="member-name-link">getUrls()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/IconsRO.html" title="interface in org.freeplane.api">IconsRO</a></dt>
 <dd>
 <div class="block">returns a list of the urls of the icons the node has.</div>
+</dd>
+<dt><a href="org/freeplane/api/MindMapRO.html#getUserDefinedStylesNames()" class="member-name-link">getUserDefinedStylesNames()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMapRO.html" title="interface in org.freeplane.api">MindMapRO</a></dt>
+<dd>
+<div class="block">returns list with the user defined styles names of the map</div>
 </dd>
 <dt><a href="org/freeplane/api/ControllerRO.html#getUserDirectory()" class="member-name-link">getUserDirectory()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/ControllerRO.html" title="interface in org.freeplane.api">ControllerRO</a></dt>
 <dd>
@@ -2184,8 +2220,6 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/plugin/script/proxy/Proxy.ConditionalStyles.html" class="type-name-link" title="interface in org.freeplane.plugin.script.proxy">Proxy.ConditionalStyles</a> - Interface in <a href="org/freeplane/plugin/script/proxy/package-summary.html">org.freeplane.plugin.script.proxy</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/freeplane/plugin/script/proxy/Proxy.ConditionalStylesRO.html" class="type-name-link" title="interface in org.freeplane.plugin.script.proxy">Proxy.ConditionalStylesRO</a> - Interface in <a href="org/freeplane/plugin/script/proxy/package-summary.html">org.freeplane.plugin.script.proxy</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="org/freeplane/plugin/script/proxy/Proxy.Connector.html" class="type-name-link" title="interface in org.freeplane.plugin.script.proxy">Proxy.Connector</a> - Interface in <a href="org/freeplane/plugin/script/proxy/package-summary.html">org.freeplane.plugin.script.proxy</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/plugin/script/proxy/Proxy.ConnectorRO.html" class="type-name-link" title="interface in org.freeplane.plugin.script.proxy">Proxy.ConnectorRO</a> - Interface in <a href="org/freeplane/plugin/script/proxy/package-summary.html">org.freeplane.plugin.script.proxy</a></dt>
@@ -2481,6 +2515,11 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Sets alias of the node</div>
 </dd>
+<dt><a href="org/freeplane/api/MindMap.html#setAssociatedTemplate(java.net.URI)" class="member-name-link">setAssociatedTemplate(URI)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMap.html" title="interface in org.freeplane.api">MindMap</a></dt>
+<dd>
+<div class="block"> Sets <code>uri</code> as Associated Template, template-normalizing it first
+ if the location is in User- or Standard-Templates Directory, i.e.</div>
+</dd>
 <dt><a href="org/freeplane/api/Node.html#setAttributes(java.util.Map)" class="member-name-link">setAttributes(Map&lt;String, Object&gt;)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Node.html" title="interface in org.freeplane.api">Node</a></dt>
 <dd>
 <div class="block">allows to set all attributes at once:</div>
@@ -2582,6 +2621,11 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/freeplane/api/Node.html#setFolded(boolean)" class="member-name-link">setFolded(boolean)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Node.html" title="interface in org.freeplane.api">Node</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/MindMap.html#setFollowedMap(java.net.URI)" class="member-name-link">setFollowedMap(URI)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMap.html" title="interface in org.freeplane.api">MindMap</a></dt>
+<dd>
+<div class="block"> Sets <code>uri</code> as Followed Map, template-normalizing it first
+ if the location is in User- or Standard-Templates Directory, e.g.</div>
+</dd>
 <dt><a href="org/freeplane/api/Attributes.html#setFormat(int,java.lang.String)" class="member-name-link">setFormat(int, String)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Attributes.html" title="interface in org.freeplane.api">Attributes</a></dt>
 <dd>
 <div class="block">sets format pattern to  the attribute at the given index.</div>
