@@ -6,7 +6,7 @@ Bundle-Name: org.freeplane.plugin.formula
 Bundle-SymbolicName: org.freeplane.plugin.formula
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.10.7
-Created-By: 21.0.2 (N/A)
+Created-By: 17.0.10 (N/A)
 Import-Package: org.freeplane.plugin.script;version="[1.10,2)",org.fre
  eplane.plugin.script.dependencies;version="[1.10,2)",de.sciss.syntaxp
  ane;version="[1.10,2)"

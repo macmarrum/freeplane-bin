@@ -7,7 +7,7 @@ Bundle-Name: org.freeplane.plugin.markdown
 Bundle-SymbolicName: org.freeplane.plugin.markdown
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.10.7
-Created-By: 21.0.2 (N/A)
+Created-By: 17.0.10 (N/A)
 Private-Package: org.freeplane.plugin.markdown
 Require-Bundle: org.freeplane.core
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
