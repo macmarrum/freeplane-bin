@@ -15,11 +15,11 @@
 		<Entry name="FindAction" row="2" weight = "1"/>
 		<Entry name="NodeListAction" row="2" weight = "1"/>
 		<Entry usedBy="EDITOR" >
-			<Entry name="CutAction" row = "1" />
+			<Entry name="CutAction" row = "1" weight = "1"/>
 		</Entry>
-		<Entry name="CopyAction" row = "1" />
+		<Entry name="CopyAction" row = "1" weight = "1"/>
 		<Entry usedBy="EDITOR" >
-			<Entry name="PasteAction" row = "1" />
+			<Entry name="PasteAction" row = "1" weight = "1"/>
 			<Entry builder="dropdownMenu" text = "edit.tooltip" width = "3" row="2">
 				<Entry name="CopySingleAction" />
 				<Entry name="CopyIDAction" />
@@ -224,6 +224,7 @@
               <Entry name="NewParentNode" accelerator="shift TAB" />
               <Entry name="NewFreeNodeAction" />
               <Entry name="NewSummaryAction" accelerator="control shift TAB"/>
+              <Entry name="NewNodeLinkedToMenuItemOnNextClickAction" />
               <Entry builder="separator" />
               <Entry name="DeleteAction" accelerator="DELETE" />
             </Entry>
@@ -250,6 +251,8 @@
               <Entry name="AddLocalLinkAction" accelerator="alt shift L" />
               <Entry name="AddMenuItemLinkAction" />
               <Entry name="AddExecutionLinkAction" />
+              <Entry builder="separator" />
+              <Entry name="NewNodeLinkedToMenuItemOnNextClickAction" />
               <Entry builder="separator" />
               <Entry name="SetLinkAnchorAction" />
               <Entry name="MakeLinkFromAnchorAction" />
@@ -332,6 +335,7 @@
 					<Entry name="SetStringPropertyAction.show_connectors.true" />
 					<Entry name="SetStringPropertyAction.show_connectors.false" />
 					<Entry name="SetStringPropertyAction.show_connectors.for_selection" />
+					<Entry name="SetStringPropertyAction.show_connectors.only_arrows_for_selection" />
 					<Entry name="SetStringPropertyAction.show_connectors.never" />
 				</Entry>
 				<Entry name="SetBooleanPropertyAction.hide_single_end_connectors" />
@@ -368,6 +372,7 @@
 				</Entry>
 				<Entry builder="separator" />
 				<Entry name="SetBooleanMapPropertyAction.show_icon_for_attributes" />
+				<Entry name="SetBooleanMapPropertyAction.attribute_table_width_fits_content" />
 			</Entry>
 			<Entry name="menu_noteView">
 				<Entry name="ShowHideNoteAction" accelerator="control GREATER" />
@@ -479,7 +484,9 @@
 		</Entry>
 		<Entry name="navigate" builder="menu_navigate">
 			<Entry name="NavigationPreviousMapAction" />
-			<Entry name="NavigationNextMapAction" accelerator="control TAB" />
+			<Entry name="NavigationNextMapAction" />
+			<Entry builder="separator" />
+			<Entry name="SetBooleanMapViewPropertyAction.folding_follows_selection" />
 			<Entry name="fold">
 				<Entry name="ToggleFoldedAction" accelerator="SPACE" />
 				<Entry name="ShowNextChildAction" accelerator="shift SPACE" />
@@ -534,27 +541,35 @@
 				<Entry builder="filterConditions" />
 				<Entry builder="noActions" />
 			</Entry>
+			<Entry builder="separator" />
+			<Entry name="SelectFilteredElementAction.NODE" />
+			<Entry name="SelectFilteredElementAction.NODE_AND_CONNECTOR" />
+			<Entry name="SelectFilteredElementAction.CONNECTOR" />
+            <Entry name="ShowAncestorsAction" />
+			<Entry name="ShowDescendantsAction" />
+			<Entry name="HideMatchingNodesAction" />
+			<Entry builder="separator" />
 			<Entry name="UndoFilterAction" />
 			<Entry name="RedoFilterAction" />
+			<Entry name="ApplyToVisibleAction" />
 			<Entry name="ReapplyFilterAction" />
 			<Entry name="SelectFilteredNodesAction" />
-			<Entry builder="separator" />
-			<Entry name="QuickFilterAction" />
-            <Entry name="QuickAndFilterAction" />
-            <Entry name="QuickOrFilterAction" />
 			<Entry name="ApplySelectedViewConditionAction" />
-			<Entry name="QuickFindAllAction" />
 			<Entry name="ApplyNoFilteringAction" />
 			<Entry name="EditFilterAction" />
 			<Entry builder="separator" />
-			<Entry name="ApplyToVisibleAction" />
-			<Entry name="HideMatchingNodesAction" />
-            <Entry name="ShowAncestorsAction" />
-			<Entry name="ShowDescendantsAction" />
+			<Entry name="QuickFindAction.FORWARD_VISIBLE" />
+			<Entry name="QuickFindAction.FORWARD" />
+			<Entry name="QuickFindAction.FORWARD_REMOVE_FILTER" />
+			<Entry name="QuickFindAction.BACK_VISIBLE" />
+			<Entry name="QuickFindAction.BACK" />
+			<Entry name="QuickFindAction.BACK_REMOVE_FILTER" />
 			<Entry builder="separator" />
 			<Entry name="QuickHighlightAction" />
-			<Entry name="QuickFindAction.BACK" />
-			<Entry name="QuickFindAction.FORWARD" />
+			<Entry name="QuickFindAllAction" />
+			<Entry name="QuickFilterAction" />
+            <Entry name="QuickAndFilterAction" />
+            <Entry name="QuickOrFilterAction" />
 		</Entry>
 		<Entry name="extras">
 			<Entry name="TimeManagementAction" accelerator="control T" />
@@ -597,7 +612,7 @@
 			<Entry builder="separator" />
 			<Entry name="modes" builder="navigate_modes,radio_button_group" />
 			<Entry builder="separator" />
-			<Entry name="maps" processOnPopup="true">
+			<Entry name="maps">
 				<Entry builder="navigate_maps,radio_button_group" />
 			</Entry>
 		</Entry>

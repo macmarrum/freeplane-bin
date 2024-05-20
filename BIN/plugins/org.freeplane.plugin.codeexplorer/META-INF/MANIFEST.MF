@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-Activator: org.freeplane.plugin.codeexplorer.Activator
+Bundle-ClassPath: .,lib/plugin-1.11.14.jar,lib/archunit-1.2.1.jar,lib/
+ jgrapht-core-1.5.2.jar,lib/gson-2.10.1.jar,lib/slf4j-nop-2.0.9.jar,li
+ b/freeplane-archunit-extension-0.0.1.jar,lib/slf4j-api-2.0.9.jar,lib/
+ jheaps-0.14.jar,lib/apfloat-1.10.1.jar
+Bundle-ManifestVersion: 2
+Bundle-Name: org.freeplane.plugin.codeexplorer
+Bundle-SymbolicName: org.freeplane.plugin.codeexplorer
+Bundle-Vendor: Freeplane Project
+Bundle-Version: 1.11.14
+Created-By: 17.0.11 (N/A)
+Private-Package: images.code,images,org.freeplane.plugin.codeexplorer,
+ org.freeplane.plugin.codeexplorer.archunit,org.freeplane.plugin.codee
+ xplorer.configurator,org.freeplane.plugin.codeexplorer.connectors,org
+ .freeplane.plugin.codeexplorer.dependencies,org.freeplane.plugin.code
+ explorer.graph,org.freeplane.plugin.codeexplorer.map,org.freeplane.pl
+ ugin.codeexplorer.task
+Require-Bundle: org.freeplane.core
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-7.0.0.202310060912
+

@@ -1,43 +1,45 @@
 Manifest-Version: 1.0
 Bundle-Activator: org.freeplane.plugin.script.Activator
-Bundle-ClassPath: .,lib/plugin-1.11.8.jar,lib/groovy-ant-4.0.13.jar,li
- b/groovy-cli-picocli-4.0.13.jar,lib/groovy-groovysh-4.0.13.jar,lib/gr
- oovy-console-4.0.13.jar,lib/groovy-datetime-4.0.13.jar,lib/groovy-gro
- ovydoc-4.0.13.jar,lib/groovy-docgenerator-4.0.13.jar,lib/groovy-jmx-4
- .0.13.jar,lib/groovy-yaml-4.0.13.jar,lib/groovy-json-4.0.13.jar,lib/g
- roovy-jsr223-4.0.13.jar,lib/groovy-macro-4.0.13.jar,lib/groovy-nio-4.
- 0.13.jar,lib/groovy-servlet-4.0.13.jar,lib/groovy-sql-4.0.13.jar,lib/
- groovy-swing-4.0.13.jar,lib/groovy-templates-4.0.13.jar,lib/groovy-te
- st-4.0.13.jar,lib/groovy-test-junit5-4.0.13.jar,lib/groovy-xml-4.0.13
- .jar,lib/groovy-4.0.13.jar,lib/groovy-dateutil-4.0.13.jar,lib/ivy-2.5
- .1.jar,lib/ant-junit-1.10.13.jar,lib/ant-1.10.13.jar,lib/ant-launcher
- -1.10.13.jar,lib/ant-antlr-1.10.13.jar,lib/picocli-4.7.4.jar,lib/java
- parser-core-3.25.3.jar,lib/asm-util-9.5.jar,lib/org.abego.treelayout.
- core-1.0.3.jar,lib/qdox-1.12.1.jar,lib/jline-2.14.6.jar,lib/junit-4.1
- 3.2.jar,lib/junit-jupiter-engine-5.9.3.jar,lib/junit-jupiter-api-5.9.
- 3.jar,lib/junit-platform-engine-1.9.3.jar,lib/junit-platform-commons-
- 1.9.3.jar,lib/junit-platform-launcher-1.9.3.jar,lib/jackson-databind-
- 2.15.2.jar,lib/jackson-core-2.15.2.jar,lib/jackson-annotations-2.15.2
- .jar,lib/jackson-dataformat-yaml-2.15.2.jar,lib/asm-analysis-9.5.jar,
- lib/asm-tree-9.5.jar,lib/asm-9.5.jar,lib/hamcrest-core-1.3.jar,lib/op
- entest4j-1.2.0.jar,lib/snakeyaml-2.0.jar
+Bundle-ClassPath: .,lib/plugin-1.11.14.jar,lib/groovy-ginq-4.0.21.jar,
+ lib/groovy-toml-4.0.21.jar,lib/groovy-ant-4.0.21.jar,lib/groovy-cli-p
+ icocli-4.0.21.jar,lib/groovy-groovysh-4.0.21.jar,lib/groovy-console-4
+ .0.21.jar,lib/groovy-datetime-4.0.21.jar,lib/groovy-groovydoc-4.0.21.
+ jar,lib/groovy-docgenerator-4.0.21.jar,lib/groovy-jmx-4.0.21.jar,lib/
+ groovy-yaml-4.0.21.jar,lib/groovy-json-4.0.21.jar,lib/groovy-jsr223-4
+ .0.21.jar,lib/groovy-macro-4.0.21.jar,lib/groovy-nio-4.0.21.jar,lib/g
+ roovy-servlet-4.0.21.jar,lib/groovy-sql-4.0.21.jar,lib/groovy-swing-4
+ .0.21.jar,lib/groovy-templates-4.0.21.jar,lib/groovy-test-4.0.21.jar,
+ lib/groovy-test-junit5-4.0.21.jar,lib/groovy-xml-4.0.21.jar,lib/groov
+ y-4.0.21.jar,lib/groovy-dateutil-4.0.21.jar,lib/ivy-2.5.2.jar,lib/jac
+ kson-dataformat-yaml-2.17.0.jar,lib/jackson-databind-2.17.0.jar,lib/j
+ ackson-core-2.17.0.jar,lib/jackson-annotations-2.17.0.jar,lib/jackson
+ -dataformat-toml-2.17.0.jar,lib/ant-junit-1.10.14.jar,lib/ant-1.10.14
+ .jar,lib/ant-launcher-1.10.14.jar,lib/ant-antlr-1.10.14.jar,lib/picoc
+ li-4.7.5.jar,lib/javaparser-core-3.25.10.jar,lib/asm-util-9.7.jar,lib
+ /org.abego.treelayout.core-1.0.3.jar,lib/qdox-1.12.1.jar,lib/jline-2.
+ 14.6.jar,lib/junit-4.13.2.jar,lib/junit-jupiter-engine-5.10.2.jar,lib
+ /junit-jupiter-api-5.10.2.jar,lib/junit-platform-engine-1.10.2.jar,li
+ b/junit-platform-commons-1.10.2.jar,lib/junit-platform-launcher-1.10.
+ 2.jar,lib/asm-analysis-9.7.jar,lib/asm-tree-9.7.jar,lib/asm-9.7.jar,l
+ ib/hamcrest-core-1.3.jar,lib/opentest4j-1.3.0.jar,lib/snakeyaml-2.2.j
+ ar,lib/byte-buddy-1.14.9.jar
 Bundle-ManifestVersion: 2
 Bundle-Name: org.freeplane.plugin.script
 Bundle-SymbolicName: org.freeplane.plugin.script
 Bundle-Vendor: Freeplane Project
-Bundle-Version: 1.11.8
-Created-By: 17.0.8.1 (N/A)
+Bundle-Version: 1.11.14
+Created-By: 17.0.11 (N/A)
 Export-Package: org.freeplane.plugin.script;uses:="org.freeplane.plugi
  n.script.dependencies,org.freeplane.plugin.script.proxy";version="1.1
- 1.8",org.freeplane.plugin.script.addons;uses:="org.freeplane.plugin.s
- cript";version="1.11.8",org.freeplane.plugin.script.dependencies;vers
- ion="1.11.8",org.freeplane.plugin.script.filter;version="1.11.8",org.
- freeplane.plugin.script.proxy;uses:="org.freeplane.plugin.script,org.
- freeplane.plugin.script.dependencies";version="1.11.8"
+ 1.14",org.freeplane.plugin.script.addons;uses:="org.freeplane.plugin.
+ script";version="1.11.14",org.freeplane.plugin.script.dependencies;ve
+ rsion="1.11.14",org.freeplane.plugin.script.filter;version="1.11.14",
+ org.freeplane.plugin.script.proxy;uses:="org.freeplane.plugin.script,
+ org.freeplane.plugin.script.dependencies";version="1.11.14"
 Import-Package: de.sciss.syntaxpane.actions;version="[1.11,2)"
 Private-Package: groovy.runtime.metaclass.groovy.grape,groovy.runtime.
  metaclass.java.lang,org.freeplane.plugin.script.help
 Require-Bundle: org.freeplane.core
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
-Tool: Bnd-6.4.0.202211291949
+Tool: Bnd-7.0.0.202310060912
 
