@@ -6,7 +6,7 @@ Bundle-Name: org.freeplane.plugin.openmaps
 Bundle-SymbolicName: org.freeplane.plugin.openmaps
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.10.7
-Created-By: 17.0.10 (N/A)
+Created-By: 17.0.11 (N/A)
 Private-Package: org.freeplane.plugin.openmaps,org.freeplane.plugin.op
  enmaps.actions,org.freeplane.plugin.openmaps.mapelements
 Require-Bundle: org.freeplane.core
