@@ -9,7 +9,7 @@ Bundle-Name: org.freeplane.plugin.codeexplorer
 Bundle-SymbolicName: org.freeplane.plugin.codeexplorer
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.11.14
-Created-By: 17.0.11 (N/A)
+Created-By: 17.0.12 (Arch Linux)
 Private-Package: images.code,images,org.freeplane.plugin.codeexplorer,
  org.freeplane.plugin.codeexplorer.archunit,org.freeplane.plugin.codee
  xplorer.configurator,org.freeplane.plugin.codeexplorer.connectors,org
