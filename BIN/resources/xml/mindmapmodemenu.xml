@@ -146,6 +146,8 @@
 					<Entry name="SetImageByFileChooserAction" accelerator="alt shift K" />
 				</Entry>
 				<Entry name="menu_extensions">
+					<Entry name="EditTagsAction" accelerator="alt F8"/>
+					<Entry name="ManageTagCategoriesAction" />
 					<Entry name="EditDetailsAction" accelerator="F3" />
 					<Entry name="EditDetailsInDialogAction" accelerator="control F3" />
 					<Entry name="CopyStyleExtensionsAction" />
@@ -331,6 +333,11 @@
 				<Entry name="ToggleFullScreenAction" accelerator="F11" />
 				<Entry name="SetBooleanMapViewPropertyAction.spotlight" />
 				<Entry name="SetBooleanPropertyAction.show_icons" />
+				<Entry builder="radio_button_group" name="show_tags" textKey="MapProperty.show_tags">
+					<Entry name="SetStringMapPropertyAction.show_tags.BESIDE_NODES" />
+					<Entry name="SetStringMapPropertyAction.show_tags.UNDER_NODES" />
+					<Entry name="SetStringMapPropertyAction.show_tags.NEVER" />
+				</Entry>
 				<Entry builder="radio_button_group" name="show_connectors" textKey="OptionPanel.show_connectors">
 					<Entry name="SetStringPropertyAction.show_connectors.true" />
 					<Entry name="SetStringPropertyAction.show_connectors.false" />
@@ -486,6 +493,7 @@
 			<Entry name="NavigationPreviousMapAction" />
 			<Entry name="NavigationNextMapAction" />
 			<Entry builder="separator" />
+			<Entry name="SetBooleanPropertyAction.synchronizeSelectionAcrossVisibleViews" />
 			<Entry name="SetBooleanMapViewPropertyAction.folding_follows_selection" />
 			<Entry name="fold">
 				<Entry name="ToggleFoldedAction" accelerator="SPACE" />
@@ -586,9 +594,9 @@
 			<Entry name="ExecuteScriptForAllNodes" plugin="org.freeplane.plugin.script" />
 			<Entry name="ScriptEditor" />
             <Entry name="formula.EvaluateAllAction" plugin="org.freeplane.plugin.formula" />
-            <Entry name="formula.ClearDependenciesAction" plugin="org.freeplane.plugin.formula" accelerator="alt F6" />
-            <Entry name="formula.TracePrecedentsAction" plugin="org.freeplane.plugin.formula" accelerator="alt F7" />
-            <Entry name="formula.TraceDependentsAction" plugin="org.freeplane.plugin.formula" accelerator="alt F8" />
+            <Entry name="formula.ClearDependenciesAction" plugin="org.freeplane.plugin.formula" accelerator="alt F5" />
+            <Entry name="formula.TracePrecedentsAction" plugin="org.freeplane.plugin.formula" accelerator="alt F6" />
+            <Entry name="formula.TraceDependentsAction" plugin="org.freeplane.plugin.formula" accelerator="alt F7" />
 			<Entry builder="separator" />
 			<Entry name="SetAcceleratorOnNextClickAction" />
 			<Entry name="acceleratorPresets">
@@ -603,6 +611,7 @@
 			<Entry name="OpenUserDirAction" />
 			<Entry builder="separator" />
 			<Entry name="ShowPreferencesAction" accelerator="control COMMA" builder="removeOnMac"/>
+
 			<Entry builder="conditionalActionBuilder" property="enableUserDefinedInterfaceStrings"
 				actionKey="TextChangeHotKeyAction"
 				actionClass="org.freeplane.core.ui.textchanger.TextChangeHotKeyAction"
@@ -685,6 +694,7 @@
             </Entry>
 			<Entry name="edit">
 	    		<Entry name="EditLongAction" accelerator="alt ENTER" />
+	    		<Entry name="EditTagsAction" accelerator="alt F8"/>
 	    		<Entry name="EditDetailsInDialogAction" accelerator="control F3" />
 	    		<Entry name="EditDetailsAction" accelerator="F3" />
 	            <Entry name="EditNoteInDialogAction" />

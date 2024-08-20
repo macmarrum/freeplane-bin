@@ -182,6 +182,9 @@
 				</combo>
 				<boolean name="paint_connectors_behind" />
 			</separator>
+			<separator name="tags" text="tags">
+				<string name="category_separator" />
+			</separator>
 			<separator name="selection_colors">
 				<boolean name="standarddrawrectangleforselection" />
 				<color name="standardselectednoderectanglecolor" supports_transparent_color="false"/>
@@ -206,6 +209,7 @@
 				<boolean name="openLinksOnPlainClicks"/>
 				<length name="grid_size" defaultUnit = "px" min="0" max = "1000" step = "0.01"/>
 				<number name="scrolling_speed" min="1" max="30" />
+				<number name="map_view_zoom_step" min="1" max="100" />
 				<boolean name="zoomAroundSelectedNode"/>
 				<boolean name="keepSelectedNodeVisible"/>
 				<boolean name="scrollOnSelect"/>
@@ -225,6 +229,7 @@
 				<boolean name="iconActionRemovesIconIfExists" />
 				<boolean name="shouldCenterSmallMaps"/>
 				<boolean name="pasteImagesFromFiles"/>
+				<boolean name="findEmailsInText"/>
 				<boolean name="enforceModalEditorDialogs" />
 				<boolean name="mouseDrivenNodeShiftsAreDisabled"/>
 				<boolean name="automaticSideDistribution"/>
