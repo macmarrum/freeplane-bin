@@ -8,7 +8,8 @@ Bundle-SymbolicName: org.freeplane.plugin.markdown
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.12.9
 Created-By: 17.0.13 (Arch Linux)
-Private-Package: org.freeplane.plugin.markdown
+Private-Package: org.freeplane.plugin.markdown,org.freeplane.plugin.ma
+ rkdown.markedj
 Require-Bundle: org.freeplane.core
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Tool: Bnd-7.0.0.202310060912
