@@ -280,30 +280,30 @@ Export-Package: com.inet.jortho;version="1.12.9",org.freeplane.api;ver
  core.ui,org.freeplane.core.ui.components,org.freeplane.core.ui.menubu
  ilders.generic,org.freeplane.features.mode,org.freeplane.view.swing.m
  ap";version="1.12.9",org.freeplane.view.swing.ui.mindmapmode;uses:="o
- rg.freeplane.core.ui,org.freeplane.features.map,org.freeplane.view.sw
- ing.map,org.freeplane.view.swing.ui";version="1.12.9",com.jgoodies.fo
- rms.builder;uses:="com.jgoodies.forms.factories,com.jgoodies.forms.la
- yout,com.jgoodies.forms.util";version="1.12.9",com.jgoodies.forms.deb
- ug;uses:="com.jgoodies.forms.layout";version="1.12.9",com.jgoodies.fo
- rms.factories;uses:="com.jgoodies.forms.layout";version="1.12.9",com.
- jgoodies.forms.layout;uses:="com.jgoodies.forms.util";version="1.12.9
- ",com.jgoodies.forms.util;uses:="com.jgoodies.forms.layout";version="
- 1.12.9",com.lightdev.app.shtm;version="1.12.9",org.apache.commons.io;
- version="1.4.9999";uses:="org.apache.commons.io.filefilter,org.apache
- .commons.io.input",org.apache.commons.io.comparator;version="1.4.9999
- ";uses:="org.apache.commons.io",org.apache.commons.io.filefilter;vers
- ion="1.4.9999";uses:="org.apache.commons.io",org.apache.commons.io.in
- put;version="1.4.9999";uses:="org.apache.commons.io,org.apache.common
- s.io.output",org.apache.commons.io.monitor;version="2.17.0";uses:="or
- g.apache.commons.io",org.apache.commons.io.output;version="1.4.9999";
- uses:="org.apache.commons.io.input",org.apache.commons.lang;version="
- 2.6";uses:="org.apache.commons.lang.exception",org.apache.commons.lan
- g.builder;version="2.6",org.apache.commons.lang.exception;version="2.
- 6",org.apache.commons.lang.math;version="2.6",org.apache.commons.lang
- .time;version="2.6",org.freeplane.features.mode.browsemode;version="1
- .12.9",org.freeplane.features.nodestyle.filemode;version="1.12.9",org
- .freeplane.main.browsemode;version="1.12.9",org.freeplane.plugin.maco
- s;version="1.12.9"
+ rg.freeplane.core.ui,org.freeplane.core.ui.components,org.freeplane.f
+ eatures.map,org.freeplane.view.swing.map,org.freeplane.view.swing.ui"
+ ;version="1.12.9",com.jgoodies.forms.builder;uses:="com.jgoodies.form
+ s.factories,com.jgoodies.forms.layout,com.jgoodies.forms.util";versio
+ n="1.12.9",com.jgoodies.forms.debug;uses:="com.jgoodies.forms.layout"
+ ;version="1.12.9",com.jgoodies.forms.factories;uses:="com.jgoodies.fo
+ rms.layout";version="1.12.9",com.jgoodies.forms.layout;uses:="com.jgo
+ odies.forms.util";version="1.12.9",com.jgoodies.forms.util;uses:="com
+ .jgoodies.forms.layout";version="1.12.9",com.lightdev.app.shtm;versio
+ n="1.12.9",org.apache.commons.io;version="1.4.9999";uses:="org.apache
+ .commons.io.filefilter,org.apache.commons.io.input",org.apache.common
+ s.io.comparator;version="1.4.9999";uses:="org.apache.commons.io",org.
+ apache.commons.io.filefilter;version="1.4.9999";uses:="org.apache.com
+ mons.io",org.apache.commons.io.input;version="1.4.9999";uses:="org.ap
+ ache.commons.io,org.apache.commons.io.output",org.apache.commons.io.m
+ onitor;version="2.17.0";uses:="org.apache.commons.io",org.apache.comm
+ ons.io.output;version="1.4.9999";uses:="org.apache.commons.io.input",
+ org.apache.commons.lang;version="2.6";uses:="org.apache.commons.lang.
+ exception",org.apache.commons.lang.builder;version="2.6",org.apache.c
+ ommons.lang.exception;version="2.6",org.apache.commons.lang.math;vers
+ ion="2.6",org.apache.commons.lang.time;version="2.6",org.freeplane.fe
+ atures.mode.browsemode;version="1.12.9",org.freeplane.features.nodest
+ yle.filemode;version="1.12.9",org.freeplane.main.browsemode;version="
+ 1.12.9",org.freeplane.plugin.macos;version="1.12.9"
 Private-Package: com.thebuzzmedia.imgscalr,net.infonode.gui,net.infono
  de.tabbedpanel.theme.internal.laftheme,org.freeplane.core.enumeration
  ,org.freeplane.core.ui.commandtonode,org.freeplane.core.ui.flatlaf,or
