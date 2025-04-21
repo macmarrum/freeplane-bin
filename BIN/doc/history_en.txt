@@ -11,6 +11,9 @@ Use OS default look and feel key bindings across all look and feels
 Code Explorer improvements
 Fold/unfold when mouse pointer goes over folding control mark
 Unfold during drag and drop when dragged object leaves node
+PlantUML: use <user-directory>/resources/plantuml-include.txt if exists
+  - equivalent of cmd param -Iplantuml-include.txt
+  - included in every diagram after @start...
 Bug fixes
 
 ==============================
