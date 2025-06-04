@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 # we only want to test the script, not Freeplane itself
 if ( echo "${DEBUG}" | grep -qe "script" ); then
@@ -32,14 +32,14 @@ findjava() {
 
 	JAVA_SOURCE=
 
-	if [ -n "${JAVACMD}" ] && [ -x "${JAVACMD}" ]; then
+	if [ -n "${FREEPLANE_JAVA_HOME}" ] && [ -x "${FREEPLANE_JAVA_HOME}/bin/java" ]; then
+		JAVACMD="${FREEPLANE_JAVA_HOME}/bin/java"
+		JAVA_SOURCE="\$FREEPLANE_JAVA_HOME"
+	elif [ -n "${JAVACMD}" ] && [ -x "${JAVACMD}" ]; then
 		JAVA_SOURCE="\$JAVACMD"
 	elif [ -n "${JAVA_BINDIR}" ] && [ -x "${JAVA_BINDIR}/java" ]; then
 		JAVACMD="${JAVA_BINDIR}/java"
 		JAVA_SOURCE="\$JAVA_BINDIR"
-	elif [ -n "${FREEPLANE_JAVA_HOME}" ] && [ -x "${FREEPLANE_JAVA_HOME}/bin/java" ]; then
-		JAVACMD="${FREEPLANE_JAVA_HOME}/bin/java"
-		JAVA_SOURCE="\$FREEPLANE_JAVA_HOME"
 	elif [ -n "${JAVA_HOME}" ] && [ -x "${JAVA_HOME}/bin/java" ]; then
 		JAVACMD="${JAVA_HOME}/bin/java"
 		JAVA_SOURCE="\$JAVA_HOME"
@@ -57,7 +57,7 @@ findjava() {
 		fi
 	fi
 
-	JAVA_VERSION=$(${JAVACMD} -version |& grep -E "[[:alnum:]]+ version" | awk '{print $3}' | tr -d '"')
+	JAVA_VERSION=$(${JAVACMD} -version 2>&1 | grep -E "[[:alnum:]]+ version" | awk '{print $3}' | tr -d '"')
 	JAVA_MAJOR_VERSION=$(echo $JAVA_VERSION | sed -e 's/^1\.//' | awk -F. '{print $1}')
 	if [ $JAVA_MAJOR_VERSION -lt 8 ] || [ $JAVA_MAJOR_VERSION -gt 23 ] || [ $JAVA_MAJOR_VERSION -eq 10 ]; then
 		if [ -z "${FREEPLANE_USE_UNSUPPORTED_JAVA_VERSION}" ]; then
@@ -152,7 +152,7 @@ else
 	freefile="$0"
 fi
 
-if [ "`echo $OSTYPE | cut -b1-6`" == "darwin" ]; then
+if [ "`echo $OSTYPE | cut -b1-6`" = "darwin" ]; then
 	xdockname='-Xdock:name=Freeplane'
 else
 	xdockname=""
@@ -206,7 +206,7 @@ if [ $JAVA_MAJOR_VERSION -ge 18 ]; then
 fi
 
 
-if [[ "$(uname)" == "Darwin" ]]; then
+if [ "$(uname)" = "Darwin" ]; then
 	JAVA_OPTS="-Xdock:icon=${freedir}/freeplane256.png $JAVA_OPTS"
 	JAVA_OPTS="-Xdock:name=Freeplane $JAVA_OPTS"
 fi
