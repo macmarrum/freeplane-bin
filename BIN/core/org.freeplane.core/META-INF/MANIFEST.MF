@@ -313,13 +313,13 @@ Private-Package: com.thebuzzmedia.imgscalr,net.infonode.gui,net.infono
  g.freeplane.core.ui.svgicons,org.freeplane.core.util.logging.internal
  ,org.freeplane.features,org.freeplane.features.attribute.clipboard,or
  g.freeplane.features.attribute.mindmapmode.clipboard,org.freeplane.fe
- atures.filter.hidden,org.freeplane.features.icon.hierarchicalicons,or
- g.freeplane.features.link.icons,org.freeplane.features.link.mindmapmo
- de.editor,org.freeplane.features.presentations.mindmapmode,org.freepl
- ane.features.styles.mindmapmode.styleeditorpanel,org.freeplane.main.a
- pplication.survey,org.freeplane.view.swing.features.time.mindmapmode.
- nodelist,org.freeplane.view.swing.map.overview,org.freeplane.view.swi
- ng.map.overview.resizable
+ atures.bookmarks,org.freeplane.features.filter.hidden,org.freeplane.f
+ eatures.icon.hierarchicalicons,org.freeplane.features.link.icons,org.
+ freeplane.features.link.mindmapmode.editor,org.freeplane.features.pre
+ sentations.mindmapmode,org.freeplane.features.styles.mindmapmode.styl
+ eeditorpanel,org.freeplane.main.application.survey,org.freeplane.view
+ .swing.features.time.mindmapmode.nodelist,org.freeplane.view.swing.ma
+ p.overview,org.freeplane.view.swing.map.overview.resizable
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Tool: Bnd-7.1.0.202411251545
 

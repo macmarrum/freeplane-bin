@@ -210,6 +210,14 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ChildNodesAlignment.html#BEFORE_PARENT" class="member-name-link">BEFORE_PARENT</a> - Enum constant in enum class org.freeplane.api.<a href="org/freeplane/api/ChildNodesAlignment.html" title="enum class in org.freeplane.api">ChildNodesAlignment</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/Node.html#bookmark(java.lang.String,org.freeplane.api.BookmarkType)" class="member-name-link">bookmark(String, BookmarkType)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Node.html" title="interface in org.freeplane.api">Node</a></dt>
+<dd>
+<div class="block">Creates a bookmark for this node with the given name and type.</div>
+</dd>
+<dt><a href="org/freeplane/api/BookmarkType.html" class="type-name-link" title="enum class in org.freeplane.api">BookmarkType</a> - Enum Class in <a href="org/freeplane/api/package-summary.html">org.freeplane.api</a></dt>
+<dd>
+<div class="block">Defines the behavior of a bookmark when activated.</div>
+</dd>
 <dt><a href="org/freeplane/api/Border.html" class="type-name-link" title="interface in org.freeplane.api">Border</a> - Interface in <a href="org/freeplane/api/package-summary.html">org.freeplane.api</a></dt>
 <dd>
 <div class="block">Border to parent node: <code>node.style.border</code> - read-write.</div>
@@ -878,6 +886,18 @@ loadScripts(document, 'script');</script>
 <div class="block">Returns a <a href="http://www.freesoft.org/CIE/RFC/1521/7.htm">BASE64</a> encoded node text
  (see <a href="org/freeplane/api/Node.html#setBinary(byte%5B%5D)"><code>Node.setBinary(byte[])</code></a>) as a binary object.</div>
 </dd>
+<dt><a href="org/freeplane/api/NodeRO.html#getBookmark()" class="member-name-link">getBookmark()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeRO.html" title="interface in org.freeplane.api">NodeRO</a></dt>
+<dd>
+<div class="block">Returns the bookmark for this node, if one exists.</div>
+</dd>
+<dt><a href="org/freeplane/api/MindMapRO.html#getBookmarks()" class="member-name-link">getBookmarks()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMapRO.html" title="interface in org.freeplane.api">MindMapRO</a></dt>
+<dd>
+<div class="block">Returns all bookmarks defined in this mind map.</div>
+</dd>
+<dt><a href="org/freeplane/api/NodeBookmark.html#getBookmarkType()" class="member-name-link">getBookmarkType()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeBookmark.html" title="interface in org.freeplane.api">NodeBookmark</a></dt>
+<dd>
+<div class="block">Returns the type of this bookmark, which determines its behavior when activated.</div>
+</dd>
 <dt><a href="org/freeplane/api/Convertible.html#getBool()" class="member-name-link">getBool()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Convertible.html" title="interface in org.freeplane.api">Convertible</a></dt>
 <dd>
 <div class="block">parses the text (case insensitive) as boolean via <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html#parseBoolean(java.lang.String)" title="class or interface in java.lang" class="external-link"><code>Boolean.parseBoolean(String)</code></a>.</div>
@@ -1268,6 +1288,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">returns the title of the MapView.</div>
 </dd>
+<dt><a href="org/freeplane/api/NodeBookmark.html#getName()" class="member-name-link">getName()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeBookmark.html" title="interface in org.freeplane.api">NodeBookmark</a></dt>
+<dd>
+<div class="block">Returns the display name of this bookmark.</div>
+</dd>
 <dt><a href="org/freeplane/api/NodeStyleRO.html#getName()" class="member-name-link">getName()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeStyleRO.html" title="interface in org.freeplane.api">NodeStyleRO</a></dt>
 <dd>
 <div class="block">Returns the name of the node's style if set or null otherwise.</div>
@@ -1283,6 +1307,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/api/LinkRO.html#getNode()" class="member-name-link">getNode()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/LinkRO.html" title="interface in org.freeplane.api">LinkRO</a></dt>
 <dd>
 <div class="block">returns the link as Node if defined and if the link target is a valid local link to a node and null otherwise.</div>
+</dd>
+<dt><a href="org/freeplane/api/NodeBookmark.html#getNode()" class="member-name-link">getNode()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeBookmark.html" title="interface in org.freeplane.api">NodeBookmark</a></dt>
+<dd>
+<div class="block">Returns the node that this bookmark points to.</div>
 </dd>
 <dt><a href="org/freeplane/api/NodeChanged.html#getNode()" class="member-name-link">getNode()</a> - Method in class org.freeplane.api.<a href="org/freeplane/api/NodeChanged.html" title="class in org.freeplane.api">NodeChanged</a></dt>
 <dd>&nbsp;</dd>
@@ -2009,7 +2037,15 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/freeplane/core/util/TextUtils.html#isNumber(java.lang.String)" class="member-name-link">isNumber(String)</a> - Static method in class org.freeplane.core.util.<a href="org/freeplane/core/util/TextUtils.html" title="class in org.freeplane.core.util">TextUtils</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/NodeStyleRO.html#isNumbering()" class="member-name-link">isNumbering()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeStyleRO.html" title="interface in org.freeplane.api">NodeStyleRO</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/NodeStyleRO.html#isNumberingEnabled()" class="member-name-link">isNumberingEnabled()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeStyleRO.html" title="interface in org.freeplane.api">NodeStyleRO</a></dt>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">since 1.12.12 - use @{link #isNumbering()} instead</div>
+</div>
+</dd>
+<dt><a href="org/freeplane/api/NodeStyleRO.html#isNumberingSet()" class="member-name-link">isNumberingSet()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeStyleRO.html" title="interface in org.freeplane.api">NodeStyleRO</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/TextWritingDirection.html#isolated(java.lang.String)" class="member-name-link">isolated(String)</a> - Method in enum class org.freeplane.api.<a href="org/freeplane/api/TextWritingDirection.html" title="enum class in org.freeplane.api">TextWritingDirection</a></dt>
 <dd>&nbsp;</dd>
@@ -2387,6 +2423,10 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/freeplane/api/Dependencies.Element.html#NODE" class="member-name-link">NODE</a> - Enum constant in enum class org.freeplane.api.<a href="org/freeplane/api/Dependencies.Element.html" title="enum class in org.freeplane.api">Dependencies.Element</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/NodeBookmark.html" class="type-name-link" title="interface in org.freeplane.api">NodeBookmark</a> - Interface in <a href="org/freeplane/api/package-summary.html">org.freeplane.api</a></dt>
+<dd>
+<div class="block">Represents a bookmark for a specific node in the mind map.</div>
+</dd>
 <dt><a href="org/freeplane/api/NodeChangeListener.html#nodeChanged(org.freeplane.api.NodeChanged)" class="member-name-link">nodeChanged(NodeChanged)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeChangeListener.html" title="interface in org.freeplane.api">NodeChangeListener</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/NodeChanged.html" class="type-name-link" title="class in org.freeplane.api">NodeChanged</a> - Class in <a href="org/freeplane/api/package-summary.html">org.freeplane.api</a></dt>
@@ -2698,6 +2738,10 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/freeplane/core/util/HtmlUtils.html#removeAllTagsFromString(java.lang.String)" class="member-name-link">removeAllTagsFromString(String)</a> - Static method in class org.freeplane.core.util.<a href="org/freeplane/core/util/HtmlUtils.html" title="class in org.freeplane.core.util">HtmlUtils</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/Node.html#removeBookmark()" class="member-name-link">removeBookmark()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Node.html" title="interface in org.freeplane.api">Node</a></dt>
+<dd>
+<div class="block">Removes the bookmark for this node if one exists.</div>
+</dd>
 <dt><a href="org/freeplane/api/Node.html#removeConnector(org.freeplane.api.Connector)" class="member-name-link">removeConnector(Connector)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Node.html" title="interface in org.freeplane.api">Node</a></dt>
 <dd>
 <div class="block">removes the given connector on both sides.</div>
@@ -2749,6 +2793,11 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/freeplane/api/TextWritingDirection.html#RIGHT_TO_LEFT" class="member-name-link">RIGHT_TO_LEFT</a> - Enum constant in enum class org.freeplane.api.<a href="org/freeplane/api/TextWritingDirection.html" title="enum class in org.freeplane.api">TextWritingDirection</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/BookmarkType.html#ROOT" class="member-name-link">ROOT</a> - Enum constant in enum class org.freeplane.api.<a href="org/freeplane/api/BookmarkType.html" title="enum class in org.freeplane.api">BookmarkType</a></dt>
+<dd>
+<div class="block">When activated, the bookmarked node becomes the root of the view, 
+ showing only this node and its descendants.</div>
+</dd>
 <dt><a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.html#round(java.lang.Double)" class="member-name-link">round(Double)</a> - Method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.html" title="class in org.freeplane.plugin.script">FreeplaneScriptBaseClass</a></dt>
 <dd>
 <div class="block">rounds a number to integral type.</div>
@@ -2804,6 +2853,11 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/freeplane/api/Controller.html#select(org.freeplane.api.Node)" class="member-name-link">select(Node)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Controller.html" title="interface in org.freeplane.api">Controller</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/BookmarkType.html#SELECT" class="member-name-link">SELECT</a> - Enum constant in enum class org.freeplane.api.<a href="org/freeplane/api/BookmarkType.html" title="enum class in org.freeplane.api">BookmarkType</a></dt>
+<dd>
+<div class="block">When activated, the bookmarked node is selected and the view 
+ scrolls to make it visible, but the map's root remains unchanged.</div>
+</dd>
 <dt><a href="org/freeplane/api/Controller.html#selectBranch(org.freeplane.api.Node)" class="member-name-link">selectBranch(Node)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Controller.html" title="interface in org.freeplane.api">Controller</a></dt>
 <dd>
 <div class="block">selects branchRoot and all children</div>
@@ -2881,6 +2935,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/Font.html#setBold(boolean)" class="member-name-link">setBold(boolean)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Font.html" title="interface in org.freeplane.api">Font</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/MindMap.html#setBookmarks(java.util.List)" class="member-name-link">setBookmarks(List&lt;NodeBookmark&gt;)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMap.html" title="interface in org.freeplane.api">MindMap</a></dt>
+<dd>
+<div class="block">Sets the bookmarks for this mind map.</div>
+</dd>
 <dt><a href="org/freeplane/core/ui/components/UITools.html#setBounds(java.awt.Component,int,int,int,int)" class="member-name-link">setBounds(Component, int, int, int, int)</a> - Static method in class org.freeplane.core.ui.components.<a href="org/freeplane/core/ui/components/UITools.html" title="class in org.freeplane.core.ui.components">UITools</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/Node.html#setChildNodesLayout(org.freeplane.api.ChildNodesLayout)" class="member-name-link">setChildNodesLayout(ChildNodesLayout)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Node.html" title="interface in org.freeplane.api">Node</a></dt>
@@ -3108,8 +3166,16 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Sets the raw (HTML) note text.</div>
 </dd>
+<dt><a href="org/freeplane/api/NodeStyle.html#setNumbering(java.lang.Boolean)" class="member-name-link">setNumbering(Boolean)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeStyle.html" title="interface in org.freeplane.api">NodeStyle</a></dt>
+<dd>
+<div class="block">since  1.12.12</div>
+</dd>
 <dt><a href="org/freeplane/api/NodeStyle.html#setNumberingEnabled(boolean)" class="member-name-link">setNumberingEnabled(boolean)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeStyle.html" title="interface in org.freeplane.api">NodeStyle</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">since 1.12.12 - use @{link #setNumbering()} instead</div>
+</div>
+</dd>
 <dt><a href="org/freeplane/api/Node.html#setObject(java.lang.Object)" class="member-name-link">setObject(Object)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Node.html" title="interface in org.freeplane.api">Node</a></dt>
 <dd>
 <div class="block">A node's text object is normally String valued but it can be of any type since every Object can be converted
@@ -3520,6 +3586,10 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/freeplane/api/Quantity.html#value" class="member-name-link">value</a> - Variable in class org.freeplane.api.<a href="org/freeplane/api/Quantity.html" title="class in org.freeplane.api">Quantity</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/BookmarkType.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class org.freeplane.api.<a href="org/freeplane/api/BookmarkType.html" title="enum class in org.freeplane.api">BookmarkType</a></dt>
+<dd>
+<div class="block">Returns the enum constant of this class with the specified name.</div>
+</dd>
 <dt><a href="org/freeplane/api/ChildNodesAlignment.Placement.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class org.freeplane.api.<a href="org/freeplane/api/ChildNodesAlignment.Placement.html" title="enum class in org.freeplane.api">ChildNodesAlignment.Placement</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
@@ -3571,6 +3641,11 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/api/TextWritingDirection.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class org.freeplane.api.<a href="org/freeplane/api/TextWritingDirection.html" title="enum class in org.freeplane.api">TextWritingDirection</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
+</dd>
+<dt><a href="org/freeplane/api/BookmarkType.html#values()" class="member-name-link">values()</a> - Static method in enum class org.freeplane.api.<a href="org/freeplane/api/BookmarkType.html" title="enum class in org.freeplane.api">BookmarkType</a></dt>
+<dd>
+<div class="block">Returns an array containing the constants of this enum class, in
+the order they are declared.</div>
 </dd>
 <dt><a href="org/freeplane/api/ChildNodesAlignment.Placement.html#values()" class="member-name-link">values()</a> - Static method in enum class org.freeplane.api.<a href="org/freeplane/api/ChildNodesAlignment.Placement.html" title="enum class in org.freeplane.api">ChildNodesAlignment.Placement</a></dt>
 <dd>
