@@ -210,10 +210,6 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ChildNodesAlignment.html#BEFORE_PARENT" class="member-name-link">BEFORE_PARENT</a> - Enum constant in enum class org.freeplane.api.<a href="org/freeplane/api/ChildNodesAlignment.html" title="enum class in org.freeplane.api">ChildNodesAlignment</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/freeplane/api/Node.html#bookmark(java.lang.String,org.freeplane.api.BookmarkType)" class="member-name-link">bookmark(String, BookmarkType)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Node.html" title="interface in org.freeplane.api">Node</a></dt>
-<dd>
-<div class="block">Creates a bookmark for this node with the given name and type.</div>
-</dd>
 <dt><a href="org/freeplane/api/BookmarkType.html" class="type-name-link" title="enum class in org.freeplane.api">BookmarkType</a> - Enum Class in <a href="org/freeplane/api/package-summary.html">org.freeplane.api</a></dt>
 <dd>
 <div class="block">Defines the behavior of a bookmark when activated.</div>
@@ -322,6 +318,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Node's or map's conditional-styles table:
  <code>node.conditionalStyles</code> or <code>node.mindMap.conditionalStyles</code> - read-only.</div>
+</dd>
+<dt><a href="org/freeplane/plugin/script/GroovyStaticImports.html#config" class="member-name-link">config</a> - Static variable in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/GroovyStaticImports.html" title="class in org.freeplane.plugin.script">GroovyStaticImports</a></dt>
+<dd>
+<div class="block">Accessor for Freeplane's configuration properties.</div>
 </dd>
 <dt><a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.ConfigProperties.html#%3Cinit%3E()" class="member-name-link">ConfigProperties()</a> - Constructor for class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.ConfigProperties.html" title="class in org.freeplane.plugin.script">FreeplaneScriptBaseClass.ConfigProperties</a></dt>
 <dd>&nbsp;</dd>
@@ -757,13 +757,25 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Applies default date-time format for dates or default number format for numbers.</div>
 </dd>
+<dt><a href="org/freeplane/plugin/script/GroovyStaticImports.html#format(java.lang.Object)" class="member-name-link">format(Object)</a> - Static method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/GroovyStaticImports.html" title="class in org.freeplane.plugin.script">GroovyStaticImports</a></dt>
+<dd>
+<div class="block">Applies default date-time format for dates or default number format for numbers.</div>
+</dd>
 <dt><a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.html#format(java.lang.Object,java.lang.String)" class="member-name-link">format(Object, String)</a> - Method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.html" title="class in org.freeplane.plugin.script">FreeplaneScriptBaseClass</a></dt>
+<dd>
+<div class="block">uses formatString to return a FormattedObject.</div>
+</dd>
+<dt><a href="org/freeplane/plugin/script/GroovyStaticImports.html#format(java.lang.Object,java.lang.String)" class="member-name-link">format(Object, String)</a> - Static method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/GroovyStaticImports.html" title="class in org.freeplane.plugin.script">GroovyStaticImports</a></dt>
 <dd>
 <div class="block">uses formatString to return a FormattedObject.</div>
 </dd>
 <dt><a href="org/freeplane/core/util/TextUtils.html#format(java.lang.String,java.lang.Object...)" class="member-name-link">format(String, Object...)</a> - Static method in class org.freeplane.core.util.<a href="org/freeplane/core/util/TextUtils.html" title="class in org.freeplane.core.util">TextUtils</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.html#formatDate(java.util.Date)" class="member-name-link">formatDate(Date)</a> - Method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.html" title="class in org.freeplane.plugin.script">FreeplaneScriptBaseClass</a></dt>
+<dd>
+<div class="block">Applies default date format (instead of standard date-time) format on the given date.</div>
+</dd>
+<dt><a href="org/freeplane/plugin/script/GroovyStaticImports.html#formatDate(java.util.Date)" class="member-name-link">formatDate(Date)</a> - Static method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/GroovyStaticImports.html" title="class in org.freeplane.plugin.script">GroovyStaticImports</a></dt>
 <dd>
 <div class="block">Applies default date format (instead of standard date-time) format on the given date.</div>
 </dd>
@@ -783,8 +795,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.ConfigProperties.html" class="type-name-link" title="class in org.freeplane.plugin.script">FreeplaneScriptBaseClass.ConfigProperties</a> - Class in <a href="org/freeplane/plugin/script/package-summary.html">org.freeplane.plugin.script</a></dt>
 <dd>
-<div class="block">Accessor for Freeplane's configuration: In scripts available
- as "global variable" <code>config</code>.</div>
+<div class="block">Accessor for Freeplane's configuration: In scripts available as "global variable" <code>config</code></div>
 </dd>
 <dt><a href="org/freeplane/core/util/FreeplaneVersion.html" class="type-name-link" title="class in org.freeplane.core.util">FreeplaneVersion</a> - Class in <a href="org/freeplane/core/util/package-summary.html">org.freeplane.core.util</a></dt>
 <dd>
@@ -893,10 +904,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/api/MindMapRO.html#getBookmarks()" class="member-name-link">getBookmarks()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMapRO.html" title="interface in org.freeplane.api">MindMapRO</a></dt>
 <dd>
 <div class="block">Returns all bookmarks defined in this mind map.</div>
-</dd>
-<dt><a href="org/freeplane/api/NodeBookmark.html#getBookmarkType()" class="member-name-link">getBookmarkType()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeBookmark.html" title="interface in org.freeplane.api">NodeBookmark</a></dt>
-<dd>
-<div class="block">Returns the type of this bookmark, which determines its behavior when activated.</div>
 </dd>
 <dt><a href="org/freeplane/api/Convertible.html#getBool()" class="member-name-link">getBool()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Convertible.html" title="interface in org.freeplane.api">Convertible</a></dt>
 <dd>
@@ -1683,6 +1690,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/FreeplaneVersion.html#getType()" class="member-name-link">getType()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/FreeplaneVersion.html" title="interface in org.freeplane.api">FreeplaneVersion</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/NodeBookmark.html#getType()" class="member-name-link">getType()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeBookmark.html" title="interface in org.freeplane.api">NodeBookmark</a></dt>
+<dd>
+<div class="block">Returns the type of this bookmark, which determines its behavior when activated.</div>
+</dd>
 <dt><a href="org/freeplane/core/util/FreeplaneVersion.html#getType()" class="member-name-link">getType()</a> - Method in class org.freeplane.core.util.<a href="org/freeplane/core/util/FreeplaneVersion.html" title="class in org.freeplane.core.util">FreeplaneVersion</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/plugin/script/proxy/Proxy.EdgeRO.html#getType()" class="member-name-link">getType()</a> - Method in interface org.freeplane.plugin.script.proxy.<a href="org/freeplane/plugin/script/proxy/Proxy.EdgeRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.EdgeRO</a></dt>
@@ -1787,6 +1798,13 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/freeplane/plugin/script/proxy/Proxy.Controller.html#getZoom()" class="member-name-link">getZoom()</a> - Method in interface org.freeplane.plugin.script.proxy.<a href="org/freeplane/plugin/script/proxy/Proxy.Controller.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Controller</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/plugin/script/GroovyStaticImports.html" class="type-name-link" title="class in org.freeplane.plugin.script">GroovyStaticImports</a> - Class in <a href="org/freeplane/plugin/script/package-summary.html">org.freeplane.plugin.script</a></dt>
+<dd>
+<div class="block">Provides static imports for Freeplane scripting utilities to enable easy access to common functionality
+ when compiling Groovy source code outside of Freeplane's script environment.</div>
+</dd>
+<dt><a href="org/freeplane/plugin/script/GroovyStaticImports.html#%3Cinit%3E()" class="member-name-link">GroovyStaticImports()</a> - Constructor for class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/GroovyStaticImports.html" title="class in org.freeplane.plugin.script">GroovyStaticImports</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <h2 class="title" id="I:H">H</h2>
 <dl class="index">
@@ -1843,6 +1861,10 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/freeplane/core/util/HtmlUtils.html#htmlToPlain(java.lang.String,boolean,boolean,java.lang.String)" class="member-name-link">htmlToPlain(String, boolean, boolean, String)</a> - Static method in class org.freeplane.core.util.<a href="org/freeplane/core/util/HtmlUtils.html" title="class in org.freeplane.core.util">HtmlUtils</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/plugin/script/GroovyStaticImports.html#htmlUtils" class="member-name-link">htmlUtils</a> - Static variable in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/GroovyStaticImports.html" title="class in org.freeplane.plugin.script">GroovyStaticImports</a></dt>
+<dd>
+<div class="block">Utilities for HTML/XML processing including conversion between HTML and plain text.</div>
+</dd>
 <dt><a href="org/freeplane/core/util/HtmlUtils.html" class="type-name-link" title="class in org.freeplane.core.util">HtmlUtils</a> - Class in <a href="org/freeplane/core/util/package-summary.html">org.freeplane.core.util</a></dt>
 <dd>
 <div class="block">Utilities for conversion from/to HTML and XML used in Freeplane: In scripts available
@@ -1868,6 +1890,14 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.html#ifNull(java.lang.Object,java.lang.Object)" class="member-name-link">ifNull(Object, Object)</a> - Method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.html" title="class in org.freeplane.plugin.script">FreeplaneScriptBaseClass</a></dt>
 <dd>
 <div class="block">returns valueIfNull if value is null and value otherwise.</div>
+</dd>
+<dt><a href="org/freeplane/plugin/script/GroovyStaticImports.html#ifNull(java.lang.Object,java.lang.Object)" class="member-name-link">ifNull(Object, Object)</a> - Static method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/GroovyStaticImports.html" title="class in org.freeplane.plugin.script">GroovyStaticImports</a></dt>
+<dd>
+<div class="block">returns valueIfNull if value is null and value otherwise.</div>
+</dd>
+<dt><a href="org/freeplane/plugin/script/GroovyStaticImports.html#ignoreCycles(java.util.function.Supplier)" class="member-name-link">ignoreCycles(Supplier&lt;T&gt;)</a> - Static method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/GroovyStaticImports.html" title="class in org.freeplane.plugin.script">GroovyStaticImports</a></dt>
+<dd>
+<div class="block">Executes the given closure while ignoring any cyclic dependencies in formulas.</div>
 </dd>
 <dt><a href="org/freeplane/plugin/script/proxy/ScriptUtils.html#ignoreCycles(java.util.function.Supplier)" class="member-name-link">ignoreCycles(Supplier&lt;T&gt;)</a> - Static method in class org.freeplane.plugin.script.proxy.<a href="org/freeplane/plugin/script/proxy/ScriptUtils.html" title="class in org.freeplane.plugin.script.proxy">ScriptUtils</a></dt>
 <dd>
@@ -2256,6 +2286,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">opens a <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html" title="class or interface in java.net" class="external-link"><code>URI</code></a></div>
 </dd>
+<dt><a href="org/freeplane/plugin/script/GroovyStaticImports.html#logger" class="member-name-link">logger</a> - Static variable in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/GroovyStaticImports.html" title="class in org.freeplane.plugin.script">GroovyStaticImports</a></dt>
+<dd>
+<div class="block">Utilities for logging messages to Freeplane's log file.</div>
+</dd>
 <dt><a href="org/freeplane/core/util/LogUtils.html" class="type-name-link" title="class in org.freeplane.core.util">LogUtils</a> - Class in <a href="org/freeplane/core/util/package-summary.html">org.freeplane.core.util</a></dt>
 <dd>
 <div class="block">Utilities for logging to the standard logfile.</div>
@@ -2329,6 +2363,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/core/util/MenuUtils.MenuEntry.html#%3Cinit%3E(java.lang.String,javax.swing.Icon)" class="member-name-link">MenuEntry(String, Icon)</a> - Constructor for class org.freeplane.core.util.<a href="org/freeplane/core/util/MenuUtils.MenuEntry.html" title="class in org.freeplane.core.util">MenuUtils.MenuEntry</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/plugin/script/GroovyStaticImports.html#menuUtils" class="member-name-link">menuUtils</a> - Static variable in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/GroovyStaticImports.html" title="class in org.freeplane.plugin.script">GroovyStaticImports</a></dt>
+<dd>
+<div class="block">Utilities for menu operations and menu item execution.</div>
+</dd>
 <dt><a href="org/freeplane/core/util/MenuUtils.html" class="type-name-link" title="class in org.freeplane.core.util">MenuUtils</a> - Class in <a href="org/freeplane/core/util/package-summary.html">org.freeplane.core.util</a></dt>
 <dd>
 <div class="block">Utilities for dealing with the Freeplane menu: In scripts available as "global variable" menuUtils.</div>
@@ -2504,6 +2542,18 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/freeplane/api/ChildrenSides.html#ofTopOrLeft(boolean)" class="member-name-link">ofTopOrLeft(boolean)</a> - Static method in enum class org.freeplane.api.<a href="org/freeplane/api/ChildrenSides.html" title="enum class in org.freeplane.api">ChildrenSides</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/NodeBookmark.html#open()" class="member-name-link">open()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeBookmark.html" title="interface in org.freeplane.api">NodeBookmark</a></dt>
+<dd>
+<div class="block">Opens this bookmark using its default behavior.</div>
+</dd>
+<dt><a href="org/freeplane/api/NodeBookmark.html#open(java.lang.String)" class="member-name-link">open(String)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeBookmark.html" title="interface in org.freeplane.api">NodeBookmark</a></dt>
+<dd>
+<div class="block">Opens this bookmark with the specified mode, overriding the bookmark's default type.</div>
+</dd>
+<dt><a href="org/freeplane/api/NodeBookmark.html#open(org.freeplane.api.BookmarkType)" class="member-name-link">open(BookmarkType)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeBookmark.html" title="interface in org.freeplane.api">NodeBookmark</a></dt>
+<dd>
+<div class="block">Opens this bookmark with the specified mode, overriding the bookmark's default type.</div>
+</dd>
 <dt><a href="org/freeplane/api/Attributes.html#optimizeWidths()" class="member-name-link">optimizeWidths()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Attributes.html" title="interface in org.freeplane.api">Attributes</a></dt>
 <dd>
 <div class="block">optimize widths of attribute view columns according to contents.</div>
@@ -2532,6 +2582,10 @@ loadScripts(document, 'script');</script>
 <h2 class="title" id="I:P">P</h2>
 <dl class="index">
 <dt><a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.html#parse(java.lang.String)" class="member-name-link">parse(String)</a> - Method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.html" title="class in org.freeplane.plugin.script">FreeplaneScriptBaseClass</a></dt>
+<dd>
+<div class="block">parses text to the proper data type, if possible, setting format to the standard.</div>
+</dd>
+<dt><a href="org/freeplane/plugin/script/GroovyStaticImports.html#parse(java.lang.String)" class="member-name-link">parse(String)</a> - Static method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/GroovyStaticImports.html" title="class in org.freeplane.plugin.script">GroovyStaticImports</a></dt>
 <dd>
 <div class="block">parses text to the proper data type, if possible, setting format to the standard.</div>
 </dd>
@@ -2802,7 +2856,15 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">rounds a number to integral type.</div>
 </dd>
+<dt><a href="org/freeplane/plugin/script/GroovyStaticImports.html#round(java.lang.Double)" class="member-name-link">round(Double)</a> - Static method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/GroovyStaticImports.html" title="class in org.freeplane.plugin.script">GroovyStaticImports</a></dt>
+<dd>
+<div class="block">rounds a number to integral type.</div>
+</dd>
 <dt><a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.html#round(java.lang.Double,int)" class="member-name-link">round(Double, int)</a> - Method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.html" title="class in org.freeplane.plugin.script">FreeplaneScriptBaseClass</a></dt>
+<dd>
+<div class="block">round to the given number of decimal places: <code>round(0.1234, 2) &rarr; 0.12</code></div>
+</dd>
+<dt><a href="org/freeplane/plugin/script/GroovyStaticImports.html#round(java.lang.Double,int)" class="member-name-link">round(Double, int)</a> - Static method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/GroovyStaticImports.html" title="class in org.freeplane.plugin.script">GroovyStaticImports</a></dt>
 <dd>
 <div class="block">round to the given number of decimal places: <code>round(0.1234, 2) &rarr; 0.12</code></div>
 </dd>
@@ -2838,6 +2900,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/api/Script.html" class="type-name-link" title="interface in org.freeplane.api">Script</a> - Interface in <a href="org/freeplane/api/package-summary.html">org.freeplane.api</a></dt>
 <dd>
 <div class="block">API for executing scripts.</div>
+</dd>
+<dt><a href="org/freeplane/plugin/script/GroovyStaticImports.html#scriptUtils" class="member-name-link">scriptUtils</a> - Static variable in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/GroovyStaticImports.html" title="class in org.freeplane.plugin.script">GroovyStaticImports</a></dt>
+<dd>
+<div class="block">Utilities for script-specific operations, particularly useful in utility scripts and add-ons.</div>
 </dd>
 <dt><a href="org/freeplane/plugin/script/proxy/ScriptUtils.html" class="type-name-link" title="class in org.freeplane.plugin.script.proxy">ScriptUtils</a> - Class in <a href="org/freeplane/plugin/script/proxy/package-summary.html">org.freeplane.plugin.script.proxy</a></dt>
 <dd>
@@ -2935,6 +3001,14 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/Font.html#setBold(boolean)" class="member-name-link">setBold(boolean)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Font.html" title="interface in org.freeplane.api">Font</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/Node.html#setBookmark(java.lang.String,java.lang.String)" class="member-name-link">setBookmark(String, String)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Node.html" title="interface in org.freeplane.api">Node</a></dt>
+<dd>
+<div class="block">Sets a bookmark for this node with the given name and type.</div>
+</dd>
+<dt><a href="org/freeplane/api/Node.html#setBookmark(java.lang.String,org.freeplane.api.BookmarkType)" class="member-name-link">setBookmark(String, BookmarkType)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Node.html" title="interface in org.freeplane.api">Node</a></dt>
+<dd>
+<div class="block">Sets a bookmark for this node with the given name and type.</div>
+</dd>
 <dt><a href="org/freeplane/api/MindMap.html#setBookmarks(java.util.List)" class="member-name-link">setBookmarks(List&lt;NodeBookmark&gt;)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMap.html" title="interface in org.freeplane.api">MindMap</a></dt>
 <dd>
 <div class="block">Sets the bookmarks for this mind map.</div>
@@ -3418,6 +3492,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/core/util/HtmlUtils.html#textToHTML(java.lang.String)" class="member-name-link">textToHTML(String)</a> - Static method in class org.freeplane.core.util.<a href="org/freeplane/core/util/HtmlUtils.html" title="class in org.freeplane.core.util">HtmlUtils</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/plugin/script/GroovyStaticImports.html#textUtils" class="member-name-link">textUtils</a> - Static variable in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/GroovyStaticImports.html" title="class in org.freeplane.plugin.script">GroovyStaticImports</a></dt>
+<dd>
+<div class="block">Utilities for text processing, translations, formatting, and string operations.</div>
+</dd>
 <dt><a href="org/freeplane/core/util/TextUtils.html" class="type-name-link" title="class in org.freeplane.core.util">TextUtils</a> - Class in <a href="org/freeplane/core/util/package-summary.html">org.freeplane.core.util</a></dt>
 <dd>
 <div class="block">utilities for translations, conversions to/from number and dates etc.</div>
@@ -3517,6 +3595,11 @@ loadScripts(document, 'script');</script>
 <div class="block">formats according to the internal standard, that is the conversion will be reversible
  for types that are handled special by the scripting api namely Dates and Numbers.</div>
 </dd>
+<dt><a href="org/freeplane/plugin/script/GroovyStaticImports.html#toString(java.lang.Object)" class="member-name-link">toString(Object)</a> - Static method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/GroovyStaticImports.html" title="class in org.freeplane.plugin.script">GroovyStaticImports</a></dt>
+<dd>
+<div class="block">formats according to the internal standard, that is the conversion will be reversible
+ for types that are handled special by the scripting api namely Dates and Numbers.</div>
+</dd>
 <dt><a href="org/freeplane/plugin/script/proxy/Convertible.html#toString(java.lang.Object)" class="member-name-link">toString(Object)</a> - Static method in class org.freeplane.plugin.script.proxy.<a href="org/freeplane/plugin/script/proxy/Convertible.html" title="class in org.freeplane.plugin.script.proxy">Convertible</a></dt>
 <dd>
 <div class="block">has special conversions for
@@ -3535,6 +3618,10 @@ loadScripts(document, 'script');</script>
 </dl>
 <h2 class="title" id="I:U">U</h2>
 <dl class="index">
+<dt><a href="org/freeplane/plugin/script/GroovyStaticImports.html#ui" class="member-name-link">ui</a> - Static variable in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/GroovyStaticImports.html" title="class in org.freeplane.plugin.script">GroovyStaticImports</a></dt>
+<dd>
+<div class="block">Utilities for GUI operations including dialogs, message boxes, and UI components access.</div>
+</dd>
 <dt><a href="org/freeplane/core/ui/components/UITools.html" class="type-name-link" title="class in org.freeplane.core.ui.components">UITools</a> - Class in <a href="org/freeplane/core/ui/components/package-summary.html">org.freeplane.core.ui.components</a></dt>
 <dd>
 <div class="block">Utilities for accessing the GUI, creating dialogs etc.: In scripts available as "global variable" <code>ui</code>.</div>

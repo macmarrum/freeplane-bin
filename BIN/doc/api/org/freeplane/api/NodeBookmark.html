@@ -95,20 +95,35 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getName()" class="member-name-link">getName</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns the display name of this bookmark.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Node.html" title="interface in org.freeplane.api">Node</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getNode()" class="member-name-link">getNode</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns the node that this bookmark points to.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="BookmarkType.html" title="enum class in org.freeplane.api">BookmarkType</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getBookmarkType()" class="member-name-link">getBookmarkType</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getType()" class="member-name-link">getType</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns the type of this bookmark, which determines its behavior when activated.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getName()" class="member-name-link">getName</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#open()" class="member-name-link">open</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Returns the display name of this bookmark.</div>
+<div class="block">Opens this bookmark using its default behavior.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Node.html" title="interface in org.freeplane.api">Node</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getNode()" class="member-name-link">getNode</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#open(java.lang.String)" class="member-name-link">open</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;mode)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Returns the node that this bookmark points to.</div>
+<div class="block">Opens this bookmark with the specified mode, overriding the bookmark's default type.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#open(org.freeplane.api.BookmarkType)" class="member-name-link">open</a><wbr>(<a href="BookmarkType.html" title="enum class in org.freeplane.api">BookmarkType</a>&nbsp;mode)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Opens this bookmark with the specified mode, overriding the bookmark's default type.</div>
 </div>
 </div>
 </div>
@@ -147,9 +162,9 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="getBookmarkType()">
-<h3>getBookmarkType</h3>
-<div class="member-signature"><span class="return-type"><a href="BookmarkType.html" title="enum class in org.freeplane.api">BookmarkType</a></span>&nbsp;<span class="element-name">getBookmarkType</span>()</div>
+<section class="detail" id="getType()">
+<h3>getType</h3>
+<div class="member-signature"><span class="return-type"><a href="BookmarkType.html" title="enum class in org.freeplane.api">BookmarkType</a></span>&nbsp;<span class="element-name">getType</span>()</div>
 <div class="block">Returns the type of this bookmark, which determines its behavior when activated.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -158,6 +173,67 @@ loadScripts(document, 'script');</script>
 <dd>
 <ul class="see-list">
 <li><a href="BookmarkType.html" title="enum class in org.freeplane.api"><code>BookmarkType</code></a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="open()">
+<h3>open</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">open</span>()</div>
+<div class="block">Opens this bookmark using its default behavior.
+ The behavior is determined by the bookmark's type:
+ - SELECT type: navigates to the node and selects it
+ - ROOT type: opens the node as the root of the view</div>
+<dl class="notes">
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list">
+<li><a href="#getType()"><code>getType()</code></a></li>
+<li><a href="#open(org.freeplane.api.BookmarkType)"><code>open(BookmarkType)</code></a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="open(org.freeplane.api.BookmarkType)">
+<h3>open</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">open</span><wbr><span class="parameters">(<a href="BookmarkType.html" title="enum class in org.freeplane.api">BookmarkType</a>&nbsp;mode)</span></div>
+<div class="block">Opens this bookmark with the specified mode, overriding the bookmark's default type.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>mode</code> - the bookmark type to use when opening:
+             SELECT to navigate to and select the node,
+             ROOT to open the node as the root of the view</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list">
+<li><a href="BookmarkType.html" title="enum class in org.freeplane.api"><code>BookmarkType</code></a></li>
+<li><a href="#open()"><code>open()</code></a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="open(java.lang.String)">
+<h3>open</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">open</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;mode)</span></div>
+<div class="block">Opens this bookmark with the specified mode, overriding the bookmark's default type.
+ Convenience overload that accepts mode as a string for easier scripting.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>mode</code> - the bookmark type as string - "SELECT" or "ROOT" (case insensitive)</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if mode is not a valid BookmarkType value</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list">
+<li><a href="BookmarkType.html" title="enum class in org.freeplane.api"><code>BookmarkType</code></a></li>
+<li><a href="#open()"><code>open()</code></a></li>
+<li><a href="#open(org.freeplane.api.BookmarkType)"><code>open(BookmarkType)</code></a></li>
 </ul>
 </dd>
 </dl>

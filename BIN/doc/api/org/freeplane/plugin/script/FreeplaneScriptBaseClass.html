@@ -90,16 +90,21 @@ loadScripts(document, 'script');</script>
  Only documented methods are meant to be used in scripts.
  <p>The following global objects are provided as shortcuts by the binding of this class:
  <ul>
- <li><b>ui:</b> see <code>UITools</code></li>
+ <li><b>ui:</b> see <a href="../../core/ui/components/UITools.html" title="class in org.freeplane.core.ui.components"><code>UITools</code></a></li>
  <li><b>logger:</b> see <a href="../../core/util/LogUtils.html" title="class in org.freeplane.core.util"><code>LogUtils</code></a></li>
- <li><b>htmlUtils:</b> see <code>HtmlUtils</code></li>
- <li><b>textUtils:</b> see <code>TextUtils</code></li>
- <li><b>menuUtils:</b> see <code>MenuUtils</code></li>
+ <li><b>htmlUtils:</b> see <a href="../../core/util/HtmlUtils.html" title="class in org.freeplane.core.util"><code>HtmlUtils</code></a></li>
+ <li><b>textUtils:</b> see <a href="../../core/util/TextUtils.html" title="class in org.freeplane.core.util"><code>TextUtils</code></a></li>
+ <li><b>menuUtils:</b> see <a href="../../core/util/MenuUtils.html" title="class in org.freeplane.core.util"><code>MenuUtils</code></a></li>
  <li><b>config:</b> see <a href="FreeplaneScriptBaseClass.ConfigProperties.html" title="class in org.freeplane.plugin.script"><code>FreeplaneScriptBaseClass.ConfigProperties</code></a></li>
  </ul>
+ <p>In case you compile groovy source code for packaging it as a jar with a Freeplane add-on, these global objects
+ are not available. To make them available, add the following import to your source code:</p>
+ <pre>
+ import static org.freeplane.plugin.script.GroovyStaticImports.*
+ </pre>
  The following classes may also be useful in scripting:
  <ul>
- <li><code>FreeplaneVersion</code></li>
+ <li><a href="../../core/util/FreeplaneVersion.html" title="class in org.freeplane.core.util"><code>FreeplaneVersion</code></a></li>
  </ul></div>
 </section>
 <section class="summary">
@@ -116,8 +121,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color"><code>static class&nbsp;</code></div>
 <div class="col-second even-row-color"><code><a href="FreeplaneScriptBaseClass.ConfigProperties.html" class="type-name-link" title="class in org.freeplane.plugin.script">FreeplaneScriptBaseClass.ConfigProperties</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Accessor for Freeplane's configuration: In scripts available
- as "global variable" <code>config</code>.</div>
+<div class="block">Accessor for Freeplane's configuration: In scripts available as "global variable" <code>config</code></div>
 </div>
 </div>
 </section>

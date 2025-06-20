@@ -82,8 +82,12 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public static class </span><span class="element-name type-name-label">FreeplaneScriptBaseClass.ConfigProperties</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
-<div class="block">Accessor for Freeplane's configuration: In scripts available
- as "global variable" <code>config</code>.</div>
+<div class="block"><p>Accessor for Freeplane's configuration: In scripts available as "global variable" <code>config</code></p>
+ <p>In case you compile groovy source code for packaging it as a jar with a Freeplane add-on, global variable
+ <code>config</code> is not available. To make it available, add the following import:</p>
+ <pre>
+ import static org.freeplane.plugin.script.GroovyStaticImports.*
+ </pre></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
