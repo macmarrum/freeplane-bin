@@ -6,7 +6,7 @@ Bundle-Name: org.freeplane.plugin.openmaps
 Bundle-SymbolicName: org.freeplane.plugin.openmaps
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.12.12
-Created-By: 17.0.15 (Arch Linux)
+Created-By: 21.0.7 (Arch Linux)
 Private-Package: org.freeplane.plugin.openmaps,org.freeplane.plugin.op
  enmaps.actions,org.freeplane.plugin.openmaps.mapelements
 Require-Bundle: org.freeplane.core

@@ -28,7 +28,7 @@ Bundle-Name: org.freeplane.plugin.script
 Bundle-SymbolicName: org.freeplane.plugin.script
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.12.12
-Created-By: 17.0.15 (Arch Linux)
+Created-By: 21.0.7 (Arch Linux)
 Export-Package: org.freeplane.plugin.script;uses:="org.freeplane.plugi
  n.script.dependencies,org.freeplane.plugin.script.proxy";version="1.1
  2.12",org.freeplane.plugin.script.addons;uses:="org.freeplane.plugin.

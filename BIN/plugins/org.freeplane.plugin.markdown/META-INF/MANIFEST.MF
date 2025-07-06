@@ -7,7 +7,7 @@ Bundle-Name: org.freeplane.plugin.markdown
 Bundle-SymbolicName: org.freeplane.plugin.markdown
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.12.12
-Created-By: 17.0.15 (Arch Linux)
+Created-By: 21.0.7 (Arch Linux)
 Private-Package: org.freeplane.plugin.markdown,org.freeplane.plugin.ma
  rkdown.markedj
 Require-Bundle: org.freeplane.core
