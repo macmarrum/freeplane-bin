@@ -16,7 +16,7 @@ Bundle-Name: org.freeplane.core
 Bundle-SymbolicName: org.freeplane.core
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.12.12
-Created-By: 21.0.7 (Arch Linux)
+Created-By: 17.0.15 (Arch Linux)
 Export-Package: com.inet.jortho;version="1.12.12",org.freeplane.api;ve
  rsion="1.12.12",org.freeplane.core.extension;version="1.12.12",org.fr
  eeplane.core.io;uses:="org.freeplane.api,org.freeplane.core.extension
