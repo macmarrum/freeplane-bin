@@ -334,6 +334,7 @@
 				<Entry name="ToggleMapOverviewAction" />
 				<Entry name="ToggleBookmarksToolbarAction" />
 				<Entry name="FocusBookmarkToolbarAction" accelerator="control shift B"/>
+				<Entry name="ToggleFocusBookmarkToolbarAction" />
 				<Entry name="ShowFormatPanel"/>
 			</Entry>
 			<Entry name="menu_viewmode" >
