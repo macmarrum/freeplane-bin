@@ -296,6 +296,7 @@
 				</Entry>
 		<Entry name="view">
 			<Entry name="NewMapViewAction" />
+			<Entry name="OpenSelectionAsNewViewRootAction" accelerator="alt shift ESCAPE"/>
 			<Entry name="zoom">
 				<Entry name="ZoomInAction" accelerator="alt UP" />
 				<Entry name="ZoomOutAction" accelerator="alt DOWN" />
@@ -367,7 +368,8 @@
 				</Entry>
 				<Entry name="SetBooleanPropertyAction.hide_single_end_connectors" />
 				<Entry name="SetBooleanPropertyAction.show_note_icon_in_tooltip" />
-				<Entry name="ShowSelectionAsRectangleAction" />
+				<Entry name="SetBooleanPropertyAction.standarddrawrectangleforselection" />
+				<Entry name="SetBooleanPropertyAction.highlightascendantedges" />
 				<Entry name="SetBooleanPropertyAction.highlight_formulas" />
 				<Entry name="map_overview" >
 					<Entry name="SetStringPropertyAction.map_overview_bounds." />
@@ -377,6 +379,11 @@
 						<Entry name="SetStringPropertyAction.map_overview_attach_point.NORTH_EAST" />
 						<Entry name="SetStringPropertyAction.map_overview_attach_point.NORTH_WEST" />
 					</Entry>
+				</Entry>
+				<Entry builder="radio_button_group" name="nodeContentForView" textKey="OptionPanel.nodeContentForView">
+					<Entry name="SetStringMapViewPropertyAction.nodeContentForView.PER_NODE (default)" />
+					<Entry name="SetStringMapViewPropertyAction.nodeContentForView.FULL" />
+					<Entry name="SetStringMapViewPropertyAction.nodeContentForView.MINIMIZED" />
 				</Entry>
 			</Entry>
 			<Entry builder="separator" />
@@ -551,6 +558,7 @@
 			<Entry name="GotoNodeAction" />
 			<Entry name="BookmarkNodeAction" />
 			<Entry name="JumpInAction"  accelerator="shift ESCAPE"/>
+			<Entry name="OpenSelectionAsNewViewRootAction" accelerator="alt shift ESCAPE"/>
 			<Entry name="JumpOutAction"  accelerator="control ESCAPE"/>
 			<Entry name="node_selector" >
 	            <Entry name="FreeSelectNodeAction.LEFT" />
