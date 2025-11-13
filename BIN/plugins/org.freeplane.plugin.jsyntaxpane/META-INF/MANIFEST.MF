@@ -6,7 +6,7 @@ Bundle-Name: org.freeplane.plugin.jsyntaxpane
 Bundle-SymbolicName: org.freeplane.plugin.jsyntaxpane
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.12.15
-Created-By: 17.0.16 (Arch Linux)
+Created-By: 21.0.8 (JetBrains s.r.o.)
 Export-Package: de.sciss.syntaxpane;version="1.12.15",de.sciss.syntaxp
  ane.lexers;uses:="de.sciss.syntaxpane";version="1.12.15",de.sciss.syn
  taxpane.syntaxkits;uses:="de.sciss.syntaxpane";version="1.12.15",de.s

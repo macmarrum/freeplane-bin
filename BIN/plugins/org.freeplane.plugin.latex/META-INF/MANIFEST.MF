@@ -8,7 +8,7 @@ Bundle-Name: org.freeplane.plugin.latex
 Bundle-SymbolicName: org.freeplane.plugin.latex
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.12.15
-Created-By: 17.0.16 (Arch Linux)
+Created-By: 21.0.8 (JetBrains s.r.o.)
 Private-Package: org.freeplane.plugin.latex
 Require-Bundle: org.freeplane.core
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
