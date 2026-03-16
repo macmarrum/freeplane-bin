@@ -1,15 +1,15 @@
 Manifest-Version: 1.0
 Bundle-Activator: org.freeplane.plugin.codeexplorer.Activator
-Bundle-ClassPath: .,lib/plugin-1.12.16.jar,lib/archunit-1.4.1.jar,lib/
- jgrapht-core-1.5.2.jar,lib/freeplane-archunit-extension-0.0.2.jar,lib
- /gson-2.13.1.jar,lib/slf4j-nop-2.1.0-alpha1.jar,lib/slf4j-api-2.1.0-a
- lpha1.jar,lib/jheaps-0.14.jar,lib/apfloat-1.10.1.jar,lib/error_prone_
- annotations-2.38.0.jar
+Bundle-ClassPath: .,lib/plugin-1.13.3.jar,lib/archunit-1.4.1.jar,lib/j
+ grapht-core-1.5.2.jar,lib/freeplane-archunit-extension-0.0.2.jar,lib/
+ gson-2.13.1.jar,lib/slf4j-nop-2.1.0-alpha1.jar,lib/slf4j-api-2.1.0-al
+ pha1.jar,lib/jheaps-0.14.jar,lib/apfloat-1.10.1.jar,lib/error_prone_a
+ nnotations-2.38.0.jar
 Bundle-ManifestVersion: 2
 Bundle-Name: org.freeplane.plugin.codeexplorer
 Bundle-SymbolicName: org.freeplane.plugin.codeexplorer
 Bundle-Vendor: Freeplane Project
-Bundle-Version: 1.12.16
+Bundle-Version: 1.13.3
 Created-By: 21.0.8 (JetBrains s.r.o.)
 Private-Package: images.code,images,org.freeplane.plugin.codeexplorer,
  org.freeplane.plugin.codeexplorer.archunit,org.freeplane.plugin.codee
