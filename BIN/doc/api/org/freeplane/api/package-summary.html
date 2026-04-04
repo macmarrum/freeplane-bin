@@ -234,78 +234,116 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color class-summary class-summary-tab1">Deprecated.
 <div class="deprecation-comment">since 1.7.10 - use MindMapRO instead</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab1"><a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a></div>
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="MapTagCategories.html" title="interface in org.freeplane.api">MapTagCategories</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab1">
+<div class="block">Read-write access to the map's tag category structure:
+ <code>map.tagCategories</code>.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="MapTagCategoriesRO.html" title="interface in org.freeplane.api">MapTagCategoriesRO</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab1">
+<div class="block">Read-only access to the map's tag category structure:
+ <code>map.tagCategories</code>.</div>
+</div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="MapTagCategoryInstruction.html" title="class in org.freeplane.api">MapTagCategoryInstruction</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="block">Single explicit edit operation for the map's tag categories.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="MapTagCategoryInstructionRequest.html" title="class in org.freeplane.api">MapTagCategoryInstructionRequest</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="block">Batch of explicit tag category edit operations.</div>
+</div>
+<div class="col-first even-row-color class-summary class-summary-tab3"><a href="MapTagCategoryInstructionType.html" title="enum class in org.freeplane.api">MapTagCategoryInstructionType</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab3">
+<div class="block">Supported edit operations for the map-level tag category API.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="MapTagCategoryNode.html" title="class in org.freeplane.api">MapTagCategoryNode</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="block">A node in the map's tag category tree.</div>
+</div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="MapTagCategoryState.html" title="class in org.freeplane.api">MapTagCategoryState</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="block">Immutable map-level tag category structure at one revision.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="MapTagItem.html" title="class in org.freeplane.api">MapTagItem</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="block">Tag item used by the map-level tag category API.</div>
+</div>
+<div class="col-first even-row-color class-summary class-summary-tab3"><a href="MapTagTargetLocation.html" title="enum class in org.freeplane.api">MapTagTargetLocation</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab3">
+<div class="block">Target placement for add and move operations in the map-level tag category API.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab1">
 <div class="block">The map a node belongs to: <code>node.map</code> - read-write.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="MindMapRO.html" title="interface in org.freeplane.api">MindMapRO</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab1">
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="MindMapRO.html" title="interface in org.freeplane.api">MindMapRO</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab1">
 <div class="block">The map a node belongs to: <code>node.map</code> - read-only.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab1"><a href="Node.html" title="interface in org.freeplane.api">Node</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab1">
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="Node.html" title="interface in org.freeplane.api">Node</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab1">
 <div class="block">The currently selected node: <code>node</code> - read-write.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="NodeBookmark.html" title="interface in org.freeplane.api">NodeBookmark</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab1">
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="NodeBookmark.html" title="interface in org.freeplane.api">NodeBookmark</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab1">
 <div class="block">Represents a bookmark for a specific node in the mind map.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="NodeChanged.html" title="class in org.freeplane.api">NodeChanged</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">&nbsp;</div>
-<div class="col-first odd-row-color class-summary class-summary-tab3"><a href="NodeChanged.ChangedElement.html" title="enum class in org.freeplane.api">NodeChanged.ChangedElement</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab3">&nbsp;</div>
-<div class="col-first even-row-color class-summary class-summary-tab1"><a href="NodeChangeListener.html" title="interface in org.freeplane.api">NodeChangeListener</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab1">&nbsp;</div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="NodeCondition.html" title="interface in org.freeplane.api">NodeCondition</a></div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="NodeChanged.html" title="class in org.freeplane.api">NodeChanged</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">&nbsp;</div>
+<div class="col-first even-row-color class-summary class-summary-tab3"><a href="NodeChanged.ChangedElement.html" title="enum class in org.freeplane.api">NodeChanged.ChangedElement</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab3">&nbsp;</div>
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="NodeChangeListener.html" title="interface in org.freeplane.api">NodeChangeListener</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab1">&nbsp;</div>
-<div class="col-first even-row-color class-summary class-summary-tab1"><a href="NodeGeometry.html" title="interface in org.freeplane.api">NodeGeometry</a></div>
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="NodeCondition.html" title="interface in org.freeplane.api">NodeCondition</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab1">&nbsp;</div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="NodeGeometryRO.html" title="interface in org.freeplane.api">NodeGeometryRO</a></div>
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="NodeGeometry.html" title="interface in org.freeplane.api">NodeGeometry</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab1">&nbsp;</div>
-<div class="col-first even-row-color class-summary class-summary-tab5"><a href="NodeNotFoundException.html" title="class in org.freeplane.api">NodeNotFoundException</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab5">&nbsp;</div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="NodeRO.html" title="interface in org.freeplane.api">NodeRO</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab1">
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="NodeGeometryRO.html" title="interface in org.freeplane.api">NodeGeometryRO</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab1">&nbsp;</div>
+<div class="col-first odd-row-color class-summary class-summary-tab5"><a href="NodeNotFoundException.html" title="class in org.freeplane.api">NodeNotFoundException</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab5">&nbsp;</div>
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="NodeRO.html" title="interface in org.freeplane.api">NodeRO</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab1">
 <div class="block">The currently selected node: <code>node</code> - read-only.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab3"><a href="NodeShape.html" title="enum class in org.freeplane.api">NodeShape</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab3">&nbsp;</div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="NodeStyle.html" title="interface in org.freeplane.api">NodeStyle</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab1">
-<div class="block">Node's style: <code>node.style</code> - read-only.</div>
-</div>
-<div class="col-first even-row-color class-summary class-summary-tab1"><a href="NodeStyleRO.html" title="interface in org.freeplane.api">NodeStyleRO</a></div>
+<div class="col-first odd-row-color class-summary class-summary-tab3"><a href="NodeShape.html" title="enum class in org.freeplane.api">NodeShape</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab3">&nbsp;</div>
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="NodeStyle.html" title="interface in org.freeplane.api">NodeStyle</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab1">
 <div class="block">Node's style: <code>node.style</code> - read-only.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="NodeToComparableMapper.html" title="interface in org.freeplane.api">NodeToComparableMapper</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab1">&nbsp;</div>
-<div class="col-first even-row-color class-summary class-summary-tab1"><a href="PhysicalUnit.html" title="interface in org.freeplane.api">PhysicalUnit</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab1">&nbsp;</div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="Properties.html" title="interface in org.freeplane.api">Properties</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab1">&nbsp;</div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="Quantity.html" title="class in org.freeplane.api">Quantity</a>&lt;U extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Enum.html" title="class or interface in java.lang" class="external-link">Enum</a>&lt;U&gt; &amp; <a href="PhysicalUnit.html" title="interface in org.freeplane.api">PhysicalUnit</a>&gt;</div>
-<div class="col-last even-row-color class-summary class-summary-tab2">&nbsp;</div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="Reminder.html" title="interface in org.freeplane.api">Reminder</a></div>
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="NodeStyleRO.html" title="interface in org.freeplane.api">NodeStyleRO</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab1">
+<div class="block">Node's style: <code>node.style</code> - read-only.</div>
+</div>
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="NodeToComparableMapper.html" title="interface in org.freeplane.api">NodeToComparableMapper</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab1">&nbsp;</div>
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="PhysicalUnit.html" title="interface in org.freeplane.api">PhysicalUnit</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab1">&nbsp;</div>
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="Properties.html" title="interface in org.freeplane.api">Properties</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab1">&nbsp;</div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="Quantity.html" title="class in org.freeplane.api">Quantity</a>&lt;U extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Enum.html" title="class or interface in java.lang" class="external-link">Enum</a>&lt;U&gt; &amp; <a href="PhysicalUnit.html" title="interface in org.freeplane.api">PhysicalUnit</a>&gt;</div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">&nbsp;</div>
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="Reminder.html" title="interface in org.freeplane.api">Reminder</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab1">
 <div class="block">Reminder: <code>node.reminder</code> - read-write.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab1"><a href="ReminderRO.html" title="interface in org.freeplane.api">ReminderRO</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab1">
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="ReminderRO.html" title="interface in org.freeplane.api">ReminderRO</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab1">
 <div class="block">Reminder: <code>node.reminder</code> - read-only.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="Script.html" title="interface in org.freeplane.api">Script</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab1">
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="Script.html" title="interface in org.freeplane.api">Script</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab1">
 <div class="block">API for executing scripts.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab3"><a href="Side.html" title="enum class in org.freeplane.api">Side</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab3">&nbsp;</div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="Tags.html" title="interface in org.freeplane.api">Tags</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab1">&nbsp;</div>
-<div class="col-first even-row-color class-summary class-summary-tab1"><a href="TagsRO.html" title="interface in org.freeplane.api">TagsRO</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab1">&nbsp;</div>
-<div class="col-first odd-row-color class-summary class-summary-tab3"><a href="TextWritingDirection.html" title="enum class in org.freeplane.api">TextWritingDirection</a></div>
+<div class="col-first odd-row-color class-summary class-summary-tab3"><a href="Side.html" title="enum class in org.freeplane.api">Side</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab3">&nbsp;</div>
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="Tags.html" title="interface in org.freeplane.api">Tags</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab1">&nbsp;</div>
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="TagsRO.html" title="interface in org.freeplane.api">TagsRO</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab1">&nbsp;</div>
+<div class="col-first even-row-color class-summary class-summary-tab3"><a href="TextWritingDirection.html" title="enum class in org.freeplane.api">TextWritingDirection</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab3">&nbsp;</div>
 </div>
 </div>
 </div>

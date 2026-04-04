@@ -1,6 +1,9 @@
 ==============================
 1.13.3
 ==============================
+Tag category AI tools
+Tag category scripting API
+Copying selected chat messages as markdown
 Bug fixes
 
 ==============================

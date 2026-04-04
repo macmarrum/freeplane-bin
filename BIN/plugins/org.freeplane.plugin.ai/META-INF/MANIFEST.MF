@@ -25,7 +25,8 @@ Private-Package: org.freeplane.plugin.ai,org.freeplane.plugin.ai.boots
  e,org.freeplane.plugin.ai.tools.edit,org.freeplane.plugin.ai.tools.mo
  ve,org.freeplane.plugin.ai.tools.read,org.freeplane.plugin.ai.tools.s
  earch,org.freeplane.plugin.ai.tools.selection,org.freeplane.plugin.ai
- .tools.text,org.freeplane.plugin.ai.tools.utilities
+ .tools.tagcategories,org.freeplane.plugin.ai.tools.text,org.freeplane
+ .plugin.ai.tools.utilities
 Require-Bundle: org.freeplane.core
 Tool: Bnd-7.1.0.202411251545
 
