@@ -286,34 +286,35 @@ Export-Package: com.inet.jortho;version="1.13.3",org.freeplane.api;ver
  .map.mindmapmode;uses:="org.freeplane.features.map,org.freeplane.feat
  ures.mode,org.freeplane.features.text.mindmapmode,org.freeplane.view.
  swing.map";version="1.13.3",org.freeplane.view.swing.ui;uses:="org.fr
- eeplane.core.ui,org.freeplane.core.ui.components,org.freeplane.core.u
- i.menubuilders.generic,org.freeplane.features.map,org.freeplane.featu
- res.map.mindmapmode,org.freeplane.features.mode,org.freeplane.view.sw
- ing.map";version="1.13.3",org.freeplane.view.swing.ui.mindmapmode;use
- s:="org.freeplane.core.ui,org.freeplane.core.ui.components,org.freepl
- ane.features.map,org.freeplane.view.swing.map,org.freeplane.view.swin
- g.ui";version="1.13.3",com.jgoodies.forms.builder;uses:="com.jgoodies
- .forms.factories,com.jgoodies.forms.layout,com.jgoodies.forms.util";v
- ersion="1.13.3",com.jgoodies.forms.debug;uses:="com.jgoodies.forms.la
- yout";version="1.13.3",com.jgoodies.forms.factories;uses:="com.jgoodi
- es.forms.layout";version="1.13.3",com.jgoodies.forms.layout;uses:="co
- m.jgoodies.forms.util";version="1.13.3",com.jgoodies.forms.util;uses:
- ="com.jgoodies.forms.layout";version="1.13.3",com.lightdev.app.shtm;v
- ersion="1.13.3",org.apache.commons.io;version="1.4.9999";uses:="org.a
- pache.commons.io.filefilter,org.apache.commons.io.input",org.apache.c
- ommons.io.comparator;version="1.4.9999";uses:="org.apache.commons.io"
- ,org.apache.commons.io.filefilter;version="1.4.9999";uses:="org.apach
- e.commons.io",org.apache.commons.io.input;version="1.4.9999";uses:="o
- rg.apache.commons.io,org.apache.commons.io.output",org.apache.commons
- .io.monitor;version="2.19.0";uses:="org.apache.commons.io",org.apache
- .commons.io.output;version="1.4.9999";uses:="org.apache.commons.io.in
- put",org.apache.commons.lang;version="2.6";uses:="org.apache.commons.
- lang.exception",org.apache.commons.lang.builder;version="2.6",org.apa
- che.commons.lang.exception;version="2.6",org.apache.commons.lang.math
- ;version="2.6",org.apache.commons.lang.time;version="2.6",org.freepla
- ne.features.mode.browsemode;version="1.13.3",org.freeplane.features.n
- odestyle.filemode;version="1.13.3",org.freeplane.main.browsemode;vers
- ion="1.13.3",org.freeplane.plugin.macos;version="1.13.3"
+ eeplane.core.resources,org.freeplane.core.ui,org.freeplane.core.ui.co
+ mponents,org.freeplane.core.ui.menubuilders.generic,org.freeplane.fea
+ tures.map,org.freeplane.features.map.mindmapmode,org.freeplane.featur
+ es.mode,org.freeplane.features.ui,org.freeplane.view.swing.map";versi
+ on="1.13.3",org.freeplane.view.swing.ui.mindmapmode;uses:="org.freepl
+ ane.core.ui,org.freeplane.core.ui.components,org.freeplane.features.m
+ ap,org.freeplane.view.swing.map,org.freeplane.view.swing.ui";version=
+ "1.13.3",com.jgoodies.forms.builder;uses:="com.jgoodies.forms.factori
+ es,com.jgoodies.forms.layout,com.jgoodies.forms.util";version="1.13.3
+ ",com.jgoodies.forms.debug;uses:="com.jgoodies.forms.layout";version=
+ "1.13.3",com.jgoodies.forms.factories;uses:="com.jgoodies.forms.layou
+ t";version="1.13.3",com.jgoodies.forms.layout;uses:="com.jgoodies.for
+ ms.util";version="1.13.3",com.jgoodies.forms.util;uses:="com.jgoodies
+ .forms.layout";version="1.13.3",com.lightdev.app.shtm;version="1.13.3
+ ",org.apache.commons.io;version="1.4.9999";uses:="org.apache.commons.
+ io.filefilter,org.apache.commons.io.input",org.apache.commons.io.comp
+ arator;version="1.4.9999";uses:="org.apache.commons.io",org.apache.co
+ mmons.io.filefilter;version="1.4.9999";uses:="org.apache.commons.io",
+ org.apache.commons.io.input;version="1.4.9999";uses:="org.apache.comm
+ ons.io,org.apache.commons.io.output",org.apache.commons.io.monitor;ve
+ rsion="2.19.0";uses:="org.apache.commons.io",org.apache.commons.io.ou
+ tput;version="1.4.9999";uses:="org.apache.commons.io.input",org.apach
+ e.commons.lang;version="2.6";uses:="org.apache.commons.lang.exception
+ ",org.apache.commons.lang.builder;version="2.6",org.apache.commons.la
+ ng.exception;version="2.6",org.apache.commons.lang.math;version="2.6"
+ ,org.apache.commons.lang.time;version="2.6",org.freeplane.features.mo
+ de.browsemode;version="1.13.3",org.freeplane.features.nodestyle.filem
+ ode;version="1.13.3",org.freeplane.main.browsemode;version="1.13.3",o
+ rg.freeplane.plugin.macos;version="1.13.3"
 Private-Package: com.thebuzzmedia.imgscalr,net.infonode.gui,net.infono
  de.tabbedpanel.theme.internal.laftheme,org.freeplane.core.enumeration
  ,org.freeplane.core.ui.commandtonode,org.freeplane.core.ui.flatlaf,or
