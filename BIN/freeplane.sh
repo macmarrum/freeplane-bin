@@ -220,8 +220,6 @@ if [ -d "/usr/share/java" ] ; then
 	JAVA_OPTS="-Dorg.freeplane.os.lib.ext=/usr/share/java $JAVA_OPTS"
 fi
 
-JAVA_OPTS="-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8080 $JAVA_OPTS"
-
 _debug "Calling: "\
 "${JAVACMD}" -XX:MaxRAM=20g -XX:MaxRAMPercentage=15.0\
  "-Dorg.freeplane.userfpdir=$userfpdir"\

@@ -19,14 +19,15 @@ Import-Package: io.github.gitbucket.markedj;version="[1.13,2)"
 Private-Package: org.freeplane.plugin.ai,org.freeplane.plugin.ai.boots
  trap,org.freeplane.plugin.ai.chat,org.freeplane.plugin.ai.chat.histor
  y,org.freeplane.plugin.ai.edits,org.freeplane.plugin.ai.maps,org.free
- plane.plugin.ai.mcpserver,org.freeplane.plugin.ai.tools,org.freeplane
- .plugin.ai.tools.connectors,org.freeplane.plugin.ai.tools.content,org
- .freeplane.plugin.ai.tools.create,org.freeplane.plugin.ai.tools.delet
- e,org.freeplane.plugin.ai.tools.edit,org.freeplane.plugin.ai.tools.mo
- ve,org.freeplane.plugin.ai.tools.read,org.freeplane.plugin.ai.tools.s
- earch,org.freeplane.plugin.ai.tools.selection,org.freeplane.plugin.ai
- .tools.tagcategories,org.freeplane.plugin.ai.tools.text,org.freeplane
- .plugin.ai.tools.utilities
+ plane.plugin.ai.mcpserver,org.freeplane.plugin.ai.model,org.freeplane
+ .plugin.ai.prompt,org.freeplane.plugin.ai.prompt.ui,org.freeplane.plu
+ gin.ai.tools,org.freeplane.plugin.ai.tools.connectors,org.freeplane.p
+ lugin.ai.tools.content,org.freeplane.plugin.ai.tools.create,org.freep
+ lane.plugin.ai.tools.delete,org.freeplane.plugin.ai.tools.edit,org.fr
+ eeplane.plugin.ai.tools.move,org.freeplane.plugin.ai.tools.read,org.f
+ reeplane.plugin.ai.tools.search,org.freeplane.plugin.ai.tools.selecti
+ on,org.freeplane.plugin.ai.tools.tagcategories,org.freeplane.plugin.a
+ i.tools.text,org.freeplane.plugin.ai.tools.utilities
 Require-Bundle: org.freeplane.core
 Tool: Bnd-7.1.0.202411251545
 
