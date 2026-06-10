@@ -1,13 +1,13 @@
 Manifest-Version: 1.0
 Bundle-Activator: org.freeplane.plugin.ai.bootstrap.Java8BootstrapActi
  vator
-Bundle-ClassPath: .,lib/plugin-1.13.3.jar,lib/langchain4j-1.10.0.jar,l
- ib/langchain4j-open-ai-1.10.0.jar,lib/langchain4j-ollama-1.10.0.jar,l
- ib/langchain4j-google-ai-gemini-1.10.0.jar,lib/langchain4j-http-clien
- t-jdk-1.10.0.jar,lib/langchain4j-http-client-1.10.0.jar,lib/langchain
- 4j-core-1.10.0.jar,lib/jackson-core-2.20.1.jar,lib/jackson-databind-2
- .20.1.jar,lib/jackson-annotations-2.20.jar,lib/opennlp-tools-2.5.4.ja
- r,lib/slf4j-api-2.0.17.jar,lib/jtokkit-1.1.0.jar,lib/jspecify-1.0.0.j
+Bundle-ClassPath: .,lib/plugin-1.13.3.jar,lib/langchain4j-1.15.1.jar,l
+ ib/langchain4j-open-ai-1.15.1.jar,lib/langchain4j-ollama-1.15.1.jar,l
+ ib/langchain4j-google-ai-gemini-1.15.1.jar,lib/langchain4j-http-clien
+ t-jdk-1.15.1.jar,lib/langchain4j-http-client-1.15.1.jar,lib/langchain
+ 4j-core-1.15.1.jar,lib/jackson-core-2.21.3.jar,lib/jackson-databind-2
+ .21.3.jar,lib/jackson-annotations-2.21.jar,lib/opennlp-tools-2.5.9.ja
+ r,lib/slf4j-api-2.0.18.jar,lib/jtokkit-1.1.0.jar,lib/jspecify-1.0.0.j
  ar
 Bundle-ManifestVersion: 2
 Bundle-Name: org.freeplane.plugin.ai
@@ -17,17 +17,22 @@ Bundle-Version: 1.13.3
 Created-By: 21.0.8 (JetBrains s.r.o.)
 Import-Package: io.github.gitbucket.markedj;version="[1.13,2)"
 Private-Package: org.freeplane.plugin.ai,org.freeplane.plugin.ai.boots
- trap,org.freeplane.plugin.ai.chat,org.freeplane.plugin.ai.chat.histor
- y,org.freeplane.plugin.ai.edits,org.freeplane.plugin.ai.maps,org.free
- plane.plugin.ai.mcpserver,org.freeplane.plugin.ai.model,org.freeplane
- .plugin.ai.prompt,org.freeplane.plugin.ai.prompt.ui,org.freeplane.plu
- gin.ai.tools,org.freeplane.plugin.ai.tools.connectors,org.freeplane.p
- lugin.ai.tools.content,org.freeplane.plugin.ai.tools.create,org.freep
- lane.plugin.ai.tools.delete,org.freeplane.plugin.ai.tools.edit,org.fr
- eeplane.plugin.ai.tools.move,org.freeplane.plugin.ai.tools.read,org.f
- reeplane.plugin.ai.tools.search,org.freeplane.plugin.ai.tools.selecti
- on,org.freeplane.plugin.ai.tools.tagcategories,org.freeplane.plugin.a
- i.tools.text,org.freeplane.plugin.ai.tools.utilities
+ trap,org.freeplane.plugin.ai.chat.history,org.freeplane.plugin.ai.cha
+ t.memory,org.freeplane.plugin.ai.chat.profile,org.freeplane.plugin.ai
+ .chat.request,org.freeplane.plugin.ai.chat.session,org.freeplane.plug
+ in.ai.chat.ui,org.freeplane.plugin.ai.code,org.freeplane.plugin.ai.ed
+ its,org.freeplane.plugin.ai.maps,org.freeplane.plugin.ai.mcpserver,or
+ g.freeplane.plugin.ai.model,org.freeplane.plugin.ai.prompt,org.freepl
+ ane.plugin.ai.prompt.ui,org.freeplane.plugin.ai.tools,org.freeplane.p
+ lugin.ai.tools.availability,org.freeplane.plugin.ai.tools.code,org.fr
+ eeplane.plugin.ai.tools.connectors,org.freeplane.plugin.ai.tools.cont
+ ent,org.freeplane.plugin.ai.tools.create,org.freeplane.plugin.ai.tool
+ s.delete,org.freeplane.plugin.ai.tools.documentation,org.freeplane.pl
+ ugin.ai.tools.edit,org.freeplane.plugin.ai.tools.formula,org.freeplan
+ e.plugin.ai.tools.move,org.freeplane.plugin.ai.tools.read,org.freepla
+ ne.plugin.ai.tools.search,org.freeplane.plugin.ai.tools.selection,org
+ .freeplane.plugin.ai.tools.tagcategories,org.freeplane.plugin.ai.tool
+ s.text,org.freeplane.plugin.ai.tools.utilities
 Require-Bundle: org.freeplane.core
 Tool: Bnd-7.1.0.202411251545
 

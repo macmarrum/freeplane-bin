@@ -1,4 +1,6 @@
 org.freeplane.api
+org.freeplane.api.ai
+org.freeplane.api.swing
 org.freeplane.core.ui.components
 org.freeplane.core.util
 org.freeplane.launcher

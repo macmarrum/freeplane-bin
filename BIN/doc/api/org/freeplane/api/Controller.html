@@ -112,159 +112,184 @@ extends <a href="ControllerRO.html" title="interface in org.freeplane.api">Contr
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#centerOnNode(org.freeplane.api.Node)" class="member-name-link">centerOnNode</a><wbr>(<a href="Node.html" title="interface in org.freeplane.api">Node</a>&nbsp;center)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ai/AiRequestHandle.html" title="interface in org.freeplane.api.ai">AiRequestHandle</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#askAi(java.lang.String,org.freeplane.api.ai.AiRequestOptions,org.freeplane.api.ai.AiRequestCallback)" class="member-name-link">askAi</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;prompt,
+ <a href="ai/AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a>&nbsp;options,
+ <a href="ai/AiRequestCallback.html" title="interface in org.freeplane.api.ai">AiRequestCallback</a>&nbsp;callback)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Starts an asynchronous AI request for raw prompt text and delivers
+ the terminal result through the callback.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#deactivateUndo()" class="member-name-link">deactivateUndo</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#centerOnNode(org.freeplane.api.Node)" class="member-name-link">centerOnNode</a><wbr>(<a href="Node.html" title="interface in org.freeplane.api">Node</a>&nbsp;center)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#deactivateUndo()" class="member-name-link">deactivateUndo</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">reset undo / redo lists and deactivate Undo for current script</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#edit(org.freeplane.api.Node)" class="member-name-link">edit</a><wbr>(<a href="Node.html" title="interface in org.freeplane.api">Node</a>&nbsp;node)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#edit(org.freeplane.api.Node)" class="member-name-link">edit</a><wbr>(<a href="Node.html" title="interface in org.freeplane.api">Node</a>&nbsp;node)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Starts editing node, normally in the inline editor.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#editInPopup(org.freeplane.api.Node)" class="member-name-link">editInPopup</a><wbr>(<a href="Node.html" title="interface in org.freeplane.api">Node</a>&nbsp;node)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#editInPopup(org.freeplane.api.Node)" class="member-name-link">editInPopup</a><wbr>(<a href="Node.html" title="interface in org.freeplane.api">Node</a>&nbsp;node)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">opens the appropriate popup text editor.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/ExecutorService.html" title="class or interface in java.util.concurrent" class="external-link">ExecutorService</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getMainThreadExecutorService()" class="member-name-link">getMainThreadExecutorService</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;? extends <a href="Map.html" title="interface in org.freeplane.api">Map</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#getOpenMaps()" class="member-name-link">getOpenMaps</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/ExecutorService.html" title="class or interface in java.util.concurrent" class="external-link">ExecutorService</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getMainThreadExecutorService()" class="member-name-link">getMainThreadExecutorService</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;? extends <a href="Map.html" title="interface in org.freeplane.api">Map</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#getOpenMaps()" class="member-name-link">getOpenMaps</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated.</span>
 <div class="deprecation-comment">since 1.7.10 - use <a href="#getOpenMindMaps()"><code>getOpenMindMaps()</code></a></div>
 </div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;? extends <a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getOpenMindMaps()" class="member-name-link">getOpenMindMaps</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;? extends <a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getOpenMindMaps()" class="member-name-link">getOpenMindMaps</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">a list of all opened maps.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="Loader.html" title="interface in org.freeplane.api">Loader</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="#load(java.io.File)" class="member-name-link">load</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a>&nbsp;file)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="Loader.html" title="interface in org.freeplane.api">Loader</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="#load(java.io.File)" class="member-name-link">load</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a>&nbsp;file)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated.</span>
 <div class="deprecation-comment">since 1.7.5 - use <a href="#mapLoader(java.io.File)"><code>mapLoader(File)</code></a></div>
 </div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="Loader.html" title="interface in org.freeplane.api">Loader</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="#load(java.lang.String)" class="member-name-link">load</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;input)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="Loader.html" title="interface in org.freeplane.api">Loader</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="#load(java.lang.String)" class="member-name-link">load</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;input)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated.</span>
 <div class="deprecation-comment">since 1.7.5 - use <a href="#mapLoader(java.lang.String)"><code>mapLoader(String)</code></a></div>
 </div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="Loader.html" title="interface in org.freeplane.api">Loader</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="#load(java.net.URL)" class="member-name-link">load</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/net/URL.html" title="class or interface in java.net" class="external-link">URL</a>&nbsp;url)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="Loader.html" title="interface in org.freeplane.api">Loader</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="#load(java.net.URL)" class="member-name-link">load</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/net/URL.html" title="class or interface in java.net" class="external-link">URL</a>&nbsp;url)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated.</span>
 <div class="deprecation-comment">since 1.7.5 - use <a href="#mapLoader(java.net.URL)"><code>mapLoader(URL)</code></a></div>
 </div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Loader.html" title="interface in org.freeplane.api">Loader</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#mapLoader(java.io.File)" class="member-name-link">mapLoader</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a>&nbsp;file)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns <a href="Loader.html" title="interface in org.freeplane.api"><code>Loader</code></a> for accessing or loading mind map from file.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Loader.html" title="interface in org.freeplane.api">Loader</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#mapLoader(java.io.File)" class="member-name-link">mapLoader</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a>&nbsp;file)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#mapLoader(java.lang.String)" class="member-name-link">mapLoader</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;file)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns <a href="Loader.html" title="interface in org.freeplane.api"><code>Loader</code></a> for accessing or loading mind map from file.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Loader.html" title="interface in org.freeplane.api">Loader</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#mapLoader(java.lang.String)" class="member-name-link">mapLoader</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;file)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#mapLoader(java.net.URL)" class="member-name-link">mapLoader</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/net/URL.html" title="class or interface in java.net" class="external-link">URL</a>&nbsp;file)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Returns <a href="Loader.html" title="interface in org.freeplane.api"><code>Loader</code></a> for accessing or loading mind map from file.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="Loader.html" title="interface in org.freeplane.api">Loader</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#mapLoader(java.net.URL)" class="member-name-link">mapLoader</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/net/URL.html" title="class or interface in java.net" class="external-link">URL</a>&nbsp;file)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns <a href="Loader.html" title="interface in org.freeplane.api"><code>Loader</code></a> for accessing or loading mind map from URL.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#moveNodes(java.util.List,org.freeplane.api.Node,int)" class="member-name-link">moveNodes</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Node.html" title="interface in org.freeplane.api">Node</a>&gt;&nbsp;nodes,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#moveNodes(java.util.List,org.freeplane.api.Node,int)" class="member-name-link">moveNodes</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Node.html" title="interface in org.freeplane.api">Node</a>&gt;&nbsp;nodes,
  <a href="Node.html" title="interface in org.freeplane.api">Node</a>&nbsp;parent,
  int&nbsp;position)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default <a href="Map.html" title="interface in org.freeplane.api">Map</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#newMap()" class="member-name-link">newMap</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default <a href="Map.html" title="interface in org.freeplane.api">Map</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#newMap()" class="member-name-link">newMap</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated.</span>
 <div class="deprecation-comment">since 1.7.10 - use <a href="#newMindMap()"><code>newMindMap()</code></a></div>
 </div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default <a href="Map.html" title="interface in org.freeplane.api">Map</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#newMap(java.net.URL)" class="member-name-link">newMap</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/net/URL.html" title="class or interface in java.net" class="external-link">URL</a>&nbsp;url)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default <a href="Map.html" title="interface in org.freeplane.api">Map</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#newMap(java.net.URL)" class="member-name-link">newMap</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/net/URL.html" title="class or interface in java.net" class="external-link">URL</a>&nbsp;url)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated.</span>
 <div class="deprecation-comment">since 1.6.16 - use <a href="#mapLoader(java.net.URL)"><code>mapLoader(URL)</code></a></div>
 </div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="Map.html" title="interface in org.freeplane.api">Map</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#newMapFromTemplate(java.io.File)" class="member-name-link">newMapFromTemplate</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a>&nbsp;templateFile)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#newMindMap()" class="member-name-link">newMindMap</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="Map.html" title="interface in org.freeplane.api">Map</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#newMapFromTemplate(java.io.File)" class="member-name-link">newMapFromTemplate</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a>&nbsp;templateFile)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="MindMap.html" title="interface in org.freeplane.api">MindMap</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#newMindMap()" class="member-name-link">newMindMap</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">opens a new map with a default name in the foreground.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#redo()" class="member-name-link">redo</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#redo()" class="member-name-link">redo</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">invokes redo once - for testing purposes mainly.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#select(java.util.Collection)" class="member-name-link">select</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends <a href="Node.html" title="interface in org.freeplane.api">Node</a>&gt;&nbsp;toSelect)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ai/AiRequestHandle.html" title="interface in org.freeplane.api.ai">AiRequestHandle</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#runAiPrompt(java.lang.String,java.time.Duration,org.freeplane.api.ai.AiRequestCallback)" class="member-name-link">runAiPrompt</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;promptName,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;timeout,
+ <a href="ai/AiRequestCallback.html" title="interface in org.freeplane.api.ai">AiRequestCallback</a>&nbsp;callback)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Starts an asynchronous AI request from a saved AI prompt name using
+ the supplied timeout and the saved prompt's stored execution
+ defaults.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ai/AiRequestHandle.html" title="interface in org.freeplane.api.ai">AiRequestHandle</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#runAiPrompt(java.lang.String,org.freeplane.api.ai.AiRequestOptions,org.freeplane.api.ai.AiRequestCallback)" class="member-name-link">runAiPrompt</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;promptName,
+ <a href="ai/AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a>&nbsp;options,
+ <a href="ai/AiRequestCallback.html" title="interface in org.freeplane.api.ai">AiRequestCallback</a>&nbsp;callback)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Starts an asynchronous AI request from a saved AI prompt name using
+ the supplied options to override saved-prompt execution defaults.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#select(java.util.Collection)" class="member-name-link">select</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends <a href="Node.html" title="interface in org.freeplane.api">Node</a>&gt;&nbsp;toSelect)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">selects multiple Nodes.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#select(org.freeplane.api.Node)" class="member-name-link">select</a><wbr>(<a href="Node.html" title="interface in org.freeplane.api">Node</a>&nbsp;toSelect)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#selectBranch(org.freeplane.api.Node)" class="member-name-link">selectBranch</a><wbr>(<a href="Node.html" title="interface in org.freeplane.api">Node</a>&nbsp;branchRoot)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#select(org.freeplane.api.Node)" class="member-name-link">select</a><wbr>(<a href="Node.html" title="interface in org.freeplane.api">Node</a>&nbsp;toSelect)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#selectBranch(org.freeplane.api.Node)" class="member-name-link">selectBranch</a><wbr>(<a href="Node.html" title="interface in org.freeplane.api">Node</a>&nbsp;branchRoot)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">selects branchRoot and all children</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#selectMultipleNodes(java.util.Collection)" class="member-name-link">selectMultipleNodes</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends <a href="Node.html" title="interface in org.freeplane.api">Node</a>&gt;&nbsp;toSelect)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#selectMultipleNodes(java.util.Collection)" class="member-name-link">selectMultipleNodes</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;? extends <a href="Node.html" title="interface in org.freeplane.api">Node</a>&gt;&nbsp;toSelect)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">same as <a href="#select(java.util.Collection)"><code>select(Collection)</code></a></div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setStatusInfo(java.lang.String)" class="member-name-link">setStatusInfo</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;info)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setStatusInfo(java.lang.String)" class="member-name-link">setStatusInfo</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;info)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">The main info for the status line with key="standard", use null to remove.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setStatusInfo(java.lang.String,java.lang.String)" class="member-name-link">setStatusInfo</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;infoPanelKey,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setStatusInfo(java.lang.String,java.lang.String)" class="member-name-link">setStatusInfo</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;infoPanelKey,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;info)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Info for status line, null to remove.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setStatusInfo(java.lang.String,java.lang.String,java.lang.String)" class="member-name-link">setStatusInfo</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;infoPanelKey,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setStatusInfo(java.lang.String,java.lang.String,java.lang.String)" class="member-name-link">setStatusInfo</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;infoPanelKey,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;info,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;iconKey)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Info for status line - text and icon - null stands for "remove" (text or icon)</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="#setStatusInfo(java.lang.String,javax.swing.Icon)" class="member-name-link">setStatusInfo</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;infoPanelKey,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="#setStatusInfo(java.lang.String,javax.swing.Icon)" class="member-name-link">setStatusInfo</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;infoPanelKey,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/Icon.html" title="class or interface in javax.swing" class="external-link">Icon</a>&nbsp;icon)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated.</span>
 <div class="deprecation-comment">since 1.2 - use <a href="#setStatusInfo(java.lang.String,java.lang.String,java.lang.String)"><code>setStatusInfo(String, String, String)</code></a></div>
 </div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setZoom(float)" class="member-name-link">setZoom</a><wbr>(float&nbsp;ratio)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setZoom(float)" class="member-name-link">setZoom</a><wbr>(float&nbsp;ratio)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">a value of 1 means 100%.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#undo()" class="member-name-link">undo</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#undo()" class="member-name-link">undo</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">invokes undo once - for testing purposes mainly.</div>
 </div>
 </div>
@@ -629,6 +654,54 @@ extends <a href="ControllerRO.html" title="interface in org.freeplane.api">Contr
 <dd>1.13.3
  Moves a group of nodes together. <br>
  Useful, e.g., when moving a summary-node group (FirstGroupNode .. SummaryNode).</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="askAi(java.lang.String,org.freeplane.api.ai.AiRequestOptions,org.freeplane.api.ai.AiRequestCallback)">
+<h3>askAi</h3>
+<div class="member-signature"><span class="return-type"><a href="ai/AiRequestHandle.html" title="interface in org.freeplane.api.ai">AiRequestHandle</a></span>&nbsp;<span class="element-name">askAi</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;prompt,
+ <a href="ai/AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a>&nbsp;options,
+ <a href="ai/AiRequestCallback.html" title="interface in org.freeplane.api.ai">AiRequestCallback</a>&nbsp;callback)</span></div>
+<div class="block">Starts an asynchronous AI request for raw prompt text and delivers
+ the terminal result through the callback.
+ May throw <a href="ai/AiRequestRejectedException.html" title="class in org.freeplane.api.ai"><code>AiRequestRejectedException</code></a>
+ for same-thread pre-acceptance rejection.
+ In Groovy scripts, implementations may also support the natural
+ trailing-closure form, for example
+ <code>c.askAi("Prompt", AiRequestOptions.builder().timeout(Duration.ofSeconds(30)).mode(org.freeplane.api.ai.AiRequestMode.HIDDEN).build()) { result -&gt; println(result.status) }</code>.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.13.3</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="runAiPrompt(java.lang.String,java.time.Duration,org.freeplane.api.ai.AiRequestCallback)">
+<h3>runAiPrompt</h3>
+<div class="member-signature"><span class="return-type"><a href="ai/AiRequestHandle.html" title="interface in org.freeplane.api.ai">AiRequestHandle</a></span>&nbsp;<span class="element-name">runAiPrompt</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;promptName,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;timeout,
+ <a href="ai/AiRequestCallback.html" title="interface in org.freeplane.api.ai">AiRequestCallback</a>&nbsp;callback)</span></div>
+<div class="block">Starts an asynchronous AI request from a saved AI prompt name using
+ the supplied timeout and the saved prompt's stored execution
+ defaults.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.13.3</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="runAiPrompt(java.lang.String,org.freeplane.api.ai.AiRequestOptions,org.freeplane.api.ai.AiRequestCallback)">
+<h3>runAiPrompt</h3>
+<div class="member-signature"><span class="return-type"><a href="ai/AiRequestHandle.html" title="interface in org.freeplane.api.ai">AiRequestHandle</a></span>&nbsp;<span class="element-name">runAiPrompt</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;promptName,
+ <a href="ai/AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a>&nbsp;options,
+ <a href="ai/AiRequestCallback.html" title="interface in org.freeplane.api.ai">AiRequestCallback</a>&nbsp;callback)</span></div>
+<div class="block">Starts an asynchronous AI request from a saved AI prompt name using
+ the supplied options to override saved-prompt execution defaults.</div>
+<dl class="notes">
+<dt>Since:</dt>
+<dd>1.13.3</dd>
 </dl>
 </section>
 </li>

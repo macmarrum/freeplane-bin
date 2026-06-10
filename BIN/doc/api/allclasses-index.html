@@ -56,6 +56,52 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Class</div>
 <div class="table-header col-last">Description</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/ai/AiModelSelection.html" title="class in org.freeplane.api.ai">AiModelSelection</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="block">Explicit or current model selection for an <a href="org/freeplane/api/ai/AiRequestOptions.html" title="class in org.freeplane.api.ai"><code>AiRequestOptions</code></a>.</div>
+</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/ai/AiRequestCallback.html" title="interface in org.freeplane.api.ai">AiRequestCallback</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
+<div class="block">Callback invoked exactly once with the terminal result of an AI request.</div>
+</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/ai/AiRequestHandle.html" title="interface in org.freeplane.api.ai">AiRequestHandle</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
+<div class="block">Non-blocking handle for an in-flight or completed AI request.</div>
+</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="org/freeplane/api/ai/AiRequestMode.html" title="enum class in org.freeplane.api.ai">AiRequestMode</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">
+<div class="block">Visible or hidden execution mode for <a href="org/freeplane/api/ai/AiRequestOptions.html" title="class in org.freeplane.api.ai"><code>AiRequestOptions</code></a>.</div>
+</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/ai/AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="block">Immutable public options for script-facing AI requests.</div>
+</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/ai/AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab5"><a href="org/freeplane/api/ai/AiRequestRejectedException.html" title="class in org.freeplane.api.ai">AiRequestRejectedException</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab5">
+<div class="block">Runtime exception for same-thread pre-acceptance AI request rejection.</div>
+</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/ai/AiRequestResult.html" title="class in org.freeplane.api.ai">AiRequestResult</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="block">Immutable terminal result delivered to <a href="org/freeplane/api/ai/AiRequestCallback.html" title="interface in org.freeplane.api.ai"><code>AiRequestCallback</code></a>.</div>
+</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/ai/AiRequestService.html" title="interface in org.freeplane.api.ai">AiRequestService</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
+<div class="block">Cross-plugin OSGi service for asynchronous AI requests.</div>
+</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="org/freeplane/api/ai/AiRequestStatus.html" title="enum class in org.freeplane.api.ai">AiRequestStatus</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">
+<div class="block">Terminal status for an AI request callback result.</div>
+</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/ai/AiSelectionOverride.html" title="class in org.freeplane.api.ai">AiSelectionOverride</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="block">Overrides the selection structure injected into the first AI prompt message.</div>
+</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="org/freeplane/api/ai/AiToolAvailability.html" title="enum class in org.freeplane.api.ai">AiToolAvailability</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">
+<div class="block">Tool availability requested for an AI call.</div>
+</div>
 <div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/AttributeCondition.html" title="interface in org.freeplane.api">AttributeCondition</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
 <div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/Attributes.html" title="interface in org.freeplane.api">Attributes</a></div>
@@ -216,264 +262,270 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
 <div class="block">Node's icons: <code>node.icons</code> - read-only.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/launcher/Launcher.html" title="class in org.freeplane.launcher">Launcher</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/swing/JFileChooser.html" title="class in org.freeplane.api.swing">JFileChooser</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="block">A wrapper around <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/JFileChooser.html" title="class or interface in javax.swing" class="external-link"><code>JFileChooser</code></a> that works around security 
+ restrictions in environments with limited reflection permissions, such as 
+ Groovy scripts running under Freeplane's security manager.</div>
+</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/launcher/Launcher.html" title="class in org.freeplane.launcher">Launcher</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">This class can be used to run freeplane instance from an application and to obtain its <a href="org/freeplane/api/Controller.html" title="interface in org.freeplane.api"><code>Controller</code></a> object.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="org/freeplane/api/LayoutOrientation.html" title="enum class in org.freeplane.api">LayoutOrientation</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab3"><a href="org/freeplane/api/LengthUnit.html" title="enum class in org.freeplane.api">LengthUnit</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab3"><a href="org/freeplane/api/LayoutOrientation.html" title="enum class in org.freeplane.api">LayoutOrientation</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/Link.html" title="interface in org.freeplane.api">Link</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="org/freeplane/api/LengthUnit.html" title="enum class in org.freeplane.api">LengthUnit</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/Link.html" title="interface in org.freeplane.api">Link</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
 <div class="block">Node's link: <code>node.link</code> - read-write.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/LinkRO.html" title="interface in org.freeplane.api">LinkRO</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/LinkRO.html" title="interface in org.freeplane.api">LinkRO</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
 <div class="block">Node's link: <code>node.link</code> - read-only.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/Loader.html" title="interface in org.freeplane.api">Loader</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/Loader.html" title="interface in org.freeplane.api">Loader</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
 <div class="block">API for selecting or creating map views.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/core/util/LogUtils.html" title="class in org.freeplane.core.util">LogUtils</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/core/util/LogUtils.html" title="class in org.freeplane.core.util">LogUtils</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Utilities for logging to the standard logfile.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/Map.html" title="interface in org.freeplane.api">Map</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">Deprecated.
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/Map.html" title="interface in org.freeplane.api">Map</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab1">Deprecated.
 <div class="deprecation-comment">since 1.7.10 - use MindMap instead</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/MapRO.html" title="interface in org.freeplane.api">MapRO</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab1">Deprecated.
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/MapRO.html" title="interface in org.freeplane.api">MapRO</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">Deprecated.
 <div class="deprecation-comment">since 1.7.10 - use MindMapRO instead</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/MapTagCategories.html" title="interface in org.freeplane.api">MapTagCategories</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/MapTagCategories.html" title="interface in org.freeplane.api">MapTagCategories</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
 <div class="block">Read-write access to the map's tag category structure:
  <code>map.tagCategories</code>.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/MapTagCategoriesRO.html" title="interface in org.freeplane.api">MapTagCategoriesRO</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/MapTagCategoriesRO.html" title="interface in org.freeplane.api">MapTagCategoriesRO</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
 <div class="block">Read-only access to the map's tag category structure:
  <code>map.tagCategories</code>.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/MapTagCategoryInstruction.html" title="class in org.freeplane.api">MapTagCategoryInstruction</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/MapTagCategoryInstruction.html" title="class in org.freeplane.api">MapTagCategoryInstruction</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Single explicit edit operation for the map's tag categories.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/MapTagCategoryInstructionRequest.html" title="class in org.freeplane.api">MapTagCategoryInstructionRequest</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/MapTagCategoryInstructionRequest.html" title="class in org.freeplane.api">MapTagCategoryInstructionRequest</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Batch of explicit tag category edit operations.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="org/freeplane/api/MapTagCategoryInstructionType.html" title="enum class in org.freeplane.api">MapTagCategoryInstructionType</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab3"><a href="org/freeplane/api/MapTagCategoryInstructionType.html" title="enum class in org.freeplane.api">MapTagCategoryInstructionType</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab3">
 <div class="block">Supported edit operations for the map-level tag category API.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/MapTagCategoryNode.html" title="class in org.freeplane.api">MapTagCategoryNode</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/MapTagCategoryNode.html" title="class in org.freeplane.api">MapTagCategoryNode</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">A node in the map's tag category tree.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/MapTagCategoryState.html" title="class in org.freeplane.api">MapTagCategoryState</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/MapTagCategoryState.html" title="class in org.freeplane.api">MapTagCategoryState</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Immutable map-level tag category structure at one revision.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/MapTagItem.html" title="class in org.freeplane.api">MapTagItem</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/MapTagItem.html" title="class in org.freeplane.api">MapTagItem</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Tag item used by the map-level tag category API.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="org/freeplane/api/MapTagTargetLocation.html" title="enum class in org.freeplane.api">MapTagTargetLocation</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab3"><a href="org/freeplane/api/MapTagTargetLocation.html" title="enum class in org.freeplane.api">MapTagTargetLocation</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab3">
 <div class="block">Target placement for add and move operations in the map-level tag category API.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/core/util/MenuUtils.html" title="class in org.freeplane.core.util">MenuUtils</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/core/util/MenuUtils.html" title="class in org.freeplane.core.util">MenuUtils</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Utilities for dealing with the Freeplane menu: In scripts available as "global variable" menuUtils.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/core/util/MenuUtils.MenuEntry.html" title="class in org.freeplane.core.util">MenuUtils.MenuEntry</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/core/util/MenuUtils.MenuEntry.html" title="class in org.freeplane.core.util">MenuUtils.MenuEntry</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">The userObject type for createMenuEntryTree().</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/core/util/MenuUtils.MenuEntryTreeBuilder.html" title="class in org.freeplane.core.util">MenuUtils.MenuEntryTreeBuilder</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/MindMap.html" title="interface in org.freeplane.api">MindMap</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/core/util/MenuUtils.MenuEntryTreeBuilder.html" title="class in org.freeplane.core.util">MenuUtils.MenuEntryTreeBuilder</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/MindMap.html" title="interface in org.freeplane.api">MindMap</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
 <div class="block">The map a node belongs to: <code>node.map</code> - read-write.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/MindMapRO.html" title="interface in org.freeplane.api">MindMapRO</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/MindMapRO.html" title="interface in org.freeplane.api">MindMapRO</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
 <div class="block">The map a node belongs to: <code>node.map</code> - read-only.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/Node.html" title="interface in org.freeplane.api">Node</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/Node.html" title="interface in org.freeplane.api">Node</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
 <div class="block">The currently selected node: <code>node</code> - read-write.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/NodeBookmark.html" title="interface in org.freeplane.api">NodeBookmark</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/NodeBookmark.html" title="interface in org.freeplane.api">NodeBookmark</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
 <div class="block">Represents a bookmark for a specific node in the mind map.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/NodeChanged.html" title="class in org.freeplane.api">NodeChanged</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab3"><a href="org/freeplane/api/NodeChanged.ChangedElement.html" title="enum class in org.freeplane.api">NodeChanged.ChangedElement</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/NodeChangeListener.html" title="interface in org.freeplane.api">NodeChangeListener</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/NodeCondition.html" title="interface in org.freeplane.api">NodeCondition</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/NodeChanged.html" title="class in org.freeplane.api">NodeChanged</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="org/freeplane/api/NodeChanged.ChangedElement.html" title="enum class in org.freeplane.api">NodeChanged.ChangedElement</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/NodeChangeListener.html" title="interface in org.freeplane.api">NodeChangeListener</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/NodeGeometry.html" title="interface in org.freeplane.api">NodeGeometry</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/NodeCondition.html" title="interface in org.freeplane.api">NodeCondition</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/NodeGeometryRO.html" title="interface in org.freeplane.api">NodeGeometryRO</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/NodeGeometry.html" title="interface in org.freeplane.api">NodeGeometry</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab5"><a href="org/freeplane/api/NodeNotFoundException.html" title="class in org.freeplane.api">NodeNotFoundException</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab5">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/NodeRO.html" title="interface in org.freeplane.api">NodeRO</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/NodeGeometryRO.html" title="interface in org.freeplane.api">NodeGeometryRO</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab5"><a href="org/freeplane/api/NodeNotFoundException.html" title="class in org.freeplane.api">NodeNotFoundException</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab5">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/NodeRO.html" title="interface in org.freeplane.api">NodeRO</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
 <div class="block">The currently selected node: <code>node</code> - read-only.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="org/freeplane/api/NodeShape.html" title="enum class in org.freeplane.api">NodeShape</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/NodeStyle.html" title="interface in org.freeplane.api">NodeStyle</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab3"><a href="org/freeplane/api/NodeShape.html" title="enum class in org.freeplane.api">NodeShape</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/NodeStyle.html" title="interface in org.freeplane.api">NodeStyle</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
+<div class="block">Node's style: <code>node.style</code> - read-only.</div>
+</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/NodeStyleRO.html" title="interface in org.freeplane.api">NodeStyleRO</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">
 <div class="block">Node's style: <code>node.style</code> - read-only.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/NodeStyleRO.html" title="interface in org.freeplane.api">NodeStyleRO</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
-<div class="block">Node's style: <code>node.style</code> - read-only.</div>
-</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/NodeToComparableMapper.html" title="interface in org.freeplane.api">NodeToComparableMapper</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/PhysicalUnit.html" title="interface in org.freeplane.api">PhysicalUnit</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/NodeToComparableMapper.html" title="interface in org.freeplane.api">NodeToComparableMapper</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/Properties.html" title="interface in org.freeplane.api">Properties</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/PhysicalUnit.html" title="interface in org.freeplane.api">PhysicalUnit</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.html" title="interface in org.freeplane.plugin.script.proxy">Proxy</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/Properties.html" title="interface in org.freeplane.api">Properties</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.html" title="interface in org.freeplane.plugin.script.proxy">Proxy</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
 <div class="block">This interface alone defines the api for accessing the internal state of the Freeplane.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Attributes.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Attributes</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.AttributesRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.AttributesRO</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Attributes.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Attributes</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Border.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Border</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.AttributesRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.AttributesRO</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.BorderRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.BorderRO</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Border.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Border</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Cloud.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Cloud</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.BorderRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.BorderRO</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.ConditionalStyle.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.ConditionalStyle</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Cloud.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Cloud</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.ConditionalStyleRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.ConditionalStyleRO</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.ConditionalStyle.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.ConditionalStyle</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.ConditionalStyles.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.ConditionalStyles</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.ConditionalStyleRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.ConditionalStyleRO</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Connector.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Connector</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.ConditionalStyles.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.ConditionalStyles</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.ConnectorRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.ConnectorRO</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Connector.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Connector</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Controller.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Controller</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.ConnectorRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.ConnectorRO</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.ControllerRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.ControllerRO</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Controller.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Controller</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.DependencyLookup.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.DependencyLookup</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.ControllerRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.ControllerRO</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Edge.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Edge</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.DependencyLookup.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.DependencyLookup</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.EdgeRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.EdgeRO</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Edge.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Edge</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.ExternalObject.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.ExternalObject</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.EdgeRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.EdgeRO</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.ExternalObjectRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.ExternalObjectRO</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.ExternalObject.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.ExternalObject</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Font.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Font</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.ExternalObjectRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.ExternalObjectRO</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.FontRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.FontRO</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Font.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Font</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Icons.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Icons</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.FontRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.FontRO</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.IconsRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.IconsRO</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Icons.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Icons</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Link.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Link</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.IconsRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.IconsRO</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.LinkRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.LinkRO</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Link.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Link</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Loader.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Loader</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.LinkRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.LinkRO</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Map.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Map</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab1">Deprecated.
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Loader.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Loader</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Map.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Map</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">Deprecated.
 <div class="deprecation-comment">since 1.7.10 use Proxy.MindMap</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.MapRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.MapRO</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">Deprecated.
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.MapRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.MapRO</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab1">Deprecated.
 <div class="deprecation-comment">since 1.7.10, use Proxy.MindMapRO</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.MapTagCategories.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.MapTagCategories</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.MapTagCategoriesRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.MapTagCategoriesRO</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.MapTagCategories.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.MapTagCategories</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.MindMap.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.MindMap</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.MapTagCategoriesRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.MapTagCategoriesRO</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.MindMapRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.MindMapRO</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.MindMap.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.MindMap</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Node.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Node</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.MindMapRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.MindMapRO</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.NodeGeometry.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.NodeGeometry</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Node.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Node</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.NodeGeometryRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.NodeGeometryRO</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.NodeGeometry.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.NodeGeometry</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.NodeRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.NodeRO</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.NodeGeometryRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.NodeGeometryRO</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.NodeStyle.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.NodeStyle</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.NodeRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.NodeRO</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.NodeStyleRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.NodeStyleRO</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.NodeStyle.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.NodeStyle</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Properties.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Properties</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.NodeStyleRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.NodeStyleRO</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Reminder.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Reminder</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Properties.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Properties</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.ReminderRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.ReminderRO</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Reminder.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Reminder</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Tags.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Tags</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.ReminderRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.ReminderRO</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.TagsRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.TagsRO</a></div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.Tags.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Tags</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/Quantity.html" title="class in org.freeplane.api">Quantity&lt;U&gt;</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/Reminder.html" title="interface in org.freeplane.api">Reminder</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/plugin/script/proxy/Proxy.TagsRO.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.TagsRO</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/api/Quantity.html" title="class in org.freeplane.api">Quantity&lt;U&gt;</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/Reminder.html" title="interface in org.freeplane.api">Reminder</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
 <div class="block">Reminder: <code>node.reminder</code> - read-write.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/ReminderRO.html" title="interface in org.freeplane.api">ReminderRO</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/ReminderRO.html" title="interface in org.freeplane.api">ReminderRO</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
 <div class="block">Reminder: <code>node.reminder</code> - read-only.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/Script.html" title="interface in org.freeplane.api">Script</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab1">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/Script.html" title="interface in org.freeplane.api">Script</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">
 <div class="block">API for executing scripts.</div>
 </div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/plugin/script/proxy/ScriptUtils.html" title="class in org.freeplane.plugin.script.proxy">ScriptUtils</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/plugin/script/proxy/ScriptUtils.html" title="class in org.freeplane.plugin.script.proxy">ScriptUtils</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Various utilities for use in scripting, especially in utility scripts.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab3"><a href="org/freeplane/api/Side.html" title="enum class in org.freeplane.api">Side</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/Tags.html" title="interface in org.freeplane.api">Tags</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/TagsRO.html" title="interface in org.freeplane.api">TagsRO</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="org/freeplane/api/Side.html" title="enum class in org.freeplane.api">Side</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/Tags.html" title="interface in org.freeplane.api">Tags</a></div>
 <div class="col-last even-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/core/util/TextUtils.html" title="class in org.freeplane.core.util">TextUtils</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab1"><a href="org/freeplane/api/TagsRO.html" title="interface in org.freeplane.api">TagsRO</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab1">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/core/util/TextUtils.html" title="class in org.freeplane.core.util">TextUtils</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">utilities for translations, conversions to/from number and dates etc.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab3"><a href="org/freeplane/api/TextWritingDirection.html" title="enum class in org.freeplane.api">TextWritingDirection</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/core/ui/components/UITools.html" title="class in org.freeplane.core.ui.components">UITools</a></div>
-<div class="col-last odd-row-color all-classes-table all-classes-table-tab2">
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab3"><a href="org/freeplane/api/TextWritingDirection.html" title="enum class in org.freeplane.api">TextWritingDirection</a></div>
+<div class="col-last odd-row-color all-classes-table all-classes-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/core/ui/components/UITools.html" title="class in org.freeplane.core.ui.components">UITools</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">
 <div class="block">Utilities for accessing the GUI, creating dialogs etc.: In scripts available as "global variable" <code>ui</code>.</div>
 </div>
-<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/core/ui/components/UITools.Defaults.html" title="class in org.freeplane.core.ui.components">UITools.Defaults</a></div>
-<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
-<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/core/ui/components/UITools.InsertEolAction.html" title="class in org.freeplane.core.ui.components">UITools.InsertEolAction</a></div>
+<div class="col-first odd-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/core/ui/components/UITools.Defaults.html" title="class in org.freeplane.core.ui.components">UITools.Defaults</a></div>
 <div class="col-last odd-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
+<div class="col-first even-row-color all-classes-table all-classes-table-tab2"><a href="org/freeplane/core/ui/components/UITools.InsertEolAction.html" title="class in org.freeplane.core.ui.components">UITools.InsertEolAction</a></div>
+<div class="col-last even-row-color all-classes-table all-classes-table-tab2">&nbsp;</div>
 </div>
 </div>
 </div>

@@ -37,7 +37,8 @@ Export-Package: org.freeplane.plugin.script;uses:="org.freeplane.plugi
  freeplane.plugin.script.dependencies";version="1.13.3"
 Import-Package: de.sciss.syntaxpane.actions;version="[1.13,2)"
 Private-Package: groovy.runtime.metaclass.groovy.grape,groovy.runtime.
- metaclass.java.lang,org.freeplane.plugin.script.help
+ metaclass.java.lang,org.freeplane.plugin.script.ai,org.freeplane.plug
+ in.script.help
 Require-Bundle: org.freeplane.core
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Tool: Bnd-7.1.0.202411251545
