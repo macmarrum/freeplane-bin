@@ -2,7 +2,7 @@
     
   <!--To view this file, open it in Freeplane.-->
     
-  <node FOLDED="false" ID="ID_TEMPLATE_ROOT" LINK="index.html" STYLE="oval" TEXT="Freeplane scripting API">
+  <node FOLDED="false" ID="ID_1" LINK="index.html" STYLE="oval" TEXT="Freeplane scripting API">
     
     <hook NAME="MapStyle">
           
@@ -334,7 +334,7 @@
           <node FOLDED="true" ID="ID_dc0cbf9877623f12c0234d41" TEXT="ADD_TO_CHAT: AiRequestMode"/>
           <node FOLDED="true" ID="ID_810a37242031f7f0905faee8" TEXT="HIDDEN: AiRequestMode"/>
           <node FOLDED="true" ID="ID_4b61e4ff3e48b1ebb79d6617" TEXT="HIDDEN_WITH_CANCEL_DIALOG: AiRequestMode"/>
-          <node FOLDED="true" ID="ID_6646070ee5154a4c0b914d64" TEXT="SHOW_IN_CHAT: AiRequestMode"/>
+          <node FOLDED="true" ID="ID_9c158faf3edf9397c604d45f" TEXT="SHOW_IN_NEW_CHAT: AiRequestMode"/>
         </node>
       </node>
       <node FOLDED="true" ID="ID_5a22163177fbb65db45ae557" TEXT="AiRequestOptions — Immutable public options for script-facing AI requests.">
@@ -344,7 +344,10 @@
         <node FOLDED="true" ID="ID_9c2b9c98fdaf0e0a127ecc26" TEXT="Properties">
           <node FOLDED="true" ID="ID_34abec5fca8ec1a06264f826" TEXT="mode: AiRequestMode [read]"/>
           <node FOLDED="true" ID="ID_753504f80e084a59e0867f92" TEXT="modelSelection: AiModelSelection [read]"/>
+          <node FOLDED="true" ID="ID_8101b95488f8e01bcb7d2067" TEXT="profileMessage: String [read]"/>
+          <node FOLDED="true" ID="ID_f6eaa403893a3109028270a2" TEXT="profileName: String [read]"/>
           <node FOLDED="true" ID="ID_58cc7dc7a7f7df3e80579e21" TEXT="selectionOverride: AiSelectionOverride [read]"/>
+          <node FOLDED="true" ID="ID_b1f06447620b66c721d79c0b" TEXT="systemMessage: String [read]"/>
           <node FOLDED="true" ID="ID_a1d13bced860f90b6ec94b45" TEXT="timeout: Duration [read]"/>
           <node FOLDED="true" ID="ID_b507a162bfa4bd15b73ff30c" TEXT="toolAvailability: AiToolAvailability [read]"/>
         </node>
@@ -2545,7 +2548,7 @@
               <node FOLDED="false" ID="ID_a1852152f4acc98d2162f459" TEXT="Shortcut for node.map.node(id).value."/>
             </node>
           </node>
-          <node FOLDED="true" ID="ID_a8ab037f7e1702631a611627" TEXT="createBinding(nodeProxy: NodeRO, controllerProxy: ControllerRO): Binding"/>
+          <node FOLDED="true" ID="ID_bd1dc0500d9b9a9e9cfc53fa" TEXT="createBinding(nodeProxy: NodeRO, controllerProxy: ControllerRO, scriptContext: ScriptContext): Binding"/>
           <node FOLDED="true" ID="ID_e85394aac36f7995672452f4" TEXT="format(object: Object): Object">
             <node FOLDED="false" ID="ID_224662a297776910fd514f3a" TEXT="Description">
               <node FOLDED="false" ID="ID_fc42eab1bca0ac48587e0a0d" TEXT="Applies default date-time format for dates or default number format for numbers. All other"/>
