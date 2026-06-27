@@ -348,6 +348,7 @@
           <node FOLDED="true" ID="ID_f6eaa403893a3109028270a2" TEXT="profileName: String [read]"/>
           <node FOLDED="true" ID="ID_58cc7dc7a7f7df3e80579e21" TEXT="selectionOverride: AiSelectionOverride [read]"/>
           <node FOLDED="true" ID="ID_b1f06447620b66c721d79c0b" TEXT="systemMessage: String [read]"/>
+          <node FOLDED="true" ID="ID_4c684f5521b160eab95297c3" TEXT="systemMessageExact: boolean [read]"/>
           <node FOLDED="true" ID="ID_a1d13bced860f90b6ec94b45" TEXT="timeout: Duration [read]"/>
           <node FOLDED="true" ID="ID_b507a162bfa4bd15b73ff30c" TEXT="toolAvailability: AiToolAvailability [read]"/>
         </node>
@@ -356,6 +357,24 @@
         </node>
         <node FOLDED="true" ID="ID_16d4b34d0867ad0cacf3fe51" TEXT="Nested types">
           <node FOLDED="true" ID="ID_f139402b53cf0e24e288a923" TEXT="AiRequestOptions.Builder"/>
+        </node>
+      </node>
+      <node FOLDED="true" ID="ID_aa77693a39a353e99ad08939" TEXT="AiRequestOptions.Builder">
+        <node FOLDED="true" ID="ID_93be7aeb02ea1ec164f553bb" TEXT="Type">
+          <node CONTENT_ID="ID_d2cf49855d680f5d6202163a" FOLDED="false" ID="ID_74ed880eb68725df44a20a73"/>
+        </node>
+        <node FOLDED="true" ID="ID_8c1cd67f0f9db46579b87390" TEXT="Methods">
+          <node FOLDED="true" ID="ID_33163a45a497eef8f6665e37" TEXT="Builder()"/>
+          <node FOLDED="true" ID="ID_328d619c1d668ae651a7830e" TEXT="build(): AiRequestOptions"/>
+          <node FOLDED="true" ID="ID_b4e219a7adb82de8828c6367" TEXT="exactSystemMessage(systemMessage: String): AiRequestOptions.Builder"/>
+          <node FOLDED="true" ID="ID_70f8159610cad8585efd8c14" TEXT="mode(mode: AiRequestMode): AiRequestOptions.Builder"/>
+          <node FOLDED="true" ID="ID_4686eb8e23f133ec60bd6624" TEXT="modelSelection(modelSelection: AiModelSelection): AiRequestOptions.Builder"/>
+          <node FOLDED="true" ID="ID_62cc1bbee4eeb29ff55a042b" TEXT="profile(name: String): AiRequestOptions.Builder"/>
+          <node FOLDED="true" ID="ID_11ec21201658073aff0f46fc" TEXT="profile(name: String, message: String): AiRequestOptions.Builder"/>
+          <node FOLDED="true" ID="ID_ddfc9083b35c30c808db6d3d" TEXT="selectionOverride(selectionOverride: AiSelectionOverride): AiRequestOptions.Builder"/>
+          <node FOLDED="true" ID="ID_b31a27d002f5c2b4aa48558e" TEXT="systemMessage(systemMessage: String): AiRequestOptions.Builder"/>
+          <node FOLDED="true" ID="ID_7bb3ed2b83b0642326910f2c" TEXT="timeout(timeout: Duration): AiRequestOptions.Builder"/>
+          <node FOLDED="true" ID="ID_f56a151a1b3cbe480b2f62d2" TEXT="toolAvailability(toolAvailability: AiToolAvailability): AiRequestOptions.Builder"/>
         </node>
       </node>
       <node FOLDED="true" ID="ID_26bf0f8d11ea0d50b9517212" TEXT="AiRequestRejectedException — Runtime exception for same-thread pre-acceptance AI request rejection.">
@@ -944,6 +963,22 @@
         </node>
         <node FOLDED="true" ID="ID_4d6d6dee02e2f87d68576dca" TEXT="Nested types">
           <node FOLDED="true" ID="ID_293a54ce3632387b82e2340c" TEXT="ChildNodesAlignment.Placement"/>
+        </node>
+      </node>
+      <node FOLDED="true" ID="ID_6f4f26e365cebab88325769c" TEXT="ChildNodesAlignment.Placement">
+        <node FOLDED="true" ID="ID_d6049200ef023470894070bf" TEXT="Type">
+          <node CONTENT_ID="ID_e0131e2415388931a6f935ce" FOLDED="false" ID="ID_0373d696947b2768514b594c"/>
+        </node>
+        <node FOLDED="true" ID="ID_1b3ddf8a22f42226ead4480d" TEXT="Methods">
+          <node FOLDED="true" ID="ID_eb66479cfda52dabcd9b3014" TEXT="align(value: int): int"/>
+          <node FOLDED="true" ID="ID_b5b5a50a765979918ba41de2" TEXT="valueOf(name: String): ChildNodesAlignment.Placement"/>
+          <node FOLDED="true" ID="ID_9668483bfb1668ffec23044d" TEXT="values(): ChildNodesAlignment.Placement[]"/>
+        </node>
+        <node FOLDED="true" ID="ID_566f25ad9dacfcce4893aee7" TEXT="Constants">
+          <node FOLDED="true" ID="ID_e7ef70df412fc93c47bd9f7a" TEXT="BOTTOM: ChildNodesAlignment.Placement"/>
+          <node FOLDED="true" ID="ID_e2968044b55d1808a8b7afa9" TEXT="CENTER: ChildNodesAlignment.Placement"/>
+          <node FOLDED="true" ID="ID_e4befc80e6e053c43346edbb" TEXT="TOP: ChildNodesAlignment.Placement"/>
+          <node FOLDED="true" ID="ID_c0b045d7a7f70a81f45d8daa" TEXT="UNKNOWN: ChildNodesAlignment.Placement"/>
         </node>
       </node>
       <node FOLDED="true" ID="ID_d16c77336102ab3f84e2bbfb" TEXT="ChildNodesLayout">
@@ -2217,6 +2252,18 @@
           <node FOLDED="true" ID="ID_837458f06e66cd35c053ac70" TEXT="Dependencies.Element"/>
         </node>
       </node>
+      <node FOLDED="true" ID="ID_6d20fc9f8046f219f6767292" TEXT="Dependencies.Element">
+        <node FOLDED="true" ID="ID_ec68c32da6dec16777296728" TEXT="Type">
+          <node CONTENT_ID="ID_e00ffb2f0b6ac219d5f9d67e" FOLDED="false" ID="ID_10ab5d114b179e91f3619281"/>
+        </node>
+        <node FOLDED="true" ID="ID_d19daf375b82050a7635f988" TEXT="Methods">
+          <node FOLDED="true" ID="ID_5763a9618a95bba0fba97217" TEXT="valueOf(name: String): Dependencies.Element"/>
+          <node FOLDED="true" ID="ID_f2627f07317496a17e63ac09" TEXT="values(): Dependencies.Element[]"/>
+        </node>
+        <node FOLDED="true" ID="ID_deeb0bf564fc3989cae625cf" TEXT="Constants">
+          <node FOLDED="true" ID="ID_da659853576046c7605dec70" TEXT="NODE: Dependencies.Element"/>
+        </node>
+      </node>
       <node FOLDED="true" ID="ID_66f8cc3a6d7ce9cc12e23362" TEXT="DependencyLookup — Calculates dependencies related to node value or attribute.">
         <node FOLDED="true" ID="ID_2683979bb3845fe94aeae39f" TEXT="Types">
           <node CONTENT_ID="ID_47f87f096832f7c30fd7782d" FOLDED="false" ID="ID_7ee0af7d72c9a818bcdd1bf1"/>
@@ -2639,6 +2686,64 @@
               <node FOLDED="false" ID="ID_0ded8fbbab4b1946c273d975" TEXT="import static org.freeplane.plugin.script.GroovyStaticImports.*"/>
             </node>
           </node>
+        </node>
+      </node>
+      <node FOLDED="true" ID="ID_e2160ff5f2e55575b859062c" TEXT="FreeplaneScriptBaseClass.ConfigProperties — Accessor for Freeplane's configuration: In scripts available as &quot;global variable&quot; config">
+        <node FOLDED="true" ID="ID_6671165f03535a00bdd3273c" TEXT="Type">
+          <node CONTENT_ID="ID_68d78498325c8af2c7c931d6" FOLDED="false" ID="ID_060c180372a68288874fd0c2"/>
+        </node>
+        <node FOLDED="true" ID="ID_e1c0df9083f5868ceae7286b" TEXT="Properties">
+          <node FOLDED="true" ID="ID_90d1faf20fca142dad5b7836" TEXT="defaultLanguageCode: String [read]"/>
+          <node FOLDED="true" ID="ID_5a9ce1c88b3641d777796006" TEXT="freeplaneUserDirectory: String [read]"/>
+          <node FOLDED="true" ID="ID_6708f6d5794fcc32c12dea77" TEXT="installationBaseDir: String [read]"/>
+          <node FOLDED="true" ID="ID_66064cf51ae061b59ffb1510" TEXT="languageCode: String [read]"/>
+          <node FOLDED="true" ID="ID_20ab96cdd9bdfacca449f504" TEXT="properties: Properties [read]"/>
+          <node FOLDED="true" ID="ID_1b288c0889621599712d3349" TEXT="propertyChangeListeners: Collection&lt;IFreeplanePropertyListener&gt; [read]"/>
+          <node FOLDED="true" ID="ID_baaae45f3976781393893b60" TEXT="resourceBaseDir: String [read]"/>
+          <node FOLDED="true" ID="ID_e96a7ef745c19d4c1b4f3a27" TEXT="resources: ResourceBundle [read]"/>
+          <node FOLDED="true" ID="ID_f12bc893bddeac9f9ec96594" TEXT="systemLocale: Locale [read]"/>
+        </node>
+        <node FOLDED="true" ID="ID_e073781e8e3abd3574ba0e3a" TEXT="Methods">
+          <node FOLDED="true" ID="ID_b0ee2d679166eda87d65103e" TEXT="ConfigProperties()"/>
+          <node FOLDED="true" ID="ID_f91ddee9936109a2e6d8fe63" TEXT="getArrayProperty(key: String, separator: String): String[]"/>
+          <node FOLDED="true" ID="ID_f0636d3962767ae34db055e8" TEXT="getAt(name: String): String">
+            <node FOLDED="false" ID="ID_29d7619d9ead4ad1433da1a6" TEXT="Description">
+              <node FOLDED="false" ID="ID_67fdf1857030fc04c32b875f" TEXT="support config['key'] from Groovy."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_394bd8092604923e9a02209b" TEXT="getBooleanProperty(key: String): boolean"/>
+          <node FOLDED="true" ID="ID_3b1b7ba8025a9db1b9db1b18" TEXT="getBooleanProperty(key: String, defaultValue: boolean): boolean"/>
+          <node FOLDED="true" ID="ID_57d7797427147c9c870287b3" TEXT="getColorProperty(name: String): Color"/>
+          <node FOLDED="true" ID="ID_5ed633efdbfe0a9268b8dc03" TEXT="getDefaultProperty(key: String): String"/>
+          <node FOLDED="true" ID="ID_23a2d08554cf0c28186ec32a" TEXT="getDoubleProperty(key: String): double"/>
+          <node FOLDED="true" ID="ID_6eec50492bf6fefdca644d19" TEXT="getDoubleProperty(key: String, defaultValue: double): double"/>
+          <node FOLDED="true" ID="ID_7a6dd5737f8122d2f6cb1014" TEXT="getEnumProperty(propertyName: String, defaultValue: Enum&lt;T&gt;): T"/>
+          <node FOLDED="true" ID="ID_eef885047e672a7cbdf771cb" TEXT="getIcon(iconKey: String): Icon"/>
+          <node FOLDED="true" ID="ID_49d8ddf537b4b5d322bef8c4" TEXT="getIconResource(resourcePath: String): URL"/>
+          <node FOLDED="true" ID="ID_67fe4c6e13b53aa20d6df150" TEXT="getImageIcon(iconKey: String): Icon"/>
+          <node FOLDED="true" ID="ID_d56b978f178233b4277dc04f" TEXT="getIntProperty(key: String): int"/>
+          <node FOLDED="true" ID="ID_b798eae6206e2ec7568d65f7" TEXT="getIntProperty(key: String, defaultValue: int): int"/>
+          <node FOLDED="true" ID="ID_c2dec19a2629ee7b36e1bb49" TEXT="getLengthProperty(name: String): int"/>
+          <node FOLDED="true" ID="ID_5fb8d7f3432ca8bd265fc2d7" TEXT="getLengthQuantityProperty(name: String): Quantity&lt;LengthUnit&gt;"/>
+          <node FOLDED="true" ID="ID_0b65a9ae8315b624f2e45e88" TEXT="getLongProperty(key: String, defaultValue: long): long"/>
+          <node FOLDED="true" ID="ID_02c2373ce45231bce2eaa0c1" TEXT="getProperty(key: String): String"/>
+          <node FOLDED="true" ID="ID_b6cb7f70fcac907e5acf027a" TEXT="getProperty(key: String, defaultValue: boolean): boolean"/>
+          <node FOLDED="true" ID="ID_d88db2c422d575ab027f8d32" TEXT="getProperty(key: String, defaultValue: double): double"/>
+          <node FOLDED="true" ID="ID_19e567daec9cc2ce06cbc227" TEXT="getProperty(key: String, defaultValue: int): int"/>
+          <node FOLDED="true" ID="ID_7647988e8b06d95ccfe3728a" TEXT="getProperty(propertyName: String, defaultValue: Enum&lt;T&gt;): T"/>
+          <node FOLDED="true" ID="ID_9a136a528cf6b335fc4882ff" TEXT="getProperty(key: String, value: String): String"/>
+          <node FOLDED="true" ID="ID_5ee7a4818cdcd638c9b797d7" TEXT="getProperty(key: String, defaultValue: long): long"/>
+          <node FOLDED="true" ID="ID_5939debf15817cf8c9e05eed" TEXT="getResource(resourcePath: String): URL"/>
+          <node FOLDED="true" ID="ID_6c52b2e37ad788bc1bcc9489" TEXT="getResourceStream(resFileName: String): InputStream throws IOException"/>
+          <node FOLDED="true" ID="ID_8d2cc64b6a2613c83e1e9fc2" TEXT="getTimeProperty(name: String): int"/>
+          <node FOLDED="true" ID="ID_b4da26cc1f96b1a66772adfd" TEXT="getTimeQuantityProperty(name: String): Quantity&lt;TimePeriodUnits&gt;"/>
+          <node FOLDED="true" ID="ID_02de8e64e0859c7e2061fed0" TEXT="setAt(name: String, value: String): void"/>
+          <node FOLDED="true" ID="ID_9d0e553a08221fa6212763a3" TEXT="setDefaultProperty(key: String, value: String): void"/>
+          <node FOLDED="true" ID="ID_6c6c1b0e4215206efbd08e64" TEXT="setProperty(property: String, value: boolean): void"/>
+          <node FOLDED="true" ID="ID_842ac1bb0f88b305c4f7d096" TEXT="setProperty(name: String, value: double): void"/>
+          <node FOLDED="true" ID="ID_fb32437fe339e44233ea35d7" TEXT="setProperty(name: String, value: int): void"/>
+          <node FOLDED="true" ID="ID_ff8b94a093ccc2c2e9232a84" TEXT="setProperty(property: String, value: String): void"/>
+          <node FOLDED="true" ID="ID_96db8edf404336c532915786" TEXT="setProperty(name: String, value: long): void"/>
         </node>
       </node>
       <node FOLDED="true" ID="ID_7f8fb8e96b0dac70e2b6f7d0" TEXT="FreeplaneVersion (org.freeplane.api)">
@@ -3107,6 +3212,15 @@
         </node>
         <node FOLDED="true" ID="ID_d47a536f39ed04f3000d3fe2" TEXT="Nested types">
           <node FOLDED="true" ID="ID_0cef971a4b1215793f208038" TEXT="HtmlUtils.IndexPair"/>
+        </node>
+      </node>
+      <node FOLDED="true" ID="ID_ac3db5b498d874ccee41ef4e" TEXT="HtmlUtils.IndexPair">
+        <node FOLDED="true" ID="ID_4428eee0ca6e74675bc82aea" TEXT="Type">
+          <node CONTENT_ID="ID_c3120350ad93529c4d4a0722" FOLDED="false" ID="ID_e0bbead81eb7d24083147be3"/>
+        </node>
+        <node FOLDED="true" ID="ID_cbb4d26cb56d8c5e527faff5" TEXT="Methods">
+          <node FOLDED="true" ID="ID_79d2cc179dd1d8ae8c4943fd" TEXT="IndexPair(pOriginalStart: int, pOriginalEnd: int, pPureTextStart: int, pPureTextEnd: int, pIsTag: boolean)"/>
+          <node FOLDED="true" ID="ID_748f298fc462ac6d8ec6c081" TEXT="toString(): String"/>
         </node>
       </node>
       <node FOLDED="true" ID="ID_9cc080f7f1e5c619856f2efb" TEXT="Icons — Node's icons: node.icons - read-only.">
@@ -4016,6 +4130,28 @@
             </node>
           </node>
           <node FOLDED="true" ID="ID_249d619299768ada7925dac9" TEXT="MenuUtils.MenuEntryTreeBuilder"/>
+        </node>
+      </node>
+      <node FOLDED="true" ID="ID_da769d8ac815be24aec80732" TEXT="MenuUtils.MenuEntry — The userObject type for createMenuEntryTree().">
+        <node FOLDED="true" ID="ID_b93f6cc5fb4fc06e0cf068a7" TEXT="Type">
+          <node CONTENT_ID="ID_678d966b8b04bb86d38f03f6" FOLDED="false" ID="ID_7bb56af61eb3ccdeca9125ec"/>
+        </node>
+        <node FOLDED="true" ID="ID_2c5f08dfc54d5603bd413129" TEXT="Properties">
+          <node FOLDED="true" ID="ID_dac901a6dffa3ddc1583fe67" TEXT="icon: Icon [read]"/>
+          <node FOLDED="true" ID="ID_122b38564229822bf759ed70" TEXT="key: String [read]"/>
+          <node FOLDED="true" ID="ID_2635d4e755ae1a6862c55237" TEXT="keyStroke: KeyStroke [read]"/>
+          <node FOLDED="true" ID="ID_6fb2b02b948b7b337673d6e7" TEXT="label: String [read]"/>
+          <node FOLDED="true" ID="ID_b8c24f9be85894e8dbf9ec05" TEXT="toolTipText: String [read]"/>
+        </node>
+        <node FOLDED="true" ID="ID_9d911f25f6a5bc7243330e17" TEXT="Methods">
+          <node FOLDED="true" ID="ID_0431f969ad7651ded23cd10e" TEXT="MenuEntry(key: String, label: String, icon: Icon, keyStroke: KeyStroke, toolTipText: String)"/>
+          <node FOLDED="true" ID="ID_25ab638ce8323acfd50efdcd" TEXT="MenuEntry(label: String, icon: Icon)"/>
+          <node FOLDED="true" ID="ID_b87d0fda2ac3449991d1caf1" TEXT="toString(): String"/>
+        </node>
+      </node>
+      <node FOLDED="true" ID="ID_6d75af47251b00bf25f55805" TEXT="MenuUtils.MenuEntryTreeBuilder">
+        <node FOLDED="true" ID="ID_c4d312471c64405d48599e5a" TEXT="Type">
+          <node CONTENT_ID="ID_f75cffa0105378f301bbc069" FOLDED="false" ID="ID_aff511076db56dfa360c7ee6"/>
         </node>
       </node>
       <node FOLDED="true" ID="ID_d0ade0d80e173e9db9ad8a42" TEXT="MindMap — The map a node belongs to: node.map - read-only.">
@@ -5817,6 +5953,25 @@
           <node FOLDED="true" ID="ID_c9e83ef54e42324d17c23a11" TEXT="NodeChanged.ChangedElement"/>
         </node>
       </node>
+      <node FOLDED="true" ID="ID_b3e21ee9712f99ec9adba889" TEXT="NodeChanged.ChangedElement">
+        <node FOLDED="true" ID="ID_95a82c25345676ce9f8b7365" TEXT="Type">
+          <node CONTENT_ID="ID_85c4f3a372e5e27b40f6edfb" FOLDED="false" ID="ID_c636db3f0ac527021838274b"/>
+        </node>
+        <node FOLDED="true" ID="ID_61b5b35bc0e5720acb8e93b6" TEXT="Methods">
+          <node FOLDED="true" ID="ID_15302c45cabd441f23b925b0" TEXT="valueOf(name: String): NodeChanged.ChangedElement"/>
+          <node FOLDED="true" ID="ID_f9e9b7049629622ae069fc44" TEXT="values(): NodeChanged.ChangedElement[]"/>
+        </node>
+        <node FOLDED="true" ID="ID_0388674051ee770ed82eb238" TEXT="Constants">
+          <node FOLDED="true" ID="ID_8998f44b60876acc2dc1fb68" TEXT="ATTRIBUTE: NodeChanged.ChangedElement"/>
+          <node FOLDED="true" ID="ID_c8c1265eace10a6da36f5e2e" TEXT="DETAILS: NodeChanged.ChangedElement"/>
+          <node FOLDED="true" ID="ID_56d82322945b666bd5200eed" TEXT="FORMULA_RESULT: NodeChanged.ChangedElement"/>
+          <node FOLDED="true" ID="ID_93e3b105493254e7acc3f839" TEXT="ICON: NodeChanged.ChangedElement"/>
+          <node FOLDED="true" ID="ID_3d7456cd4cacd6174026df05" TEXT="NOTE: NodeChanged.ChangedElement"/>
+          <node FOLDED="true" ID="ID_53eba5ff16a7b5be12fb02e8" TEXT="TAGS: NodeChanged.ChangedElement"/>
+          <node FOLDED="true" ID="ID_6468ec7a0cdf7e3e477cece7" TEXT="TEXT: NodeChanged.ChangedElement"/>
+          <node FOLDED="true" ID="ID_ff996fa9c0cdfcf3e257d3fa" TEXT="UNKNOWN: NodeChanged.ChangedElement"/>
+        </node>
+      </node>
       <node FOLDED="true" ID="ID_903e879d96cdcd70f714655d" TEXT="NodeCondition">
         <node FOLDED="true" ID="ID_37ae0121806489785ac5d1ba" TEXT="Type">
           <node CONTENT_ID="ID_80fc5ba0c950184e7bcbec44" FOLDED="false" ID="ID_12ac9386227c8339d87596c1"/>
@@ -6672,6 +6827,23 @@
         <node FOLDED="true" ID="ID_bd8e3f5445bff38ef4f9a1e8" TEXT="Nested types">
           <node FOLDED="true" ID="ID_52c4bfbede5fb1e9acd5060f" TEXT="UITools.Defaults"/>
           <node FOLDED="true" ID="ID_0643d133e55d0c55736a7ff1" TEXT="UITools.InsertEolAction"/>
+        </node>
+      </node>
+      <node FOLDED="true" ID="ID_87358bb50a6a0b96522b288e" TEXT="UITools.Defaults">
+        <node FOLDED="true" ID="ID_2efd9777a1ff5db9ba5f64c4" TEXT="Type">
+          <node CONTENT_ID="ID_38021ad16397cbbbf0b7ac78" FOLDED="false" ID="ID_a16eb535109323c6f3bfd32a"/>
+        </node>
+        <node FOLDED="true" ID="ID_bc3ca83b083826448ea5b67f" TEXT="Methods">
+          <node FOLDED="true" ID="ID_ca573b21325286ef360e77b5" TEXT="Defaults()"/>
+        </node>
+      </node>
+      <node FOLDED="true" ID="ID_7aa54fa0a9748c983a02b743" TEXT="UITools.InsertEolAction">
+        <node FOLDED="true" ID="ID_9dea64bb9eec9c2190303410" TEXT="Type">
+          <node CONTENT_ID="ID_77a6bbcdbcea2cd73f6f55ac" FOLDED="false" ID="ID_82da40de8cb3b6d2134e2aa2"/>
+        </node>
+        <node FOLDED="true" ID="ID_a773b574cb0e64cb40a5cee5" TEXT="Methods">
+          <node FOLDED="true" ID="ID_b53491ba713e0ac1c1d85450" TEXT="InsertEolAction()"/>
+          <node FOLDED="true" ID="ID_32c0498801431372ec69e152" TEXT="actionPerformed(e: ActionEvent): void"/>
         </node>
       </node>
     </node>
