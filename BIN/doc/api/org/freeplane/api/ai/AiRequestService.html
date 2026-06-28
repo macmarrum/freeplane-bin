@@ -111,17 +111,25 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#askAi(java.lang.String,org.freeplane.api.ai.AiRequestOptions,org.freeplane.api.ai.AiRequestCallback)" class="member-name-link">askAi</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;prompt,
  <a href="AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a>&nbsp;options,
  <a href="AiRequestCallback.html" title="interface in org.freeplane.api.ai">AiRequestCallback</a>&nbsp;callback)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Starts an asynchronous AI request for raw prompt text.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="AiRequestHandle.html" title="interface in org.freeplane.api.ai">AiRequestHandle</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#runAiPrompt(java.lang.String,java.time.Duration,org.freeplane.api.ai.AiRequestCallback)" class="member-name-link">runAiPrompt</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;promptName,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;timeout,
  <a href="AiRequestCallback.html" title="interface in org.freeplane.api.ai">AiRequestCallback</a>&nbsp;callback)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Starts an asynchronous AI request from a saved AI prompt name using the
+ supplied timeout and the saved prompt's stored execution defaults.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="AiRequestHandle.html" title="interface in org.freeplane.api.ai">AiRequestHandle</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#runAiPrompt(java.lang.String,org.freeplane.api.ai.AiRequestOptions,org.freeplane.api.ai.AiRequestCallback)" class="member-name-link">runAiPrompt</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;promptName,
  <a href="AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a>&nbsp;options,
  <a href="AiRequestCallback.html" title="interface in org.freeplane.api.ai">AiRequestCallback</a>&nbsp;callback)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Starts an asynchronous AI request from a saved AI prompt name using options
+ to override saved-prompt execution defaults.</div>
+</div>
 </div>
 </div>
 </div>
@@ -142,6 +150,20 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="return-type"><a href="AiRequestHandle.html" title="interface in org.freeplane.api.ai">AiRequestHandle</a></span>&nbsp;<span class="element-name">askAi</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;prompt,
  <a href="AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a>&nbsp;options,
  <a href="AiRequestCallback.html" title="interface in org.freeplane.api.ai">AiRequestCallback</a>&nbsp;callback)</span></div>
+<div class="block">Starts an asynchronous AI request for raw prompt text.
+
+ <p>The supplied options must include a positive timeout and a non-null
+ <a href="AiRequestMode.html" title="enum class in org.freeplane.api.ai"><code>AiRequestMode</code></a>. System-message handling is controlled by
+ <a href="AiRequestOptions.Builder.html#systemMessage(java.lang.String)"><code>AiRequestOptions.Builder.systemMessage(String)</code></a> and
+ <a href="AiRequestOptions.Builder.html#exactSystemMessage(java.lang.String)"><code>AiRequestOptions.Builder.exactSystemMessage(String)</code></a>.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>prompt</code> - prompt text sent as the user request</dd>
+<dd><code>options</code> - request options; must include timeout and mode</dd>
+<dd><code>callback</code> - callback invoked with the terminal request result</dd>
+<dt>Returns:</dt>
+<dd>non-blocking request handle</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -150,6 +172,16 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="return-type"><a href="AiRequestHandle.html" title="interface in org.freeplane.api.ai">AiRequestHandle</a></span>&nbsp;<span class="element-name">runAiPrompt</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;promptName,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;timeout,
  <a href="AiRequestCallback.html" title="interface in org.freeplane.api.ai">AiRequestCallback</a>&nbsp;callback)</span></div>
+<div class="block">Starts an asynchronous AI request from a saved AI prompt name using the
+ supplied timeout and the saved prompt's stored execution defaults.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>promptName</code> - saved prompt name</dd>
+<dd><code>timeout</code> - positive request timeout</dd>
+<dd><code>callback</code> - callback invoked with the terminal request result</dd>
+<dt>Returns:</dt>
+<dd>non-blocking request handle</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -158,6 +190,20 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="return-type"><a href="AiRequestHandle.html" title="interface in org.freeplane.api.ai">AiRequestHandle</a></span>&nbsp;<span class="element-name">runAiPrompt</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;promptName,
  <a href="AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a>&nbsp;options,
  <a href="AiRequestCallback.html" title="interface in org.freeplane.api.ai">AiRequestCallback</a>&nbsp;callback)</span></div>
+<div class="block">Starts an asynchronous AI request from a saved AI prompt name using options
+ to override saved-prompt execution defaults.
+
+ <p>Unset option fields inherit from the saved prompt where applicable.
+ Explicit values in <a href="AiRequestOptions.html" title="class in org.freeplane.api.ai"><code>AiRequestOptions</code></a> override saved-prompt values;
+ unset fields inside <a href="AiModelConfiguration.html" title="class in org.freeplane.api.ai"><code>AiModelConfiguration</code></a> inherit independently.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>promptName</code> - saved prompt name</dd>
+<dd><code>options</code> - request options; must include a positive timeout</dd>
+<dd><code>callback</code> - callback invoked with the terminal request result</dd>
+<dt>Returns:</dt>
+<dd>non-blocking request handle</dd>
+</dl>
 </section>
 </li>
 </ul>

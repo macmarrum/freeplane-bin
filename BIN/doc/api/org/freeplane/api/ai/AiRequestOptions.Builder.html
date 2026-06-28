@@ -96,6 +96,11 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public static class </span><span class="element-name type-name-label">AiRequestOptions.Builder</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Mutable builder for <a href="AiRequestOptions.html" title="class in org.freeplane.api.ai"><code>AiRequestOptions</code></a>.
+
+ <p>The builder records requested overrides only. It does not validate saved
+ prompt names, profile names, provider names, or model availability; those are
+ resolved when the request starts.</p></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -125,35 +130,55 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#build()" class="member-name-link">build</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Builds immutable request options.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#exactSystemMessage(java.lang.String)" class="member-name-link">exactSystemMessage</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;systemMessage)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the complete system message exactly as supplied by the caller.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#mode(org.freeplane.api.ai.AiRequestMode)" class="member-name-link">mode</a><wbr>(<a href="AiRequestMode.html" title="enum class in org.freeplane.api.ai">AiRequestMode</a>&nbsp;mode)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the request execution mode.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#modelSelection(org.freeplane.api.ai.AiModelSelection)" class="member-name-link">modelSelection</a><wbr>(<a href="AiModelSelection.html" title="class in org.freeplane.api.ai">AiModelSelection</a>&nbsp;modelSelection)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#modelConfiguration(org.freeplane.api.ai.AiModelConfiguration)" class="member-name-link">modelConfiguration</a><wbr>(<a href="AiModelConfiguration.html" title="class in org.freeplane.api.ai">AiModelConfiguration</a>&nbsp;modelConfiguration)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets model-configuration overrides.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#profile(java.lang.String)" class="member-name-link">profile</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Requests a saved assistant profile by name.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#profile(java.lang.String,java.lang.String)" class="member-name-link">profile</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Requests an inline assistant profile instruction.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#selectionOverride(org.freeplane.api.ai.AiSelectionOverride)" class="member-name-link">selectionOverride</a><wbr>(<a href="AiSelectionOverride.html" title="class in org.freeplane.api.ai">AiSelectionOverride</a>&nbsp;selectionOverride)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the Freeplane map selection injected into the first prompt message.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#systemMessage(java.lang.String)" class="member-name-link">systemMessage</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;systemMessage)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets a base system-message override while preserving Freeplane guidance.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#timeout(java.time.Duration)" class="member-name-link">timeout</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;timeout)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the maximum request duration.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toolAvailability(org.freeplane.api.ai.AiToolAvailability)" class="member-name-link">toolAvailability</a><wbr>(<a href="AiToolAvailability.html" title="enum class in org.freeplane.api.ai">AiToolAvailability</a>&nbsp;toolAvailability)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the AI tool availability requested for this call.</div>
+</div>
 </div>
 </div>
 </div>
@@ -189,48 +214,144 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="timeout(java.time.Duration)">
 <h3>timeout</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></span>&nbsp;<span class="element-name">timeout</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;timeout)</span></div>
+<div class="block">Sets the maximum request duration.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>timeout</code> - positive timeout; must not be <code>null</code></dd>
+<dt>Returns:</dt>
+<dd>this builder</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="mode(org.freeplane.api.ai.AiRequestMode)">
 <h3>mode</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></span>&nbsp;<span class="element-name">mode</span><wbr><span class="parameters">(<a href="AiRequestMode.html" title="enum class in org.freeplane.api.ai">AiRequestMode</a>&nbsp;mode)</span></div>
+<div class="block">Sets the request execution mode.
+
+ <p>This is mandatory for <code>askAi</code>. If omitted for <code>runAiPrompt</code>,
+ the saved prompt decides whether the request is shown in chat or hidden.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>mode</code> - requested execution mode, or <code>null</code> to leave it unset</dd>
+<dt>Returns:</dt>
+<dd>this builder</dd>
+</dl>
 </section>
 </li>
 <li>
-<section class="detail" id="modelSelection(org.freeplane.api.ai.AiModelSelection)">
-<h3>modelSelection</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></span>&nbsp;<span class="element-name">modelSelection</span><wbr><span class="parameters">(<a href="AiModelSelection.html" title="class in org.freeplane.api.ai">AiModelSelection</a>&nbsp;modelSelection)</span></div>
+<section class="detail" id="modelConfiguration(org.freeplane.api.ai.AiModelConfiguration)">
+<h3>modelConfiguration</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></span>&nbsp;<span class="element-name">modelConfiguration</span><wbr><span class="parameters">(<a href="AiModelConfiguration.html" title="class in org.freeplane.api.ai">AiModelConfiguration</a>&nbsp;modelConfiguration)</span></div>
+<div class="block">Sets model-configuration overrides.
+
+ <p>Unset fields inside the configuration inherit independently. For a saved
+ prompt, inherited fields come from the saved prompt; otherwise they come
+ from the current model defaults. Use <a href="AiModelSelection.html#defaultModel()"><code>AiModelSelection.defaultModel()</code></a>
+ to explicitly request the default model instead of a saved prompt's model.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>modelConfiguration</code> - model overrides, or <code>null</code> to inherit all</dd>
+<dt>Returns:</dt>
+<dd>this builder</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="toolAvailability(org.freeplane.api.ai.AiToolAvailability)">
 <h3>toolAvailability</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></span>&nbsp;<span class="element-name">toolAvailability</span><wbr><span class="parameters">(<a href="AiToolAvailability.html" title="enum class in org.freeplane.api.ai">AiToolAvailability</a>&nbsp;toolAvailability)</span></div>
+<div class="block">Sets the AI tool availability requested for this call.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>toolAvailability</code> - requested availability, or <code>null</code> to inherit</dd>
+<dt>Returns:</dt>
+<dd>this builder</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="selectionOverride(org.freeplane.api.ai.AiSelectionOverride)">
 <h3>selectionOverride</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></span>&nbsp;<span class="element-name">selectionOverride</span><wbr><span class="parameters">(<a href="AiSelectionOverride.html" title="class in org.freeplane.api.ai">AiSelectionOverride</a>&nbsp;selectionOverride)</span></div>
+<div class="block">Sets the Freeplane map selection injected into the first prompt message.
+
+ <p>This changes only prompt composition. It does not change the user's UI
+ selection and does not affect later tool results.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>selectionOverride</code> - selection override, or <code>null</code> to use the current selection</dd>
+<dt>Returns:</dt>
+<dd>this builder</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="systemMessage(java.lang.String)">
 <h3>systemMessage</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></span>&nbsp;<span class="element-name">systemMessage</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;systemMessage)</span></div>
+<div class="block">Sets a base system-message override while preserving Freeplane guidance.
+
+ <p>The value is trimmed when <a href="#build()"><code>build()</code></a> is called. Passing
+ <code>null</code> clears the override and makes the request use the configured
+ Freeplane AI system message. Passing a blank string stores <code>""</code>,
+ which suppresses the configured base message but still lets Freeplane append
+ generated guidance for the active tool level and other applicable chat
+ context, such as map-selection handling, profile control, response format, or
+ code-host use.</p>
+
+ <p>This method clears the exact-system-message flag set by
+ <a href="#exactSystemMessage(java.lang.String)"><code>exactSystemMessage(String)</code></a>; the last system-message builder call
+ wins.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>systemMessage</code> - base system message override, blank to suppress the configured base message,
+        or <code>null</code> to inherit it</dd>
+<dt>Returns:</dt>
+<dd>this builder</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="exactSystemMessage(java.lang.String)">
 <h3>exactSystemMessage</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></span>&nbsp;<span class="element-name">exactSystemMessage</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;systemMessage)</span></div>
+<div class="block">Sets the complete system message exactly as supplied by the caller.
+
+ <p>The value is trimmed when <a href="#build()"><code>build()</code></a> is called. When non-null,
+ Freeplane treats the trimmed value, including <code>""</code>, as the complete
+ system instruction and does not append generated guidance. The caller is
+ then responsible for including any required instructions that Freeplane would
+ normally add, such as tool-calling, map-selection, profile-control,
+ response-format, or code-host instructions.</p>
+
+ <p>Passing <code>null</code> clears the system-message override and clears the
+ exact flag. <a href="#systemMessage(java.lang.String)"><code>systemMessage(String)</code></a> also clears the exact flag; the
+ last system-message builder call wins.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>systemMessage</code> - complete system message, blank for an empty exact system instruction,
+        or <code>null</code> to inherit the configured Freeplane system message</dd>
+<dt>Returns:</dt>
+<dd>this builder</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="profile(java.lang.String)">
 <h3>profile</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></span>&nbsp;<span class="element-name">profile</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</span></div>
+<div class="block">Requests a saved assistant profile by name.
+
+ <p>The name is trimmed when <a href="#build()"><code>build()</code></a> is called. The profile is
+ looked up when the request starts; missing, blank, or ambiguous names
+ complete the request with a configuration error.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>name</code> - saved profile name</dd>
+<dt>Returns:</dt>
+<dd>this builder</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -238,12 +359,33 @@ loadScripts(document, 'script');</script>
 <h3>profile</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></span>&nbsp;<span class="element-name">profile</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message)</span></div>
+<div class="block">Requests an inline assistant profile instruction.
+
+ <p>This overload does not look up a saved profile. The name and message are
+ trimmed when <a href="#build()"><code>build()</code></a> is called. If the message is blank and the
+ name is non-blank, Freeplane sends a profile marker for that name. If both
+ are blank, no profile instruction is sent.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>name</code> - profile name to display in the instruction; <code>null</code> is treated as blank</dd>
+<dd><code>message</code> - inline profile instruction; must not be <code>null</code></dd>
+<dt>Returns:</dt>
+<dd>this builder</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="build()">
 <h3>build</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a></span>&nbsp;<span class="element-name">build</span>()</div>
+<div class="block">Builds immutable request options.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>immutable options</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/NullPointerException.html" title="class or interface in java.lang" class="external-link">NullPointerException</a></code> - if timeout is unset</dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - if timeout is zero or negative</dd>
+</dl>
 </section>
 </li>
 </ul>

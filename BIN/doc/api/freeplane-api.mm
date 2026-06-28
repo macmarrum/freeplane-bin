@@ -103,6 +103,9 @@
         <node FOLDED="true" ID="ID_4076888e32bcd7bc78f39106" TEXT="freeplane">
           <node FOLDED="true" ID="ID_1d42f0cce5eeca9c39ba72b2" TEXT="api">
             <node FOLDED="true" ID="ID_0618382d17ac933496414ae3" TEXT="ai">
+              <node FOLDED="true" ID="ID_413533de7829f17ca5b66dbb" TEXT="AiModelConfiguration [class]">
+                <node FOLDED="false" ID="ID_c8de46e0430fb4761788ab3c" TEXT="AiModelConfiguration.Builder [class]"/>
+              </node>
               <node FOLDED="false" ID="ID_b37706213dc0d05fec15d2ed" TEXT="AiModelSelection [class]"/>
               <node FOLDED="false" ID="ID_303a31abe9406b84655c4e82" TEXT="AiRequestCallback [interface]"/>
               <node FOLDED="false" ID="ID_794032034f5268f1592d3e79" TEXT="AiRequestHandle [interface]"/>
@@ -115,6 +118,8 @@
               <node FOLDED="false" ID="ID_dff85aca1ee46c0a73b93ac9" TEXT="AiRequestService [interface]"/>
               <node FOLDED="false" ID="ID_65392ff0b67f274807bbfbef" TEXT="AiRequestStatus [enum]"/>
               <node FOLDED="false" ID="ID_c9cc26f247afd713793436ac" TEXT="AiSelectionOverride [class]"/>
+              <node FOLDED="false" ID="ID_6ad16bd51620bfef1a9434b4" TEXT="AiTemperature [class]"/>
+              <node FOLDED="false" ID="ID_470edcd3eb71f13097519642" TEXT="AiThinkingEffort [enum]"/>
               <node FOLDED="false" ID="ID_7e90613a949113c07bf919fe" TEXT="AiToolAvailability [enum]"/>
             </node>
             <node FOLDED="true" ID="ID_27a765b2084d09ba2eaa3422" TEXT="swing">
@@ -285,19 +290,125 @@
       </node>
     </node>
     <node FOLDED="false" ID="ID_6a512fd00e2b152a60e34cc5" POSITION="right" TEXT="API groups">
-      <node FOLDED="true" ID="ID_01e6aa5e4da6e35c2d66ff4a" TEXT="AiModelSelection — Explicit or current model selection for an AiRequestOptions.">
+      <node FOLDED="true" ID="ID_3ecee820800f3dd2e06e37e4" TEXT="AiModelConfiguration — Immutable public model configuration for script-facing AI requests.">
+        <node FOLDED="true" ID="ID_e58fbfeeaa576e41021d9fce" TEXT="Type">
+          <node CONTENT_ID="ID_413533de7829f17ca5b66dbb" FOLDED="false" ID="ID_4cfe54243981be1962f971d7"/>
+        </node>
+        <node FOLDED="true" ID="ID_042238fc529eef38bb9c6e75" TEXT="Properties">
+          <node FOLDED="true" ID="ID_4bc8f3b6e405c086698fb1d1" TEXT="modelSelection: AiModelSelection [read]">
+            <node FOLDED="false" ID="ID_b3daee67f15a0e10e72591e9" TEXT="Description">
+              <node FOLDED="false" ID="ID_99d9fc2d89f615457b28eb75" TEXT="Returns the requested model selection, or null to inherit it."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_bdd0b8debf4bf82796a9a1e8" TEXT="temperature: AiTemperature [read]">
+            <node FOLDED="false" ID="ID_e665c7ee76b16b1f6f1ee6d9" TEXT="Description">
+              <node FOLDED="false" ID="ID_350ba0ed6930d36ce8480e1c" TEXT="Returns the requested temperature, or null to inherit it."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_a68d56c29f5ca6dfa3742bf8" TEXT="thinkingEffort: AiThinkingEffort [read]">
+            <node FOLDED="false" ID="ID_92245419e44916874c3be867" TEXT="Description">
+              <node FOLDED="false" ID="ID_3611d6ab432b8a0257b841fc" TEXT="Returns the requested thinking effort, or null to inherit it."/>
+            </node>
+          </node>
+        </node>
+        <node FOLDED="true" ID="ID_700c2db6d92d9e2fb88e142d" TEXT="Methods">
+          <node FOLDED="true" ID="ID_52250eaecb6f7bea6dbc3568" TEXT="builder(): AiModelConfiguration.Builder">
+            <node FOLDED="false" ID="ID_d883ed9620330948c318d98d" TEXT="Description">
+              <node FOLDED="false" ID="ID_53b9ff89538fca9f9b8d1b52" TEXT="Creates a model-configuration builder."/>
+              <node FOLDED="false" ID="ID_6352106e2bf6db5091e0336e" TEXT="Returns — a new builder"/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_0ef1deca46f6e4e78d5a3316" TEXT="equals(obj: Object): boolean"/>
+          <node FOLDED="true" ID="ID_42ffb8671c5e6440ee241324" TEXT="hashCode(): int"/>
+        </node>
+        <node FOLDED="true" ID="ID_f9ec1ca534c20403559f4f31" TEXT="Nested types">
+          <node FOLDED="true" ID="ID_1963cb1d2d66d0eae21114bb" TEXT="AiModelConfiguration.Builder — Mutable builder for AiModelConfiguration.">
+            <node FOLDED="false" ID="ID_7f2c0f690e9c1667e29ee628" TEXT="Description">
+              <node FOLDED="false" ID="ID_88a709fff8fa9ca352344aeb" TEXT="Mutable builder for AiModelConfiguration."/>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node FOLDED="true" ID="ID_0a92ef480ff9eb8b19fb708e" TEXT="AiModelConfiguration.Builder — Mutable builder for AiModelConfiguration.">
+        <node FOLDED="true" ID="ID_ab0a5a4791587b73885a7bea" TEXT="Type">
+          <node CONTENT_ID="ID_c8de46e0430fb4761788ab3c" FOLDED="false" ID="ID_228dca49b3eb3355eee09f8f"/>
+        </node>
+        <node FOLDED="true" ID="ID_b154dcc85d4e7aa0a6beb90d" TEXT="Methods">
+          <node FOLDED="true" ID="ID_e8460898a22c15ebaae13bab" TEXT="Builder()"/>
+          <node FOLDED="true" ID="ID_2d59c57bcab0f4d13e19faaf" TEXT="build(): AiModelConfiguration">
+            <node FOLDED="false" ID="ID_c397c829d73cbf32ef2f7cf7" TEXT="Description">
+              <node FOLDED="false" ID="ID_ea5a204fbddf8e5f38eddead" TEXT="Builds immutable model configuration."/>
+              <node FOLDED="false" ID="ID_a97bd5e67cdb74a79b00678f" TEXT="Returns — immutable model configuration"/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_96d9d10b6654acaab130fa4c" TEXT="modelSelection(modelSelection: AiModelSelection): AiModelConfiguration.Builder">
+            <node FOLDED="false" ID="ID_cfd99242eddbe240489eb46b" TEXT="Description">
+              <node FOLDED="false" ID="ID_590e41f9c8e20aab72eb0793" TEXT="Sets the model selection."/>
+              <node FOLDED="false" ID="ID_2701a1f6174db49562152d9f" TEXT="Use AiModelSelection#explicit(String, String) for a specific provider/model pair. Use"/>
+              <node FOLDED="false" ID="ID_cba5942eee62e517d85b81e3" TEXT="AiModelSelection#defaultModel() to force the execution-context default model, including when a"/>
+              <node FOLDED="false" ID="ID_a93f1dce2276de753500bba2" TEXT="saved prompt has its own explicit model."/>
+              <node FOLDED="false" ID="ID_60b885b70847a9b872c92a65" TEXT="Parameter modelSelection — requested selection, or null to inherit"/>
+              <node FOLDED="false" ID="ID_483555e9942c95982421f4ec" TEXT="Returns — this builder"/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_6863d6d2f80f7a507d3c3de2" TEXT="temperature(temperature: AiTemperature): AiModelConfiguration.Builder">
+            <node FOLDED="false" ID="ID_f3b1f9708a8332342f26210d" TEXT="Description">
+              <node FOLDED="false" ID="ID_ef7becabcc11b5e734dc6e8e" TEXT="Sets model temperature."/>
+              <node FOLDED="false" ID="ID_8eeda3ffbb4e5afb93cea93c" TEXT="Use AiTemperature#modelDefault() to request the model's own default temperature explicitly."/>
+              <node FOLDED="false" ID="ID_f6b62549cdac62ec4b66b0b7" TEXT="Parameter temperature — requested temperature, or null to inherit"/>
+              <node FOLDED="false" ID="ID_a0d1d7340e7f35590171b389" TEXT="Returns — this builder"/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_63c6d587153380ca5d7ffa86" TEXT="thinkingEffort(thinkingEffort: AiThinkingEffort): AiModelConfiguration.Builder">
+            <node FOLDED="false" ID="ID_80283ee4fa0c7d45dd7222cc" TEXT="Description">
+              <node FOLDED="false" ID="ID_c8cd753016b9053069f5adb8" TEXT="Sets provider-independent thinking effort."/>
+              <node FOLDED="false" ID="ID_c4a14b53dabad1601fd550fe" TEXT="Parameter thinkingEffort — requested effort, or null to inherit"/>
+              <node FOLDED="false" ID="ID_f6bb2751bec170d1d5b0540f" TEXT="Returns — this builder"/>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node FOLDED="true" ID="ID_01e6aa5e4da6e35c2d66ff4a" TEXT="AiModelSelection — Explicit provider/model choice or default-model marker inside an AiModelConfiguration.">
         <node FOLDED="true" ID="ID_2978e715606e0afd3e34d5a3" TEXT="Type">
           <node CONTENT_ID="ID_b37706213dc0d05fec15d2ed" FOLDED="false" ID="ID_34f1f764114aaee671322e02"/>
         </node>
         <node FOLDED="true" ID="ID_2f311647d805ea3f5ab74d22" TEXT="Properties">
-          <node FOLDED="true" ID="ID_fb31d13f01c36a3b8d5f08f0" TEXT="current: boolean [read]"/>
-          <node FOLDED="true" ID="ID_8328d204c9a2ff9680038f80" TEXT="modelName: String [read]"/>
-          <node FOLDED="true" ID="ID_d3a0597a3ae67ff3d980e9b0" TEXT="providerName: String [read]"/>
+          <node FOLDED="true" ID="ID_ecb3f2fc4301ef50ad4863e5" TEXT="defaultModel: boolean [read]">
+            <node FOLDED="false" ID="ID_aa1352a7ff7f5e76d81ee62a" TEXT="Description">
+              <node FOLDED="false" ID="ID_2ca545e2e972ae7986982df8" TEXT="Returns whether this selection explicitly requests the default model."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_8328d204c9a2ff9680038f80" TEXT="modelName: String [read]">
+            <node FOLDED="false" ID="ID_59a43ae16c14b1965430e2ee" TEXT="Description">
+              <node FOLDED="false" ID="ID_e7faed8d75cf4955c1fe2522" TEXT="Returns the explicit model name, or null for #defaultModel()."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_d3a0597a3ae67ff3d980e9b0" TEXT="providerName: String [read]">
+            <node FOLDED="false" ID="ID_a642d0574325d6b68541f498" TEXT="Description">
+              <node FOLDED="false" ID="ID_89446e61f248db23a590bbbc" TEXT="Returns the explicit provider name, or null for #defaultModel()."/>
+            </node>
+          </node>
         </node>
         <node FOLDED="true" ID="ID_1886000c2e3b7049ccdaf453" TEXT="Methods">
-          <node FOLDED="true" ID="ID_68620dda504384e5c7aa988e" TEXT="current(): AiModelSelection"/>
+          <node FOLDED="true" ID="ID_e9822815438fe97a93928a4f" TEXT="defaultModel(): AiModelSelection">
+            <node FOLDED="false" ID="ID_7a204719cb1a423e8987de25" TEXT="Description">
+              <node FOLDED="false" ID="ID_596e423b92d1d413473fda0e" TEXT="Selects the default model resolved by the request execution context."/>
+              <node FOLDED="false" ID="ID_80068591023e110fe72ac63d" TEXT="This is an explicit override, not the same as leaving model selection unset. In a saved prompt"/>
+              <node FOLDED="false" ID="ID_3eb487c98d83f538e7ad826f" TEXT="request it bypasses the saved prompt's explicit model selection while still allowing other"/>
+              <node FOLDED="false" ID="ID_5ae7edf25c4523a5def1ee91" TEXT="model-configuration fields to inherit independently."/>
+              <node FOLDED="false" ID="ID_e94204169e990232499e5e05" TEXT="Returns — default-model marker"/>
+            </node>
+          </node>
           <node FOLDED="true" ID="ID_6f4782de3251d8255cebf02a" TEXT="equals(obj: Object): boolean"/>
-          <node FOLDED="true" ID="ID_79b0100fb374a7da464a8c20" TEXT="explicit(providerName: String, modelName: String): AiModelSelection"/>
+          <node FOLDED="true" ID="ID_79b0100fb374a7da464a8c20" TEXT="explicit(providerName: String, modelName: String): AiModelSelection">
+            <node FOLDED="false" ID="ID_7b41f71b4ab1baaec08f4e68" TEXT="Description">
+              <node FOLDED="false" ID="ID_a709f71f94928250f77d43e6" TEXT="Selects a specific provider/model pair."/>
+              <node FOLDED="false" ID="ID_2b5da298e5b8b22da6f72ed5" TEXT="Both names are trimmed and must be non-blank. Availability is checked when the request starts."/>
+              <node FOLDED="false" ID="ID_f70e07e8fa2604a28463a0ea" TEXT="Parameter providerName — provider identifier"/>
+              <node FOLDED="false" ID="ID_303a5e2d1d23fc7df4ab0dc9" TEXT="Parameter modelName — model identifier within the provider"/>
+              <node FOLDED="false" ID="ID_82f31e2d30c5ad4cebf50cf4" TEXT="Returns — explicit model selection"/>
+            </node>
+          </node>
           <node FOLDED="true" ID="ID_8ddf806df42bb51faa22dc5f" TEXT="hashCode(): int"/>
         </node>
       </node>
@@ -322,7 +433,7 @@
           <node FOLDED="true" ID="ID_ebd0faba9738a9151e620bb8" TEXT="cancel(): void"/>
         </node>
       </node>
-      <node FOLDED="true" ID="ID_9a8e2e4310a5f6ec042902be" TEXT="AiRequestMode — Visible or hidden execution mode for AiRequestOptions.">
+      <node FOLDED="true" ID="ID_9a8e2e4310a5f6ec042902be" TEXT="AiRequestMode — User-interface visibility for an AI request.">
         <node FOLDED="true" ID="ID_99a5371f6b49469a1ea27c44" TEXT="Type">
           <node CONTENT_ID="ID_7811f90988abb485fd1cf71e" FOLDED="false" ID="ID_22b3a8825dd874172f6b76da"/>
         </node>
@@ -331,10 +442,26 @@
           <node FOLDED="true" ID="ID_910a6090500cd41b6df88986" TEXT="values(): AiRequestMode[]"/>
         </node>
         <node FOLDED="true" ID="ID_466cc585d4c95a9b5730c949" TEXT="Constants">
-          <node FOLDED="true" ID="ID_dc0cbf9877623f12c0234d41" TEXT="ADD_TO_CHAT: AiRequestMode"/>
-          <node FOLDED="true" ID="ID_810a37242031f7f0905faee8" TEXT="HIDDEN: AiRequestMode"/>
-          <node FOLDED="true" ID="ID_4b61e4ff3e48b1ebb79d6617" TEXT="HIDDEN_WITH_CANCEL_DIALOG: AiRequestMode"/>
-          <node FOLDED="true" ID="ID_9c158faf3edf9397c604d45f" TEXT="SHOW_IN_NEW_CHAT: AiRequestMode"/>
+          <node FOLDED="true" ID="ID_dc0cbf9877623f12c0234d41" TEXT="ADD_TO_CHAT: AiRequestMode">
+            <node FOLDED="false" ID="ID_97fedb22e9a7581adc73d739" TEXT="Description">
+              <node FOLDED="false" ID="ID_b7c1da26112d7f19b7a90acc" TEXT="Add the request to the selected chat when compatible, otherwise start a new visible script chat."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_810a37242031f7f0905faee8" TEXT="HIDDEN: AiRequestMode">
+            <node FOLDED="false" ID="ID_35fd0c1056afba979ce49736" TEXT="Description">
+              <node FOLDED="false" ID="ID_6528ff73a2bfb748c364b2ed" TEXT="Run hidden from chat history without showing a progress dialog."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_4b61e4ff3e48b1ebb79d6617" TEXT="HIDDEN_WITH_CANCEL_DIALOG: AiRequestMode">
+            <node FOLDED="false" ID="ID_8ef323d179c7ea1b384f74ce" TEXT="Description">
+              <node FOLDED="false" ID="ID_5a6e3b4473903aa7937ec820" TEXT="Run hidden from chat history and show a progress dialog with cancellation."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_9c158faf3edf9397c604d45f" TEXT="SHOW_IN_NEW_CHAT: AiRequestMode">
+            <node FOLDED="false" ID="ID_23f180b5eb5776ea097679f1" TEXT="Description">
+              <node FOLDED="false" ID="ID_49cf4e9c824b9a8e2bb3e491" TEXT="Start a new visible chat tab/session for the request."/>
+            </node>
+          </node>
         </node>
       </node>
       <node FOLDED="true" ID="ID_5a22163177fbb65db45ae557" TEXT="AiRequestOptions — Immutable public options for script-facing AI requests.">
@@ -342,39 +469,194 @@
           <node CONTENT_ID="ID_9781f322ec9e032b1dd22157" FOLDED="false" ID="ID_8846822ba1b4c8d59472ddef"/>
         </node>
         <node FOLDED="true" ID="ID_9c2b9c98fdaf0e0a127ecc26" TEXT="Properties">
-          <node FOLDED="true" ID="ID_34abec5fca8ec1a06264f826" TEXT="mode: AiRequestMode [read]"/>
-          <node FOLDED="true" ID="ID_753504f80e084a59e0867f92" TEXT="modelSelection: AiModelSelection [read]"/>
-          <node FOLDED="true" ID="ID_8101b95488f8e01bcb7d2067" TEXT="profileMessage: String [read]"/>
-          <node FOLDED="true" ID="ID_f6eaa403893a3109028270a2" TEXT="profileName: String [read]"/>
-          <node FOLDED="true" ID="ID_58cc7dc7a7f7df3e80579e21" TEXT="selectionOverride: AiSelectionOverride [read]"/>
-          <node FOLDED="true" ID="ID_b1f06447620b66c721d79c0b" TEXT="systemMessage: String [read]"/>
-          <node FOLDED="true" ID="ID_4c684f5521b160eab95297c3" TEXT="systemMessageExact: boolean [read]"/>
-          <node FOLDED="true" ID="ID_a1d13bced860f90b6ec94b45" TEXT="timeout: Duration [read]"/>
-          <node FOLDED="true" ID="ID_b507a162bfa4bd15b73ff30c" TEXT="toolAvailability: AiToolAvailability [read]"/>
+          <node FOLDED="true" ID="ID_34abec5fca8ec1a06264f826" TEXT="mode: AiRequestMode [read]">
+            <node FOLDED="false" ID="ID_b6f740542db97a1e3c31ccfb" TEXT="Description">
+              <node FOLDED="false" ID="ID_ac0723a4a1e638f8443211a2" TEXT="Returns the requested execution mode, or null when unset."/>
+              <node FOLDED="false" ID="ID_0c6885738ad0c142e320bae0" TEXT="askAi requires a non-null mode. runAiPrompt accepts null and derives the mode from the saved"/>
+              <node FOLDED="false" ID="ID_d4b25cabf87d842f70fb72c7" TEXT="prompt."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_ab6d47cd45ecf44658d941ef" TEXT="modelConfiguration: AiModelConfiguration [read]">
+            <node FOLDED="false" ID="ID_3a88b18ddce1a6a1a4e26112" TEXT="Description">
+              <node FOLDED="false" ID="ID_5158cf8f52fb5c8290da34f3" TEXT="Returns model overrides, or null when all model fields are inherited."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_8101b95488f8e01bcb7d2067" TEXT="profileMessage: String [read]">
+            <node FOLDED="false" ID="ID_03045fc58e47fa87d9bb7254" TEXT="Description">
+              <node FOLDED="false" ID="ID_b7d635513879d1805f400f2f" TEXT="Returns the inline assistant profile instruction, or null when #getProfileName() should be"/>
+              <node FOLDED="false" ID="ID_b66dc353016a4cd5dd9a39ae" TEXT="resolved as a saved profile name."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_f6eaa403893a3109028270a2" TEXT="profileName: String [read]">
+            <node FOLDED="false" ID="ID_67ea84eb53cc938b321cf2bc" TEXT="Description">
+              <node FOLDED="false" ID="ID_0981a65f4e698c664a132bb9" TEXT="Returns the requested assistant profile name, or null when no profile request was configured."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_58cc7dc7a7f7df3e80579e21" TEXT="selectionOverride: AiSelectionOverride [read]">
+            <node FOLDED="false" ID="ID_459af7d9584ece526a8ffac7" TEXT="Description">
+              <node FOLDED="false" ID="ID_376f7d68531cad2199fb524a" TEXT="Returns a prompt-time selection override, or null to use the current Freeplane selection."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_b1f06447620b66c721d79c0b" TEXT="systemMessage: String [read]">
+            <node FOLDED="false" ID="ID_64d24293752c5be061343fa5" TEXT="Description">
+              <node FOLDED="false" ID="ID_e8a366156926d3d7a831b3f5" TEXT="Returns the base system message override, or null to use the configured Freeplane AI system"/>
+              <node FOLDED="false" ID="ID_432aa26e102e7b5a34d13c5b" TEXT="message."/>
+              <node FOLDED="false" ID="ID_88c01cac2b537c44334ffa53" TEXT="The builder trims this value. A blank but non-null value therefore becomes &quot;&quot;; this deliberately"/>
+              <node FOLDED="false" ID="ID_ad588ffda356156f3fb8a677" TEXT="suppresses the configured base system message. Unless #isSystemMessageExact() is true, Freeplane"/>
+              <node FOLDED="false" ID="ID_b0af27dada69962bbcbbf027" TEXT="still appends generated system guidance for the active tool level and other applicable chat"/>
+              <node FOLDED="false" ID="ID_4a656a02d895dd4681bc4d8e" TEXT="context, such as map-selection handling, profile control, response format, or code-host use."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_4c684f5521b160eab95297c3" TEXT="systemMessageExact: boolean [read]">
+            <node FOLDED="false" ID="ID_881aa395a9aa466645898230" TEXT="Description">
+              <node FOLDED="false" ID="ID_6068a8ceb5e11362cdbfef7d" TEXT="Returns whether #getSystemMessage() is the complete system message."/>
+              <node FOLDED="false" ID="ID_bcc02ddea927e2602d9210be" TEXT="When this flag is true, Freeplane sends the trimmed system-message value as the full system"/>
+              <node FOLDED="false" ID="ID_2de3c55275846c91d30f6700" TEXT="instruction and does not append generated guidance. Use Builder#exactSystemMessage(String) only"/>
+              <node FOLDED="false" ID="ID_4bdb53b3c2d41a88fb3d7252" TEXT="when the caller supplies all required instruction text explicitly. A blank exact system message"/>
+              <node FOLDED="false" ID="ID_a8d787b848729d1c49272b82" TEXT="is allowed and produces an empty system instruction. Passing null to exactSystemMessage clears"/>
+              <node FOLDED="false" ID="ID_b30632c0a8b373cfe6505886" TEXT="both the override and this flag."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_a1d13bced860f90b6ec94b45" TEXT="timeout: Duration [read]">
+            <node FOLDED="false" ID="ID_d5aa37b4c67169ff2e7505cc" TEXT="Description">
+              <node FOLDED="false" ID="ID_12c274cddefe75dbc1afbf7b" TEXT="Returns the request timeout."/>
+              <node FOLDED="false" ID="ID_a174e0e644e827ca236fa952" TEXT="The timeout is required and must be positive. If it expires before the request completes, the"/>
+              <node FOLDED="false" ID="ID_50e976dcfd17b2ed6bdafc82" TEXT="callback receives AiRequestStatus#TIMED_OUT."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_b507a162bfa4bd15b73ff30c" TEXT="toolAvailability: AiToolAvailability [read]">
+            <node FOLDED="false" ID="ID_35b6fc932d15f0b46fc55000" TEXT="Description">
+              <node FOLDED="false" ID="ID_f355b121440b42df76f668e9" TEXT="Returns the requested tool-availability level, or null when unset."/>
+              <node FOLDED="false" ID="ID_2db63cd6d0e38efd6dee24d4" TEXT="For direct askAi requests, unset tool availability is treated as AiToolAvailability#CURRENT."/>
+              <node FOLDED="false" ID="ID_70a8871997b46cecc429ea88" TEXT="Saved prompt requests inherit the saved prompt value when this option is unset."/>
+            </node>
+          </node>
         </node>
         <node FOLDED="true" ID="ID_709354f6902b84c0f350512a" TEXT="Methods">
-          <node FOLDED="true" ID="ID_06c698327aefea4bfa6d3f41" TEXT="builder(): AiRequestOptions.Builder"/>
+          <node FOLDED="true" ID="ID_06c698327aefea4bfa6d3f41" TEXT="builder(): AiRequestOptions.Builder">
+            <node FOLDED="false" ID="ID_8fb9b0980eea3fdd02ff210b" TEXT="Description">
+              <node FOLDED="false" ID="ID_b8d1be04d4d4b6265e0d704b" TEXT="Creates a new request-options builder."/>
+              <node FOLDED="false" ID="ID_abc1873d068375c3753d4066" TEXT="Returns — a builder whose timeout must be set before Builder#build() is called"/>
+            </node>
+          </node>
         </node>
         <node FOLDED="true" ID="ID_16d4b34d0867ad0cacf3fe51" TEXT="Nested types">
-          <node FOLDED="true" ID="ID_f139402b53cf0e24e288a923" TEXT="AiRequestOptions.Builder"/>
+          <node FOLDED="true" ID="ID_f139402b53cf0e24e288a923" TEXT="AiRequestOptions.Builder — Mutable builder for AiRequestOptions.">
+            <node FOLDED="false" ID="ID_776f4adcb876c25627deb5e3" TEXT="Description">
+              <node FOLDED="false" ID="ID_7792ee4d4de63ad6dd564c14" TEXT="Mutable builder for AiRequestOptions."/>
+              <node FOLDED="false" ID="ID_9f9b4d19243c3765158b6827" TEXT="The builder records requested overrides only. It does not validate saved prompt names, profile"/>
+              <node FOLDED="false" ID="ID_23df3cfc41e481512405a7cc" TEXT="names, provider names, or model availability; those are resolved when the request starts."/>
+            </node>
+          </node>
         </node>
       </node>
-      <node FOLDED="true" ID="ID_aa77693a39a353e99ad08939" TEXT="AiRequestOptions.Builder">
+      <node FOLDED="true" ID="ID_aa77693a39a353e99ad08939" TEXT="AiRequestOptions.Builder — Mutable builder for AiRequestOptions.">
         <node FOLDED="true" ID="ID_93be7aeb02ea1ec164f553bb" TEXT="Type">
           <node CONTENT_ID="ID_d2cf49855d680f5d6202163a" FOLDED="false" ID="ID_74ed880eb68725df44a20a73"/>
         </node>
         <node FOLDED="true" ID="ID_8c1cd67f0f9db46579b87390" TEXT="Methods">
           <node FOLDED="true" ID="ID_33163a45a497eef8f6665e37" TEXT="Builder()"/>
-          <node FOLDED="true" ID="ID_328d619c1d668ae651a7830e" TEXT="build(): AiRequestOptions"/>
-          <node FOLDED="true" ID="ID_b4e219a7adb82de8828c6367" TEXT="exactSystemMessage(systemMessage: String): AiRequestOptions.Builder"/>
-          <node FOLDED="true" ID="ID_70f8159610cad8585efd8c14" TEXT="mode(mode: AiRequestMode): AiRequestOptions.Builder"/>
-          <node FOLDED="true" ID="ID_4686eb8e23f133ec60bd6624" TEXT="modelSelection(modelSelection: AiModelSelection): AiRequestOptions.Builder"/>
-          <node FOLDED="true" ID="ID_62cc1bbee4eeb29ff55a042b" TEXT="profile(name: String): AiRequestOptions.Builder"/>
-          <node FOLDED="true" ID="ID_11ec21201658073aff0f46fc" TEXT="profile(name: String, message: String): AiRequestOptions.Builder"/>
-          <node FOLDED="true" ID="ID_ddfc9083b35c30c808db6d3d" TEXT="selectionOverride(selectionOverride: AiSelectionOverride): AiRequestOptions.Builder"/>
-          <node FOLDED="true" ID="ID_b31a27d002f5c2b4aa48558e" TEXT="systemMessage(systemMessage: String): AiRequestOptions.Builder"/>
-          <node FOLDED="true" ID="ID_7bb3ed2b83b0642326910f2c" TEXT="timeout(timeout: Duration): AiRequestOptions.Builder"/>
-          <node FOLDED="true" ID="ID_f56a151a1b3cbe480b2f62d2" TEXT="toolAvailability(toolAvailability: AiToolAvailability): AiRequestOptions.Builder"/>
+          <node FOLDED="true" ID="ID_328d619c1d668ae651a7830e" TEXT="build(): AiRequestOptions">
+            <node FOLDED="false" ID="ID_f006b99a0c7a73bbaea3bd52" TEXT="Description">
+              <node FOLDED="false" ID="ID_1c3e095f5c380576420fde44" TEXT="Builds immutable request options."/>
+              <node FOLDED="false" ID="ID_f91c5372d5b860d8d03327af" TEXT="Returns — immutable options"/>
+              <node FOLDED="false" ID="ID_6b882963c6df6191824d3101" TEXT="Throws NullPointerException — if timeout is unset"/>
+              <node FOLDED="false" ID="ID_ea5075ee36fca43d2d1bb4e8" TEXT="Throws IllegalArgumentException — if timeout is zero or negative"/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_b4e219a7adb82de8828c6367" TEXT="exactSystemMessage(systemMessage: String): AiRequestOptions.Builder">
+            <node FOLDED="false" ID="ID_5f4f671ad4a55f9f72d1e016" TEXT="Description">
+              <node FOLDED="false" ID="ID_f595bd77ba979a4b009a5f7d" TEXT="Sets the complete system message exactly as supplied by the caller."/>
+              <node FOLDED="false" ID="ID_0debcddfcfcbd99f0a87e2c1" TEXT="The value is trimmed when #build() is called. When non-null, Freeplane treats the trimmed value,"/>
+              <node FOLDED="false" ID="ID_26b8d6a3226d467746a72c50" TEXT="including &quot;&quot;, as the complete system instruction and does not append generated guidance. The"/>
+              <node FOLDED="false" ID="ID_16648f2c1c62121d3df08253" TEXT="caller is then responsible for including any required instructions that Freeplane would normally"/>
+              <node FOLDED="false" ID="ID_7170314549484f6acf13a7ad" TEXT="add, such as tool-calling, map-selection, profile-control, response-format, or code-host"/>
+              <node FOLDED="false" ID="ID_03429dbfcc2929d74f3cdaf8" TEXT="instructions."/>
+              <node FOLDED="false" ID="ID_0e59481fbee1883535fb0a0f" TEXT="Passing null clears the system-message override and clears the exact flag."/>
+              <node FOLDED="false" ID="ID_bc96692ab5349b63b3b42481" TEXT="#systemMessage(String) also clears the exact flag; the last system-message builder call wins."/>
+              <node FOLDED="false" ID="ID_3b624290c69a6f32abb76043" TEXT="Parameter systemMessage — complete system message, blank for an empty exact system instruction,"/>
+              <node FOLDED="false" ID="ID_8e151886794338d887a4e617" TEXT="or null to inherit the configured Freeplane system message"/>
+              <node FOLDED="false" ID="ID_30696ad4e03b06f487240917" TEXT="Returns — this builder"/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_70f8159610cad8585efd8c14" TEXT="mode(mode: AiRequestMode): AiRequestOptions.Builder">
+            <node FOLDED="false" ID="ID_5ff796e66dbbf631154be310" TEXT="Description">
+              <node FOLDED="false" ID="ID_42944586f65bf4df884d985a" TEXT="Sets the request execution mode."/>
+              <node FOLDED="false" ID="ID_380f2e8fcde7d1e31facb2fa" TEXT="This is mandatory for askAi. If omitted for runAiPrompt, the saved prompt decides whether the"/>
+              <node FOLDED="false" ID="ID_b5d27cad71775ae55897a2df" TEXT="request is shown in chat or hidden."/>
+              <node FOLDED="false" ID="ID_2181725cf769fe720534f07f" TEXT="Parameter mode — requested execution mode, or null to leave it unset"/>
+              <node FOLDED="false" ID="ID_81b0e77339d5d42d1c21aefb" TEXT="Returns — this builder"/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_8fc2c0a67e53b316568ac192" TEXT="modelConfiguration(modelConfiguration: AiModelConfiguration): AiRequestOptions.Builder">
+            <node FOLDED="false" ID="ID_f523c680ff3b3affee9aa2e4" TEXT="Description">
+              <node FOLDED="false" ID="ID_d5e6fe6a173d0fd3278918b0" TEXT="Sets model-configuration overrides."/>
+              <node FOLDED="false" ID="ID_55b9d8cf34baa59736c90a33" TEXT="Unset fields inside the configuration inherit independently. For a saved prompt, inherited"/>
+              <node FOLDED="false" ID="ID_7b503594ea4a9b0d3b587740" TEXT="fields come from the saved prompt; otherwise they come from the current model defaults. Use"/>
+              <node FOLDED="false" ID="ID_be71fa72e99fd07944e76822" TEXT="AiModelSelection#defaultModel() to explicitly request the default model instead of a saved"/>
+              <node FOLDED="false" ID="ID_075e7c2623e80e15b056463a" TEXT="prompt's model."/>
+              <node FOLDED="false" ID="ID_9958615754a671be54d72074" TEXT="Parameter modelConfiguration — model overrides, or null to inherit all"/>
+              <node FOLDED="false" ID="ID_279a5f58bb2696348839a2aa" TEXT="Returns — this builder"/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_62cc1bbee4eeb29ff55a042b" TEXT="profile(name: String): AiRequestOptions.Builder">
+            <node FOLDED="false" ID="ID_4a30f5c9911bb1c7dcc38f38" TEXT="Description">
+              <node FOLDED="false" ID="ID_d4ce8164dd1149ee7bc02d5f" TEXT="Requests a saved assistant profile by name."/>
+              <node FOLDED="false" ID="ID_8ec068f5c762ce1d15ac88e2" TEXT="The name is trimmed when #build() is called. The profile is looked up when the request starts;"/>
+              <node FOLDED="false" ID="ID_5a89a08cdf500dcb6470e6c5" TEXT="missing, blank, or ambiguous names complete the request with a configuration error."/>
+              <node FOLDED="false" ID="ID_dcd20d39e2903942085a2923" TEXT="Parameter name — saved profile name"/>
+              <node FOLDED="false" ID="ID_b4002c2611a60654c13c13b3" TEXT="Returns — this builder"/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_11ec21201658073aff0f46fc" TEXT="profile(name: String, message: String): AiRequestOptions.Builder">
+            <node FOLDED="false" ID="ID_d9405353032b7aafbb6eabc6" TEXT="Description">
+              <node FOLDED="false" ID="ID_a8c4630fac7dad73c20a355b" TEXT="Requests an inline assistant profile instruction."/>
+              <node FOLDED="false" ID="ID_cb43bebf6c17c01f5d077770" TEXT="This overload does not look up a saved profile. The name and message are trimmed when #build()"/>
+              <node FOLDED="false" ID="ID_5ed2322f320719553b15d9b3" TEXT="is called. If the message is blank and the name is non-blank, Freeplane sends a profile marker"/>
+              <node FOLDED="false" ID="ID_cd9ee6915c07dfa4beb35476" TEXT="for that name. If both are blank, no profile instruction is sent."/>
+              <node FOLDED="false" ID="ID_bee9f62a60e5353a0eabbbe4" TEXT="Parameter name — profile name to display in the instruction; null is treated as blank"/>
+              <node FOLDED="false" ID="ID_6cc175c40dceaa68b0facced" TEXT="Parameter message — inline profile instruction; must not be null"/>
+              <node FOLDED="false" ID="ID_3ac6fa1d1c3bc54a749a7714" TEXT="Returns — this builder"/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_ddfc9083b35c30c808db6d3d" TEXT="selectionOverride(selectionOverride: AiSelectionOverride): AiRequestOptions.Builder">
+            <node FOLDED="false" ID="ID_de735675af2a03d49d6ac77a" TEXT="Description">
+              <node FOLDED="false" ID="ID_8dcb5a615abcfececd1e0f55" TEXT="Sets the Freeplane map selection injected into the first prompt message."/>
+              <node FOLDED="false" ID="ID_0f5040f4d8130f2ac91d0c47" TEXT="This changes only prompt composition. It does not change the user's UI selection and does not"/>
+              <node FOLDED="false" ID="ID_13c497a98cc3fd3bbfbc45c3" TEXT="affect later tool results."/>
+              <node FOLDED="false" ID="ID_2f2a89fd9321e837f375a52f" TEXT="Parameter selectionOverride — selection override, or null to use the current selection"/>
+              <node FOLDED="false" ID="ID_cd45776245ec26e1b90a69cf" TEXT="Returns — this builder"/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_b31a27d002f5c2b4aa48558e" TEXT="systemMessage(systemMessage: String): AiRequestOptions.Builder">
+            <node FOLDED="false" ID="ID_582541e60d3b3e1c96a50cd3" TEXT="Description">
+              <node FOLDED="false" ID="ID_127d112a9ecda8187eda6679" TEXT="Sets a base system-message override while preserving Freeplane guidance."/>
+              <node FOLDED="false" ID="ID_f7b5b380e3eeb211422de1ca" TEXT="The value is trimmed when #build() is called. Passing null clears the override and makes the"/>
+              <node FOLDED="false" ID="ID_a3aa339315c34c8133e95b07" TEXT="request use the configured Freeplane AI system message. Passing a blank string stores &quot;&quot;, which"/>
+              <node FOLDED="false" ID="ID_d2751a91c917e0d24b6fe157" TEXT="suppresses the configured base message but still lets Freeplane append generated guidance for"/>
+              <node FOLDED="false" ID="ID_ae0fa58ec0a3dfd89b7ccfb6" TEXT="the active tool level and other applicable chat context, such as map-selection handling, profile"/>
+              <node FOLDED="false" ID="ID_8f2c69ac44cc39b21c176a21" TEXT="control, response format, or code-host use."/>
+              <node FOLDED="false" ID="ID_82814acc91fd6036f9b79214" TEXT="This method clears the exact-system-message flag set by #exactSystemMessage(String); the last"/>
+              <node FOLDED="false" ID="ID_683dd31ea1106540fb5ed0a8" TEXT="system-message builder call wins."/>
+              <node FOLDED="false" ID="ID_f1fe27be1ea4638a910a2a1d" TEXT="Parameter systemMessage — base system message override, blank to suppress the configured base"/>
+              <node FOLDED="false" ID="ID_12038a69c9998e9580eebdb3" TEXT="message, or null to inherit it"/>
+              <node FOLDED="false" ID="ID_7631993685af72b3746042a9" TEXT="Returns — this builder"/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_7bb3ed2b83b0642326910f2c" TEXT="timeout(timeout: Duration): AiRequestOptions.Builder">
+            <node FOLDED="false" ID="ID_3ad8ce64302c7d28dac2a688" TEXT="Description">
+              <node FOLDED="false" ID="ID_c2e081709bbe0a150f8eeede" TEXT="Sets the maximum request duration."/>
+              <node FOLDED="false" ID="ID_9c2f0fab82433e4a30fa0d57" TEXT="Parameter timeout — positive timeout; must not be null"/>
+              <node FOLDED="false" ID="ID_c22c7a6f8a4d70f526c3b807" TEXT="Returns — this builder"/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_f56a151a1b3cbe480b2f62d2" TEXT="toolAvailability(toolAvailability: AiToolAvailability): AiRequestOptions.Builder">
+            <node FOLDED="false" ID="ID_0638592d4d74a7151e892998" TEXT="Description">
+              <node FOLDED="false" ID="ID_781e7c7af30293d69e67d1da" TEXT="Sets the AI tool availability requested for this call."/>
+              <node FOLDED="false" ID="ID_a164ab5fcd7328576d46c54f" TEXT="Parameter toolAvailability — requested availability, or null to inherit"/>
+              <node FOLDED="false" ID="ID_6e2799519f528215da7b7627" TEXT="Returns — this builder"/>
+            </node>
+          </node>
         </node>
       </node>
       <node FOLDED="true" ID="ID_26bf0f8d11ea0d50b9517212" TEXT="AiRequestRejectedException — Runtime exception for same-thread pre-acceptance AI request rejection.">
@@ -406,9 +688,41 @@
           <node CONTENT_ID="ID_dff85aca1ee46c0a73b93ac9" FOLDED="false" ID="ID_f79f876528921c6c6b0486ca"/>
         </node>
         <node FOLDED="true" ID="ID_0e7ad7360d389502dbaab3f6" TEXT="Methods">
-          <node FOLDED="true" ID="ID_c5b3ef239f44ec68ccd88e3f" TEXT="askAi(prompt: String, options: AiRequestOptions, callback: AiRequestCallback): AiRequestHandle"/>
-          <node FOLDED="true" ID="ID_11e622b2fcfbc3b09b850643" TEXT="runAiPrompt(promptName: String, timeout: Duration, callback: AiRequestCallback): AiRequestHandle"/>
-          <node FOLDED="true" ID="ID_7b124aa410852cb79e85c693" TEXT="runAiPrompt(promptName: String, options: AiRequestOptions, callback: AiRequestCallback): AiRequestHandle"/>
+          <node FOLDED="true" ID="ID_c5b3ef239f44ec68ccd88e3f" TEXT="askAi(prompt: String, options: AiRequestOptions, callback: AiRequestCallback): AiRequestHandle">
+            <node FOLDED="false" ID="ID_3892d6f2126ff3b1222895e2" TEXT="Description">
+              <node FOLDED="false" ID="ID_7b9788367b2a16d5b10f7cf3" TEXT="Starts an asynchronous AI request for raw prompt text."/>
+              <node FOLDED="false" ID="ID_222d780437c3d6c8b210df26" TEXT="The supplied options must include a positive timeout and a non-null AiRequestMode."/>
+              <node FOLDED="false" ID="ID_1fe5a117e2e5a71daeaa5e11" TEXT="System-message handling is controlled by AiRequestOptions.Builder#systemMessage(String) and"/>
+              <node FOLDED="false" ID="ID_63c0919adb7f6253c691599c" TEXT="AiRequestOptions.Builder#exactSystemMessage(String)."/>
+              <node FOLDED="false" ID="ID_7fc6c1192c606e909895a5b3" TEXT="Parameter prompt — prompt text sent as the user request"/>
+              <node FOLDED="false" ID="ID_804f57079f0cfbe6d459f3f4" TEXT="Parameter options — request options; must include timeout and mode"/>
+              <node FOLDED="false" ID="ID_7b9862462056b7ab9d5fcec0" TEXT="Parameter callback — callback invoked with the terminal request result"/>
+              <node FOLDED="false" ID="ID_2f7ddd82f9434f768b03a5ea" TEXT="Returns — non-blocking request handle"/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_11e622b2fcfbc3b09b850643" TEXT="runAiPrompt(promptName: String, timeout: Duration, callback: AiRequestCallback): AiRequestHandle">
+            <node FOLDED="false" ID="ID_a62215db6a1357f39a33a433" TEXT="Description">
+              <node FOLDED="false" ID="ID_2cd73df7148124d120772324" TEXT="Starts an asynchronous AI request from a saved AI prompt name using the supplied timeout and the"/>
+              <node FOLDED="false" ID="ID_f2ba087d8bc8634af32625ac" TEXT="saved prompt's stored execution defaults."/>
+              <node FOLDED="false" ID="ID_3a3afc0cdbf6dec77d00a3a1" TEXT="Parameter promptName — saved prompt name"/>
+              <node FOLDED="false" ID="ID_a25e308d382462c102c5c180" TEXT="Parameter timeout — positive request timeout"/>
+              <node FOLDED="false" ID="ID_f8345c5e1c38fc21e95700b9" TEXT="Parameter callback — callback invoked with the terminal request result"/>
+              <node FOLDED="false" ID="ID_de76727624df711b73a1dec7" TEXT="Returns — non-blocking request handle"/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_7b124aa410852cb79e85c693" TEXT="runAiPrompt(promptName: String, options: AiRequestOptions, callback: AiRequestCallback): AiRequestHandle">
+            <node FOLDED="false" ID="ID_b80fd568f33b6654b472a942" TEXT="Description">
+              <node FOLDED="false" ID="ID_3fe40e0523b13c08f6d4750f" TEXT="Starts an asynchronous AI request from a saved AI prompt name using options to override"/>
+              <node FOLDED="false" ID="ID_d7843706e5ce8050c3416dd0" TEXT="saved-prompt execution defaults."/>
+              <node FOLDED="false" ID="ID_458e551a74b7300d30cbe341" TEXT="Unset option fields inherit from the saved prompt where applicable. Explicit values in"/>
+              <node FOLDED="false" ID="ID_50a1cc500cb5b18b0900c669" TEXT="AiRequestOptions override saved-prompt values; unset fields inside AiModelConfiguration inherit"/>
+              <node FOLDED="false" ID="ID_4aa8b7c163b7c58375ab77da" TEXT="independently."/>
+              <node FOLDED="false" ID="ID_27f2af17d4e7266a9716f4d3" TEXT="Parameter promptName — saved prompt name"/>
+              <node FOLDED="false" ID="ID_96393a00cba6b91be1e39158" TEXT="Parameter options — request options; must include a positive timeout"/>
+              <node FOLDED="false" ID="ID_a69cbf015c1a0e00d9d3b811" TEXT="Parameter callback — callback invoked with the terminal request result"/>
+              <node FOLDED="false" ID="ID_9ff4c021ba0641a0188db632" TEXT="Returns — non-blocking request handle"/>
+            </node>
+          </node>
         </node>
       </node>
       <node FOLDED="true" ID="ID_bd6619ac280ae0af16b5bbbb" TEXT="AiRequestStatus — Terminal status for an AI request callback result.">
@@ -439,13 +753,102 @@
           <node CONTENT_ID="ID_c9cc26f247afd713793436ac" FOLDED="false" ID="ID_fad187df4de5b35e2362cd42"/>
         </node>
         <node FOLDED="true" ID="ID_21ce0b9e962dbc93bc4dcc5a" TEXT="Properties">
-          <node FOLDED="true" ID="ID_babf586ba7fd7d2d4fe6ebd2" TEXT="mindMap: MindMap [read]"/>
-          <node FOLDED="true" ID="ID_b8d16174870a435ad7d19f85" TEXT="selectedNodeIds: List&lt;String&gt; [read]"/>
+          <node FOLDED="true" ID="ID_babf586ba7fd7d2d4fe6ebd2" TEXT="mindMap: MindMap [read]">
+            <node FOLDED="false" ID="ID_34b891544e3cad2a6dab8213" TEXT="Description">
+              <node FOLDED="false" ID="ID_0216e883b56bfb9047d9685b" TEXT="Returns the map used for the injected selection."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_b8d16174870a435ad7d19f85" TEXT="selectedNodeIds: List&lt;String&gt; [read]">
+            <node FOLDED="false" ID="ID_76d57dcddd53063ff40e31bc" TEXT="Description">
+              <node FOLDED="false" ID="ID_6e3664f651ef2d3117a25562" TEXT="Returns ordered selected node IDs."/>
+            </node>
+          </node>
         </node>
         <node FOLDED="true" ID="ID_2799dea3a1a2ede8807b6957" TEXT="Methods">
-          <node FOLDED="true" ID="ID_2c295d800d8e8af220130245" TEXT="AiSelectionOverride(mindMap: MindMap, selectedNodeIds: List&lt;String&gt;)"/>
+          <node FOLDED="true" ID="ID_2c295d800d8e8af220130245" TEXT="AiSelectionOverride(mindMap: MindMap, selectedNodeIds: List&lt;String&gt;)">
+            <node FOLDED="false" ID="ID_2faadd0811af7fd05956155f" TEXT="Description">
+              <node FOLDED="false" ID="ID_1bf5c2032b9ef6e3ed90e503" TEXT="Creates a prompt-time selection override."/>
+              <node FOLDED="false" ID="ID_38719a1b16bafd63ea5107e0" TEXT="The node IDs are trimmed, kept in the supplied order, and must be unique. They should identify"/>
+              <node FOLDED="false" ID="ID_be110501516e32ea7a59414e" TEXT="nodes in mindMap."/>
+              <node FOLDED="false" ID="ID_cebb70556ae63d037cf995a4" TEXT="Parameter mindMap — map used for the injected selection"/>
+              <node FOLDED="false" ID="ID_b20d3ff1f9fcad69822c54fc" TEXT="Parameter selectedNodeIds — ordered selected node IDs; must not contain null, blank, or"/>
+              <node FOLDED="false" ID="ID_2103d9acf57bbb236e224eb8" TEXT="duplicate values"/>
+            </node>
+          </node>
           <node FOLDED="true" ID="ID_728e522739a4b5e6ca064cce" TEXT="equals(obj: Object): boolean"/>
           <node FOLDED="true" ID="ID_4006c147ec1bcce0155f6643" TEXT="hashCode(): int"/>
+        </node>
+      </node>
+      <node FOLDED="true" ID="ID_d30adcc42b527cfdec9e56a0" TEXT="AiTemperature — Immutable public temperature configuration for script-facing AI requests.">
+        <node FOLDED="true" ID="ID_fed8a9439f41cf8ab817c616" TEXT="Type">
+          <node CONTENT_ID="ID_6ad16bd51620bfef1a9434b4" FOLDED="false" ID="ID_1fea0dbecc8c9e34d22d172d"/>
+        </node>
+        <node FOLDED="true" ID="ID_6615a7c4ca7afd81578061a1" TEXT="Properties">
+          <node FOLDED="true" ID="ID_7cd38351b310b94c3588a5a3" TEXT="modelDefault: boolean [read]">
+            <node FOLDED="false" ID="ID_6fff7ffdd8686fb3825fb884" TEXT="Description">
+              <node FOLDED="false" ID="ID_bb881f2ed834faa5a072a486" TEXT="Returns whether this value requests the model default."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_52a870ecd5ca07d5a3fde076" TEXT="numeric: boolean [read]">
+            <node FOLDED="false" ID="ID_406bad149bae5624d883f5b5" TEXT="Description">
+              <node FOLDED="false" ID="ID_efda2873cf5d7f4cd66d7f9d" TEXT="Returns whether this value is numeric."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_d4ec7de23d9c03c96fcd2d8a" TEXT="value: Double [read]">
+            <node FOLDED="false" ID="ID_7289a26101ab5331fb228354" TEXT="Description">
+              <node FOLDED="false" ID="ID_b24d63fcb0c099df031f1ef3" TEXT="Returns the numeric temperature value, or null for #modelDefault()."/>
+            </node>
+          </node>
+        </node>
+        <node FOLDED="true" ID="ID_cfbd787b32343631b4045cb7" TEXT="Methods">
+          <node FOLDED="true" ID="ID_bf3e7e707d333ac48d4e5d60" TEXT="equals(obj: Object): boolean"/>
+          <node FOLDED="true" ID="ID_096bfb3fb625e3be5388e385" TEXT="hashCode(): int"/>
+          <node FOLDED="true" ID="ID_913ecd59cbf984fe62218fca" TEXT="modelDefault(): AiTemperature">
+            <node FOLDED="false" ID="ID_a0b98226449c4a296211846b" TEXT="Description">
+              <node FOLDED="false" ID="ID_399a9a562e839b43e518b24a" TEXT="Requests the selected model's default temperature explicitly."/>
+              <node FOLDED="false" ID="ID_da0cda663d148b92e142c191" TEXT="Returns — shared model-default temperature marker"/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_ff52c4865e1dc4bc0d217738" TEXT="of(value: double): AiTemperature">
+            <node FOLDED="false" ID="ID_84360e622d00e11521fd92b1" TEXT="Description">
+              <node FOLDED="false" ID="ID_ddd88202f8fabc6aaa51733f" TEXT="Requests a numeric temperature."/>
+              <node FOLDED="false" ID="ID_afd952f92021e7689d289471" TEXT="Parameter value — finite temperature value"/>
+              <node FOLDED="false" ID="ID_461c5c72a22eeb655f50e86b" TEXT="Returns — numeric temperature configuration"/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_edf990568322a28d865d459d" TEXT="toString(): String"/>
+        </node>
+      </node>
+      <node FOLDED="true" ID="ID_d85f16072a2c8de46c14d5f9" TEXT="AiThinkingEffort — Provider-independent thinking-effort override for AI model configuration.">
+        <node FOLDED="true" ID="ID_b3f595e56f0e08e8c6ea615b" TEXT="Type">
+          <node CONTENT_ID="ID_470edcd3eb71f13097519642" FOLDED="false" ID="ID_4b969209b365e08372de4218"/>
+        </node>
+        <node FOLDED="true" ID="ID_f4eeeb887d753965c6b871a1" TEXT="Methods">
+          <node FOLDED="true" ID="ID_2bbe9aaf674d13c202a3da89" TEXT="fromPreferenceValue(value: String): AiThinkingEffort">
+            <node FOLDED="false" ID="ID_e30336236de129e5311cc223" TEXT="Description">
+              <node FOLDED="false" ID="ID_e463901ee5a4e17b368ffde2" TEXT="Parses a stored preference value."/>
+              <node FOLDED="false" ID="ID_ac1494d0779a2418ad05d4a0" TEXT="null, blank, and inherit return null. Unknown values also return null."/>
+              <node FOLDED="false" ID="ID_bcd8eca95689e9831cf44371" TEXT="Parameter value — preference value"/>
+              <node FOLDED="false" ID="ID_cf9319376f3fbb2a438fb4c0" TEXT="Returns — parsed effort, or null to inherit"/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_4f55fd9b16b40870963cc36b" TEXT="toOpenAiValue(): String">
+            <node FOLDED="false" ID="ID_55d34670e4e0619486a19798" TEXT="Description">
+              <node FOLDED="false" ID="ID_ffa0bb9e6b751700e8d786a3" TEXT="Returns the lowercase value used by OpenAI-compatible providers."/>
+              <node FOLDED="false" ID="ID_fd512e91fd7b6170a8d82fea" TEXT="Returns — lowercase provider value"/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_0d174ec6ed175b31537fc551" TEXT="valueOf(name: String): AiThinkingEffort"/>
+          <node FOLDED="true" ID="ID_d7aab72e64490c11c3e6b70f" TEXT="values(): AiThinkingEffort[]"/>
+        </node>
+        <node FOLDED="true" ID="ID_d807621c8d5c18ab042ce74f" TEXT="Constants">
+          <node FOLDED="true" ID="ID_08fed45747c37eea495f54f6" TEXT="HIGH: AiThinkingEffort"/>
+          <node FOLDED="true" ID="ID_3bb6768c776c0d9690372618" TEXT="LOW: AiThinkingEffort"/>
+          <node FOLDED="true" ID="ID_63bc531cb201826199cb731c" TEXT="MAX: AiThinkingEffort"/>
+          <node FOLDED="true" ID="ID_d16d93d7e8fa801a4cf2e1c3" TEXT="MEDIUM: AiThinkingEffort"/>
+          <node FOLDED="true" ID="ID_1316fff68aa5dd13c845a969" TEXT="MINIMAL: AiThinkingEffort"/>
+          <node FOLDED="true" ID="ID_97be13624ef20e6ff393fd2b" TEXT="NONE: AiThinkingEffort"/>
+          <node FOLDED="true" ID="ID_cfcb6de35c3da975c5eb42f5" TEXT="XHIGH: AiThinkingEffort"/>
         </node>
       </node>
       <node FOLDED="true" ID="ID_26c7cd42587ed1990b9ce092" TEXT="AiToolAvailability — Tool availability requested for an AI call.">
@@ -457,11 +860,32 @@
           <node FOLDED="true" ID="ID_f3e238f4df3cfb113b967568" TEXT="values(): AiToolAvailability[]"/>
         </node>
         <node FOLDED="true" ID="ID_7dbcb13255d7bdfbe7de56fc" TEXT="Constants">
-          <node FOLDED="true" ID="ID_ce4b8857782e31bd0704b30f" TEXT="CURRENT: AiToolAvailability"/>
-          <node FOLDED="true" ID="ID_8288fdbffde1401d84321f1f" TEXT="DISABLED: AiToolAvailability"/>
-          <node FOLDED="true" ID="ID_22198c070ae3663b82ea40af" TEXT="EDITING: AiToolAvailability"/>
-          <node FOLDED="true" ID="ID_f7aba243ca38ef3efe6e2283" TEXT="READING: AiToolAvailability"/>
-          <node FOLDED="true" ID="ID_91459367e1caa06225037329" TEXT="SCRIPT_EXECUTION: AiToolAvailability"/>
+          <node FOLDED="true" ID="ID_ce4b8857782e31bd0704b30f" TEXT="CURRENT: AiToolAvailability">
+            <node FOLDED="false" ID="ID_6093ec0335e6cb5c86e83c99" TEXT="Description">
+              <node FOLDED="false" ID="ID_cf47bc4552b8c4a6389303ba" TEXT="Use the current AI tool setting."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_8288fdbffde1401d84321f1f" TEXT="DISABLED: AiToolAvailability">
+            <node FOLDED="false" ID="ID_fa3f6e66a8df9b1470aa1bf9" TEXT="Description">
+              <node FOLDED="false" ID="ID_3ab788386cc50f50bc304a76" TEXT="Disable application tools for the request."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_22198c070ae3663b82ea40af" TEXT="EDITING: AiToolAvailability">
+            <node FOLDED="false" ID="ID_4808943af6b00ddb5cf8ada9" TEXT="Description">
+              <node FOLDED="false" ID="ID_5837812a80ee9c6d9950e9bd" TEXT="Allow Freeplane reading and map-editing tools, but not script/code execution tools."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_f7aba243ca38ef3efe6e2283" TEXT="READING: AiToolAvailability">
+            <node FOLDED="false" ID="ID_55dd3796ce04b413415e647a" TEXT="Description">
+              <node FOLDED="false" ID="ID_11195e0021edadf9dc368c77" TEXT="Allow Freeplane read/search/selection tools only."/>
+            </node>
+          </node>
+          <node FOLDED="true" ID="ID_91459367e1caa06225037329" TEXT="SCRIPT_EXECUTION: AiToolAvailability">
+            <node FOLDED="false" ID="ID_9d4bb7fce018a1eeece52ebe" TEXT="Description">
+              <node FOLDED="false" ID="ID_6c3aaa408ec85f0a8713b67b" TEXT="Allow editing tools and script/code execution tools where those tools are enabled and"/>
+              <node FOLDED="false" ID="ID_54e5dd34a61f8cea4a61c078" TEXT="authorized."/>
+            </node>
+          </node>
         </node>
       </node>
       <node FOLDED="true" ID="ID_1c801c82539585450d963a70" TEXT="AttributeCondition">
@@ -1612,11 +2036,16 @@
           <node FOLDED="true" ID="ID_e9cfd8c2baa4adfea6dab8af" TEXT="askAi(prompt: String, options: AiRequestOptions, callback: AiRequestCallback): AiRequestHandle [write]">
             <node FOLDED="false" ID="ID_69944359564387b20f04a184" TEXT="Description">
               <node FOLDED="false" ID="ID_d38a4e6f873db699d0f225e3" TEXT="Starts an asynchronous AI request for raw prompt text and delivers the terminal result through"/>
-              <node FOLDED="false" ID="ID_1759a64b1d7d448509aeb5fd" TEXT="the callback. May throw org.freeplane.api.ai.AiRequestRejectedException for same-thread"/>
-              <node FOLDED="false" ID="ID_f672bb83629eb8efba46871b" TEXT="pre-acceptance rejection. In Groovy scripts, implementations may also support the natural"/>
-              <node FOLDED="false" ID="ID_52682631f60891feff947e4f" TEXT="trailing-closure form, for example c.askAi(&quot;Prompt&quot;,"/>
-              <node FOLDED="false" ID="ID_0ef3903e3a1a96ec16062b39" TEXT="AiRequestOptions.builder().timeout(Duration.ofSeconds(30)).mode(org.freeplane.api.ai.AiRequestMode.HIDDEN).build())"/>
-              <node FOLDED="false" ID="ID_65df25d6aed33e53d511d188" TEXT="{ result -&amp;gt; println(result.status) }."/>
+              <node FOLDED="false" ID="ID_1759a64b1d7d448509aeb5fd" TEXT="the callback."/>
+              <node FOLDED="false" ID="ID_f672bb83629eb8efba46871b" TEXT="The supplied options must include a positive timeout and a non-null"/>
+              <node FOLDED="false" ID="ID_52682631f60891feff947e4f" TEXT="org.freeplane.api.ai.AiRequestMode. See AiRequestOptions.Builder#systemMessage(String) and"/>
+              <node FOLDED="false" ID="ID_0ef3903e3a1a96ec16062b39" TEXT="AiRequestOptions.Builder#exactSystemMessage(String) for the difference between a base"/>
+              <node FOLDED="false" ID="ID_65df25d6aed33e53d511d188" TEXT="system-message override and an exact system instruction."/>
+              <node FOLDED="false" ID="ID_914b853a10caf3d14a7f62bb" TEXT="May throw org.freeplane.api.ai.AiRequestRejectedException for same-thread pre-acceptance"/>
+              <node FOLDED="false" ID="ID_33984cc4fedc22cd9f777f84" TEXT="rejection. In Groovy scripts, implementations may also support the natural trailing-closure"/>
+              <node FOLDED="false" ID="ID_1c26f692028b6eef084f119f" TEXT="form, for example c.askAi(&quot;Prompt&quot;,"/>
+              <node FOLDED="false" ID="ID_44025b5cdef2e307c9433280" TEXT="AiRequestOptions.builder().timeout(Duration.ofSeconds(30)).mode(org.freeplane.api.ai.AiRequestMode.HIDDEN).build())"/>
+              <node FOLDED="false" ID="ID_56c62a966e96a60c31592d34" TEXT="{ result -&amp;gt; println(result.status) }."/>
             </node>
             <node FOLDED="false" ID="ID_30e8645b6b6ed40af03e0625" TEXT="Since">
               <node FOLDED="false" ID="ID_46663ec6b2b4fdaebc7a69e4" TEXT="1.13.3"/>
@@ -1887,6 +2316,9 @@
             <node FOLDED="false" ID="ID_be4f6dc4e0ee7a8095d65320" TEXT="Description">
               <node FOLDED="false" ID="ID_0c7b1f2feef7c69e0bd645f1" TEXT="Starts an asynchronous AI request from a saved AI prompt name using the supplied options to"/>
               <node FOLDED="false" ID="ID_d11277896afb3aed970244e0" TEXT="override saved-prompt execution defaults."/>
+              <node FOLDED="false" ID="ID_5dbefd98ccd7326e1f8d4cac" TEXT="Unset option fields inherit from the saved prompt where applicable. Explicit values in"/>
+              <node FOLDED="false" ID="ID_2a18f2c28ccdcc0040488101" TEXT="AiRequestOptions override saved-prompt values; unset fields inside"/>
+              <node FOLDED="false" ID="ID_21d02cd49c03cdeb2d39e44e" TEXT="org.freeplane.api.ai.AiModelConfiguration inherit independently."/>
             </node>
             <node FOLDED="false" ID="ID_a571bcd60911b09f9b1389ff" TEXT="Since">
               <node FOLDED="false" ID="ID_10a3f3e9998ee4846f4d2c03" TEXT="1.13.3"/>

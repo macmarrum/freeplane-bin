@@ -93,7 +93,10 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">AiSelectionOverride</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
 <div class="block">Overrides the selection structure injected into the first AI prompt message.
- This affects only prompt composition and does not replace later tool results.</div>
+
+ <p>This affects only prompt composition. It does not change the Freeplane UI
+ selection and does not replace later tool results; tools still observe their own
+ current input and permissions.</p></div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.13.3</dd>
@@ -111,7 +114,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.freeplane.api.MindMap,java.util.List)" class="member-name-link">AiSelectionOverride</a><wbr>(<a href="../MindMap.html" title="interface in org.freeplane.api">MindMap</a>&nbsp;mindMap,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;selectedNodeIds)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Creates a prompt-time selection override.</div>
+</div>
 </div>
 </section>
 </li>
@@ -131,10 +136,14 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../MindMap.html" title="interface in org.freeplane.api">MindMap</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getMindMap()" class="member-name-link">getMindMap</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the map used for the injected selection.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSelectedNodeIds()" class="member-name-link">getSelectedNodeIds</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns ordered selected node IDs.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#hashCode()" class="member-name-link">hashCode</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
@@ -160,6 +169,16 @@ loadScripts(document, 'script');</script>
 <h3>AiSelectionOverride</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">AiSelectionOverride</span><wbr><span class="parameters">(<a href="../MindMap.html" title="interface in org.freeplane.api">MindMap</a>&nbsp;mindMap,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;selectedNodeIds)</span></div>
+<div class="block">Creates a prompt-time selection override.
+
+ <p>The node IDs are trimmed, kept in the supplied order, and must be unique.
+ They should identify nodes in <code>mindMap</code>.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>mindMap</code> - map used for the injected selection</dd>
+<dd><code>selectedNodeIds</code> - ordered selected node IDs; must not contain null,
+        blank, or duplicate values</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -174,12 +193,22 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getMindMap()">
 <h3>getMindMap</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../MindMap.html" title="interface in org.freeplane.api">MindMap</a></span>&nbsp;<span class="element-name">getMindMap</span>()</div>
+<div class="block">Returns the map used for the injected selection.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>mind map</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getSelectedNodeIds()">
 <h3>getSelectedNodeIds</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">getSelectedNodeIds</span>()</div>
+<div class="block">Returns ordered selected node IDs.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>immutable ordered node-ID list</dd>
+</dl>
 </section>
 </li>
 <li>

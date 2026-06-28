@@ -100,7 +100,10 @@ loadScripts(document, 'script');</script>
 <div class="block">Adds a tag at the path given by the instruction.</div>
 </dd>
 <dt><a href="org/freeplane/api/ai/AiRequestMode.html#ADD_TO_CHAT" class="member-name-link">ADD_TO_CHAT</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestMode.html" title="enum class in org.freeplane.api.ai">AiRequestMode</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Add the request to the selected chat when compatible, otherwise start a new
+ visible script chat.</div>
+</dd>
 <dt><a href="org/freeplane/api/Icons.html#addAll(java.util.Collection)" class="member-name-link">addAll(Collection&lt;String&gt;)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Icons.html" title="interface in org.freeplane.api">Icons</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/Icons.html#addAll(org.freeplane.api.IconsRO)" class="member-name-link">addAll(IconsRO)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Icons.html" title="interface in org.freeplane.api">Icons</a></dt>
@@ -137,9 +140,18 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestStatus.html#AI_UNAVAILABLE" class="member-name-link">AI_UNAVAILABLE</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestStatus.html" title="enum class in org.freeplane.api.ai">AiRequestStatus</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiModelConfiguration.html" class="type-name-link" title="class in org.freeplane.api.ai">AiModelConfiguration</a> - Class in <a href="org/freeplane/api/ai/package-summary.html">org.freeplane.api.ai</a></dt>
+<dd>
+<div class="block">Immutable public model configuration for script-facing AI requests.</div>
+</dd>
+<dt><a href="org/freeplane/api/ai/AiModelConfiguration.Builder.html" class="type-name-link" title="class in org.freeplane.api.ai">AiModelConfiguration.Builder</a> - Class in <a href="org/freeplane/api/ai/package-summary.html">org.freeplane.api.ai</a></dt>
+<dd>
+<div class="block">Mutable builder for <a href="org/freeplane/api/ai/AiModelConfiguration.html" title="class in org.freeplane.api.ai"><code>AiModelConfiguration</code></a>.</div>
+</dd>
 <dt><a href="org/freeplane/api/ai/AiModelSelection.html" class="type-name-link" title="class in org.freeplane.api.ai">AiModelSelection</a> - Class in <a href="org/freeplane/api/ai/package-summary.html">org.freeplane.api.ai</a></dt>
 <dd>
-<div class="block">Explicit or current model selection for an <a href="org/freeplane/api/ai/AiRequestOptions.html" title="class in org.freeplane.api.ai"><code>AiRequestOptions</code></a>.</div>
+<div class="block">Explicit provider/model choice or default-model marker inside an
+ <a href="org/freeplane/api/ai/AiModelConfiguration.html" title="class in org.freeplane.api.ai"><code>AiModelConfiguration</code></a>.</div>
 </dd>
 <dt><a href="org/freeplane/api/ai/AiRequestCallback.html" class="type-name-link" title="interface in org.freeplane.api.ai">AiRequestCallback</a> - Interface in <a href="org/freeplane/api/ai/package-summary.html">org.freeplane.api.ai</a></dt>
 <dd>
@@ -151,14 +163,16 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/freeplane/api/ai/AiRequestMode.html" class="type-name-link" title="enum class in org.freeplane.api.ai">AiRequestMode</a> - Enum Class in <a href="org/freeplane/api/ai/package-summary.html">org.freeplane.api.ai</a></dt>
 <dd>
-<div class="block">Visible or hidden execution mode for <a href="org/freeplane/api/ai/AiRequestOptions.html" title="class in org.freeplane.api.ai"><code>AiRequestOptions</code></a>.</div>
+<div class="block">User-interface visibility for an AI request.</div>
 </dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.html" class="type-name-link" title="class in org.freeplane.api.ai">AiRequestOptions</a> - Class in <a href="org/freeplane/api/ai/package-summary.html">org.freeplane.api.ai</a></dt>
 <dd>
 <div class="block">Immutable public options for script-facing AI requests.</div>
 </dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.Builder.html" class="type-name-link" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a> - Class in <a href="org/freeplane/api/ai/package-summary.html">org.freeplane.api.ai</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Mutable builder for <a href="org/freeplane/api/ai/AiRequestOptions.html" title="class in org.freeplane.api.ai"><code>AiRequestOptions</code></a>.</div>
+</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestRejectedException.html" class="type-name-link" title="class in org.freeplane.api.ai">AiRequestRejectedException</a> - Exception Class in <a href="org/freeplane/api/ai/package-summary.html">org.freeplane.api.ai</a></dt>
 <dd>
 <div class="block">Runtime exception for same-thread pre-acceptance AI request rejection.</div>
@@ -184,7 +198,17 @@ loadScripts(document, 'script');</script>
 <div class="block">Overrides the selection structure injected into the first AI prompt message.</div>
 </dd>
 <dt><a href="org/freeplane/api/ai/AiSelectionOverride.html#%3Cinit%3E(org.freeplane.api.MindMap,java.util.List)" class="member-name-link">AiSelectionOverride(MindMap, List&lt;String&gt;)</a> - Constructor for class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiSelectionOverride.html" title="class in org.freeplane.api.ai">AiSelectionOverride</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a prompt-time selection override.</div>
+</dd>
+<dt><a href="org/freeplane/api/ai/AiTemperature.html" class="type-name-link" title="class in org.freeplane.api.ai">AiTemperature</a> - Class in <a href="org/freeplane/api/ai/package-summary.html">org.freeplane.api.ai</a></dt>
+<dd>
+<div class="block">Immutable public temperature configuration for script-facing AI requests.</div>
+</dd>
+<dt><a href="org/freeplane/api/ai/AiThinkingEffort.html" class="type-name-link" title="enum class in org.freeplane.api.ai">AiThinkingEffort</a> - Enum Class in <a href="org/freeplane/api/ai/package-summary.html">org.freeplane.api.ai</a></dt>
+<dd>
+<div class="block">Provider-independent thinking-effort override for AI model configuration.</div>
+</dd>
 <dt><a href="org/freeplane/api/ai/AiToolAvailability.html" class="type-name-link" title="enum class in org.freeplane.api.ai">AiToolAvailability</a> - Enum Class in <a href="org/freeplane/api/ai/package-summary.html">org.freeplane.api.ai</a></dt>
 <dd>
 <div class="block">Tool availability requested for an AI call.</div>
@@ -230,7 +254,9 @@ loadScripts(document, 'script');</script>
 <div class="block">For implicit conversion to boolean: true if the text is not empty.</div>
 </dd>
 <dt><a href="org/freeplane/api/ai/AiRequestService.html#askAi(java.lang.String,org.freeplane.api.ai.AiRequestOptions,org.freeplane.api.ai.AiRequestCallback)" class="member-name-link">askAi(String, AiRequestOptions, AiRequestCallback)</a> - Method in interface org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestService.html" title="interface in org.freeplane.api.ai">AiRequestService</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Starts an asynchronous AI request for raw prompt text.</div>
+</dd>
 <dt><a href="org/freeplane/api/Controller.html#askAi(java.lang.String,org.freeplane.api.ai.AiRequestOptions,org.freeplane.api.ai.AiRequestCallback)" class="member-name-link">askAi(String, AiRequestOptions, AiRequestCallback)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Controller.html" title="interface in org.freeplane.api">Controller</a></dt>
 <dd>
 <div class="block">Starts an asynchronous AI request for raw prompt text and delivers
@@ -309,9 +335,23 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/NodeShape.html#BUBBLE" class="member-name-link">BUBBLE</a> - Enum constant in enum class org.freeplane.api.<a href="org/freeplane/api/NodeShape.html" title="enum class in org.freeplane.api">NodeShape</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiModelConfiguration.Builder.html#build()" class="member-name-link">build()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelConfiguration.Builder.html" title="class in org.freeplane.api.ai">AiModelConfiguration.Builder</a></dt>
+<dd>
+<div class="block">Builds immutable model configuration.</div>
+</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.Builder.html#build()" class="member-name-link">build()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Builds immutable request options.</div>
+</dd>
+<dt><a href="org/freeplane/api/ai/AiModelConfiguration.html#builder()" class="member-name-link">builder()</a> - Static method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelConfiguration.html" title="class in org.freeplane.api.ai">AiModelConfiguration</a></dt>
+<dd>
+<div class="block">Creates a model-configuration builder.</div>
+</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.html#builder()" class="member-name-link">builder()</a> - Static method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a></dt>
+<dd>
+<div class="block">Creates a new request-options builder.</div>
+</dd>
+<dt><a href="org/freeplane/api/ai/AiModelConfiguration.Builder.html#%3Cinit%3E()" class="member-name-link">Builder()</a> - Constructor for class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelConfiguration.Builder.html" title="class in org.freeplane.api.ai">AiModelConfiguration.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.Builder.html#%3Cinit%3E()" class="member-name-link">Builder()</a> - Constructor for class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></dt>
 <dd>&nbsp;</dd>
@@ -576,10 +616,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/core/util/TextUtils.html#createTranslatedString(java.lang.String)" class="member-name-link">createTranslatedString(String)</a> - Static method in class org.freeplane.core.util.<a href="org/freeplane/core/util/TextUtils.html" title="class in org.freeplane.core.util">TextUtils</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/freeplane/api/ai/AiModelSelection.html#current()" class="member-name-link">current()</a> - Static method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelSelection.html" title="class in org.freeplane.api.ai">AiModelSelection</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiToolAvailability.html#CURRENT" class="member-name-link">CURRENT</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiToolAvailability.html" title="enum class in org.freeplane.api.ai">AiToolAvailability</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Use the current AI tool setting.</div>
+</dd>
 </dl>
 <h2 class="title" id="I:D">D</h2>
 <dl class="index">
@@ -605,6 +645,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/core/ui/components/UITools.Defaults.html#DEFAULT_FONT_SCALING_FACTOR" class="member-name-link">DEFAULT_FONT_SCALING_FACTOR</a> - Static variable in class org.freeplane.core.ui.components.<a href="org/freeplane/core/ui/components/UITools.Defaults.html" title="class in org.freeplane.core.ui.components">UITools.Defaults</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiModelSelection.html#defaultModel()" class="member-name-link">defaultModel()</a> - Static method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelSelection.html" title="class in org.freeplane.api.ai">AiModelSelection</a></dt>
+<dd>
+<div class="block">Selects the default model resolved by the request execution context.</div>
+</dd>
 <dt><a href="org/freeplane/core/ui/components/UITools.Defaults.html#%3Cinit%3E()" class="member-name-link">Defaults()</a> - Constructor for class org.freeplane.core.ui.components.<a href="org/freeplane/core/ui/components/UITools.Defaults.html" title="class in org.freeplane.core.ui.components">UITools.Defaults</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/Node.html#delete()" class="member-name-link">delete()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Node.html" title="interface in org.freeplane.api">Node</a></dt>
@@ -635,7 +679,9 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/api/ChildrenSides.html#DIAGONAL_DESCENDING" class="member-name-link">DIAGONAL_DESCENDING</a> - Enum constant in enum class org.freeplane.api.<a href="org/freeplane/api/ChildrenSides.html" title="enum class in org.freeplane.api">ChildrenSides</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiToolAvailability.html#DISABLED" class="member-name-link">DISABLED</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiToolAvailability.html" title="enum class in org.freeplane.api.ai">AiToolAvailability</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Disable application tools for the request.</div>
+</dd>
 <dt><a href="org/freeplane/launcher/Launcher.html#disableSecurityManager()" class="member-name-link">disableSecurityManager()</a> - Method in class org.freeplane.launcher.<a href="org/freeplane/launcher/Launcher.html" title="class in org.freeplane.launcher">Launcher</a></dt>
 <dd>
 <div class="block">Disables security manager for launched Freeplane instance.</div>
@@ -666,7 +712,9 @@ loadScripts(document, 'script');</script>
 <div class="block">Starts editing node, normally in the inline editor.</div>
 </dd>
 <dt><a href="org/freeplane/api/ai/AiToolAvailability.html#EDITING" class="member-name-link">EDITING</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiToolAvailability.html" title="enum class in org.freeplane.api.ai">AiToolAvailability</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Allow Freeplane reading and map-editing tools, but not script/code execution tools.</div>
+</dd>
 <dt><a href="org/freeplane/api/Controller.html#editInPopup(org.freeplane.api.Node)" class="member-name-link">editInPopup(Node)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Controller.html" title="interface in org.freeplane.api">Controller</a></dt>
 <dd>
 <div class="block">opens the appropriate popup text editor.</div>
@@ -683,9 +731,13 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/freeplane/core/util/HtmlUtils.html#endOfText(java.lang.String)" class="member-name-link">endOfText(String)</a> - Static method in class org.freeplane.core.util.<a href="org/freeplane/core/util/HtmlUtils.html" title="class in org.freeplane.core.util">HtmlUtils</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiModelConfiguration.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelConfiguration.html" title="class in org.freeplane.api.ai">AiModelConfiguration</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiModelSelection.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelSelection.html" title="class in org.freeplane.api.ai">AiModelSelection</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiSelectionOverride.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiSelectionOverride.html" title="class in org.freeplane.api.ai">AiSelectionOverride</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiTemperature.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiTemperature.html" title="class in org.freeplane.api.ai">AiTemperature</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/MapTagCategoryInstruction.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class org.freeplane.api.<a href="org/freeplane/api/MapTagCategoryInstruction.html" title="class in org.freeplane.api">MapTagCategoryInstruction</a></dt>
 <dd>&nbsp;</dd>
@@ -724,7 +776,9 @@ loadScripts(document, 'script');</script>
 <div class="block">Evaluate probably changed formulas in the map.</div>
 </dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.Builder.html#exactSystemMessage(java.lang.String)" class="member-name-link">exactSystemMessage(String)</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Sets the complete system message exactly as supplied by the caller.</div>
+</dd>
 <dt><a href="org/freeplane/core/util/MenuUtils.html#executeMenuItems(java.util.List)" class="member-name-link">executeMenuItems(List&lt;String&gt;)</a> - Static method in class org.freeplane.core.util.<a href="org/freeplane/core/util/MenuUtils.html" title="class in org.freeplane.core.util">MenuUtils</a></dt>
 <dd>
 <div class="block">to be used from scripts to execute menu items.</div>
@@ -736,7 +790,9 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/core/ui/components/UITools.html#executeWhenNodeHasFocus(java.lang.Runnable)" class="member-name-link">executeWhenNodeHasFocus(Runnable)</a> - Static method in class org.freeplane.core.ui.components.<a href="org/freeplane/core/ui/components/UITools.html" title="class in org.freeplane.core.ui.components">UITools</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiModelSelection.html#explicit(java.lang.String,java.lang.String)" class="member-name-link">explicit(String, String)</a> - Static method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelSelection.html" title="class in org.freeplane.api.ai">AiModelSelection</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Selects a specific provider/model pair.</div>
+</dd>
 <dt><a href="org/freeplane/api/ControllerRO.html#export(org.freeplane.api.MindMap,java.io.File,java.lang.String,boolean)" class="member-name-link">export(MindMap, File, String, boolean)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/ControllerRO.html" title="interface in org.freeplane.api">ControllerRO</a></dt>
 <dd>
 <div class="block">exports map to destination file, example:</div>
@@ -942,6 +998,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/core/util/FreeplaneVersion.html#%3Cinit%3E(int,int,int,java.lang.String,int)" class="member-name-link">FreeplaneVersion(int, int, int, String, int)</a> - Constructor for class org.freeplane.core.util.<a href="org/freeplane/core/util/FreeplaneVersion.html" title="class in org.freeplane.core.util">FreeplaneVersion</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiThinkingEffort.html#fromPreferenceValue(java.lang.String)" class="member-name-link">fromPreferenceValue(String)</a> - Static method in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiThinkingEffort.html" title="enum class in org.freeplane.api.ai">AiThinkingEffort</a></dt>
+<dd>
+<div class="block">Parses a stored preference value.</div>
+</dd>
 <dt><a href="org/freeplane/api/Quantity.html#fromString(java.lang.String,U)" class="member-name-link">fromString(String, U)</a> - Static method in class org.freeplane.api.<a href="org/freeplane/api/Quantity.html" title="class in org.freeplane.api">Quantity</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/LengthUnit.html#fromStringInPt(java.lang.String)" class="member-name-link">fromStringInPt(String)</a> - Static method in enum class org.freeplane.api.<a href="org/freeplane/api/LengthUnit.html" title="enum class in org.freeplane.api">LengthUnit</a></dt>
@@ -1443,7 +1503,9 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/core/util/FreeplaneVersion.html#getMin()" class="member-name-link">getMin()</a> - Method in class org.freeplane.core.util.<a href="org/freeplane/core/util/FreeplaneVersion.html" title="class in org.freeplane.core.util">FreeplaneVersion</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiSelectionOverride.html#getMindMap()" class="member-name-link">getMindMap()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiSelectionOverride.html" title="class in org.freeplane.api.ai">AiSelectionOverride</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns the map used for the injected selection.</div>
+</dd>
 <dt><a href="org/freeplane/api/HeadlessLoader.html#getMindMap()" class="member-name-link">getMindMap()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/HeadlessLoader.html" title="interface in org.freeplane.api">HeadlessLoader</a></dt>
 <dd>
 <div class="block">Creates and returns a map or selects and returns a previously loaded map.</div>
@@ -1465,11 +1527,21 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/api/NodeStyleRO.html#getMinNodeWidth()" class="member-name-link">getMinNodeWidth()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeStyleRO.html" title="interface in org.freeplane.api">NodeStyleRO</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.html#getMode()" class="member-name-link">getMode()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns the requested execution mode, or <code>null</code> when unset.</div>
+</dd>
+<dt><a href="org/freeplane/api/ai/AiRequestOptions.html#getModelConfiguration()" class="member-name-link">getModelConfiguration()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a></dt>
+<dd>
+<div class="block">Returns model overrides, or <code>null</code> when all model fields are inherited.</div>
+</dd>
 <dt><a href="org/freeplane/api/ai/AiModelSelection.html#getModelName()" class="member-name-link">getModelName()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelSelection.html" title="class in org.freeplane.api.ai">AiModelSelection</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="org/freeplane/api/ai/AiRequestOptions.html#getModelSelection()" class="member-name-link">getModelSelection()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns the explicit model name, or <code>null</code> for <a href="org/freeplane/api/ai/AiModelSelection.html#defaultModel()"><code>AiModelSelection.defaultModel()</code></a>.</div>
+</dd>
+<dt><a href="org/freeplane/api/ai/AiModelConfiguration.html#getModelSelection()" class="member-name-link">getModelSelection()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelConfiguration.html" title="class in org.freeplane.api.ai">AiModelConfiguration</a></dt>
+<dd>
+<div class="block">Returns the requested model selection, or <code>null</code> to inherit it.</div>
+</dd>
 <dt><a href="org/freeplane/api/FontRO.html#getName()" class="member-name-link">getName()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/FontRO.html" title="interface in org.freeplane.api">FontRO</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/MapTagCategoryNode.html#getName()" class="member-name-link">getName()</a> - Method in class org.freeplane.api.<a href="org/freeplane/api/MapTagCategoryNode.html" title="class in org.freeplane.api">MapTagCategoryNode</a></dt>
@@ -1687,9 +1759,15 @@ loadScripts(document, 'script');</script>
 <div class="block">returns the previous node with respect to this node in depth-first order.</div>
 </dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.html#getProfileMessage()" class="member-name-link">getProfileMessage()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns the inline assistant profile instruction, or <code>null</code> when
+ <a href="org/freeplane/api/ai/AiRequestOptions.html#getProfileName()"><code>AiRequestOptions.getProfileName()</code></a> should be resolved as a saved profile name.</div>
+</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.html#getProfileName()" class="member-name-link">getProfileName()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns the requested assistant profile name, or <code>null</code> when no
+ profile request was configured.</div>
+</dd>
 <dt><a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.ConfigProperties.html#getProperties()" class="member-name-link">getProperties()</a> - Method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.ConfigProperties.html" title="class in org.freeplane.plugin.script">FreeplaneScriptBaseClass.ConfigProperties</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.ConfigProperties.html#getProperty(java.lang.String)" class="member-name-link">getProperty(String)</a> - Method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.ConfigProperties.html" title="class in org.freeplane.plugin.script">FreeplaneScriptBaseClass.ConfigProperties</a></dt>
@@ -1715,7 +1793,9 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.ConfigProperties.html#getPropertyChangeListeners()" class="member-name-link">getPropertyChangeListeners()</a> - Method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.ConfigProperties.html" title="class in org.freeplane.plugin.script">FreeplaneScriptBaseClass.ConfigProperties</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiModelSelection.html#getProviderName()" class="member-name-link">getProviderName()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelSelection.html" title="class in org.freeplane.api.ai">AiModelSelection</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns the explicit provider name, or <code>null</code> for <a href="org/freeplane/api/ai/AiModelSelection.html#defaultModel()"><code>AiModelSelection.defaultModel()</code></a>.</div>
+</dd>
 <dt><a href="org/freeplane/api/MapTagCategoryNode.html#getQualifiedName()" class="member-name-link">getQualifiedName()</a> - Method in class org.freeplane.api.<a href="org/freeplane/api/MapTagCategoryNode.html" title="class in org.freeplane.api">MapTagCategoryNode</a></dt>
 <dd>
 <div class="block">Returns the qualified name built with the category separator.</div>
@@ -1788,7 +1868,9 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/plugin/script/proxy/Proxy.Controller.html#getSelected()" class="member-name-link">getSelected()</a> - Method in interface org.freeplane.plugin.script.proxy.<a href="org/freeplane/plugin/script/proxy/Proxy.Controller.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Controller</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiSelectionOverride.html#getSelectedNodeIds()" class="member-name-link">getSelectedNodeIds()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiSelectionOverride.html" title="class in org.freeplane.api.ai">AiSelectionOverride</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns ordered selected node IDs.</div>
+</dd>
 <dt><a href="org/freeplane/api/ControllerRO.html#getSelecteds()" class="member-name-link">getSelecteds()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/ControllerRO.html" title="interface in org.freeplane.api">ControllerRO</a></dt>
 <dd>
 <div class="block">A read-only list of selected nodes.</div>
@@ -1796,7 +1878,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/plugin/script/proxy/Proxy.Controller.html#getSelecteds()" class="member-name-link">getSelecteds()</a> - Method in interface org.freeplane.plugin.script.proxy.<a href="org/freeplane/plugin/script/proxy/Proxy.Controller.html" title="interface in org.freeplane.plugin.script.proxy">Proxy.Controller</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.html#getSelectionOverride()" class="member-name-link">getSelectionOverride()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns a prompt-time selection override, or <code>null</code> to use the current
+ Freeplane selection.</div>
+</dd>
 <dt><a href="org/freeplane/api/Cloud.html#getShape()" class="member-name-link">getShape()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Cloud.html" title="interface in org.freeplane.api">Cloud</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ConnectorRO.html#getShape()" class="member-name-link">getShape()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/ConnectorRO.html" title="interface in org.freeplane.api">ConnectorRO</a></dt>
@@ -1870,7 +1955,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.ConfigProperties.html#getSystemLocale()" class="member-name-link">getSystemLocale()</a> - Method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.ConfigProperties.html" title="class in org.freeplane.plugin.script">FreeplaneScriptBaseClass.ConfigProperties</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.html#getSystemMessage()" class="member-name-link">getSystemMessage()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns the base system message override, or <code>null</code> to use the
+ configured Freeplane AI system message.</div>
+</dd>
 <dt><a href="org/freeplane/api/MindMap.html#getTagCategories()" class="member-name-link">getTagCategories()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMap.html" title="interface in org.freeplane.api">MindMap</a></dt>
 <dd>
 <div class="block">Returns read-write access to the map-level tag category structure.</div>
@@ -1894,6 +1982,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/api/MapTagCategoryInstruction.html#getTargetLocation()" class="member-name-link">getTargetLocation()</a> - Method in class org.freeplane.api.<a href="org/freeplane/api/MapTagCategoryInstruction.html" title="class in org.freeplane.api">MapTagCategoryInstruction</a></dt>
 <dd>
 <div class="block">Returns the target placement for add and move operations.</div>
+</dd>
+<dt><a href="org/freeplane/api/ai/AiModelConfiguration.html#getTemperature()" class="member-name-link">getTemperature()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelConfiguration.html" title="class in org.freeplane.api.ai">AiModelConfiguration</a></dt>
+<dd>
+<div class="block">Returns the requested temperature, or <code>null</code> to inherit it.</div>
 </dd>
 <dt><a href="org/freeplane/api/Convertible.html#getText()" class="member-name-link">getText()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Convertible.html" title="interface in org.freeplane.api">Convertible</a></dt>
 <dd>
@@ -1921,8 +2013,14 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/core/ui/components/UITools.html#getTextColorForBackground(java.awt.Color)" class="member-name-link">getTextColorForBackground(Color)</a> - Static method in class org.freeplane.core.ui.components.<a href="org/freeplane/core/ui/components/UITools.html" title="class in org.freeplane.core.ui.components">UITools</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiModelConfiguration.html#getThinkingEffort()" class="member-name-link">getThinkingEffort()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelConfiguration.html" title="class in org.freeplane.api.ai">AiModelConfiguration</a></dt>
+<dd>
+<div class="block">Returns the requested thinking effort, or <code>null</code> to inherit it.</div>
+</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.html#getTimeout()" class="member-name-link">getTimeout()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns the request timeout.</div>
+</dd>
 <dt><a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.ConfigProperties.html#getTimeProperty(java.lang.String)" class="member-name-link">getTimeProperty(String)</a> - Method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.ConfigProperties.html" title="class in org.freeplane.plugin.script">FreeplaneScriptBaseClass.ConfigProperties</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.ConfigProperties.html#getTimeQuantityProperty(java.lang.String)" class="member-name-link">getTimeQuantityProperty(String)</a> - Method in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/FreeplaneScriptBaseClass.ConfigProperties.html" title="class in org.freeplane.plugin.script">FreeplaneScriptBaseClass.ConfigProperties</a></dt>
@@ -1938,7 +2036,9 @@ loadScripts(document, 'script');</script>
 <div class="block">Allow statements like this: <code>node['attr_name'].to.num</code>.</div>
 </dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.html#getToolAvailability()" class="member-name-link">getToolAvailability()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns the requested tool-availability level, or <code>null</code> when unset.</div>
+</dd>
 <dt><a href="org/freeplane/core/util/MenuUtils.MenuEntry.html#getToolTipText()" class="member-name-link">getToolTipText()</a> - Method in class org.freeplane.core.util.<a href="org/freeplane/core/util/MenuUtils.MenuEntry.html" title="class in org.freeplane.core.util">MenuUtils.MenuEntry</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/AttributesRO.html#getTransformed()" class="member-name-link">getTransformed()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/AttributesRO.html" title="interface in org.freeplane.api">AttributesRO</a></dt>
@@ -2023,6 +2123,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/core/ui/components/UITools.html#getValidFrameBounds(java.awt.Component,int,int,int,int)" class="member-name-link">getValidFrameBounds(Component, int, int, int, int)</a> - Static method in class org.freeplane.core.ui.components.<a href="org/freeplane/core/ui/components/UITools.html" title="class in org.freeplane.core.ui.components">UITools</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiTemperature.html#getValue()" class="member-name-link">getValue()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiTemperature.html" title="class in org.freeplane.api.ai">AiTemperature</a></dt>
+<dd>
+<div class="block">Returns the numeric temperature value, or <code>null</code> for <a href="org/freeplane/api/ai/AiTemperature.html#modelDefault()"><code>AiTemperature.modelDefault()</code></a>.</div>
+</dd>
 <dt><a href="org/freeplane/api/NodeRO.html#getValue()" class="member-name-link">getValue()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeRO.html" title="interface in org.freeplane.api">NodeRO</a></dt>
 <dd>
 <div class="block">an alias for <a href="org/freeplane/api/NodeRO.html#getTo()"><code>NodeRO.getTo()</code></a>.</div>
@@ -2085,9 +2189,13 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/freeplane/api/ConnectorRO.html#hasEndArrow()" class="member-name-link">hasEndArrow()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/ConnectorRO.html" title="interface in org.freeplane.api">ConnectorRO</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiModelConfiguration.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelConfiguration.html" title="class in org.freeplane.api.ai">AiModelConfiguration</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiModelSelection.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelSelection.html" title="class in org.freeplane.api.ai">AiModelSelection</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiSelectionOverride.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiSelectionOverride.html" title="class in org.freeplane.api.ai">AiSelectionOverride</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiTemperature.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiTemperature.html" title="class in org.freeplane.api.ai">AiTemperature</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/MapTagCategoryInstruction.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class org.freeplane.api.<a href="org/freeplane/api/MapTagCategoryInstruction.html" title="class in org.freeplane.api">MapTagCategoryInstruction</a></dt>
 <dd>&nbsp;</dd>
@@ -2126,13 +2234,19 @@ loadScripts(document, 'script');</script>
 <div class="block">API for creating and accessing mind map without UI.</div>
 </dd>
 <dt><a href="org/freeplane/api/ai/AiRequestMode.html#HIDDEN" class="member-name-link">HIDDEN</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestMode.html" title="enum class in org.freeplane.api.ai">AiRequestMode</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Run hidden from chat history without showing a progress dialog.</div>
+</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestMode.html#HIDDEN_WITH_CANCEL_DIALOG" class="member-name-link">HIDDEN_WITH_CANCEL_DIALOG</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestMode.html" title="enum class in org.freeplane.api.ai">AiRequestMode</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Run hidden from chat history and show a progress dialog with cancellation.</div>
+</dd>
 <dt><a href="org/freeplane/api/MindMap.html#hide(boolean,boolean,org.freeplane.api.NodeCondition)" class="member-name-link">hide(boolean, boolean, NodeCondition)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/MindMap.html" title="interface in org.freeplane.api">MindMap</a></dt>
 <dd>
 <div class="block">Hides nodes matching given condition.</div>
 </dd>
+<dt><a href="org/freeplane/api/ai/AiThinkingEffort.html#HIGH" class="member-name-link">HIGH</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiThinkingEffort.html" title="enum class in org.freeplane.api.ai">AiThinkingEffort</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/HorizontalTextAlignment.html" class="type-name-link" title="enum class in org.freeplane.api">HorizontalTextAlignment</a> - Enum Class in <a href="org/freeplane/api/package-summary.html">org.freeplane.api</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/core/util/HtmlUtils.html#htmlToPlain(java.lang.String)" class="member-name-link">htmlToPlain(String)</a> - Static method in class org.freeplane.core.util.<a href="org/freeplane/core/util/HtmlUtils.html" title="class in org.freeplane.core.util">HtmlUtils</a></dt>
@@ -2248,8 +2362,6 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/NodeStyleRO.html#isCssSet()" class="member-name-link">isCssSet()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeStyleRO.html" title="interface in org.freeplane.api">NodeStyleRO</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/freeplane/api/ai/AiModelSelection.html#isCurrent()" class="member-name-link">isCurrent()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelSelection.html" title="class in org.freeplane.api.ai">AiModelSelection</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/BorderRO.html#isDashSet()" class="member-name-link">isDashSet()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/BorderRO.html" title="interface in org.freeplane.api">BorderRO</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/EdgeRO.html#isDashSet()" class="member-name-link">isDashSet()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/EdgeRO.html" title="interface in org.freeplane.api">EdgeRO</a></dt>
@@ -2261,6 +2373,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/plugin/script/proxy/Convertible.html#isDate()" class="member-name-link">isDate()</a> - Method in class org.freeplane.plugin.script.proxy.<a href="org/freeplane/plugin/script/proxy/Convertible.html" title="class in org.freeplane.plugin.script.proxy">Convertible</a></dt>
 <dd>
 <div class="block">Type check.</div>
+</dd>
+<dt><a href="org/freeplane/api/ai/AiModelSelection.html#isDefaultModel()" class="member-name-link">isDefaultModel()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelSelection.html" title="class in org.freeplane.api.ai">AiModelSelection</a></dt>
+<dd>
+<div class="block">Returns whether this selection explicitly requests the default model.</div>
 </dd>
 <dt><a href="org/freeplane/api/NodeRO.html#isDescendantOf(org.freeplane.api.Node)" class="member-name-link">isDescendantOf(Node)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeRO.html" title="interface in org.freeplane.api">NodeRO</a></dt>
 <dd>
@@ -2351,6 +2467,10 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/freeplane/api/NodeStyleRO.html#isMinNodeWidthSet()" class="member-name-link">isMinNodeWidthSet()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeStyleRO.html" title="interface in org.freeplane.api">NodeStyleRO</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiTemperature.html#isModelDefault()" class="member-name-link">isModelDefault()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiTemperature.html" title="class in org.freeplane.api.ai">AiTemperature</a></dt>
+<dd>
+<div class="block">Returns whether this value requests the model default.</div>
+</dd>
 <dt><a href="org/freeplane/api/FontRO.html#isNameSet()" class="member-name-link">isNameSet()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/FontRO.html" title="interface in org.freeplane.api">FontRO</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/FreeplaneVersion.html#isNewerThan(org.freeplane.api.FreeplaneVersion)" class="member-name-link">isNewerThan(FreeplaneVersion)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/FreeplaneVersion.html" title="interface in org.freeplane.api">FreeplaneVersion</a></dt>
@@ -2377,6 +2497,10 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/freeplane/api/NodeStyleRO.html#isNumberingSet()" class="member-name-link">isNumberingSet()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeStyleRO.html" title="interface in org.freeplane.api">NodeStyleRO</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiTemperature.html#isNumeric()" class="member-name-link">isNumeric()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiTemperature.html" title="class in org.freeplane.api.ai">AiTemperature</a></dt>
+<dd>
+<div class="block">Returns whether this value is numeric.</div>
+</dd>
 <dt><a href="org/freeplane/api/TextWritingDirection.html#isolated(java.lang.String)" class="member-name-link">isolated(String)</a> - Method in enum class org.freeplane.api.<a href="org/freeplane/api/TextWritingDirection.html" title="enum class in org.freeplane.api">TextWritingDirection</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/TextWritingDirection.html#isolatePathSeparators(java.lang.String)" class="member-name-link">isolatePathSeparators(String)</a> - Method in enum class org.freeplane.api.<a href="org/freeplane/api/TextWritingDirection.html" title="enum class in org.freeplane.api">TextWritingDirection</a></dt>
@@ -2406,7 +2530,9 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/api/FontRO.html#isStrikethroughSet()" class="member-name-link">isStrikethroughSet()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/FontRO.html" title="interface in org.freeplane.api">FontRO</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.html#isSystemMessageExact()" class="member-name-link">isSystemMessageExact()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns whether <a href="org/freeplane/api/ai/AiRequestOptions.html#getSystemMessage()"><code>AiRequestOptions.getSystemMessage()</code></a> is the complete system message.</div>
+</dd>
 <dt><a href="org/freeplane/api/NodeStyleRO.html#isTextColorSet()" class="member-name-link">isTextColorSet()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeStyleRO.html" title="interface in org.freeplane.api">NodeStyleRO</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/NodeRO.html#isTopOrLeft()" class="member-name-link">isTopOrLeft()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/NodeRO.html" title="interface in org.freeplane.api">NodeRO</a></dt>
@@ -2644,6 +2770,8 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/freeplane/core/util/LogUtils.html#%3Cinit%3E()" class="member-name-link">LogUtils()</a> - Constructor for class org.freeplane.core.util.<a href="org/freeplane/core/util/LogUtils.html" title="class in org.freeplane.core.util">LogUtils</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiThinkingEffort.html#LOW" class="member-name-link">LOW</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiThinkingEffort.html" title="enum class in org.freeplane.api.ai">AiThinkingEffort</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <h2 class="title" id="I:M">M</h2>
 <dl class="index">
@@ -2753,7 +2881,11 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">in opposite to the URI make scheme mandatory.</div>
 </dd>
+<dt><a href="org/freeplane/api/ai/AiThinkingEffort.html#MAX" class="member-name-link">MAX</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiThinkingEffort.html" title="enum class in org.freeplane.api.ai">AiThinkingEffort</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/freeplane/core/ui/components/UITools.html#MAX_BUTTON_DIMENSION" class="member-name-link">MAX_BUTTON_DIMENSION</a> - Static variable in class org.freeplane.core.ui.components.<a href="org/freeplane/core/ui/components/UITools.html" title="class in org.freeplane.core.ui.components">UITools</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiThinkingEffort.html#MEDIUM" class="member-name-link">MEDIUM</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiThinkingEffort.html" title="enum class in org.freeplane.api.ai">AiThinkingEffort</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/core/util/MenuUtils.MenuEntry.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.swing.Icon,javax.swing.KeyStroke,java.lang.String)" class="member-name-link">MenuEntry(String, String, Icon, KeyStroke, String)</a> - Constructor for class org.freeplane.core.util.<a href="org/freeplane/core/util/MenuUtils.MenuEntry.html" title="class in org.freeplane.core.util">MenuUtils.MenuEntry</a></dt>
 <dd>&nbsp;</dd>
@@ -2783,16 +2915,30 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">The map a node belongs to: <code>node.map</code> - read-only.</div>
 </dd>
+<dt><a href="org/freeplane/api/ai/AiThinkingEffort.html#MINIMAL" class="member-name-link">MINIMAL</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiThinkingEffort.html" title="enum class in org.freeplane.api.ai">AiThinkingEffort</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/freeplane/core/util/HtmlUtils.IndexPair.html#mIsTag" class="member-name-link">mIsTag</a> - Variable in class org.freeplane.core.util.<a href="org/freeplane/core/util/HtmlUtils.IndexPair.html" title="class in org.freeplane.core.util">HtmlUtils.IndexPair</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/LengthUnit.html#mm" class="member-name-link">mm</a> - Enum constant in enum class org.freeplane.api.<a href="org/freeplane/api/LengthUnit.html" title="enum class in org.freeplane.api">LengthUnit</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.Builder.html#mode(org.freeplane.api.ai.AiRequestMode)" class="member-name-link">mode(AiRequestMode)</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Sets the request execution mode.</div>
+</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestStatus.html#MODEL_UNAVAILABLE" class="member-name-link">MODEL_UNAVAILABLE</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestStatus.html" title="enum class in org.freeplane.api.ai">AiRequestStatus</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/freeplane/api/ai/AiRequestOptions.Builder.html#modelSelection(org.freeplane.api.ai.AiModelSelection)" class="member-name-link">modelSelection(AiModelSelection)</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></dt>
-<dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiRequestOptions.Builder.html#modelConfiguration(org.freeplane.api.ai.AiModelConfiguration)" class="member-name-link">modelConfiguration(AiModelConfiguration)</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></dt>
+<dd>
+<div class="block">Sets model-configuration overrides.</div>
+</dd>
+<dt><a href="org/freeplane/api/ai/AiTemperature.html#modelDefault()" class="member-name-link">modelDefault()</a> - Static method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiTemperature.html" title="class in org.freeplane.api.ai">AiTemperature</a></dt>
+<dd>
+<div class="block">Requests the selected model's default temperature explicitly.</div>
+</dd>
+<dt><a href="org/freeplane/api/ai/AiModelConfiguration.Builder.html#modelSelection(org.freeplane.api.ai.AiModelSelection)" class="member-name-link">modelSelection(AiModelSelection)</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelConfiguration.Builder.html" title="class in org.freeplane.api.ai">AiModelConfiguration.Builder</a></dt>
+<dd>
+<div class="block">Sets the model selection.</div>
+</dd>
 <dt><a href="org/freeplane/api/ConditionalStyles.html#move(int,int)" class="member-name-link">move(int, int)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/ConditionalStyles.html" title="interface in org.freeplane.api">ConditionalStyles</a></dt>
 <dd>
 <div class="block">Moves the conditional style found at <b>position</b> to <b>toPosition</b></div>
@@ -2913,6 +3059,8 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="org/freeplane/api/NodeToComparableMapper.html" class="type-name-link" title="interface in org.freeplane.api">NodeToComparableMapper</a> - Interface in <a href="org/freeplane/api/package-summary.html">org.freeplane.api</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiThinkingEffort.html#NONE" class="member-name-link">NONE</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiThinkingEffort.html" title="enum class in org.freeplane.api.ai">AiThinkingEffort</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ChildNodesAlignment.html#NOT_SET" class="member-name-link">NOT_SET</a> - Enum constant in enum class org.freeplane.api.<a href="org/freeplane/api/ChildNodesAlignment.html" title="enum class in org.freeplane.api">ChildNodesAlignment</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ChildNodesLayout.html#NOT_SET" class="member-name-link">NOT_SET</a> - Enum constant in enum class org.freeplane.api.<a href="org/freeplane/api/ChildNodesLayout.html" title="enum class in org.freeplane.api">ChildNodesLayout</a></dt>
@@ -2934,6 +3082,10 @@ loadScripts(document, 'script');</script>
 <dl class="index">
 <dt><a href="org/freeplane/core/util/HtmlUtils.html#objectToHtml(java.lang.Object)" class="member-name-link">objectToHtml(Object)</a> - Static method in class org.freeplane.core.util.<a href="org/freeplane/core/util/HtmlUtils.html" title="class in org.freeplane.core.util">HtmlUtils</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiTemperature.html#of(double)" class="member-name-link">of(double)</a> - Static method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiTemperature.html" title="class in org.freeplane.api.ai">AiTemperature</a></dt>
+<dd>
+<div class="block">Requests a numeric temperature.</div>
+</dd>
 <dt><a href="org/freeplane/api/Dash.html#of(int%5B%5D)" class="member-name-link">of(int[])</a> - Static method in enum class org.freeplane.api.<a href="org/freeplane/api/Dash.html" title="enum class in org.freeplane.api">Dash</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/DependencyLookup.html#ofAttribute(int)" class="member-name-link">ofAttribute(int)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/DependencyLookup.html" title="interface in org.freeplane.api">DependencyLookup</a></dt>
@@ -3027,9 +3179,13 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/api/swing/JFileChooser.html#problem-description-heading" class="search-tag-link">Problem Description</a> - Search tag in class org.freeplane.api.swing.JFileChooser</dt>
 <dd>Section</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.Builder.html#profile(java.lang.String)" class="member-name-link">profile(String)</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Requests a saved assistant profile by name.</div>
+</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.Builder.html#profile(java.lang.String,java.lang.String)" class="member-name-link">profile(String, String)</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Requests an inline assistant profile instruction.</div>
+</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestStatus.html#PROMPT_NOT_FOUND" class="member-name-link">PROMPT_NOT_FOUND</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestStatus.html" title="enum class in org.freeplane.api.ai">AiRequestStatus</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/Properties.html" class="type-name-link" title="interface in org.freeplane.api">Properties</a> - Interface in <a href="org/freeplane/api/package-summary.html">org.freeplane.api</a></dt>
@@ -3161,7 +3317,9 @@ loadScripts(document, 'script');</script>
 <div class="block">Returns the current map-level tag category structure.</div>
 </dd>
 <dt><a href="org/freeplane/api/ai/AiToolAvailability.html#READING" class="member-name-link">READING</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiToolAvailability.html" title="enum class in org.freeplane.api.ai">AiToolAvailability</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Allow Freeplane read/search/selection tools only.</div>
+</dd>
 <dt><a href="org/freeplane/api/Script.html#readingFiles()" class="member-name-link">readingFiles()</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Script.html" title="interface in org.freeplane.api">Script</a></dt>
 <dd>
 <div class="block">With permission to read files.</div>
@@ -3319,7 +3477,10 @@ loadScripts(document, 'script');</script>
 <div class="block">round to the given number of decimal places: <code>round(0.1234, 2) &rarr; 0.12</code></div>
 </dd>
 <dt><a href="org/freeplane/api/ai/AiRequestService.html#runAiPrompt(java.lang.String,java.time.Duration,org.freeplane.api.ai.AiRequestCallback)" class="member-name-link">runAiPrompt(String, Duration, AiRequestCallback)</a> - Method in interface org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestService.html" title="interface in org.freeplane.api.ai">AiRequestService</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Starts an asynchronous AI request from a saved AI prompt name using the
+ supplied timeout and the saved prompt's stored execution defaults.</div>
+</dd>
 <dt><a href="org/freeplane/api/Controller.html#runAiPrompt(java.lang.String,java.time.Duration,org.freeplane.api.ai.AiRequestCallback)" class="member-name-link">runAiPrompt(String, Duration, AiRequestCallback)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Controller.html" title="interface in org.freeplane.api">Controller</a></dt>
 <dd>
 <div class="block">Starts an asynchronous AI request from a saved AI prompt name using
@@ -3327,7 +3488,10 @@ loadScripts(document, 'script');</script>
  defaults.</div>
 </dd>
 <dt><a href="org/freeplane/api/ai/AiRequestService.html#runAiPrompt(java.lang.String,org.freeplane.api.ai.AiRequestOptions,org.freeplane.api.ai.AiRequestCallback)" class="member-name-link">runAiPrompt(String, AiRequestOptions, AiRequestCallback)</a> - Method in interface org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestService.html" title="interface in org.freeplane.api.ai">AiRequestService</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Starts an asynchronous AI request from a saved AI prompt name using options
+ to override saved-prompt execution defaults.</div>
+</dd>
 <dt><a href="org/freeplane/api/Controller.html#runAiPrompt(java.lang.String,org.freeplane.api.ai.AiRequestOptions,org.freeplane.api.ai.AiRequestCallback)" class="member-name-link">runAiPrompt(String, AiRequestOptions, AiRequestCallback)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Controller.html" title="interface in org.freeplane.api">Controller</a></dt>
 <dd>
 <div class="block">Starts an asynchronous AI request from a saved AI prompt name using
@@ -3367,7 +3531,9 @@ loadScripts(document, 'script');</script>
 <div class="block">API for executing scripts.</div>
 </dd>
 <dt><a href="org/freeplane/api/ai/AiToolAvailability.html#SCRIPT_EXECUTION" class="member-name-link">SCRIPT_EXECUTION</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiToolAvailability.html" title="enum class in org.freeplane.api.ai">AiToolAvailability</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Allow editing tools and script/code execution tools where those tools are enabled and authorized.</div>
+</dd>
 <dt><a href="org/freeplane/plugin/script/GroovyStaticImports.html#scriptUtils" class="member-name-link">scriptUtils</a> - Static variable in class org.freeplane.plugin.script.<a href="org/freeplane/plugin/script/GroovyStaticImports.html" title="class in org.freeplane.plugin.script">GroovyStaticImports</a></dt>
 <dd>
 <div class="block">Utilities for script-specific operations, particularly useful in utility scripts and add-ons.</div>
@@ -3398,7 +3564,9 @@ loadScripts(document, 'script');</script>
 <div class="block">selects branchRoot and all children</div>
 </dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.Builder.html#selectionOverride(org.freeplane.api.ai.AiSelectionOverride)" class="member-name-link">selectionOverride(AiSelectionOverride)</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Sets the Freeplane map selection injected into the first prompt message.</div>
+</dd>
 <dt><a href="org/freeplane/api/Controller.html#selectMultipleNodes(java.util.Collection)" class="member-name-link">selectMultipleNodes(Collection&lt;? extends Node&gt;)</a> - Method in interface org.freeplane.api.<a href="org/freeplane/api/Controller.html" title="interface in org.freeplane.api">Controller</a></dt>
 <dd>
 <div class="block">same as <a href="org/freeplane/api/Controller.html#select(java.util.Collection)"><code>Controller.select(Collection)</code></a></div>
@@ -3909,7 +4077,9 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/core/util/LogUtils.html#severe(java.lang.Throwable)" class="member-name-link">severe(Throwable)</a> - Static method in class org.freeplane.core.util.<a href="org/freeplane/core/util/LogUtils.html" title="class in org.freeplane.core.util">LogUtils</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestMode.html#SHOW_IN_NEW_CHAT" class="member-name-link">SHOW_IN_NEW_CHAT</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestMode.html" title="enum class in org.freeplane.api.ai">AiRequestMode</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Start a new visible chat tab/session for the request.</div>
+</dd>
 <dt><a href="org/freeplane/core/ui/components/UITools.html#showAttributeEmptyStringErrorMessage()" class="member-name-link">showAttributeEmptyStringErrorMessage()</a> - Static method in class org.freeplane.core.ui.components.<a href="org/freeplane/core/ui/components/UITools.html" title="class in org.freeplane.core.ui.components">UITools</a></dt>
 <dd>
 <div class="block">Shows the error message  "attributes_adding_empty_attribute_error"</div>
@@ -3971,7 +4141,9 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/api/HorizontalTextAlignment.html#swingConstant" class="member-name-link">swingConstant</a> - Variable in enum class org.freeplane.api.<a href="org/freeplane/api/HorizontalTextAlignment.html" title="enum class in org.freeplane.api">HorizontalTextAlignment</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.Builder.html#systemMessage(java.lang.String)" class="member-name-link">systemMessage(String)</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Sets a base system-message override while preserving Freeplane guidance.</div>
+</dd>
 </dl>
 <h2 class="title" id="I:T">T</h2>
 <dl class="index">
@@ -3985,6 +4157,10 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/TagsRO.html" class="type-name-link" title="interface in org.freeplane.api">TagsRO</a> - Interface in <a href="org/freeplane/api/package-summary.html">org.freeplane.api</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiModelConfiguration.Builder.html#temperature(org.freeplane.api.ai.AiTemperature)" class="member-name-link">temperature(AiTemperature)</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelConfiguration.Builder.html" title="class in org.freeplane.api.ai">AiModelConfiguration.Builder</a></dt>
+<dd>
+<div class="block">Sets model temperature.</div>
+</dd>
 <dt><a href="org/freeplane/api/NodeChanged.ChangedElement.html#TEXT" class="member-name-link">TEXT</a> - Enum constant in enum class org.freeplane.api.<a href="org/freeplane/api/NodeChanged.ChangedElement.html" title="enum class in org.freeplane.api">NodeChanged.ChangedElement</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/core/util/HtmlUtils.html#textToHTML(java.lang.String)" class="member-name-link">textToHTML(String)</a> - Static method in class org.freeplane.core.util.<a href="org/freeplane/core/util/HtmlUtils.html" title="class in org.freeplane.core.util">HtmlUtils</a></dt>
@@ -4001,10 +4177,16 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/TextWritingDirection.html" class="type-name-link" title="enum class in org.freeplane.api">TextWritingDirection</a> - Enum Class in <a href="org/freeplane/api/package-summary.html">org.freeplane.api</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiModelConfiguration.Builder.html#thinkingEffort(org.freeplane.api.ai.AiThinkingEffort)" class="member-name-link">thinkingEffort(AiThinkingEffort)</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiModelConfiguration.Builder.html" title="class in org.freeplane.api.ai">AiModelConfiguration.Builder</a></dt>
+<dd>
+<div class="block">Sets provider-independent thinking effort.</div>
+</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestStatus.html#TIMED_OUT" class="member-name-link">TIMED_OUT</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestStatus.html" title="enum class in org.freeplane.api.ai">AiRequestStatus</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.Builder.html#timeout(java.time.Duration)" class="member-name-link">timeout(Duration)</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Sets the maximum request duration.</div>
+</dd>
 <dt><a href="org/freeplane/api/Quantity.html#toBaseUnits()" class="member-name-link">toBaseUnits()</a> - Method in class org.freeplane.api.<a href="org/freeplane/api/Quantity.html" title="class in org.freeplane.api">Quantity</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/Quantity.html#toBaseUnitsRounded()" class="member-name-link">toBaseUnitsRounded()</a> - Method in class org.freeplane.api.<a href="org/freeplane/api/Quantity.html" title="class in org.freeplane.api">Quantity</a></dt>
@@ -4018,7 +4200,13 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/core/util/TextUtils.html#toNumber(java.lang.String)" class="member-name-link">toNumber(String)</a> - Static method in class org.freeplane.core.util.<a href="org/freeplane/core/util/TextUtils.html" title="class in org.freeplane.core.util">TextUtils</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ai/AiRequestOptions.Builder.html#toolAvailability(org.freeplane.api.ai.AiToolAvailability)" class="member-name-link">toolAvailability(AiToolAvailability)</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Sets the AI tool availability requested for this call.</div>
+</dd>
+<dt><a href="org/freeplane/api/ai/AiThinkingEffort.html#toOpenAiValue()" class="member-name-link">toOpenAiValue()</a> - Method in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiThinkingEffort.html" title="enum class in org.freeplane.api.ai">AiThinkingEffort</a></dt>
+<dd>
+<div class="block">Returns the lowercase value used by OpenAI-compatible providers.</div>
+</dd>
 <dt><a href="org/freeplane/api/ChildNodesAlignment.Placement.html#TOP" class="member-name-link">TOP</a> - Enum constant in enum class org.freeplane.api.<a href="org/freeplane/api/ChildNodesAlignment.Placement.html" title="enum class in org.freeplane.api">ChildNodesAlignment.Placement</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ChildrenSides.html#TOP_OR_LEFT" class="member-name-link">TOP_OR_LEFT</a> - Enum constant in enum class org.freeplane.api.<a href="org/freeplane/api/ChildrenSides.html" title="enum class in org.freeplane.api">ChildrenSides</a></dt>
@@ -4074,6 +4262,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="org/freeplane/api/ChildNodesLayout.html#TOPTOBOTTOM_RIGHT_LAST" class="member-name-link">TOPTOBOTTOM_RIGHT_LAST</a> - Enum constant in enum class org.freeplane.api.<a href="org/freeplane/api/ChildNodesLayout.html" title="enum class in org.freeplane.api">ChildNodesLayout</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/ChildNodesLayout.html#TOPTOBOTTOM_RIGHT_TOP" class="member-name-link">TOPTOBOTTOM_RIGHT_TOP</a> - Enum constant in enum class org.freeplane.api.<a href="org/freeplane/api/ChildNodesLayout.html" title="enum class in org.freeplane.api">ChildNodesLayout</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/freeplane/api/ai/AiTemperature.html#toString()" class="member-name-link">toString()</a> - Method in class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiTemperature.html" title="class in org.freeplane.api.ai">AiTemperature</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/freeplane/api/Dependencies.html#toString()" class="member-name-link">toString()</a> - Method in class org.freeplane.api.<a href="org/freeplane/api/Dependencies.html" title="class in org.freeplane.api">Dependencies</a></dt>
 <dd>&nbsp;</dd>
@@ -4190,6 +4380,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </dd>
+<dt><a href="org/freeplane/api/ai/AiThinkingEffort.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiThinkingEffort.html" title="enum class in org.freeplane.api.ai">AiThinkingEffort</a></dt>
+<dd>
+<div class="block">Returns the enum constant of this class with the specified name.</div>
+</dd>
 <dt><a href="org/freeplane/api/ai/AiToolAvailability.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiToolAvailability.html" title="enum class in org.freeplane.api.ai">AiToolAvailability</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
@@ -4264,6 +4458,11 @@ loadScripts(document, 'script');</script>
 the order they are declared.</div>
 </dd>
 <dt><a href="org/freeplane/api/ai/AiRequestStatus.html#values()" class="member-name-link">values()</a> - Static method in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiRequestStatus.html" title="enum class in org.freeplane.api.ai">AiRequestStatus</a></dt>
+<dd>
+<div class="block">Returns an array containing the constants of this enum class, in
+the order they are declared.</div>
+</dd>
+<dt><a href="org/freeplane/api/ai/AiThinkingEffort.html#values()" class="member-name-link">values()</a> - Static method in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiThinkingEffort.html" title="enum class in org.freeplane.api.ai">AiThinkingEffort</a></dt>
 <dd>
 <div class="block">Returns an array containing the constants of this enum class, in
 the order they are declared.</div>
@@ -4387,6 +4586,8 @@ the order they are declared.</div>
 </dl>
 <h2 class="title" id="I:X">X</h2>
 <dl class="index">
+<dt><a href="org/freeplane/api/ai/AiThinkingEffort.html#XHIGH" class="member-name-link">XHIGH</a> - Enum constant in enum class org.freeplane.api.ai.<a href="org/freeplane/api/ai/AiThinkingEffort.html" title="enum class in org.freeplane.api.ai">AiThinkingEffort</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/freeplane/core/util/FreeplaneVersion.html#XML_VERSION" class="member-name-link">XML_VERSION</a> - Static variable in class org.freeplane.core.util.<a href="org/freeplane/core/util/FreeplaneVersion.html" title="class in org.freeplane.core.util">FreeplaneVersion</a></dt>
 <dd>&nbsp;</dd>
 </dl>

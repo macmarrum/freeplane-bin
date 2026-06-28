@@ -91,9 +91,18 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Class</div>
 <div class="table-header col-last">Description</div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="AiModelConfiguration.html" title="class in org.freeplane.api.ai">AiModelConfiguration</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="block">Immutable public model configuration for script-facing AI requests.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="AiModelConfiguration.Builder.html" title="class in org.freeplane.api.ai">AiModelConfiguration.Builder</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="block">Mutable builder for <a href="AiModelConfiguration.html" title="class in org.freeplane.api.ai"><code>AiModelConfiguration</code></a>.</div>
+</div>
 <div class="col-first even-row-color class-summary class-summary-tab2"><a href="AiModelSelection.html" title="class in org.freeplane.api.ai">AiModelSelection</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab2">
-<div class="block">Explicit or current model selection for an <a href="AiRequestOptions.html" title="class in org.freeplane.api.ai"><code>AiRequestOptions</code></a>.</div>
+<div class="block">Explicit provider/model choice or default-model marker inside an
+ <a href="AiModelConfiguration.html" title="class in org.freeplane.api.ai"><code>AiModelConfiguration</code></a>.</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab1"><a href="AiRequestCallback.html" title="interface in org.freeplane.api.ai">AiRequestCallback</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab1">
@@ -105,14 +114,16 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab3"><a href="AiRequestMode.html" title="enum class in org.freeplane.api.ai">AiRequestMode</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab3">
-<div class="block">Visible or hidden execution mode for <a href="AiRequestOptions.html" title="class in org.freeplane.api.ai"><code>AiRequestOptions</code></a>.</div>
+<div class="block">User-interface visibility for an AI request.</div>
 </div>
 <div class="col-first even-row-color class-summary class-summary-tab2"><a href="AiRequestOptions.html" title="class in org.freeplane.api.ai">AiRequestOptions</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab2">
 <div class="block">Immutable public options for script-facing AI requests.</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="AiRequestOptions.Builder.html" title="class in org.freeplane.api.ai">AiRequestOptions.Builder</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">&nbsp;</div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="block">Mutable builder for <a href="AiRequestOptions.html" title="class in org.freeplane.api.ai"><code>AiRequestOptions</code></a>.</div>
+</div>
 <div class="col-first even-row-color class-summary class-summary-tab5"><a href="AiRequestRejectedException.html" title="class in org.freeplane.api.ai">AiRequestRejectedException</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab5">
 <div class="block">Runtime exception for same-thread pre-acceptance AI request rejection.</div>
@@ -132,6 +143,14 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color class-summary class-summary-tab2"><a href="AiSelectionOverride.html" title="class in org.freeplane.api.ai">AiSelectionOverride</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab2">
 <div class="block">Overrides the selection structure injected into the first AI prompt message.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="AiTemperature.html" title="class in org.freeplane.api.ai">AiTemperature</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="block">Immutable public temperature configuration for script-facing AI requests.</div>
+</div>
+<div class="col-first even-row-color class-summary class-summary-tab3"><a href="AiThinkingEffort.html" title="enum class in org.freeplane.api.ai">AiThinkingEffort</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab3">
+<div class="block">Provider-independent thinking-effort override for AI model configuration.</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab3"><a href="AiToolAvailability.html" title="enum class in org.freeplane.api.ai">AiToolAvailability</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab3">

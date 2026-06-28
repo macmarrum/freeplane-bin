@@ -98,7 +98,11 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public enum </span><span class="element-name type-name-label">AiToolAvailability</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Enum.html" title="class or interface in java.lang" class="external-link">Enum</a>&lt;<a href="AiToolAvailability.html" title="enum class in org.freeplane.api.ai">AiToolAvailability</a>&gt;</span></div>
-<div class="block">Tool availability requested for an AI call.</div>
+<div class="block">Tool availability requested for an AI call.
+
+ <p><a href="#CURRENT"><code>CURRENT</code></a> means the request should use the current AI tool setting.
+ To inherit a saved prompt's own setting, leave
+ <a href="AiRequestOptions.Builder.html#toolAvailability(org.freeplane.api.ai.AiToolAvailability)"><code>AiRequestOptions.Builder.toolAvailability(AiToolAvailability)</code></a> unset.</p></div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>1.13.3</dd>
@@ -124,15 +128,25 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Enum Constant</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code><a href="#CURRENT" class="member-name-link">CURRENT</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Use the current AI tool setting.</div>
+</div>
 <div class="col-first odd-row-color"><code><a href="#DISABLED" class="member-name-link">DISABLED</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">Disable application tools for the request.</div>
+</div>
 <div class="col-first even-row-color"><code><a href="#EDITING" class="member-name-link">EDITING</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Allow Freeplane reading and map-editing tools, but not script/code execution tools.</div>
+</div>
 <div class="col-first odd-row-color"><code><a href="#READING" class="member-name-link">READING</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">Allow Freeplane read/search/selection tools only.</div>
+</div>
 <div class="col-first even-row-color"><code><a href="#SCRIPT_EXECUTION" class="member-name-link">SCRIPT_EXECUTION</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Allow editing tools and script/code execution tools where those tools are enabled and authorized.</div>
+</div>
 </div>
 </section>
 </li>
@@ -182,30 +196,35 @@ the order they are declared.</div>
 <section class="detail" id="CURRENT">
 <h3>CURRENT</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="AiToolAvailability.html" title="enum class in org.freeplane.api.ai">AiToolAvailability</a></span>&nbsp;<span class="element-name">CURRENT</span></div>
+<div class="block">Use the current AI tool setting.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="DISABLED">
 <h3>DISABLED</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="AiToolAvailability.html" title="enum class in org.freeplane.api.ai">AiToolAvailability</a></span>&nbsp;<span class="element-name">DISABLED</span></div>
+<div class="block">Disable application tools for the request.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="READING">
 <h3>READING</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="AiToolAvailability.html" title="enum class in org.freeplane.api.ai">AiToolAvailability</a></span>&nbsp;<span class="element-name">READING</span></div>
+<div class="block">Allow Freeplane read/search/selection tools only.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="EDITING">
 <h3>EDITING</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="AiToolAvailability.html" title="enum class in org.freeplane.api.ai">AiToolAvailability</a></span>&nbsp;<span class="element-name">EDITING</span></div>
+<div class="block">Allow Freeplane reading and map-editing tools, but not script/code execution tools.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="SCRIPT_EXECUTION">
 <h3>SCRIPT_EXECUTION</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="AiToolAvailability.html" title="enum class in org.freeplane.api.ai">AiToolAvailability</a></span>&nbsp;<span class="element-name">SCRIPT_EXECUTION</span></div>
+<div class="block">Allow editing tools and script/code execution tools where those tools are enabled and authorized.</div>
 </section>
 </li>
 </ul>
