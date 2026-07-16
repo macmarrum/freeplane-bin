@@ -24,16 +24,16 @@ Private-Package: org.freeplane.plugin.ai,org.freeplane.plugin.ai.boots
  its,org.freeplane.plugin.ai.maps,org.freeplane.plugin.ai.mcpserver,or
  g.freeplane.plugin.ai.model,org.freeplane.plugin.ai.model.ui,org.free
  plane.plugin.ai.prompt,org.freeplane.plugin.ai.prompt.ui,org.freeplan
- e.plugin.ai.tools,org.freeplane.plugin.ai.tools.availability,org.free
- plane.plugin.ai.tools.code,org.freeplane.plugin.ai.tools.connectors,o
- rg.freeplane.plugin.ai.tools.content,org.freeplane.plugin.ai.tools.cr
- eate,org.freeplane.plugin.ai.tools.delete,org.freeplane.plugin.ai.too
- ls.documentation,org.freeplane.plugin.ai.tools.edit,org.freeplane.plu
- gin.ai.tools.formula,org.freeplane.plugin.ai.tools.move,org.freeplane
- .plugin.ai.tools.read,org.freeplane.plugin.ai.tools.search,org.freepl
- ane.plugin.ai.tools.selection,org.freeplane.plugin.ai.tools.tagcatego
- ries,org.freeplane.plugin.ai.tools.text,org.freeplane.plugin.ai.tools
- .utilities
+ e.plugin.ai.text,org.freeplane.plugin.ai.tools,org.freeplane.plugin.a
+ i.tools.availability,org.freeplane.plugin.ai.tools.code,org.freeplane
+ .plugin.ai.tools.connectors,org.freeplane.plugin.ai.tools.content,org
+ .freeplane.plugin.ai.tools.create,org.freeplane.plugin.ai.tools.delet
+ e,org.freeplane.plugin.ai.tools.documentation,org.freeplane.plugin.ai
+ .tools.edit,org.freeplane.plugin.ai.tools.formula,org.freeplane.plugi
+ n.ai.tools.move,org.freeplane.plugin.ai.tools.read,org.freeplane.plug
+ in.ai.tools.search,org.freeplane.plugin.ai.tools.selection,org.freepl
+ ane.plugin.ai.tools.tagcategories,org.freeplane.plugin.ai.tools.text,
+ org.freeplane.plugin.ai.tools.utilities
 Require-Bundle: org.freeplane.core
 Tool: Bnd-7.1.0.202411251545
 
