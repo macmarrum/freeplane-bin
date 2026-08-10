@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-Activator: org.freeplane.plugin.ai.bootstrap.Java8BootstrapActi
  vator
-Bundle-ClassPath: .,lib/plugin-1.13.3.jar,lib/langchain4j-1.15.1.jar,l
+Bundle-ClassPath: .,lib/plugin-1.13.4.jar,lib/langchain4j-1.15.1.jar,l
  ib/langchain4j-open-ai-1.15.1.jar,lib/langchain4j-ollama-1.15.1.jar,l
  ib/langchain4j-google-ai-gemini-1.15.1.jar,lib/langchain4j-http-clien
  t-jdk-1.15.1.jar,lib/langchain4j-http-client-1.15.1.jar,lib/langchain
@@ -13,7 +13,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: org.freeplane.plugin.ai
 Bundle-SymbolicName: org.freeplane.plugin.ai
 Bundle-Vendor: Freeplane Project
-Bundle-Version: 1.13.3
+Bundle-Version: 1.13.4
 Created-By: 21.0.8 (JetBrains s.r.o.)
 Import-Package: io.github.gitbucket.markedj;version="[1.13,2)"
 Private-Package: org.freeplane.plugin.ai,org.freeplane.plugin.ai.boots
