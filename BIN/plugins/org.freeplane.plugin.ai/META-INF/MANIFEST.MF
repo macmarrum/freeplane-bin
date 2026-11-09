@@ -14,7 +14,7 @@ Bundle-Name: org.freeplane.plugin.ai
 Bundle-SymbolicName: org.freeplane.plugin.ai
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.13.4
-Created-By: 21.0.8 (JetBrains s.r.o.)
+Created-By: 21.0.12.1 (Arch Linux)
 Import-Package: io.github.gitbucket.markedj;version="[1.13,2)"
 Private-Package: org.freeplane.plugin.ai,org.freeplane.plugin.ai.boots
  trap,org.freeplane.plugin.ai.chat.history,org.freeplane.plugin.ai.cha

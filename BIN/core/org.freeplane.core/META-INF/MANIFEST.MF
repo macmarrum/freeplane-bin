@@ -16,7 +16,7 @@ Bundle-Name: org.freeplane.core
 Bundle-SymbolicName: org.freeplane.core
 Bundle-Vendor: Freeplane Project
 Bundle-Version: 1.13.4
-Created-By: 21.0.8 (JetBrains s.r.o.)
+Created-By: 21.0.12.1 (Arch Linux)
 Export-Package: com.inet.jortho;version="1.13.4",org.freeplane.api;use
  s:="org.freeplane.api.ai";version="1.13.4",org.freeplane.api.ai;uses:
  ="org.freeplane.api";version="1.13.4",org.freeplane.core.extension;ve
