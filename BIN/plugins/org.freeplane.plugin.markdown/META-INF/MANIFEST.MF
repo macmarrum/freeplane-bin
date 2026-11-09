@@ -1,16 +1,16 @@
 Manifest-Version: 1.0
 Bundle-Activator: org.freeplane.plugin.markdown.Activator
-Bundle-ClassPath: .,lib/plugin-1.13.4.jar,lib/markedj-1.0.20.jar,lib/j
+Bundle-ClassPath: .,lib/plugin-1.13.5.jar,lib/markedj-1.0.20.jar,lib/j
  soup-1.17.2.jar
 Bundle-ManifestVersion: 2
 Bundle-Name: org.freeplane.plugin.markdown
 Bundle-SymbolicName: org.freeplane.plugin.markdown
 Bundle-Vendor: Freeplane Project
-Bundle-Version: 1.13.4
+Bundle-Version: 1.13.5
 Created-By: 21.0.12.1 (Arch Linux)
 Export-Package: io.github.gitbucket.markedj;uses:="io.github.gitbucket
- .markedj.extension";version="1.13.4",io.github.gitbucket.markedj.exte
- nsion;uses:="io.github.gitbucket.markedj";version="1.13.4"
+ .markedj.extension";version="1.13.5",io.github.gitbucket.markedj.exte
+ nsion;uses:="io.github.gitbucket.markedj";version="1.13.5"
 Private-Package: org.freeplane.plugin.markdown,org.freeplane.plugin.ma
  rkdown.markedj
 Require-Bundle: org.freeplane.core
